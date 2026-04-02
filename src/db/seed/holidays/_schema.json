@@ -1,0 +1,22 @@
+{
+  "$schema": "gemeinde-holidays-v1",
+  "description": "Standardized format for holiday data per Gemeinde, category and year. This schema is designed to be parseable by the Go+AI parser.",
+  "fields": {
+    "gemeinde_id": "string - references gemeinden.id",
+    "year": "number",
+    "category": "string - worker|student|school",
+    "holidays": [
+      {
+        "name": {
+          "de": "string",
+          "fr": "string",
+          "it": "string",
+          "en": "string"
+        },
+        "start": "YYYY-MM-DD",
+        "end": "YYYY-MM-DD",
+        "type": "vacation|public_holiday|bridge_day"
+      }
+    ]
+  }
+}

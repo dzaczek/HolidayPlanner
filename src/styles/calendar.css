@@ -1,0 +1,233 @@
+#calendar-container {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+}
+
+/* Loading bar */
+#loading-bar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: 28px;
+  background: var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+#loading-bar .loading-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--primary);
+  transition: width 0.2s ease;
+  border-radius: var(--radius);
+}
+
+#loading-bar .loading-text {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.calendar-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.calendar-grid.layout-3x4 { grid-template-columns: repeat(4, 1fr); }
+.calendar-grid.layout-2x6 { grid-template-columns: repeat(6, 1fr); }
+.calendar-grid.layout-4x3 { grid-template-columns: repeat(3, 1fr); }
+.calendar-grid.layout-6x2 { grid-template-columns: repeat(2, 1fr); }
+.calendar-grid.layout-1x12 { grid-template-columns: repeat(12, 1fr); overflow-x: auto; }
+.calendar-grid.layout-12x1 { grid-template-columns: 1fr; }
+
+/* 1x12 / 12x1: constrain month width so cells stay square */
+.calendar-grid.layout-1x12 .month-block {
+  min-width: 280px;
+}
+
+.calendar-grid.layout-12x1 .month-block {
+  max-width: 320px;
+}
+
+.month-block {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 8px;
+  min-width: 0;
+}
+
+.month-block .month-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 4px 0 6px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4px;
+}
+
+.month-block .weekday-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  margin-bottom: 2px;
+}
+
+.month-block .weekday-header span {
+  text-align: center;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  padding: 2px 0;
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+}
+
+.day-cell {
+  aspect-ratio: 1;
+  border-radius: 3px;
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: default;
+  border: 1px solid transparent;
+  overflow: visible;
+  min-height: 20px;
+}
+
+
+.day-cell.empty {
+  visibility: hidden;
+}
+
+.day-cell .day-number {
+  position: relative;
+  z-index: 2;
+  font-weight: 500;
+  text-shadow: 0 0 2px rgba(255,255,255,0.8);
+  pointer-events: none;
+}
+
+.day-cell:not(.empty):hover {
+  border-color: var(--primary);
+  cursor: pointer;
+}
+
+.day-cell.weekend {
+  background: #f0f0f0;
+}
+
+.day-cell.has-dayoff {
+  border: 1px solid #000;
+}
+
+.day-cell.today {
+  border-color: var(--primary);
+  border-width: 2px;
+  font-weight: 700;
+}
+
+/* Holiday strips inside day cell */
+.day-cell .holiday-strips {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  transition: bottom 0.15s;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+/* When cell has a leave, holiday strips shrink to top 70% */
+.day-cell.has-leave .holiday-strips {
+  bottom: 30%;
+}
+
+.day-cell .holiday-strip {
+  flex: 1;
+}
+
+.day-cell .holiday-strip.source-menu {
+  /* solid color set via inline style */
+}
+
+.day-cell .holiday-strip.source-manual {
+  /* stripe pattern set via inline style */
+}
+
+/* Leave bar: bottom 30% of cell with person color stripes */
+.leave-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30%;
+  z-index: 4;
+  opacity: 0.8;
+  /* 1px black outline around the leave area */
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  overflow: visible;
+}
+
+/* Capped ends: rounded corners + side border */
+.leave-bar.leave-cap-left {
+  border-left: 1px solid #000;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.leave-bar.leave-cap-right {
+  border-right: 1px solid #000;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* Fused edges: extend bar to cover the 1px grid gap, no side border */
+.leave-bar.leave-fuse-left {
+  left: -1px;
+}
+
+.leave-bar.leave-fuse-right {
+  right: -1px;
+}
+
+/* Label text in the middle of each week row segment */
+.leave-label-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.45rem;
+  font-weight: 600;
+  color: #000;
+  text-shadow:
+    -1px -1px 0 rgba(255,255,255,0.8),
+     1px -1px 0 rgba(255,255,255,0.8),
+    -1px  1px 0 rgba(255,255,255,0.8),
+     1px  1px 0 rgba(255,255,255,0.8);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 5;
+  overflow: visible;
+}

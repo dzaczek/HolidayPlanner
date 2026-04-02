@@ -1,0 +1,266 @@
+#sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: fit-content;
+  position: sticky;
+  top: 76px;
+}
+
+#persons-panel,
+#leaves-panel {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 12px;
+}
+
+.persons-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.persons-header h2 {
+  font-size: 1rem;
+}
+
+#persons-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.person-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  position: relative;
+}
+
+.person-color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+.person-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.person-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.person-meta {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.person-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.person-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: var(--text-muted);
+}
+
+.person-actions button:hover {
+  background: var(--border);
+  color: var(--text);
+}
+
+.gemeinde-dropdown {
+  list-style: none;
+  max-height: 180px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: var(--surface);
+  display: none;
+}
+
+.gemeinde-dropdown li {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.gemeinde-dropdown li:hover {
+  background: #e8f0fe;
+}
+
+.person-item .btn-person-add-days {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.person-days-off {
+  font-size: 0.7rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.days-off-detail {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* Leaves panel */
+
+.leaves-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.leaves-header h2 {
+  font-size: 1rem;
+}
+
+#leaves-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.leave-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.leave-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.leave-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.leave-dates {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.leave-persons-badges {
+  display: flex;
+  gap: 4px;
+  margin-top: 3px;
+  flex-wrap: wrap;
+}
+
+.leave-person-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 10px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.leave-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.leave-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: var(--text-muted);
+}
+
+.leave-actions button:hover {
+  background: var(--border);
+  color: var(--text);
+}
+
+/* Leave person picker in modal */
+
+.leave-persons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.leave-person-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 6px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.leave-person-option:hover {
+  background: #f0f5ff;
+}
+
+.leave-person-option input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary);
+}
+
+.leave-person-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}

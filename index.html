@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HCP - Holiday Calendar Planner</title>
+  <link rel="stylesheet" href="/src/styles/main.css" />
+  <link rel="stylesheet" href="/src/styles/calendar.css" />
+  <link rel="stylesheet" href="/src/styles/persons.css" />
+  <link rel="stylesheet" href="/src/styles/patterns.css" />
+  <link rel="manifest" href="/manifest.json" />
+</head>
+<body>
+  <header id="app-header">
+    <h1 data-i18n="app.title">Holiday Calendar Planner</h1>
+    <div class="header-controls">
+      <div class="year-selector">
+        <button id="prev-year" aria-label="Previous year">&laquo;</button>
+        <span id="current-year">2026</span>
+        <button id="next-year" aria-label="Next year">&raquo;</button>
+      </div>
+      <div class="layout-selector">
+        <select id="layout-select">
+          <option value="3x4">3 &times; 4</option>
+          <option value="2x6">2 &times; 6</option>
+          <option value="4x3">4 &times; 3</option>
+          <option value="6x2">6 &times; 2</option>
+          <option value="1x12">1 &times; 12</option>
+          <option value="12x1">12 &times; 1</option>
+        </select>
+      </div>
+      <div class="lang-selector">
+        <select id="lang-select">
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="it">Italiano</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <button id="backup-btn" class="btn-header" title="Backup">&#9776;</button>
+      <button id="share-btn" class="btn-header btn-share" title="Share">&#8599; Share</button>
+    </div>
+  </header>
+
+  <main>
+    <aside id="sidebar">
+      <section id="persons-panel">
+        <div class="persons-header">
+          <h2 data-i18n="persons.title">Personen</h2>
+          <button id="add-person-btn" class="btn-add" title="Add person">+</button>
+        </div>
+        <ul id="persons-list"></ul>
+      </section>
+
+      <section id="leaves-panel">
+        <div class="leaves-header">
+          <h2 data-i18n="leaves.title">Urlaub</h2>
+          <button id="add-leave-btn" class="btn-add" title="Add leave">+</button>
+        </div>
+        <ul id="leaves-list"></ul>
+      </section>
+    </aside>
+
+    <section id="calendar-container"></section>
+  </main>
+
+  <footer id="app-footer">
+    <p><strong>HCP</strong> — Kantonaler Familienurlaub-Planer / Planificateur cantonal de vacances familiales / Pianificatore cantonale ferie familiari / Cantonal Family Holiday Planner</p>
+    <p class="footer-beta">Beta — Kann Fehler enthalten / Peut contenir des erreurs / Può contenere errori / May contain errors</p>
+    <p class="footer-contact">Bei Fehlern bitte Kontakt / En cas d'erreurs, veuillez contacter / In caso di errori, contattare / For errors, please contact: <a href="mailto:contact@hcp-planner.ch">contact@hcp-planner.ch</a></p>
+  </footer>
+
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div id="modal" class="modal"></div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

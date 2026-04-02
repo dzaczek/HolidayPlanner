@@ -1,0 +1,33 @@
+[
+  {
+    "gemeinde_id": "261",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Semesterferien Frühling", "fr": "Vacances de semestre printemps", "it": "Vacanze semestrali primavera", "en": "Spring semester break" },
+        "start": "2026-02-09",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "fr": "Vacances de Pâques", "it": "Vacanze di Pasqua", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "fr": "Vacances d'été", "it": "Vacanze estive", "en": "Summer break" },
+        "start": "2026-07-20",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "fr": "Vacances de Noël", "it": "Vacanze di Natale", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  }
+]
