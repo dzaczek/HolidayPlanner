@@ -45,6 +45,16 @@ body {
   white-space: nowrap;
 }
 
+.app-version {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  background: var(--border);
+  padding: 2px 6px;
+  border-radius: 8px;
+  white-space: nowrap;
+  align-self: center;
+}
+
 .header-controls {
   display: flex;
   align-items: center;
