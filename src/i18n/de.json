@@ -60,5 +60,6 @@
   "weekdays.3": "Do",
   "weekdays.4": "Fr",
   "weekdays.5": "Sa",
-  "weekdays.6": "So"
+  "weekdays.6": "So",
+  "privacy.notice": "Ihre Daten werden ausschliesslich lokal in Ihrem Browser gespeichert. Es werden keine Daten an Server übermittelt. Beim Teilen via URL werden die Daten im Link kodiert. Sie sind selbst für die Sicherung Ihrer Daten verantwortlich (Backup-Funktion)."
 }

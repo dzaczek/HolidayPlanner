@@ -60,5 +60,6 @@
   "weekdays.3": "Gio",
   "weekdays.4": "Ven",
   "weekdays.5": "Sab",
-  "weekdays.6": "Dom"
+  "weekdays.6": "Dom",
+  "privacy.notice": "I vostri dati sono memorizzati esclusivamente nel vostro browser. Nessun dato viene trasmesso a un server. Quando condividete tramite URL, i dati sono codificati nel link. Siete responsabili del backup dei vostri dati (funzione Backup)."
 }

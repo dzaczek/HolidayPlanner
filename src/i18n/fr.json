@@ -60,5 +60,6 @@
   "weekdays.3": "Jeu",
   "weekdays.4": "Ven",
   "weekdays.5": "Sam",
-  "weekdays.6": "Dim"
+  "weekdays.6": "Dim",
+  "privacy.notice": "Vos données sont stockées exclusivement dans votre navigateur. Aucune donnée n'est transmise à un serveur. Lors du partage via URL, les données sont encodées dans le lien. Vous êtes responsable de la sauvegarde de vos données (fonction Backup)."
 }

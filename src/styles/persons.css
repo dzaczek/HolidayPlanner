@@ -264,3 +264,13 @@
   border-radius: 50%;
   flex-shrink: 0;
 }
+
+/* Privacy notice */
+.sidebar-privacy {
+  font-size: 0.65rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  padding: 10px 12px;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
