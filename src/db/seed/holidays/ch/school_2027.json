@@ -1,0 +1,1433 @@
+[
+  {
+    "canton": "AI",
+    "school_type": "Alle Schulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-05",
+        "end": "2027-02-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-04-10",
+        "end": "2027-04-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-17",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "AR",
+    "school_type": "Alle Schulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-04-10",
+        "end": "2027-04-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-10",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-09",
+        "end": "2027-10-24",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "BE",
+    "school_type": "Kindergarten, Volksschulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-04-10",
+        "end": "2027-04-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-09-25",
+        "end": "2027-10-17",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "BE",
+    "school_type": "École obligatoire",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-26",
+        "end": "2027-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-17",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "BL",
+    "school_type": "Alle Schulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-06",
+        "end": "2027-02-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-20",
+        "end": "2027-04-04",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-17",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "BS",
+    "school_type": "Alle Schulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-06",
+        "end": "2027-02-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-20",
+        "end": "2027-04-04",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-17",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "FL",
+    "school_type": "Alle Schulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-06",
+        "end": "2027-02-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-25",
+        "end": "2027-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-17",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "FR",
+    "school_type": "Écoles primaires (ville)",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-06",
+        "end": "2027-02-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-26",
+        "end": "2027-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-10",
+        "end": "2027-08-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-16",
+        "end": "2027-11-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "GE",
+    "school_type": "Toutes les écoles",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-13",
+        "end": "2027-02-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-26",
+        "end": "2027-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-23",
+        "end": "2027-10-31",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "GL",
+    "school_type": "Alle Schulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-01-30",
+        "end": "2027-02-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-04-01",
+        "end": "2027-04-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-09",
+        "end": "2027-10-24",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "GR",
+    "school_type": "Deutsch-/Romanischbünden",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-09",
+        "end": "2027-10-24",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "JU",
+    "school_type": "Écoles publiques",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-13",
+        "end": "2027-02-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-26",
+        "end": "2027-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-17",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "LU",
+    "school_type": "Alle Schulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-01-30",
+        "end": "2027-02-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-26",
+        "end": "2027-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-09-25",
+        "end": "2027-10-10",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "NE",
+    "school_type": "École obligatoire",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-27",
+        "end": "2027-03-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-26",
+        "end": "2027-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-17",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "NW",
+    "school_type": "Volks- und Mittelschulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-01-30",
+        "end": "2027-02-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-26",
+        "end": "2027-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-09-25",
+        "end": "2027-10-10",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "OW",
+    "school_type": "Alle Schulen ausser Engelberg",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-01-30",
+        "end": "2027-02-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-26",
+        "end": "2027-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-09-25",
+        "end": "2027-10-10",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SG",
+    "school_type": "Alle Schulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-04-10",
+        "end": "2027-04-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-10",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-24",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SH",
+    "school_type": "Alle Schulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-01-30",
+        "end": "2027-02-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-04-17",
+        "end": "2027-05-02",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-10",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-24",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SO",
+    "school_type": "Mittel- und Berufsschulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-06",
+        "end": "2027-02-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-04-10",
+        "end": "2027-04-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-10",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-24",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SZ",
+    "school_type": "Volksschule",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-27",
+        "end": "2027-03-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-10",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-17",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "TG",
+    "school_type": "Volksschule",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-01-30",
+        "end": "2027-02-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-26",
+        "end": "2027-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-10",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-09",
+        "end": "2027-10-24",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "TI",
+    "school_type": "Tutte le scuole",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-06",
+        "end": "2027-02-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-26",
+        "end": "2027-04-04",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-06-17",
+        "end": "2027-06-17",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "UR",
+    "school_type": "Alle Schulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-27",
+        "end": "2027-03-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-17",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "VD",
+    "school_type": "Toutes les écoles",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-06",
+        "end": "2027-02-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-03-26",
+        "end": "2027-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-09",
+        "end": "2027-10-24",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "VS",
+    "school_type": "Alle Schulen ausser Tourismusgem.",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-20",
+        "end": "2027-03-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-06-30",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-09",
+        "end": "2027-10-24",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "VS",
+    "school_type": "Oberwallis Tourismusgemeinden",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-27",
+        "end": "2027-03-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-04-24",
+        "end": "2027-05-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-06-30",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-09",
+        "end": "2027-10-24",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "ZG",
+    "school_type": "Öffentlich-rechtliche Schulen",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-02-06",
+        "end": "2027-02-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-04-17",
+        "end": "2027-05-02",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-17",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "ZH",
+    "school_type": "Volksschule",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-04-24",
+        "end": "2027-05-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-17",
+        "end": "2027-08-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-10-09",
+        "end": "2027-10-24",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "AG",
+    "school_type": "Alle Schulen, kant. Daten",
+    "year": 2027,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2027-01-30",
+        "end": "2027-02-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2027-04-10",
+        "end": "2027-04-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2027-07-03",
+        "end": "2027-08-08",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2027-10-02",
+        "end": "2027-10-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2027-12-24",
+        "end": "2028-01-09",
+        "type": "vacation"
+      }
+    ]
+  }
+]

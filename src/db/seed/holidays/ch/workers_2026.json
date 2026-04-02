@@ -1,0 +1,3308 @@
+[
+  {
+    "canton": "ZH",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "fr": "Fête du travail",
+          "it": "Festa del lavoro",
+          "en": "Labour Day"
+        },
+        "start": "2026-05-01",
+        "end": "2026-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "BE",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "LU",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Empfängnis",
+          "fr": "Immaculée Conception",
+          "it": "Immacolata",
+          "en": "Immaculate Conception"
+        },
+        "start": "2026-12-08",
+        "end": "2026-12-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "UR",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Dreikönigstag",
+          "fr": "Épiphanie",
+          "it": "Epifania",
+          "en": "Epiphany"
+        },
+        "start": "2026-01-06",
+        "end": "2026-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Josephstag",
+          "fr": "Saint-Joseph",
+          "it": "San Giuseppe",
+          "en": "St. Joseph's Day"
+        },
+        "start": "2026-03-19",
+        "end": "2026-03-19",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Empfängnis",
+          "fr": "Immaculée Conception",
+          "it": "Immacolata",
+          "en": "Immaculate Conception"
+        },
+        "start": "2026-12-08",
+        "end": "2026-12-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "SZ",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Dreikönigstag",
+          "fr": "Épiphanie",
+          "it": "Epifania",
+          "en": "Epiphany"
+        },
+        "start": "2026-01-06",
+        "end": "2026-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Josephstag",
+          "fr": "Saint-Joseph",
+          "it": "San Giuseppe",
+          "en": "St. Joseph's Day"
+        },
+        "start": "2026-03-19",
+        "end": "2026-03-19",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Empfängnis",
+          "fr": "Immaculée Conception",
+          "it": "Immacolata",
+          "en": "Immaculate Conception"
+        },
+        "start": "2026-12-08",
+        "end": "2026-12-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "OW",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Josephstag",
+          "fr": "Saint-Joseph",
+          "it": "San Giuseppe",
+          "en": "St. Joseph's Day"
+        },
+        "start": "2026-03-19",
+        "end": "2026-03-19",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bruder Klaus",
+          "fr": "Saint Nicolas de Flüe",
+          "it": "San Nicola della Flüe",
+          "en": "Brother Klaus"
+        },
+        "start": "2026-09-25",
+        "end": "2026-09-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Empfängnis",
+          "fr": "Immaculée Conception",
+          "it": "Immacolata",
+          "en": "Immaculate Conception"
+        },
+        "start": "2026-12-08",
+        "end": "2026-12-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "NW",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Josephstag",
+          "fr": "Saint-Joseph",
+          "it": "San Giuseppe",
+          "en": "St. Joseph's Day"
+        },
+        "start": "2026-03-19",
+        "end": "2026-03-19",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Empfängnis",
+          "fr": "Immaculée Conception",
+          "it": "Immacolata",
+          "en": "Immaculate Conception"
+        },
+        "start": "2026-12-08",
+        "end": "2026-12-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "GL",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "ZG",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Empfängnis",
+          "fr": "Immaculée Conception",
+          "it": "Immacolata",
+          "en": "Immaculate Conception"
+        },
+        "start": "2026-12-08",
+        "end": "2026-12-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "FR",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Empfängnis",
+          "fr": "Immaculée Conception",
+          "it": "Immacolata",
+          "en": "Immaculate Conception"
+        },
+        "start": "2026-12-08",
+        "end": "2026-12-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "SO",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "fr": "Fête du travail",
+          "it": "Festa del lavoro",
+          "en": "Labour Day"
+        },
+        "start": "2026-05-01",
+        "end": "2026-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "BS",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "fr": "Fête du travail",
+          "it": "Festa del lavoro",
+          "en": "Labour Day"
+        },
+        "start": "2026-05-01",
+        "end": "2026-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "BL",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "fr": "Fête du travail",
+          "it": "Festa del lavoro",
+          "en": "Labour Day"
+        },
+        "start": "2026-05-01",
+        "end": "2026-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "SH",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "fr": "Fête du travail",
+          "it": "Festa del lavoro",
+          "en": "Labour Day"
+        },
+        "start": "2026-05-01",
+        "end": "2026-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "AR",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "AI",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Empfängnis",
+          "fr": "Immaculée Conception",
+          "it": "Immacolata",
+          "en": "Immaculate Conception"
+        },
+        "start": "2026-12-08",
+        "end": "2026-12-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "SG",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "GR",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "AG",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Empfängnis",
+          "fr": "Immaculée Conception",
+          "it": "Immacolata",
+          "en": "Immaculate Conception"
+        },
+        "start": "2026-12-08",
+        "end": "2026-12-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "TG",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "fr": "Fête du travail",
+          "it": "Festa del lavoro",
+          "en": "Labour Day"
+        },
+        "start": "2026-05-01",
+        "end": "2026-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "TI",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Dreikönigstag",
+          "fr": "Épiphanie",
+          "it": "Epifania",
+          "en": "Epiphany"
+        },
+        "start": "2026-01-06",
+        "end": "2026-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Josephstag",
+          "fr": "Saint-Joseph",
+          "it": "San Giuseppe",
+          "en": "St. Joseph's Day"
+        },
+        "start": "2026-03-19",
+        "end": "2026-03-19",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "fr": "Fête du travail",
+          "it": "Festa del lavoro",
+          "en": "Labour Day"
+        },
+        "start": "2026-05-01",
+        "end": "2026-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Peter und Paul",
+          "fr": "Saints Pierre et Paul",
+          "it": "San Pietro e Paolo",
+          "en": "Saints Peter and Paul"
+        },
+        "start": "2026-06-29",
+        "end": "2026-06-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Empfängnis",
+          "fr": "Immaculée Conception",
+          "it": "Immacolata",
+          "en": "Immaculate Conception"
+        },
+        "start": "2026-12-08",
+        "end": "2026-12-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Stephanstag",
+          "fr": "Saint-Étienne",
+          "it": "Santo Stefano",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2026-12-26",
+        "end": "2026-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "VD",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "VS",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Josephstag",
+          "fr": "Saint-Joseph",
+          "it": "San Giuseppe",
+          "en": "St. Joseph's Day"
+        },
+        "start": "2026-03-19",
+        "end": "2026-03-19",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Empfängnis",
+          "fr": "Immaculée Conception",
+          "it": "Immacolata",
+          "en": "Immaculate Conception"
+        },
+        "start": "2026-12-08",
+        "end": "2026-12-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "NE",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "fr": "Fête du travail",
+          "it": "Festa del lavoro",
+          "en": "Labour Day"
+        },
+        "start": "2026-05-01",
+        "end": "2026-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "GE",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Restauration der Republik",
+          "fr": "Restauration de la République",
+          "it": "Restaurazione della Repubblica",
+          "en": "Restoration of the Republic"
+        },
+        "start": "2026-12-31",
+        "end": "2026-12-31",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "JU",
+    "year": 2026,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahrstag",
+          "fr": "Nouvel An",
+          "it": "Capodanno",
+          "en": "New Year's Day"
+        },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Berchtoldstag",
+          "fr": "2 janvier",
+          "it": "2 gennaio",
+          "en": "Berchtold's Day"
+        },
+        "start": "2026-01-02",
+        "end": "2026-01-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "fr": "Vendredi saint",
+          "it": "Venerdì santo",
+          "en": "Good Friday"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "fr": "Lundi de Pâques",
+          "it": "Lunedì di Pasqua",
+          "en": "Easter Monday"
+        },
+        "start": "2026-04-06",
+        "end": "2026-04-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "fr": "Fête du travail",
+          "it": "Festa del lavoro",
+          "en": "Labour Day"
+        },
+        "start": "2026-05-01",
+        "end": "2026-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Auffahrt",
+          "fr": "Ascension",
+          "it": "Ascensione",
+          "en": "Ascension Day"
+        },
+        "start": "2026-05-14",
+        "end": "2026-05-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "fr": "Lundi de Pentecôte",
+          "it": "Lunedì di Pentecoste",
+          "en": "Whit Monday"
+        },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "fr": "Fête-Dieu",
+          "it": "Corpus Domini",
+          "en": "Corpus Christi"
+        },
+        "start": "2026-06-04",
+        "end": "2026-06-04",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Bundesfeiertag",
+          "fr": "Fête nationale",
+          "it": "Festa nazionale",
+          "en": "Swiss National Day"
+        },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "fr": "Assomption",
+          "it": "Assunzione",
+          "en": "Assumption of Mary"
+        },
+        "start": "2026-08-15",
+        "end": "2026-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "fr": "Toussaint",
+          "it": "Ognissanti",
+          "en": "All Saints' Day"
+        },
+        "start": "2026-11-01",
+        "end": "2026-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachtstag",
+          "fr": "Noël",
+          "it": "Natale",
+          "en": "Christmas Day"
+        },
+        "start": "2026-12-25",
+        "end": "2026-12-25",
+        "type": "public_holiday"
+      }
+    ]
+  }
+]

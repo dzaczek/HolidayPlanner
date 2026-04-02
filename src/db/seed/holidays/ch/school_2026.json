@@ -1,0 +1,1752 @@
+[
+  {
+    "canton": "AI",
+    "school_type": "Alle Schulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-13",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-03",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "AR",
+    "school_type": "Alle Schulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-03",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "BE",
+    "school_type": "Kindergarten, Volksschulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-09-19",
+        "end": "2026-10-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-24",
+        "end": "2027-01-10",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "BE",
+    "school_type": "École obligatoire",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-03",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-25",
+        "end": "2027-01-10",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "BL",
+    "school_type": "Alle Schulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-14",
+        "end": "2026-03-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-03-28",
+        "end": "2026-04-12",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-06-27",
+        "end": "2026-08-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-09-26",
+        "end": "2026-10-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "BS",
+    "school_type": "Alle Schulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-14",
+        "end": "2026-03-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-03-28",
+        "end": "2026-04-12",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-06-27",
+        "end": "2026-08-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-09-26",
+        "end": "2026-10-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "FL",
+    "school_type": "Alle Schulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-14",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-03",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-24",
+        "end": "2027-01-06",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "FR",
+    "school_type": "Écoles primaires (ville)",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-14",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-11",
+        "end": "2026-08-26",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-10",
+        "end": "2026-10-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "GE",
+    "school_type": "Toutes les écoles",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-21",
+        "end": "2026-03-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-06-27",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-17",
+        "end": "2026-10-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-24",
+        "end": "2027-01-10",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "GL",
+    "school_type": "Alle Schulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-01-24",
+        "end": "2026-02-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-06-27",
+        "end": "2026-08-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-03",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-24",
+        "end": "2027-01-10",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "GR",
+    "school_type": "Deutsch-/Romanischbünden",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-21",
+        "end": "2026-03-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-10",
+        "end": "2026-10-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-05",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "JU",
+    "school_type": "Écoles publiques",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-14",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-03",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-24",
+        "end": "2027-01-10",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "LU",
+    "school_type": "Alle Schulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-07",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-09-26",
+        "end": "2026-10-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "NE",
+    "school_type": "École obligatoire",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-21",
+        "end": "2026-03-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-03",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "NW",
+    "school_type": "Volks- und Mittelschulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-07",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-09-26",
+        "end": "2026-10-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "OW",
+    "school_type": "Alle Schulen ausser Engelberg",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-07",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-09-25",
+        "end": "2026-10-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-24",
+        "end": "2027-01-06",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SG",
+    "school_type": "Alle Schulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-09-26",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SH",
+    "school_type": "Alle Schulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-01-24",
+        "end": "2026-02-08",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-11",
+        "end": "2026-04-26",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-09-26",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-24",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SO",
+    "school_type": "Mittel- und Berufsschulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-01-31",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-09-26",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SZ",
+    "school_type": "Volksschule",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-21",
+        "end": "2026-03-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-25",
+        "end": "2026-05-10",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-09-26",
+        "end": "2026-10-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-25",
+        "end": "2027-01-06",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "TG",
+    "school_type": "Volksschule",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-01-24",
+        "end": "2026-02-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-03",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "TI",
+    "school_type": "Tutte le scuole",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-14",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-12",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-06-18",
+        "end": "2026-08-30",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-31",
+        "end": "2026-11-08",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-24",
+        "end": "2027-01-06",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "UR",
+    "school_type": "Alle Schulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-28",
+        "end": "2026-03-08",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-05-02",
+        "end": "2026-05-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-03",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-24",
+        "end": "2027-01-10",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "VD",
+    "school_type": "Toutes les écoles",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-14",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-06-27",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-10",
+        "end": "2026-10-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-24",
+        "end": "2027-01-10",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "VS",
+    "school_type": "Alle Schulen ausser Tourismusgem.",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-21",
+        "end": "2026-03-08",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-05-09",
+        "end": "2026-05-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-01",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-10",
+        "end": "2026-10-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "VS",
+    "school_type": "Oberwallis Tourismusgemeinden",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-02-28",
+        "end": "2026-03-08",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-05-02",
+        "end": "2026-05-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-01",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-10",
+        "end": "2026-10-25",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "ZG",
+    "school_type": "Öffentlich-rechtliche Schulen",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-01-31",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-11",
+        "end": "2026-04-26",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-03",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "ZH",
+    "school_type": "Volksschule",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-18",
+        "end": "2026-05-03",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-11",
+        "end": "2026-08-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-03",
+        "end": "2026-10-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "AG",
+    "school_type": "Alle Schulen, kant. Daten",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2026-01-24",
+        "end": "2026-02-08",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-09",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "fr": "Vacances d'automne",
+          "it": "Vacanze autunnali",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-09-26",
+        "end": "2026-10-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "fr": "Vacances de Noël",
+          "it": "Vacanze di Natale",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-03",
+        "type": "vacation"
+      }
+    ]
+  }
+]

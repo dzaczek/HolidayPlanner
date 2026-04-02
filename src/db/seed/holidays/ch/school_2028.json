@@ -1,0 +1,43 @@
+[
+  {
+    "canton": "AG",
+    "school_type": "Alle Schulen, kant. Daten",
+    "year": 2028,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Sportferien",
+          "fr": "Vacances de sport",
+          "it": "Vacanze sportive",
+          "en": "Sport holidays"
+        },
+        "start": "2028-01-29",
+        "end": "2028-02-13",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühlingsferien",
+          "fr": "Vacances de printemps",
+          "it": "Vacanze di primavera",
+          "en": "Spring holidays"
+        },
+        "start": "2028-04-08",
+        "end": "2028-04-23",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "fr": "Vacances d'été",
+          "it": "Vacanze estive",
+          "en": "Summer holidays"
+        },
+        "start": "2028-07-08",
+        "end": "2028-08-13",
+        "type": "vacation"
+      }
+    ]
+  }
+]
