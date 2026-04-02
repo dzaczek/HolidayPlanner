@@ -1,4 +1,5 @@
 import { t } from '../i18n/i18n.js';
+import { sanitizeColor } from '../utils.js';
 import { addPerson, deletePerson, getAllPersons, updatePerson } from '../db/store.js';
 import { getAllGemeinden } from '../db/store.js';
 import { showModal, hideModal } from '../app.js';
@@ -21,7 +22,7 @@ export async function renderPersonsList(year, onChange) {
     li.className = 'person-item';
 
     li.innerHTML = `
-      <div class="person-color-dot" style="background-color: ${person.color}"></div>
+      <div class="person-color-dot" style="background-color: ${sanitizeColor(person.color)}"></div>
       <div class="person-info">
         <div class="person-name">${escapeHtml(person.name)}</div>
         <div class="person-meta">${t(`category.${person.category}`)} / ${escapeHtml(person.gemeindeName || person.gemeinde)}</div>
