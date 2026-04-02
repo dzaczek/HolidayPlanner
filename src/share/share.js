@@ -63,6 +63,7 @@ export async function importFromURL() {
     const payload = JSON.parse(json);
 
     if (payload.v !== 1) throw new Error('Unsupported share version');
+    validatePayload(payload);
 
     return payload;
   } catch (err) {
@@ -171,4 +172,34 @@ async function decompress(bytes) {
     offset += chunk.length;
   }
   return new TextDecoder().decode(result);
+}
+
+const VALID_CATEGORIES = ['worker', 'student', 'school'];
+const COLOR_RE = /^#[0-9a-fA-F]{6}$/;
+const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+const VALID_SOURCES = ['menu', 'manual'];
+const VALID_LANGS = ['de', 'fr', 'it', 'en'];
+
+function validatePayload(p) {
+  if (typeof p.y !== 'number' || p.y < 2000 || p.y > 2100) throw new Error('Invalid year');
+  if (!Array.isArray(p.p)) throw new Error('Invalid persons');
+  if (!Array.isArray(p.h)) throw new Error('Invalid holidays');
+  if (!Array.isArray(p.l)) throw new Error('Invalid leaves');
+  if (p.lang && !VALID_LANGS.includes(p.lang)) throw new Error('Invalid lang');
+
+  for (const person of p.p) {
+    if (typeof person.n !== 'string' || person.n.length > 200) throw new Error('Invalid person name');
+    if (!VALID_CATEGORIES.includes(person.c)) throw new Error('Invalid category');
+    if (person.cl && !COLOR_RE.test(person.cl)) throw new Error('Invalid color');
+  }
+  for (const h of p.h) {
+    if (typeof h.pi !== 'number' || h.pi < 0 || h.pi >= p.p.length) throw new Error('Invalid holiday personIndex');
+    if (!DATE_RE.test(h.d)) throw new Error('Invalid holiday date');
+    if (h.s && !VALID_SOURCES.includes(h.s)) throw new Error('Invalid source');
+  }
+  for (const l of p.l) {
+    if (!DATE_RE.test(l.s) || !DATE_RE.test(l.e)) throw new Error('Invalid leave dates');
+    if (!Array.isArray(l.pi)) throw new Error('Invalid leave personIds');
+    if (typeof l.lb !== 'string' || l.lb.length > 500) throw new Error('Invalid leave label');
+  }
 }

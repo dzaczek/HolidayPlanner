@@ -1,4 +1,5 @@
 import { t } from '../i18n/i18n.js';
+import { sanitizeColor } from '../utils.js';
 import { addLeave, deleteLeave, getAllLeaves, updateLeave, getAllPersons } from '../db/store.js';
 import { showModal, hideModal } from '../app.js';
 import { startPlacementMode, startLeaveDrag } from '../calendar/drag-drop.js';
@@ -25,7 +26,7 @@ export async function renderLeavesPanel(year, persons, onChange) {
       const p = personMap[pid];
       if (!p) continue;
       const netDays = await countLeaveWorkdaysForPerson(leave, p, year);
-      badgeParts.push(`<span class="leave-person-badge" style="background:${p.color}" title="${escapeHtml(p.name)}: ${netDays} ${t('leaves.workdays')}">${netDays}</span>`);
+      badgeParts.push(`<span class="leave-person-badge" style="background:${sanitizeColor(p.color)}" title="${escapeHtml(p.name)}: ${netDays} ${t('leaves.workdays')}">${netDays}</span>`);
     }
     const personDots = badgeParts.join('');
 
@@ -76,7 +77,7 @@ export async function showLeaveModal(year, persons, existingLeave, onChange) {
     const checked = leave.personIds.includes(p.id) ? 'checked' : '';
     return `<label class="leave-person-option">
       <input type="checkbox" value="${p.id}" ${checked} />
-      <span class="leave-person-dot" style="background:${p.color}"></span>
+      <span class="leave-person-dot" style="background:${sanitizeColor(p.color)}"></span>
       <span>${escapeHtml(p.name)}</span>
     </label>`;
   }).join('');
