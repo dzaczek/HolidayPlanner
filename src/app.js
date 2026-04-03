@@ -5,7 +5,7 @@ import { buildHolidayMap } from './holidays/holiday-source.js';
 import { showHolidayPicker } from './holidays/holiday-picker.js';
 import { renderLeavesPanel, showLeaveModal, buildLeaveMap } from './leaves/leave-manager.js';
 import { seedDatabase, ensureYearLoaded } from './db/seed/loader.js';
-import { getAllPersons, carryOverPersons, getTemplates, addHolidaysBatch, getHolidaysForPerson } from './db/store.js';
+import { getAllPersons, carryOverPersons, getTemplates, addHolidaysBatch, getHolidaysForPerson, clearAllStores, setSeedVersion } from './db/store.js';
 import { generateShareURL, importFromURL, applySharedData } from './share/share.js';
 import { showBackupModal } from './share/backup.js';
 
@@ -62,6 +62,10 @@ function bindControls() {
   document.getElementById('lang-select').addEventListener('change', async (e) => {
     setLang(e.target.value);
     await refreshAll();
+  });
+
+  document.getElementById('reset-btn').addEventListener('click', () => {
+    showResetConfirm();
   });
 
   document.getElementById('backup-btn').addEventListener('click', () => {
@@ -234,4 +238,25 @@ export function hideModal() {
   const overlay = document.getElementById('modal-overlay');
   overlay.classList.add('hidden');
   document.getElementById('modal').innerHTML = '';
+}
+
+function showResetConfirm() {
+  const html = `
+    <h3>${t('reset.title')}</h3>
+    <p class="reset-warning">${t('reset.warning')}</p>
+    <p class="reset-info">${t('reset.info')}</p>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" id="modal-cancel">${t('btn.cancel')}</button>
+      <button class="btn btn-danger" id="reset-confirm">${t('reset.confirm')}</button>
+    </div>
+  `;
+  showModal(html);
+
+  document.getElementById('modal-cancel').addEventListener('click', hideModal);
+  document.getElementById('reset-confirm').addEventListener('click', async () => {
+    await clearAllStores();
+    setSeedVersion(0);
+    hideModal();
+    location.reload();
+  });
 }

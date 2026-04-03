@@ -246,6 +246,28 @@ main {
   cursor: default;
 }
 
+.btn-reset {
+  background: var(--danger);
+}
+
+.btn-reset:hover {
+  background: #b91c1c;
+}
+
+.reset-warning {
+  font-size: 0.9rem;
+  color: var(--danger);
+  font-weight: 500;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.reset-info {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 /* Backup modal */
 .backup-options {
   display: flex;
