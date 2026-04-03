@@ -21,7 +21,7 @@ services:
   goaccess:
     build: ./goaccess
     ports:
-      - "7891:7891"
+      - "7891"
     expose:
       - "7890"
     volumes:

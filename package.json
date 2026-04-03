@@ -1,5 +1,6 @@
 {
   "name": "hcp-holiday-calendar-planner",
+  "description": "Swiss cantonal family holiday planner — optimize vacation decisions when family members work or attend school in different cantons",
   "private": true,
   "version": "1.0.0",
   "type": "module",
