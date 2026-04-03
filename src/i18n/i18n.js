@@ -4,7 +4,17 @@ import fr from './fr.json';
 import it from './it.json';
 
 const locales = { de, en, fr, it };
-let currentLang = localStorage.getItem('hcp-lang') || 'de';
+
+function detectLang() {
+  const langs = [...(navigator.languages || []), navigator.language || ''];
+  for (const tag of langs) {
+    const code = tag.toLowerCase().split('-')[0];
+    if (locales[code]) return code;
+  }
+  return 'en';
+}
+
+let currentLang = localStorage.getItem('hcp-lang') || detectLang();
 
 export function t(key) {
   return locales[currentLang]?.[key] || locales['en']?.[key] || key;
