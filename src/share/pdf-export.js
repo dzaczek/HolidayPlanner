@@ -191,25 +191,77 @@ async function buildPrintLayout(year) {
     grid.className = 'calendar-grid layout-3x4';
   }
 
-  // Fix leave bars for html2canvas: it struggles with overflow:visible + absolute children.
+  // Fix leave bars for html2canvas:
+  // 1) overflow:hidden on cells so absolute children render
+  // 2) Inline all styles — html2canvas can't render repeating-linear-gradient,
+  //    so replace multi-color gradients with a tiny canvas-based data URL pattern.
   for (const cell of calClone.querySelectorAll('.day-cell')) {
     cell.style.overflow = 'hidden';
   }
-  for (const bar of calClone.querySelectorAll('.leave-bar')) {
+
+  // Collect original leave-bar backgrounds from the live DOM before we modify the clone
+  const origBars = calContainer.querySelectorAll('.leave-bar');
+  const cloneBars = calClone.querySelectorAll('.leave-bar');
+
+  for (let i = 0; i < cloneBars.length; i++) {
+    const bar = cloneBars[i];
+    const orig = origBars[i];
+
     bar.style.position = 'absolute';
-    bar.style.left = bar.classList.contains('leave-fuse-left') ? '0px' : bar.style.left || '0';
-    bar.style.right = bar.classList.contains('leave-fuse-right') ? '0px' : bar.style.right || '0';
+    bar.style.left = bar.classList.contains('leave-fuse-left') ? '0px' : '0';
+    bar.style.right = bar.classList.contains('leave-fuse-right') ? '0px' : '0';
     bar.style.bottom = '0';
     bar.style.height = '30%';
     bar.style.zIndex = '4';
-    bar.style.opacity = '0.8';
+    bar.style.opacity = '0.85';
     bar.style.borderTop = '1px solid #000';
     bar.style.borderBottom = '1px solid #000';
+
+    // Extract colors from the original bar's inline background
+    if (orig) {
+      const bgStyle = orig.style.background;
+      // Extract colors from the gradient or solid background
+      const colorMatches = bgStyle.match(/#[0-9a-fA-F]{3,8}|rgba?\([^)]+\)|[a-z]+(?=\s+\d+px)/g);
+      const colors = colorMatches ? [...new Set(colorMatches)] : [];
+
+      if (colors.length === 1) {
+        // Single color — just use backgroundColor (html2canvas handles this fine)
+        bar.style.background = 'none';
+        bar.style.backgroundColor = colors[0];
+      } else if (colors.length > 1) {
+        // Multiple colors — generate a tiny striped canvas as data URL
+        bar.style.background = `url(${generateStripeDataURL(colors)})`;
+        bar.style.backgroundRepeat = 'repeat';
+        bar.style.backgroundSize = `${colors.length * 4}px 100%`;
+      } else {
+        // Fallback: copy original background as-is
+        bar.style.background = bgStyle;
+      }
+    }
   }
 
   wrapper.appendChild(calClone);
 
   return wrapper;
+}
+
+/**
+ * Generate a tiny canvas-based data URL with vertical color stripes.
+ * html2canvas can render background-image: url(data:...) but NOT repeating-linear-gradient.
+ */
+function generateStripeDataURL(colors) {
+  const px = 4;
+  const width = colors.length * px;
+  const height = 1;
+  const cvs = document.createElement('canvas');
+  cvs.width = width;
+  cvs.height = height;
+  const ctx = cvs.getContext('2d');
+  for (let i = 0; i < colors.length; i++) {
+    ctx.fillStyle = colors[i];
+    ctx.fillRect(i * px, 0, px, height);
+  }
+  return cvs.toDataURL('image/png');
 }
 
 function formatDateShort(dateStr) {
