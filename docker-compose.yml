@@ -1,8 +1,8 @@
 services:
   hcp:
     build: .
-    ports:
-      - "8080:8080"
+    expose:
+      - "8080"
     read_only: true
     tmpfs:
       - /var/cache/nginx:uid=101,gid=101
@@ -21,10 +21,20 @@ services:
   goaccess:
     build: ./goaccess
     ports:
-      - "7890:7890"
       - "7891:7891"
+    expose:
+      - "7890"
     volumes:
       - nginx-logs:/var/log/nginx:ro
+    depends_on:
+      - hcp
+    restart: unless-stopped
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run
+    environment:
+      - TUNNEL_TOKEN=${CF_TUNNEL_TOKEN}
     depends_on:
       - hcp
     restart: unless-stopped
