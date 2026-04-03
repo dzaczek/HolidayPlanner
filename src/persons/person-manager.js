@@ -1,6 +1,6 @@
 import { t } from '../i18n/i18n.js';
 import { sanitizeColor } from '../utils.js';
-import { addPerson, deletePerson, getAllPersons, updatePerson } from '../db/store.js';
+import { addPerson, deletePerson, getAllPersons, updatePerson, getHolidaysForPerson, deleteHoliday } from '../db/store.js';
 import { getAllGemeinden } from '../db/store.js';
 import { showModal, hideModal } from '../app.js';
 import { showHolidayPicker } from '../holidays/holiday-picker.js';
@@ -202,9 +202,24 @@ export async function showPersonModal(year, existingPerson, onChange) {
     };
 
     if (isEdit) {
+      const categoryChanged = data.category !== person.category;
+      const gemeindeChanged = data.gemeinde !== person.gemeinde;
+
       await updatePerson(data);
-      hideModal();
-      if (onChange) onChange('refresh');
+
+      // If category or Gemeinde changed, delete old menu holidays and re-assign
+      if (categoryChanged || gemeindeChanged) {
+        const oldHolidays = await getHolidaysForPerson(data.id, year);
+        for (const h of oldHolidays) {
+          if (h.source === 'menu') await deleteHoliday(h.id);
+        }
+        hideModal();
+        // Trigger auto-assign with new category/gemeinde
+        if (onChange) onChange('reassign', data);
+      } else {
+        hideModal();
+        if (onChange) onChange('refresh');
+      }
     } else {
       const newId = await addPerson(data);
       data.id = newId;

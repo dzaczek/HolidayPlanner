@@ -103,9 +103,35 @@ function bindControls() {
 async function handlePersonChange(action, person) {
   if (action === 'add-days' && person) {
     showHolidayPicker(person, getYear(), () => refreshAll(), { autoChecked: false });
+  } else if (action === 'reassign' && person) {
+    // Category or Gemeinde changed — re-assign holidays from new templates
+    await autoAssignSinglePerson(person, getYear());
+    await refreshAll();
   } else {
     await refreshAll();
   }
+}
+
+async function autoAssignSinglePerson(person, year) {
+  const templates = await getTemplates(person.category, person.gemeinde, year);
+  let extraTemplates = [];
+  if (person.category === 'school' || person.category === 'student') {
+    extraTemplates = await getTemplates('worker', person.gemeinde, year);
+  }
+  const allTemplates = [...templates, ...extraTemplates];
+  const holidays = [];
+  const seen = new Set();
+  for (const tmpl of allTemplates) {
+    const start = new Date(tmpl.startDate + 'T00:00:00');
+    const end = new Date(tmpl.endDate + 'T00:00:00');
+    for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+      const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+      if (seen.has(dateStr)) continue;
+      seen.add(dateStr);
+      holidays.push({ personId: person.id, date: dateStr, source: 'menu', label: tmpl.name, year });
+    }
+  }
+  if (holidays.length > 0) await addHolidaysBatch(holidays);
 }
 
 async function handleLeaveChange() {
