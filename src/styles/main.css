@@ -343,6 +343,20 @@ main {
 .backup-status.success { color: #16a34a; }
 .backup-status.error { color: var(--danger); }
 
+.backup-section-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.backup-ics-hint {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  text-align: center;
+}
+
 /* Footer */
 #app-footer {
   padding: 20px;

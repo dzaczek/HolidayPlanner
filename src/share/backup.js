@@ -1,6 +1,7 @@
 import { getDB } from '../db/schema.js';
 import { showModal, hideModal } from '../app.js';
 import { t } from '../i18n/i18n.js';
+import { exportICS, exportLeavesICS } from './ics-export.js';
 
 /**
  * Export all user data (persons, holidays, leaves) as JSON file download.
@@ -92,6 +93,17 @@ export function showBackupModal(onRestore) {
         ${t('backup.restore')}
         <input type="file" id="backup-file" accept=".json" style="display:none" />
       </label>
+      <div class="backup-divider"></div>
+      <p class="backup-section-title">${t('backup.exportCal')}</p>
+      <button class="btn btn-secondary backup-btn" id="export-ics-all">
+        <span class="backup-icon">&#128197;</span>
+        ${t('backup.icsAll')}
+      </button>
+      <button class="btn btn-secondary backup-btn" id="export-ics-leaves">
+        <span class="backup-icon">&#9992;</span>
+        ${t('backup.icsLeaves')}
+      </button>
+      <p class="backup-ics-hint">${t('backup.icsHint')}</p>
       <p id="backup-status" class="backup-status"></p>
     </div>
     <div class="modal-actions">
@@ -109,6 +121,32 @@ export function showBackupModal(onRestore) {
     try {
       await exportBackup();
       status.textContent = '✓';
+      status.className = 'backup-status success';
+    } catch (err) {
+      status.textContent = err.message;
+      status.className = 'backup-status error';
+    }
+  });
+
+  document.getElementById('export-ics-all').addEventListener('click', async () => {
+    const status = document.getElementById('backup-status');
+    status.textContent = '...';
+    try {
+      const count = await exportICS();
+      status.textContent = `✓ ${count} events`;
+      status.className = 'backup-status success';
+    } catch (err) {
+      status.textContent = err.message;
+      status.className = 'backup-status error';
+    }
+  });
+
+  document.getElementById('export-ics-leaves').addEventListener('click', async () => {
+    const status = document.getElementById('backup-status');
+    status.textContent = '...';
+    try {
+      const count = await exportLeavesICS();
+      status.textContent = `✓ ${count} events`;
       status.className = 'backup-status success';
     } catch (err) {
       status.textContent = err.message;
