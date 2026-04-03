@@ -8,6 +8,7 @@ import { seedDatabase, ensureYearLoaded } from './db/seed/loader.js';
 import { getAllPersons, carryOverPersons, getTemplates, addHolidaysBatch, getHolidaysForPerson, clearAllStores, clearUserStores, setSeedVersion } from './db/store.js';
 import { generateShareURL, importFromURL, applySharedData } from './share/share.js';
 import { showBackupModal } from './share/backup.js';
+import { exportPDF } from './share/pdf-export.js';
 
 let calendarContainer;
 
@@ -74,6 +75,19 @@ function bindControls() {
   document.getElementById('lang-select').addEventListener('change', async (e) => {
     setLang(e.target.value);
     await refreshAll();
+  });
+
+  document.getElementById('pdf-btn').addEventListener('click', async () => {
+    const btn = document.getElementById('pdf-btn');
+    btn.disabled = true;
+    btn.textContent = '...';
+    try {
+      await exportPDF();
+    } catch (err) {
+      console.error('[HCP] PDF export failed:', err);
+    }
+    btn.innerHTML = '&#128196; PDF';
+    btn.disabled = false;
   });
 
   document.getElementById('about-btn').addEventListener('click', () => {

@@ -2,6 +2,7 @@ import { getDB } from '../db/schema.js';
 import { showModal, hideModal } from '../app.js';
 import { t } from '../i18n/i18n.js';
 import { exportICS, exportLeavesICS } from './ics-export.js';
+import { exportPDF } from './pdf-export.js';
 
 /**
  * Export all user data (persons, holidays, leaves) as JSON file download.
@@ -104,6 +105,12 @@ export function showBackupModal(onRestore) {
         ${t('backup.icsLeaves')}
       </button>
       <p class="backup-ics-hint">${t('backup.icsHint')}</p>
+      <div class="backup-divider"></div>
+      <button class="btn btn-secondary backup-btn" id="export-pdf">
+        <span class="backup-icon">&#128196;</span>
+        ${t('backup.pdf')}
+      </button>
+      <p class="backup-ics-hint">${t('backup.pdfHint')}</p>
       <p id="backup-status" class="backup-status"></p>
     </div>
     <div class="modal-actions">
@@ -151,6 +158,18 @@ export function showBackupModal(onRestore) {
     } catch (err) {
       status.textContent = err.message;
       status.className = 'backup-status error';
+    }
+  });
+
+  document.getElementById('export-pdf').addEventListener('click', async () => {
+    const status = document.getElementById('backup-status');
+    status.textContent = '...';
+    hideModal();
+    try {
+      await exportPDF();
+      // Modal is already closed for clean screenshot
+    } catch (err) {
+      console.error('[HCP] PDF export failed:', err);
     }
   });
 

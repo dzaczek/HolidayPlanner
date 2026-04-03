@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "html2canvas": "^1.4.1",
     "idb": "^8.0.3",
+    "jspdf": "^4.2.1",
+    "qrcode-generator": "^2.0.4",
     "vite": "^8.0.3"
   }
 }
