@@ -1,6 +1,8 @@
 # HCP - Holiday Calendar Planner
 
-Swiss cantonal family holiday planner. Browser-based, offline-first, all data stored locally in IndexedDB.
+A calendar tool that helps families in Switzerland optimize their vacation planning when family members work or attend school in different cantons. Parents and children each have different holiday schedules (public holidays, school holidays, university holidays) depending on their canton and municipality — HCP visualizes all of them on one calendar so you can find the best overlapping days off.
+
+Browser-based, offline-first, all data stored locally in IndexedDB.
 
 ## Quick Start
 
