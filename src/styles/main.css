@@ -39,6 +39,12 @@ body {
   z-index: 100;
 }
 
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 #app-header h1 {
   font-size: 1.2rem;
   font-weight: 600;
@@ -46,13 +52,12 @@ body {
 }
 
 .app-version {
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   color: var(--text-muted);
   background: var(--border);
-  padding: 2px 6px;
+  padding: 1px 6px;
   border-radius: 8px;
   white-space: nowrap;
-  align-self: center;
 }
 
 .header-controls {
