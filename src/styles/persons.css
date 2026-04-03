@@ -334,6 +334,31 @@
   pointer-events: none;
 }
 
+/* About panel in sidebar */
+.sidebar-about {
+  padding: 10px 12px;
+  border-top: 1px solid var(--border);
+}
+
+.sidebar-about .about-intro {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.sidebar-about .about-features {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.sidebar-about .about-features li {
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
 /* Privacy notice */
 .sidebar-privacy {
   font-size: 0.65rem;

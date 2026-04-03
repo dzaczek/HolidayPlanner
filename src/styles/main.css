@@ -60,6 +60,13 @@ body {
   white-space: nowrap;
 }
 
+.app-motto {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
+  white-space: nowrap;
+}
+
 .header-controls {
   display: flex;
   align-items: center;
