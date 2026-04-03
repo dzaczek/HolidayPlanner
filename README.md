@@ -10,7 +10,21 @@ Browser-based, offline-first, all data stored locally in IndexedDB.
 
 ![HCP Screenshot](img/example.png)
 
-## Quick Start
+## How to use
+
+Just open **[hcp.sysop.cat](https://hcp.sysop.cat/)** in your browser — no installation, no account, no setup needed.
+
+All your data is stored locally in your browser's cache (IndexedDB). Nothing is sent to any server — everything stays on your computer. If you clear your browser data or switch to a different device, your calendar will be empty again.
+
+**Remember to make backups!** Use the Backup button to download a JSON file with all your data. You can restore it anytime with the same button. This is the only way to transfer your calendar between devices or protect it from being lost.
+
+---
+
+## For developers
+
+The sections below are for developers who want to run HCP locally or contribute to the project.
+
+### Quick Start
 
 ```bash
 npm install
@@ -19,7 +33,7 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173).
 
-## Docker
+### Docker
 
 ```bash
 docker-compose up -d
@@ -32,7 +46,7 @@ docker-compose up -d
 
 Logs are persisted in a shared Docker volume (`nginx-logs`) between the HCP and GoAccess containers.
 
-### Security
+#### Security
 
 - Read-only filesystem (`read_only: true`)
 - Non-root nginx user (uid 101)
@@ -40,7 +54,7 @@ Logs are persisted in a shared Docker volume (`nginx-logs`) between the HCP and 
 - CSP, X-Frame-Options, X-Content-Type-Options headers
 - Input escaping, color sanitization, share URL payload validation
 
-## Production Build
+### Production Build
 
 ```bash
 npm run build
