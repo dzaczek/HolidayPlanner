@@ -32,6 +32,12 @@ export async function initApp() {
   const langSelect = document.getElementById('lang-select');
   langSelect.value = getLang();
 
+  // Default to 12x1 on mobile
+  if (window.innerWidth <= 900) {
+    setLayout('12x1');
+    document.getElementById('layout-select').value = '12x1';
+  }
+
   applyTranslations();
   bindControls();
   await refreshAll();

@@ -67,6 +67,27 @@ body {
   white-space: nowrap;
 }
 
+@media (max-width: 900px) {
+  .app-motto {
+    display: none;
+  }
+
+  #app-header {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 12px;
+  }
+
+  #app-header h1 {
+    font-size: 1rem;
+  }
+
+  .header-controls {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}
+
 .header-controls {
   display: flex;
   align-items: center;
