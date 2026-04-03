@@ -64,6 +64,10 @@ function bindControls() {
     await refreshAll();
   });
 
+  document.getElementById('about-btn').addEventListener('click', () => {
+    showAbout();
+  });
+
   document.getElementById('reset-btn').addEventListener('click', () => {
     showResetConfirm();
   });
@@ -264,6 +268,23 @@ export function hideModal() {
   const overlay = document.getElementById('modal-overlay');
   overlay.classList.add('hidden');
   document.getElementById('modal').innerHTML = '';
+}
+
+function showAbout() {
+  const html = `
+    <h3>${t('about.title')}</h3>
+    <p>${t('about.intro')}</p>
+    <ul class="about-features">
+      <li>${t('about.feature.view')}</li>
+      <li>${t('about.feature.clarity')}</li>
+      <li>${t('about.feature.family')}</li>
+    </ul>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" id="modal-cancel">${t('btn.close')}</button>
+    </div>
+  `;
+  showModal(html);
+  document.getElementById('modal-cancel').addEventListener('click', hideModal);
 }
 
 function showResetConfirm() {

@@ -71,5 +71,10 @@
   "weekdays.4": "Fr",
   "weekdays.5": "Sa",
   "weekdays.6": "So",
-  "privacy.notice": "Ihre Daten werden ausschliesslich lokal in Ihrem Browser gespeichert. Es werden keine Daten an Server übermittelt. Beim Teilen via URL werden die Daten im Link kodiert. Sie sind selbst für die Sicherung Ihrer Daten verantwortlich (Backup-Funktion)."
+  "privacy.notice": "Ihre Daten werden ausschliesslich lokal in Ihrem Browser gespeichert. Es werden keine Daten an Server übermittelt. Beim Teilen via URL werden die Daten im Link kodiert. Sie sind selbst für die Sicherung Ihrer Daten verantwortlich (Backup-Funktion).",
+  "about.title": "Planuj schlauer, erhole dich länger!",
+  "about.intro": "Haben Sie es satt, an fünf verschiedenen Stellen nachzuschauen, ob Ihr Kanton frei hat, wenn die Kinder Ferien haben? Dieser Kalender erledigt das für Sie. Ideal für Personen, die in einem Kanton arbeiten und in einem anderen wohnen oder zur Schule gehen.",
+  "about.feature.view": "Personalisierte Ansicht: Wählen Sie die Kantone, die Sie interessieren, und vergleichen Sie sie auf einem Bildschirm.",
+  "about.feature.clarity": "Übersichtlichkeit: Intuitive Farbkennzeichnungen für Feiertage, lokale Feiertage und Schulpausen.",
+  "about.feature.family": "Familienunterstützung: Planen Sie gemeinsame Ausflüge ohne Risiko, die Termine der Winter- oder Frühlingsferien zu verwechseln."
 }

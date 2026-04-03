@@ -71,5 +71,10 @@
   "weekdays.4": "Ven",
   "weekdays.5": "Sam",
   "weekdays.6": "Dim",
-  "privacy.notice": "Vos données sont stockées exclusivement dans votre navigateur. Aucune donnée n'est transmise à un serveur. Lors du partage via URL, les données sont encodées dans le lien. Vous êtes responsable de la sauvegarde de vos données (fonction Backup)."
+  "privacy.notice": "Vos données sont stockées exclusivement dans votre navigateur. Aucune donnée n'est transmise à un serveur. Lors du partage via URL, les données sont encodées dans le lien. Vous êtes responsable de la sauvegarde de vos données (fonction Backup).",
+  "about.title": "Planifiez malin, reposez-vous plus longtemps !",
+  "about.intro": "Vous en avez assez de vérifier cinq sources différentes pour savoir si votre canton est en congé quand les enfants sont en vacances ? Ce calendrier le fait pour vous. Idéal pour les personnes qui travaillent dans un canton et vivent ou étudient dans un autre.",
+  "about.feature.view": "Vue personnalisée : Choisissez les cantons qui vous intéressent et comparez-les sur un seul écran.",
+  "about.feature.clarity": "Clarté : Codes couleurs intuitifs pour les jours fériés, les fêtes locales et les vacances scolaires.",
+  "about.feature.family": "Soutien familial : Planifiez vos sorties ensemble sans risque de confondre les dates des vacances d'hiver ou de printemps."
 }
