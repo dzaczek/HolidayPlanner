@@ -5,7 +5,7 @@ import { buildHolidayMap } from './holidays/holiday-source.js';
 import { showHolidayPicker } from './holidays/holiday-picker.js';
 import { renderLeavesPanel, showLeaveModal, buildLeaveMap } from './leaves/leave-manager.js';
 import { seedDatabase, ensureYearLoaded } from './db/seed/loader.js';
-import { getAllPersons, carryOverPersons, getTemplates, addHolidaysBatch, getHolidaysForPerson, clearAllStores, setSeedVersion } from './db/store.js';
+import { getAllPersons, carryOverPersons, getTemplates, addHolidaysBatch, getHolidaysForPerson, clearAllStores, clearUserStores, setSeedVersion } from './db/store.js';
 import { generateShareURL, importFromURL, applySharedData } from './share/share.js';
 import { showBackupModal } from './share/backup.js';
 
@@ -19,9 +19,15 @@ export async function initApp() {
   // Check for shared data in URL
   const shared = await importFromURL();
   if (shared) {
-    const year = await applySharedData(shared);
-    setYear(year);
-    if (shared.lang) setLang(shared.lang);
+    const accepted = await showShareImportConfirm();
+    if (accepted) {
+      await clearUserStores();
+      const year = await applySharedData(shared);
+      setYear(year);
+      if (shared.lang) setLang(shared.lang);
+    } else {
+      setYear(new Date().getFullYear());
+    }
     window.history.replaceState({}, '', window.location.pathname);
   } else {
     setYear(new Date().getFullYear());
@@ -274,6 +280,38 @@ export function hideModal() {
   const overlay = document.getElementById('modal-overlay');
   overlay.classList.add('hidden');
   document.getElementById('modal').innerHTML = '';
+}
+
+function showShareImportConfirm() {
+  return new Promise((resolve) => {
+    const html = `
+      <h3>${t('share.import.title')}</h3>
+      <p class="reset-warning">${t('share.import.warning')}</p>
+      <p class="reset-info">${t('share.import.info')}</p>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="share-cancel">${t('btn.cancel')}</button>
+        <button class="btn btn-primary" id="share-confirm">${t('share.import.confirm')}</button>
+      </div>
+    `;
+    showModal(html);
+
+    document.getElementById('share-cancel').addEventListener('click', () => {
+      hideModal();
+      resolve(false);
+    });
+    document.getElementById('share-confirm').addEventListener('click', () => {
+      hideModal();
+      resolve(true);
+    });
+
+    // Also handle overlay click as cancel
+    document.getElementById('modal-overlay').addEventListener('click', (e) => {
+      if (e.target === document.getElementById('modal-overlay')) {
+        hideModal();
+        resolve(false);
+      }
+    }, { once: true });
+  });
 }
 
 function showAbout() {

@@ -222,6 +222,15 @@ export async function isSeeded() {
  * Clear only seed data (gemeinden + templates).
  * Preserves user data: persons, holidays, leaves.
  */
+export async function clearUserStores() {
+  const db = await getDB();
+  const tx = db.transaction(['persons', 'holidays', 'leaves'], 'readwrite');
+  await tx.objectStore('persons').clear();
+  await tx.objectStore('holidays').clear();
+  await tx.objectStore('leaves').clear();
+  await tx.done;
+}
+
 export async function clearSeedStores() {
   const db = await getDB();
   const tx = db.transaction(['gemeinden', 'holidayTemplates'], 'readwrite');
