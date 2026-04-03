@@ -85,11 +85,11 @@ async function buildPrintLayout(year) {
   for (const p of persons) {
     const { total } = await countTotalDaysOff(p, year);
     personItems.push(`
-      <div style="display:flex;align-items:center;gap:4px;">
-        <div style="width:10px;height:10px;border-radius:50%;background:${sanitizeColor(p.color)};flex-shrink:0;border:1px solid rgba(0,0,0,0.15);"></div>
-        <span style="font-size:8px;font-weight:600;">${escapeHTML(p.name)}</span>
-        <span style="font-size:7px;color:#666;">${t(`category.${p.category}`)}</span>
-        <span style="font-size:7px;color:#2563eb;font-weight:500;">${total}d</span>
+      <div style="display:flex;align-items:center;gap:5px;">
+        <div style="width:14px;height:14px;border-radius:50%;background:${sanitizeColor(p.color)};flex-shrink:0;border:1px solid rgba(0,0,0,0.2);"></div>
+        <span style="font-size:12px;font-weight:600;">${escapeHTML(p.name)}</span>
+        <span style="font-size:10px;color:#555;">${t(`category.${p.category}`)}</span>
+        <span style="font-size:10px;color:#2563eb;font-weight:600;">${total}d</span>
       </div>
     `);
   }
@@ -106,17 +106,17 @@ async function buildPrintLayout(year) {
       .map(p => sanitizeColor(p.color));
 
     const colorDots = colors.map(c =>
-      `<div style="width:8px;height:8px;border-radius:50%;background:${c};border:1px solid rgba(0,0,0,0.15);"></div>`
+      `<div style="width:12px;height:12px;border-radius:50%;background:${c};border:1px solid rgba(0,0,0,0.2);"></div>`
     ).join('');
 
     const from = formatDateShort(leave.startDate);
     const to = formatDateShort(leave.endDate);
 
     leaveItems.push(`
-      <div style="display:flex;align-items:center;gap:3px;">
+      <div style="display:flex;align-items:center;gap:4px;">
         ${colorDots}
-        <span style="font-size:8px;font-weight:600;">${escapeHTML(leave.label || t('leaves.title'))}</span>
-        <span style="font-size:7px;color:#666;">${from}–${to}</span>
+        <span style="font-size:12px;font-weight:600;">${escapeHTML(leave.label || t('leaves.title'))}</span>
+        <span style="font-size:10px;color:#555;">${from}–${to}</span>
       </div>
     `);
   }
@@ -150,10 +150,10 @@ async function buildPrintLayout(year) {
   legendBar.style.cssText = `
     display: flex;
     flex-wrap: wrap;
-    gap: 6px 14px;
+    gap: 8px 18px;
     align-items: center;
-    padding: 4px 8px;
-    margin-bottom: 4px;
+    padding: 6px 12px;
+    margin-bottom: 6px;
     background: #f8fafc;
     border-radius: 4px;
     border: 1px solid #e2e8f0;
@@ -162,7 +162,7 @@ async function buildPrintLayout(year) {
   // Persons section
   if (personItems.length > 0) {
     legendBar.innerHTML = `
-      <div style="font-size:8px;font-weight:700;color:#333;">${escapeHTML(t('persons.title'))}:</div>
+      <div style="font-size:12px;font-weight:700;color:#333;">${escapeHTML(t('persons.title'))}:</div>
       ${personItems.join('')}
     `;
   }
@@ -170,7 +170,7 @@ async function buildPrintLayout(year) {
   // Leaves section
   if (leaveItems.length > 0) {
     legendBar.innerHTML += `
-      <div style="font-size:8px;font-weight:700;color:#333;margin-left:8px;">${escapeHTML(t('leaves.title'))}:</div>
+      <div style="font-size:12px;font-weight:700;color:#333;margin-left:12px;">${escapeHTML(t('leaves.title'))}:</div>
       ${leaveItems.join('')}
     `;
   }
@@ -189,6 +189,18 @@ async function buildPrintLayout(year) {
   const grid = calClone.querySelector('.calendar-grid');
   if (grid) {
     grid.className = 'calendar-grid layout-3x4';
+  }
+
+  // Enlarge day numbers and month titles for print readability
+  for (const num of calClone.querySelectorAll('.day-number')) {
+    num.style.fontSize = '11px';
+    num.style.fontWeight = '600';
+  }
+  for (const title of calClone.querySelectorAll('.month-title')) {
+    title.style.fontSize = '14px';
+  }
+  for (const hdr of calClone.querySelectorAll('.weekday-header span')) {
+    hdr.style.fontSize = '10px';
   }
 
   // Fix leave bars for html2canvas:
