@@ -44,7 +44,7 @@ export async function exportPDF() {
 
     const pageW = pdf.internal.pageSize.getWidth();
     const pageH = pdf.internal.pageSize.getHeight();
-    const margin = 4;
+    const margin = 2;
     const contentW = pageW - margin * 2;
     const contentH = pageH - margin * 2;
 
@@ -98,19 +98,19 @@ async function buildPrintLayout(year) {
   // Clone the calendar container content
   const calContainer = document.getElementById('calendar-container');
 
-  // Create offscreen wrapper
+  // Create offscreen wrapper — match A4 landscape proportions (297:210 ≈ 1.41)
   const wrapper = document.createElement('div');
   wrapper.className = 'pdf-print-wrapper';
   wrapper.style.cssText = `
     position: fixed;
     left: -9999px;
     top: 0;
-    width: 1400px;
+    width: 1800px;
     background: #fff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    padding: 12px;
+    padding: 8px 10px;
   `;
 
   // Title bar
@@ -122,14 +122,14 @@ async function buildPrintLayout(year) {
 
   // Main content row: legend + calendar
   const row = document.createElement('div');
-  row.style.cssText = 'display:flex;gap:12px;flex:1;';
+  row.style.cssText = 'display:flex;gap:8px;flex:1;';
 
   // Legend panel
   const legend = document.createElement('div');
   legend.style.cssText = `
-    width: 160px;
+    width: 150px;
     flex-shrink: 0;
-    padding: 8px;
+    padding: 6px;
     background: #f8fafc;
     border-radius: 6px;
     border: 1px solid #e2e8f0;
@@ -152,6 +152,23 @@ async function buildPrintLayout(year) {
   const grid = calClone.querySelector('.calendar-grid');
   if (grid) {
     grid.className = 'calendar-grid layout-4x3';
+  }
+
+  // Fix leave bars for html2canvas: it struggles with overflow:visible + absolute children.
+  // Set overflow:hidden on day cells and inline critical leave-bar styles.
+  for (const cell of calClone.querySelectorAll('.day-cell')) {
+    cell.style.overflow = 'hidden';
+  }
+  for (const bar of calClone.querySelectorAll('.leave-bar')) {
+    bar.style.position = 'absolute';
+    bar.style.left = bar.classList.contains('leave-fuse-left') ? '0px' : bar.style.left || '0';
+    bar.style.right = bar.classList.contains('leave-fuse-right') ? '0px' : bar.style.right || '0';
+    bar.style.bottom = '0';
+    bar.style.height = '30%';
+    bar.style.zIndex = '4';
+    bar.style.opacity = '0.8';
+    bar.style.borderTop = '1px solid #000';
+    bar.style.borderBottom = '1px solid #000';
   }
 
   row.appendChild(calClone);
