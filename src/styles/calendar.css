@@ -41,11 +41,11 @@
 
 .calendar-grid {
   display: grid;
-  gap: 12px;
+  gap: 8px;
 }
 
-.calendar-grid.layout-3x4 { grid-template-columns: repeat(4, 1fr); }
-.calendar-grid.layout-2x6 { grid-template-columns: repeat(6, 1fr); }
+.calendar-grid.layout-3x4 { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.calendar-grid.layout-2x6 { grid-template-columns: repeat(6, 1fr); gap: 4px; }
 .calendar-grid.layout-4x3 { grid-template-columns: repeat(3, 1fr); }
 .calendar-grid.layout-6x2 { grid-template-columns: repeat(2, 1fr); }
 .calendar-grid.layout-1x12 { grid-template-columns: repeat(12, 1fr); overflow-x: auto; }
@@ -64,8 +64,13 @@
   background: var(--surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 8px;
+  padding: 6px;
   min-width: 0;
+}
+
+.calendar-grid.layout-3x4 .month-block,
+.calendar-grid.layout-2x6 .month-block {
+  padding: 4px;
 }
 
 .month-block .month-title {
@@ -99,8 +104,8 @@
 
 .day-cell {
   aspect-ratio: 1;
-  border-radius: 3px;
-  font-size: 0.6rem;
+  border-radius: 2px;
+  font-size: 0.55rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,7 +113,7 @@
   cursor: default;
   border: 1px solid transparent;
   overflow: visible;
-  min-height: 20px;
+  min-height: 18px;
 }
 
 
@@ -165,6 +170,10 @@
 
 .day-cell .holiday-strip {
   flex: 1;
+}
+
+.day-cell .holiday-strip.strip-half {
+  flex: 0.5;
 }
 
 .day-cell .holiday-strip.source-menu {

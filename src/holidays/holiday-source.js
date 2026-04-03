@@ -26,6 +26,8 @@ export async function buildHolidayMap(year) {
       color: person.color,
       source: h.source,
       label: h.label,
+      style: h.style || (h.source === 'manual' ? 'striped' : 'solid'),
+      portion: h.portion || 100,
     });
   }
 

@@ -6,7 +6,21 @@ import { showModal, hideModal } from '../app.js';
 import { showHolidayPicker } from '../holidays/holiday-picker.js';
 import { countTotalDaysOff } from '../holidays/workday-counter.js';
 
-const PERSON_COLORS = ['#4CAF50', '#2196F3', '#FF9800', '#E91E63', '#9C27B0', '#00BCD4', '#FF5722', '#607D8B'];
+// 12 pastel colors, mutually contrasting, calendar-friendly
+const PERSON_COLORS = [
+  '#7CB9E8', // pastel blue
+  '#F4A6A0', // pastel red/coral
+  '#A8D5A2', // pastel green
+  '#F6C87E', // pastel orange
+  '#C3A6D8', // pastel purple
+  '#80D4C1', // pastel teal
+  '#F9B4D6', // pastel pink
+  '#B8C97E', // pastel olive
+  '#8ECAE6', // pastel sky
+  '#E8B87E', // pastel amber
+  '#A0C4E8', // pastel steel
+  '#D4A8C0', // pastel mauve
+];
 let colorIndex = 0;
 
 export async function renderPersonsList(year, onChange) {
@@ -85,7 +99,15 @@ export async function showPersonModal(year, existingPerson, onChange) {
     </div>
     <div class="form-group">
       <label>${t('persons.color')}</label>
-      <input type="color" id="modal-person-color" value="${person.color}" />
+      <div class="color-picker">
+        <div class="color-swatches" id="color-swatches">
+          ${PERSON_COLORS.map(c => `<button type="button" class="color-swatch${person.color === c ? ' active' : ''}" style="background:${c}" data-color="${c}"></button>`).join('')}
+          <button type="button" class="color-swatch color-swatch-custom${!PERSON_COLORS.includes(person.color) && person.color ? ' active' : ''}" title="Custom">
+            <span>...</span>
+          </button>
+        </div>
+        <input type="color" id="modal-person-color" value="${person.color}" class="color-input-hidden" />
+      </div>
     </div>
     <div class="modal-actions">
       <button class="btn btn-secondary" id="modal-cancel">${t('btn.cancel')}</button>
@@ -94,6 +116,24 @@ export async function showPersonModal(year, existingPerson, onChange) {
   `;
 
   showModal(html);
+
+  // Color picker
+  const colorInput = document.getElementById('modal-person-color');
+  document.querySelectorAll('.color-swatch[data-color]').forEach(swatch => {
+    swatch.addEventListener('click', () => {
+      document.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
+      swatch.classList.add('active');
+      colorInput.value = swatch.dataset.color;
+    });
+  });
+  document.querySelector('.color-swatch-custom').addEventListener('click', () => {
+    colorInput.click();
+  });
+  colorInput.addEventListener('input', () => {
+    document.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
+    document.querySelector('.color-swatch-custom').classList.add('active');
+    document.querySelector('.color-swatch-custom').style.background = colorInput.value;
+  });
 
   // Gemeinde autocomplete
   const searchInput = document.getElementById('modal-gemeinde-search');

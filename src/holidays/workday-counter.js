@@ -1,19 +1,14 @@
 import { getTemplates, getHolidaysForPerson, getAllLeaves } from '../db/store.js';
 
 /**
- * Build a Set of all free dates (non-working) for a person in a given year.
- * Includes:
- * - Weekend days (Sat/Sun) are excluded from workday counts separately
- * - Holiday templates from DB (cantonal holidays for workers, school holidays for school kids)
- * - Manually assigned holidays (from holidays store)
+ * Build a map of all free dates for a person: date -> portion weight (1.0 or 0.5).
+ * Includes templates (cantonal/school) and personally assigned holidays.
  */
 export async function getPersonFreeDates(person, year) {
-  const freeDates = new Set();
+  const freeDates = new Map(); // date -> weight (1.0 full, 0.5 half)
 
-  // 1. Get holiday templates for person's category
+  // 1. Templates (always full day = 1.0)
   const templates = await getTemplates(person.category, person.gemeinde, year);
-
-  // School kids and students also get public holidays (worker)
   let extraTemplates = [];
   if (person.category === 'school' || person.category === 'student') {
     extraTemplates = await getTemplates('worker', person.gemeinde, year);
@@ -23,14 +18,16 @@ export async function getPersonFreeDates(person, year) {
     const start = new Date(tmpl.startDate + 'T00:00:00');
     const end = new Date(tmpl.endDate + 'T00:00:00');
     for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
-      freeDates.add(formatDate(d));
+      freeDates.set(formatDate(d), 1.0);
     }
   }
 
-  // 2. Get personally assigned holidays (from holiday picker - both menu & manual)
+  // 2. Personally assigned holidays (may be 50% = 0.5)
   const holidays = await getHolidaysForPerson(person.id, year);
   for (const h of holidays) {
-    freeDates.add(h.date);
+    const weight = (h.portion === 50) ? 0.5 : 1.0;
+    const existing = freeDates.get(h.date) || 0;
+    freeDates.set(h.date, Math.max(existing, weight));
   }
 
   return freeDates;
@@ -38,7 +35,6 @@ export async function getPersonFreeDates(person, year) {
 
 /**
  * Count working days in a date range, excluding weekends and person's free dates.
- * Returns the number of actual vacation days the person "uses" in this period.
  */
 export function countNetWorkdays(startStr, endStr, freeDates) {
   const start = new Date(startStr + 'T00:00:00');
@@ -46,28 +42,29 @@ export function countNetWorkdays(startStr, endStr, freeDates) {
   let count = 0;
   for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
     const dow = d.getDay();
-    if (dow === 0 || dow === 6) continue; // weekend
+    if (dow === 0 || dow === 6) continue;
     const dateStr = formatDate(d);
-    if (freeDates.has(dateStr)) continue; // already a free day
-    count++;
+    const weight = freeDates.get(dateStr) || 0;
+    if (weight >= 1.0) continue; // full day off
+    count += (1 - weight); // 0.5 day off = 0.5 counted
   }
   return count;
 }
 
 /**
  * Count total days off for a person in a year.
- * = working days from assigned holidays + net working days from leaves
+ * 50% days count as 0.5.
  */
 export async function countTotalDaysOff(person, year) {
   const freeDates = await getPersonFreeDates(person, year);
   const allLeaves = await getAllLeaves(year);
 
-  // Count working days that are holidays (from templates + manual)
+  // Count working days that are holidays (respecting portion)
   let holidayWorkdays = 0;
-  for (const dateStr of freeDates) {
+  for (const [dateStr, weight] of freeDates) {
     const d = new Date(dateStr + 'T00:00:00');
     const dow = d.getDay();
-    if (dow !== 0 && dow !== 6) holidayWorkdays++;
+    if (dow !== 0 && dow !== 6) holidayWorkdays += weight;
   }
 
   // Count net leave working days (excluding already-free days)
@@ -79,15 +76,14 @@ export async function countTotalDaysOff(person, year) {
   }
 
   return {
-    holidayWorkdays,   // days off from holidays/school holidays
-    leaveNetWorkdays,  // extra vacation days (net, excluding holidays)
+    holidayWorkdays,
+    leaveNetWorkdays,
     total: holidayWorkdays + leaveNetWorkdays,
   };
 }
 
 /**
  * Count net working days for a specific leave + person.
- * Used in leave panel badges.
  */
 export async function countLeaveWorkdaysForPerson(leave, person, year) {
   const freeDates = await getPersonFreeDates(person, year);

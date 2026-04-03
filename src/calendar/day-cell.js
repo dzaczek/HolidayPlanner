@@ -3,7 +3,8 @@ import { getLang } from '../i18n/i18n.js';
 /**
  * Render holiday strips inside a day cell.
  * Each person with a holiday on this date gets a proportional strip.
- * Menu holidays = solid color, manual holidays = stripe pattern.
+ * style: 'solid' = flat color, 'striped' = diagonal stripe pattern.
+ * portion: 100 = full strip, 50 = half-height strip.
  */
 export function renderDayHolidays(dayCell, holidaysOnDate) {
   if (!holidaysOnDate || holidaysOnDate.length === 0) return;
@@ -15,12 +16,16 @@ export function renderDayHolidays(dayCell, holidaysOnDate) {
 
   for (const h of holidaysOnDate) {
     const strip = document.createElement('div');
-    strip.className = `holiday-strip source-${h.source}`;
+    strip.className = 'holiday-strip';
 
-    if (h.source === 'menu') {
-      strip.style.backgroundColor = h.color;
-    } else {
-      strip.style.backgroundColor = h.color;
+    // Portion: 50% = half height
+    if (h.portion === 50) {
+      strip.classList.add('strip-half');
+    }
+
+    // Style
+    strip.style.backgroundColor = h.color;
+    if (h.style === 'striped') {
       strip.style.backgroundImage = `repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(255,255,255,0.5) 3px, rgba(255,255,255,0.5) 6px)`;
     }
 

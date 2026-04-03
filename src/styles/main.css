@@ -461,6 +461,98 @@ main {
   color: white;
 }
 
+.manual-options {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.manual-options .form-group {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.radio-row {
+  display: flex;
+  gap: 10px;
+}
+
+.radio-opt {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.radio-opt input {
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.manual-existing {
+  margin-bottom: 8px;
+}
+
+.manual-existing h4,
+#tab-manual h4 {
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+
+.manual-entry {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 4px;
+}
+
+.manual-entry-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.manual-entry-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: block;
+}
+
+.manual-entry-dates {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.manual-entry-meta {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-left: 6px;
+}
+
+.btn-manual-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--danger);
+  font-size: 0.9rem;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.btn-manual-delete:hover {
+  background: #fee2e2;
+}
+
+.manual-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 12px 0;
+}
+
 .manual-place-hint {
   font-size: 0.8rem;
   color: var(--text-muted);

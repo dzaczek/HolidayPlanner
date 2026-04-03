@@ -6,6 +6,8 @@ let active = false;
 let person = null;
 let dayCount = 0;
 let label = '';
+let style = 'solid';
+let portion = 100;
 let year = 0;
 let onDone = null;
 let previewCells = [];
@@ -15,6 +17,8 @@ export function startPlacementMode(opts) {
   person = opts.person;
   dayCount = opts.dayCount;
   label = opts.label || '';
+  style = opts.style || 'solid';
+  portion = opts.portion || 100;
   year = opts.year;
   onDone = opts.onDone;
   active = true;
@@ -113,7 +117,7 @@ function clearPreview() {
 async function confirmPlacement(fromDateStr) {
   const dates = expandDays(fromDateStr, dayCount);
   const holidays = dates.map(date => ({
-    personId: person.id, date, source: 'manual', label, year,
+    personId: person.id, date, source: 'manual', label, style, portion, year,
   }));
   if (holidays.length > 0) await addHolidaysBatch(holidays);
   cleanupPlacement();
