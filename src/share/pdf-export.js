@@ -1,13 +1,13 @@
 import { getYear } from '../calendar/renderer.js';
 import { generateShareURL } from './share.js';
 import { t } from '../i18n/i18n.js';
-import { getAllPersons, getHolidaysForPerson } from '../db/store.js';
+import { getAllPersons, getAllLeaves } from '../db/store.js';
 import { countTotalDaysOff } from '../holidays/workday-counter.js';
 import { sanitizeColor } from '../utils.js';
 
 /**
  * Export the calendar view as a landscape PDF:
- * - Page 1: legend (persons) on the left + calendar 4x3 on the right
+ * - Page 1: title + legend bar + calendar 3x4 (4 cols, 3 rows)
  * - Page 2: QR code with share link
  */
 export async function exportPDF() {
@@ -73,24 +73,50 @@ export async function exportPDF() {
 }
 
 /**
- * Build an offscreen div with legend + calendar in 4x3 grid,
- * styled for A4 landscape proportions.
+ * Build an offscreen div with horizontal legend bar + calendar in 3x4 grid (4 cols, 3 rows),
+ * optimized for A4 landscape.
  */
 async function buildPrintLayout(year) {
   const persons = await getAllPersons(year);
+  const leaves = await getAllLeaves(year);
 
-  // Build legend HTML
-  const legendItems = [];
+  // Build person legend items (horizontal)
+  const personItems = [];
   for (const p of persons) {
     const { total } = await countTotalDaysOff(p, year);
-    legendItems.push(`
-      <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
-        <div style="width:12px;height:12px;border-radius:50%;background:${sanitizeColor(p.color)};flex-shrink:0;border:1px solid rgba(0,0,0,0.15);"></div>
-        <div style="min-width:0;">
-          <div style="font-size:9px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escapeHTML(p.name)}</div>
-          <div style="font-size:7px;color:#666;">${t(`category.${p.category}`)} · ${escapeHTML(p.gemeindeName || p.gemeinde || '')}</div>
-          <div style="font-size:7px;color:#2563eb;font-weight:500;">${t('persons.daysOff')}: ${total}</div>
-        </div>
+    personItems.push(`
+      <div style="display:flex;align-items:center;gap:4px;">
+        <div style="width:10px;height:10px;border-radius:50%;background:${sanitizeColor(p.color)};flex-shrink:0;border:1px solid rgba(0,0,0,0.15);"></div>
+        <span style="font-size:8px;font-weight:600;">${escapeHTML(p.name)}</span>
+        <span style="font-size:7px;color:#666;">${t(`category.${p.category}`)}</span>
+        <span style="font-size:7px;color:#2563eb;font-weight:500;">${total}d</span>
+      </div>
+    `);
+  }
+
+  // Build leave legend items (horizontal)
+  const personMap = {};
+  for (const p of persons) personMap[p.id] = p;
+
+  const leaveItems = [];
+  for (const leave of leaves) {
+    const colors = (leave.personIds || [])
+      .map(pid => personMap[pid])
+      .filter(Boolean)
+      .map(p => sanitizeColor(p.color));
+
+    const colorDots = colors.map(c =>
+      `<div style="width:8px;height:8px;border-radius:50%;background:${c};border:1px solid rgba(0,0,0,0.15);"></div>`
+    ).join('');
+
+    const from = formatDateShort(leave.startDate);
+    const to = formatDateShort(leave.endDate);
+
+    leaveItems.push(`
+      <div style="display:flex;align-items:center;gap:3px;">
+        ${colorDots}
+        <span style="font-size:8px;font-weight:600;">${escapeHTML(leave.label || t('leaves.title'))}</span>
+        <span style="font-size:7px;color:#666;">${from}–${to}</span>
       </div>
     `);
   }
@@ -98,49 +124,60 @@ async function buildPrintLayout(year) {
   // Clone the calendar container content
   const calContainer = document.getElementById('calendar-container');
 
-  // Create offscreen wrapper — match A4 landscape proportions (297:210 ≈ 1.41)
+  // Create offscreen wrapper — wide to fill A4 landscape
   const wrapper = document.createElement('div');
   wrapper.className = 'pdf-print-wrapper';
   wrapper.style.cssText = `
     position: fixed;
     left: -9999px;
     top: 0;
-    width: 1800px;
+    width: 2000px;
     background: #fff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    padding: 8px 10px;
+    padding: 6px 8px;
   `;
 
   // Title bar
   const titleBar = document.createElement('div');
-  titleBar.style.cssText = 'text-align:center;margin-bottom:8px;';
-  titleBar.innerHTML = `<div style="font-size:16px;font-weight:700;">${escapeHTML(t('app.title'))} — ${year}</div>
-    <div style="font-size:9px;color:#666;font-style:italic;">${escapeHTML(t('about.motto'))}</div>`;
+  titleBar.style.cssText = 'text-align:center;margin-bottom:4px;';
+  titleBar.innerHTML = `<div style="font-size:14px;font-weight:700;">${escapeHTML(t('app.title'))} — ${year}</div>`;
   wrapper.appendChild(titleBar);
 
-  // Main content row: legend + calendar
-  const row = document.createElement('div');
-  row.style.cssText = 'display:flex;gap:8px;flex:1;';
-
-  // Legend panel
-  const legend = document.createElement('div');
-  legend.style.cssText = `
-    width: 150px;
-    flex-shrink: 0;
-    padding: 6px;
+  // Legend bar — persons and leaves in a horizontal row
+  const legendBar = document.createElement('div');
+  legendBar.style.cssText = `
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    align-items: center;
+    padding: 4px 8px;
+    margin-bottom: 4px;
     background: #f8fafc;
-    border-radius: 6px;
+    border-radius: 4px;
     border: 1px solid #e2e8f0;
   `;
-  legend.innerHTML = `
-    <div style="font-size:11px;font-weight:700;margin-bottom:8px;border-bottom:1px solid #e2e8f0;padding-bottom:4px;">${escapeHTML(t('persons.title'))}</div>
-    ${legendItems.join('')}
-  `;
-  row.appendChild(legend);
 
-  // Calendar clone — force 4x3 layout
+  // Persons section
+  if (personItems.length > 0) {
+    legendBar.innerHTML = `
+      <div style="font-size:8px;font-weight:700;color:#333;">${escapeHTML(t('persons.title'))}:</div>
+      ${personItems.join('')}
+    `;
+  }
+
+  // Leaves section
+  if (leaveItems.length > 0) {
+    legendBar.innerHTML += `
+      <div style="font-size:8px;font-weight:700;color:#333;margin-left:8px;">${escapeHTML(t('leaves.title'))}:</div>
+      ${leaveItems.join('')}
+    `;
+  }
+
+  wrapper.appendChild(legendBar);
+
+  // Calendar clone — force 3x4 layout (4 columns, 3 rows — landscape-friendly)
   const calClone = calContainer.cloneNode(true);
   calClone.style.cssText = 'flex:1;min-width:0;';
 
@@ -148,14 +185,13 @@ async function buildPrintLayout(year) {
   const lb = calClone.querySelector('#loading-bar');
   if (lb) lb.remove();
 
-  // Force 4x3 layout class
+  // Force 3x4 layout class (4 columns = landscape)
   const grid = calClone.querySelector('.calendar-grid');
   if (grid) {
-    grid.className = 'calendar-grid layout-4x3';
+    grid.className = 'calendar-grid layout-3x4';
   }
 
   // Fix leave bars for html2canvas: it struggles with overflow:visible + absolute children.
-  // Set overflow:hidden on day cells and inline critical leave-bar styles.
   for (const cell of calClone.querySelectorAll('.day-cell')) {
     cell.style.overflow = 'hidden';
   }
@@ -171,10 +207,15 @@ async function buildPrintLayout(year) {
     bar.style.borderBottom = '1px solid #000';
   }
 
-  row.appendChild(calClone);
-  wrapper.appendChild(row);
+  wrapper.appendChild(calClone);
 
   return wrapper;
+}
+
+function formatDateShort(dateStr) {
+  if (!dateStr) return '';
+  const [y, m, d] = dateStr.split('-');
+  return `${d}.${m}`;
 }
 
 function escapeHTML(str) {
