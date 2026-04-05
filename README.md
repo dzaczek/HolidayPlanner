@@ -100,7 +100,9 @@ When you switch to a new year, all your people and their holiday assignments car
 
 ### Data Sources
 
-All holiday data is derived from official Swiss government and institutional sources. The source PDF files are stored in the `datasource/` directory.
+All holiday data is derived from official government and institutional sources. The source PDF files are stored in the `datasource/` directory.
+
+#### Switzerland (CH)
 
 | Source | Type | URL | Used for |
 |--------|------|-----|----------|
@@ -110,6 +112,20 @@ All holiday data is derived from official Swiss government and institutional sou
 | **Kantonale Feiertage** | PDF | [bj.admin.ch/dam/bj/de/data/publiservice/service/zivilprozessrecht/kant-feiertage.pdf](https://www.bj.admin.ch/dam/bj/de/data/publiservice/service/zivilprozessrecht/kant-feiertage.pdf) | Official public holidays per canton (fixed + moveable dates) |
 | **Universität Zürich Semesterdaten** | Web | [uzh.ch/de/studies/dates](https://www.uzh.ch/de/studies/dates.html) | University semester breaks (students.json) |
 | **swisstopo PLZ/Ortschaften** | Data | [data.geo.admin.ch/ch.swisstopo-vd.ortschaftenverzeichnis_plz](https://data.geo.admin.ch/ch.swisstopo-vd.ortschaftenverzeichnis_plz/) | Municipality database (2123 Gemeinden with BFS number, canton, PLZ, language) |
+
+#### Germany (DE)
+
+All sources below are free, require no API key, and have been verified as working.
+
+| Source | Type | URL | Used for |
+|--------|------|-----|----------|
+| **Destatis GV-ISys** | CSV/XLS | [destatis.de/.../Gemeindeverzeichnis](https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/_inhalt.html) | Authoritative municipality register — all Gemeinden with AGS code, Bundesland, Kreis |
+| **OpenPLZAPI** | JSON API | [openplzapi.org](https://openplzapi.org/) | Municipality lookup with PLZ, name, Bundesland. Search-based: `/de/Localities?name=Berlin` |
+| **OpenHolidaysAPI** | JSON API | [openholidaysapi.org](https://openholidaysapi.org/) | Public holidays + school holidays in one API. `/PublicHolidays?countryIsoCode=DE&validFrom=2026-01-01&validTo=2026-12-31` |
+| **date.nager.at** | JSON API | [date.nager.at/api/v3/publicholidays/2026/DE](https://date.nager.at/api/v3/publicholidays/2026/DE) | Public holidays per Bundesland with subdivision codes |
+| **feiertage-api.de** | JSON API | [feiertage-api.de/api/?jahr=2026&nur_land=BY](https://feiertage-api.de/api/?jahr=2026&nur_land=BY) | Public holidays per Bundesland with detailed notes |
+| **ferien-api.de** | JSON API | [ferien-api.de/api/v1/holidays/BY/2026](https://ferien-api.de/api/v1/holidays/BY/2026) | School holidays per Bundesland and year |
+| **KMK Ferienregelung** | PDF | [kmk.org/service/ferien.html](https://www.kmk.org/service/ferien.html) | Official school holidays PDF (authoritative source, all 16 Bundesländer) |
 
 Source files in the repository:
 ```
