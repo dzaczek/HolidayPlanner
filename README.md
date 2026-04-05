@@ -104,8 +104,9 @@ All holiday data is derived from official Swiss government and institutional sou
 
 | Source | Type | URL | Used for |
 |--------|------|-----|----------|
-| **EDK/CDIP Schulferien** | PDF | [edk.ch/de/bildungssystem/kantonale-schulorganisation/schulferien](https://www.edk.ch/de/bildungssystem/kantonale-schulorganisation/schulferien) | School holidays for all 26 cantons. Published yearly as `Schulferien_YYYY.pdf` |
-| **Kantonal-einheitlicher Ferienplan (BKS VS)** | PDF | [ag.ch/de/bks/kindergarten-volksschule/schulorganisation/ferienplan](https://www.ag.ch/de/bks/kindergarten-volksschule/schulorganisation/ferienplan) | School holidays for canton Aargau (AG), from the Erziehungsrat Ferienplan |
+| **EDK/CDIP Schulferien 2026** | PDF | [edudoc.ch/record/235166/files/Schulferien_2026.pdf](https://edudoc.ch/record/235166/files/Schulferien_2026.pdf) | School holidays for all 26 cantons (2026) |
+| **EDK/CDIP Schulferien 2027** | PDF | [edudoc.ch/record/240657/files/Schulferien_2027.pdf](https://edudoc.ch/record/240657/files/Schulferien_2027.pdf) | School holidays for all 26 cantons (2027) |
+| **Kantonal-einheitlicher Ferienplan (BKS)** | PDF | [schulen-aargau.ch/.../bksvs-kantonal-einheitlicher-ferienplan.pdf](https://www.schulen-aargau.ch/media/schulen-aargau/schulorganisation/ressourcen-planung/stunden-ferienplanung/bksvs-kantonal-einheitlicher-ferienplan.pdf) | School holidays for canton Aargau (AG), from the Erziehungsrat Ferienplan |
 | **Kantonale Feiertage** | PDF | [bj.admin.ch/dam/bj/de/data/publiservice/service/zivilprozessrecht/kant-feiertage.pdf](https://www.bj.admin.ch/dam/bj/de/data/publiservice/service/zivilprozessrecht/kant-feiertage.pdf) | Official public holidays per canton (fixed + moveable dates) |
 | **Universität Zürich Semesterdaten** | Web | [uzh.ch/de/studies/dates](https://www.uzh.ch/de/studies/dates.html) | University semester breaks (students.json) |
 | **swisstopo PLZ/Ortschaften** | Data | [data.geo.admin.ch/ch.swisstopo-vd.ortschaftenverzeichnis_plz](https://data.geo.admin.ch/ch.swisstopo-vd.ortschaftenverzeichnis_plz/) | Municipality database (2123 Gemeinden with BFS number, canton, PLZ, language) |
