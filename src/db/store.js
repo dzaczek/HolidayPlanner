@@ -200,7 +200,7 @@ export async function deleteLeave(id) {
 
 // === Seed check ===
 
-const SEED_VERSION = 11; // bump this to force re-seed
+const SEED_VERSION = 12; // bump this to force re-seed (multi-country support)
 
 export async function getSeedVersion() {
   try {

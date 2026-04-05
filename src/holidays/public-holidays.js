@@ -1,5 +1,6 @@
 /**
- * Dynamic computation of Swiss cantonal public holidays for any year.
+ * Dynamic computation of cantonal/regional public holidays for any year.
+ * Supports CH (Swiss cantons) and DE (German Bundesländer).
  * No seed data needed - works for past and future years.
  */
 
@@ -123,19 +124,102 @@ const CANTON = {
   JU: ['neujahr','berchtold','karfreitag','ostermontag','arbeit','auffahrt','pfingst','fronleich','himmelfahrt','allerheilig','weihnacht'],
 };
 
+// === German public holidays ===
+
+const H_DE = {
+  neujahr:       { de: 'Neujahrstag', en: "New Year's Day", fixed: [1, 1] },
+  dreikoenig:    { de: 'Heilige Drei Könige', en: 'Epiphany', fixed: [1, 6] },
+  frauentag:     { de: 'Internationaler Frauentag', en: "International Women's Day", fixed: [3, 8] },
+  karfreitag:    { de: 'Karfreitag', en: 'Good Friday', mov: 'karfreitag' },
+  ostermontag:   { de: 'Ostermontag', en: 'Easter Monday', mov: 'ostermontag' },
+  arbeit:        { de: 'Tag der Arbeit', en: 'Labour Day', fixed: [5, 1] },
+  auffahrt:      { de: 'Christi Himmelfahrt', en: 'Ascension Day', mov: 'auffahrt' },
+  pfingstmontag: { de: 'Pfingstmontag', en: 'Whit Monday', mov: 'pfingstmontag' },
+  fronleichnam:  { de: 'Fronleichnam', en: 'Corpus Christi', mov: 'fronleichnam' },
+  himmelfahrt:   { de: 'Mariä Himmelfahrt', en: 'Assumption of Mary', fixed: [8, 15] },
+  weltkindertag: { de: 'Weltkindertag', en: "World Children's Day", fixed: [9, 20] },
+  einheit:       { de: 'Tag der Deutschen Einheit', en: 'German Unity Day', fixed: [10, 3] },
+  reformation:   { de: 'Reformationstag', en: 'Reformation Day', fixed: [10, 31] },
+  allerheiligen: { de: 'Allerheiligen', en: "All Saints' Day", fixed: [11, 1] },
+  busstag:       { de: 'Buß- und Bettag', en: 'Repentance Day', mov: 'busstag' },
+  weihnacht1:    { de: '1. Weihnachtstag', en: 'Christmas Day', fixed: [12, 25] },
+  weihnacht2:    { de: '2. Weihnachtstag', en: "St. Stephen's Day", fixed: [12, 26] },
+};
+
+// Buß- und Bettag: Wednesday before Nov 23
+function bussUndBettag(year) {
+  const d = new Date(year, 10, 22); // Nov 22
+  while (d.getDay() !== 3) d.setDate(d.getDate() - 1);
+  return d;
+}
+
+// Bundesland -> holiday keys (nationwide + regional)
+const BUNDESLAND = {
+  BW: ['neujahr','dreikoenig','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','fronleichnam','einheit','allerheiligen','weihnacht1','weihnacht2'],
+  BY: ['neujahr','dreikoenig','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','fronleichnam','himmelfahrt','einheit','allerheiligen','weihnacht1','weihnacht2'],
+  BE: ['neujahr','frauentag','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','einheit','weihnacht1','weihnacht2'],
+  BB: ['neujahr','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','einheit','reformation','weihnacht1','weihnacht2'],
+  HB: ['neujahr','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','einheit','reformation','weihnacht1','weihnacht2'],
+  HH: ['neujahr','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','einheit','reformation','weihnacht1','weihnacht2'],
+  HE: ['neujahr','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','fronleichnam','einheit','weihnacht1','weihnacht2'],
+  MV: ['neujahr','frauentag','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','einheit','reformation','weihnacht1','weihnacht2'],
+  NI: ['neujahr','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','einheit','reformation','weihnacht1','weihnacht2'],
+  NW: ['neujahr','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','fronleichnam','einheit','allerheiligen','weihnacht1','weihnacht2'],
+  RP: ['neujahr','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','fronleichnam','einheit','allerheiligen','weihnacht1','weihnacht2'],
+  SL: ['neujahr','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','fronleichnam','himmelfahrt','einheit','allerheiligen','weihnacht1','weihnacht2'],
+  SN: ['neujahr','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','einheit','reformation','busstag','weihnacht1','weihnacht2'],
+  ST: ['neujahr','dreikoenig','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','einheit','reformation','weihnacht1','weihnacht2'],
+  SH: ['neujahr','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','einheit','reformation','weihnacht1','weihnacht2'],
+  TH: ['neujahr','karfreitag','ostermontag','arbeit','auffahrt','pfingstmontag','weltkindertag','einheit','reformation','weihnacht1','weihnacht2'],
+};
+
 function resolveDate(key, info, year, mov) {
   if (info.fixed) return new Date(year, info.fixed[0] - 1, info.fixed[1]);
   if (info.mov) return mov[info.mov];
   return null;
 }
 
+function resolveDateDE(key, info, year, mov) {
+  if (info.fixed) return new Date(year, info.fixed[0] - 1, info.fixed[1]);
+  if (info.mov === 'busstag') return bussUndBettag(year);
+  if (info.mov) return mov[info.mov];
+  return null;
+}
+
 /**
- * Get public holidays for a canton and year.
+ * Get public holidays for a canton/region and year.
+ * Supports both Swiss cantons and German Bundesländer.
+ * @param {string} region - Canton code (CH) or Bundesland code (DE)
+ * @param {number} year
+ * @param {string} [country='CH'] - Country code
  * Returns array of { name: {de,fr,it,en}, start, end, type }
  */
-export function getPublicHolidays(canton, year) {
+export function getPublicHolidays(region, year, country = 'CH') {
   const mov = moveable(year);
-  const keys = CANTON[canton];
+
+  if (country === 'DE') {
+    const keys = BUNDESLAND[region];
+    if (!keys) return [];
+    const holidays = [];
+    for (const key of keys) {
+      const info = H_DE[key];
+      if (!info) continue;
+      const d = resolveDateDE(key, info, year, mov);
+      if (!d) continue;
+      const dateStr = formatDate(d);
+      holidays.push({
+        name: { de: info.de, en: info.en },
+        start: dateStr,
+        end: dateStr,
+        type: 'public_holiday',
+      });
+    }
+    holidays.sort((a, b) => a.start.localeCompare(b.start));
+    return holidays;
+  }
+
+  // Default: Switzerland
+  const keys = CANTON[region];
   if (!keys) return [];
 
   // Always include Bundesfeiertag

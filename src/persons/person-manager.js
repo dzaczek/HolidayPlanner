@@ -154,6 +154,7 @@ export async function showPersonModal(year, existingPerson, onChange) {
       matches = gemeinden.filter(g =>
         g.name.toLowerCase().includes(q) ||
         (g.canton && g.canton.toLowerCase().includes(q)) ||
+        (g.country && g.country.toLowerCase().includes(q)) ||
         (g.plz && g.plz.some(p => p.startsWith(q)))
       ).slice(0, 30);
     }
@@ -168,11 +169,14 @@ export async function showPersonModal(year, existingPerson, onChange) {
       const li = document.createElement('li');
       const plzStr = g.plz?.length ? g.plz[0] : '';
       const cantonStr = g.canton || '';
-      li.textContent = `${g.name}${cantonStr ? ' (' + cantonStr + ')' : ''}${plzStr ? ' — ' + plzStr : ''}`;
+      const countryStr = g.country || '';
+      const regionParts = [cantonStr, countryStr].filter(Boolean).join(', ');
+      const regionLabel = regionParts ? ` (${regionParts})` : '';
+      li.textContent = `${g.name}${regionLabel}${plzStr ? ' — ' + plzStr : ''}`;
       li.addEventListener('mousedown', (e) => {
         e.preventDefault();
         hiddenInput.value = g.id;
-        searchInput.value = `${g.name}${cantonStr ? ' (' + cantonStr + ')' : ''}`;
+        searchInput.value = `${g.name}${regionLabel}`;
         dropdown.style.display = 'none';
       });
       dropdown.appendChild(li);
