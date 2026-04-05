@@ -98,9 +98,30 @@ When you switch to a new year, all your people and their holiday assignments car
 
 ## Holiday Data
 
+### Data Sources
+
+All holiday data is derived from official Swiss government and institutional sources. The source PDF files are stored in the `datasource/` directory.
+
+| Source | Type | URL | Used for |
+|--------|------|-----|----------|
+| **EDK/CDIP Schulferien** | PDF | [edk.ch/de/bildungssystem/kantonale-schulorganisation/schulferien](https://www.edk.ch/de/bildungssystem/kantonale-schulorganisation/schulferien) | School holidays for all 26 cantons. Published yearly as `Schulferien_YYYY.pdf` |
+| **Kantonal-einheitlicher Ferienplan (BKS VS)** | PDF | [ag.ch/de/bks/kindergarten-volksschule/schulorganisation/ferienplan](https://www.ag.ch/de/bks/kindergarten-volksschule/schulorganisation/ferienplan) | School holidays for canton Aargau (AG), from the Erziehungsrat Ferienplan |
+| **Kantonale Feiertage** | PDF | [bj.admin.ch/dam/bj/de/data/publiservice/service/zivilprozessrecht/kant-feiertage.pdf](https://www.bj.admin.ch/dam/bj/de/data/publiservice/service/zivilprozessrecht/kant-feiertage.pdf) | Official public holidays per canton (fixed + moveable dates) |
+| **Universität Zürich Semesterdaten** | Web | [uzh.ch/de/studies/dates](https://www.uzh.ch/de/studies/dates.html) | University semester breaks (students.json) |
+| **swisstopo PLZ/Ortschaften** | Data | [data.geo.admin.ch/ch.swisstopo-vd.ortschaftenverzeichnis_plz](https://data.geo.admin.ch/ch.swisstopo-vd.ortschaftenverzeichnis_plz/) | Municipality database (2123 Gemeinden with BFS number, canton, PLZ, language) |
+
+Source files in the repository:
+```
+datasource/
+├── Schulferien_2026.pdf                        # EDK/CDIP school holidays 2026
+├── Schulferien_2027.pdf                        # EDK/CDIP school holidays 2027
+├── kant-feiertage.pdf                          # cantonal public holidays (BJ)
+└── bksvs-kantonal-einheitlicher-ferienplan.pdf # AG school holidays (Erziehungsrat)
+```
+
 ### Swiss Cantons (26 cantons, 2025-2035)
 
-Public holidays are computed dynamically (Easter algorithm + fixed dates) and stored as `workers_YYYY.json`.
+Public holidays are computed dynamically (Easter algorithm + fixed dates) and stored as `workers_YYYY.json`. The source table is parsed from `datasource/kant-feiertage.pdf` (Bundesamt für Justiz).
 
 Generation:
 ```bash
@@ -109,7 +130,7 @@ python3 tools/parse_feiertage.py --years 2025 2026 2027 2028 2029 2030
 
 ### School Holidays
 
-Parsed from official EDK/CDIP PDFs (`Schulferien_YYYY.pdf`). Canton AG uses data from the official Erziehungsrat Ferienplan.
+Parsed from official EDK/CDIP PDFs (`datasource/Schulferien_YYYY.pdf`). Canton AG uses data from the official Erziehungsrat Ferienplan (`datasource/bksvs-kantonal-einheitlicher-ferienplan.pdf`).
 
 ```bash
 python3 tools/parse_schulferien.py Schulferien_2026.pdf Schulferien_2027.pdf
