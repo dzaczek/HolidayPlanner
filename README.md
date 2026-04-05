@@ -150,12 +150,114 @@ src/db/seed/holidays/ch/
 └── students.json         # university holidays
 ```
 
-### Adding a New Year
+### Adding a New Year (existing country)
 
 1. Generate worker holidays: `python3 tools/parse_feiertage.py --years 2036`
 2. Parse school holidays: `python3 tools/parse_schulferien.py Schulferien_2036.pdf`
 3. Bump `SEED_VERSION` in `src/db/store.js`
 4. Build and deploy
+
+### Adding a New Country
+
+The app supports multiple countries. Each country has its own directory under `src/db/seed/holidays/` and its municipalities in `gemeinden.json`. To add a new country (e.g. Austria `at`):
+
+#### Step 1: Create the holiday directory
+
+```
+src/db/seed/holidays/at/
+├── workers_2026.json     # public holidays per region
+├── school_2026.json      # school holidays per region
+└── students.json         # university holidays (or empty [])
+```
+
+#### Step 2: Add municipalities to `gemeinden.json`
+
+Each municipality needs these fields:
+
+```json
+{
+  "id": "at-40101",
+  "name": "Linz",
+  "canton": "OO",
+  "country": "AT",
+  "language": "de",
+  "plz": ["4020", "4021"]
+}
+```
+
+- **`id`** — unique identifier (prefix with country code to avoid collisions, e.g. `de-09162`, `at-40101`)
+- **`canton`** — regional code (Bundesland, province, etc.). Must match the `canton` field in holiday JSON files
+- **`country`** — ISO 2-letter country code (`CH`, `DE`, `AT`, ...)
+- **`plz`** — array of postal codes for autocomplete search
+
+#### Step 3: Create holiday JSON files
+
+Holiday files follow the schema in `src/db/seed/holidays/_schema.json`. Each file is an array of entries grouped by region:
+
+```json
+[
+  {
+    "canton": "OO",
+    "year": 2026,
+    "holidays": [
+      {
+        "name": { "de": "Neujahrstag", "en": "New Year's Day" },
+        "start": "2026-01-01",
+        "end": "2026-01-01",
+        "type": "public_holiday"
+      }
+    ]
+  }
+]
+```
+
+- **`canton`** — must match the region code used in `gemeinden.json`
+- **`type`** — one of: `public_holiday`, `vacation`, `bridge_day`
+- **`name`** — multilingual object; at minimum provide `de` and `en`
+
+For `students.json`, entries reference a specific municipality:
+
+```json
+[
+  {
+    "gemeinde_id": "at-40101",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Semesterferien", "en": "Semester break" },
+        "start": "2026-02-02",
+        "end": "2026-02-27",
+        "type": "vacation"
+      }
+    ]
+  }
+]
+```
+
+#### Step 4: Register the country in the loader
+
+Add an entry in `src/db/seed/loader.js` in the `countryModules` object:
+
+```javascript
+at: {
+  school: import.meta.glob('./holidays/at/school_*.json'),
+  workers: import.meta.glob('./holidays/at/workers_*.json'),
+  students: () => import('./holidays/at/students.json').catch(() => ({ default: [] })),
+},
+```
+
+#### Step 5: (Optional) Add dynamic public holiday computation
+
+If you want public holidays to work for years without seed data, add the country's region-to-holiday mapping in `src/holidays/public-holidays.js` (see the existing `CANTON` map for CH and `BUNDESLAND` map for DE as examples).
+
+#### Step 6: Finalize
+
+1. Bump `SEED_VERSION` in `src/db/store.js`
+2. Bump the matching version in `seedDatabase()` in `src/db/seed/loader.js`
+3. `npm run build` and deploy
+
+The autocomplete in the person modal will automatically show the new municipalities as `Name (Region, Country) — PLZ`.
 
 ### Gemeinden
 
