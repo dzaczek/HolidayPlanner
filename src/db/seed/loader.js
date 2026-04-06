@@ -13,6 +13,11 @@ const countryModules = {
     workers: import.meta.glob('./holidays/de/workers_*.json'),
     students: () => import('./holidays/de/students.json').catch(() => ({ default: [] })),
   },
+  galaxy: {
+    school: import.meta.glob('./holidays/galaxy/school_*.json'),
+    workers: import.meta.glob('./holidays/galaxy/workers_*.json'),
+    students: () => import('./holidays/galaxy/students.json').catch(() => ({ default: [] })),
+  },
 };
 
 // Country codes derived from registered modules
@@ -43,7 +48,7 @@ export async function seedDatabase() {
   console.log('[HCP] Seeding Gemeinden...');
   await clearSeedStores();
   await addGemeindenBatch(gemeinden);
-  setSeedVersion(12);
+  setSeedVersion(13);
   console.log(`[HCP] Seeded ${gemeinden.length} Gemeinden`);
 }
 

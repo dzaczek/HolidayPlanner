@@ -200,7 +200,7 @@ export async function deleteLeave(id) {
 
 // === Seed check ===
 
-const SEED_VERSION = 12; // bump this to force re-seed (multi-country support)
+const SEED_VERSION = 13; // bump this to force re-seed (GALAXY demo data)
 
 export async function getSeedVersion() {
   try {
