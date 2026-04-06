@@ -1,0 +1,40 @@
+[
+  {
+    "gemeinde_id": "galaxy-101",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Semesterferien", "en": "Deep Thought Semester Break" },
+        "start": "2026-02-09",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Answer Computation Recess" },
+        "start": "2026-07-13",
+        "end": "2026-09-06",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "galaxy-201",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Semesterferien", "en": "Sub-Etha Semester Break" },
+        "start": "2026-02-16",
+        "end": "2026-03-01",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Hitchhiking Season" },
+        "start": "2026-06-29",
+        "end": "2026-08-30",
+        "type": "vacation"
+      }
+    ]
+  }
+]

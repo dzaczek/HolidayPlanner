@@ -24086,5 +24086,109 @@
       "8152",
       "8952"
     ]
+  },
+  {
+    "id": "galaxy-101",
+    "name": "Magrathea City",
+    "canton": "MG",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42001"]
+  },
+  {
+    "id": "galaxy-102",
+    "name": "Slartibartfast's Fjords",
+    "canton": "MG",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42002"]
+  },
+  {
+    "id": "galaxy-103",
+    "name": "Deep Thought Valley",
+    "canton": "MG",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42003"]
+  },
+  {
+    "id": "galaxy-201",
+    "name": "Betelgeuse Five",
+    "canton": "BT",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42101"]
+  },
+  {
+    "id": "galaxy-202",
+    "name": "Betelgeuse Seven",
+    "canton": "BT",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42102"]
+  },
+  {
+    "id": "galaxy-203",
+    "name": "Ford's Landing",
+    "canton": "BT",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42103"]
+  },
+  {
+    "id": "galaxy-301",
+    "name": "Vogsphere Central",
+    "canton": "VG",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42201"]
+  },
+  {
+    "id": "galaxy-302",
+    "name": "Vogon Poetry Hall",
+    "canton": "VG",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42202"]
+  },
+  {
+    "id": "galaxy-401",
+    "name": "Damogran Port",
+    "canton": "DM",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42301"]
+  },
+  {
+    "id": "galaxy-402",
+    "name": "Heart of Gold Dock",
+    "canton": "DM",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42302"]
+  },
+  {
+    "id": "galaxy-501",
+    "name": "Krikkit One",
+    "canton": "KK",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42401"]
+  },
+  {
+    "id": "galaxy-502",
+    "name": "Krikkit Two",
+    "canton": "KK",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42402"]
+  },
+  {
+    "id": "galaxy-601",
+    "name": "Milliways",
+    "canton": "MG",
+    "country": "GALAXY",
+    "language": "en",
+    "plz": ["42999"]
   }
 ]
