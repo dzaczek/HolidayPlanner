@@ -153,6 +153,53 @@ Parsed from official EDK/CDIP PDFs (`datasource/Schulferien_YYYY.pdf`). Canton A
 python3 tools/parse_schulferien.py Schulferien_2026.pdf Schulferien_2027.pdf
 ```
 
+### Universities
+
+Student holiday data is available per university. Users select their university by name in the municipality field.
+
+#### Switzerland (20 universities)
+
+| University | Code | Canton |
+|-----------|------|--------|
+| Universität Zürich | UZH | ZH |
+| ETH Zürich | ETH | ZH |
+| Université de Genève | UNIGE | GE |
+| Université de Lausanne | UNIL | VD |
+| EPFL Lausanne | EPFL | VD |
+| Universität Bern | UNIBE | BE |
+| Universität Basel | UNIBAS | BS |
+| Université de Fribourg | UNIFR | FR |
+| Universität St. Gallen | HSG | SG |
+| Universität Luzern | UNILU | LU |
+| Université de Neuchâtel | UNINE | NE |
+| USI Lugano | USI | TI |
+| ZHAW Zürich | ZHAW | ZH |
+| BFH Bern | BFH | BE |
+| ZHdK Zürich | ZHdK | ZH |
+| FHNW Windisch | FHNW | AG |
+| OST Rapperswil | OST | SG |
+| ZHAW Winterthur | ZHAW-W | ZH |
+| HSLU Luzern | HSLU | LU |
+| FH Graubünden | FHGR | GR |
+
+#### Germany (13 universities)
+
+| University | Code | Bundesland |
+|-----------|------|------------|
+| LMU München | LMU | BY |
+| TU München | TUM | BY |
+| FU Berlin | FU | BE |
+| HU Berlin | HU | BE |
+| TU Berlin | TU | BE |
+| Universität zu Köln | Uni Köln | NW |
+| Goethe-Universität Frankfurt | Goethe | HE |
+| Universität Hamburg | Uni HH | HH |
+| RWTH Aachen | RWTH | NW |
+| WWU Münster | WWU | NW |
+| Universität Heidelberg | Uni HD | BW |
+| Universität Stuttgart | Uni S | BW |
+| TU Dresden | TUD | SN |
+
 ### Data Format
 
 Holiday data follows a standardized schema (`src/db/seed/holidays/_schema.json`) designed for future automated parsing via Go + AI.
@@ -163,7 +210,14 @@ src/db/seed/holidays/ch/
 ├── school_2027.json
 ├── workers_2026.json     # public holidays per canton
 ├── workers_2027.json
-└── students.json         # university holidays
+└── students.json         # university holidays (20 universities)
+
+src/db/seed/holidays/de/
+├── school_2026.json      # school holidays per Bundesland
+├── school_2027.json
+├── workers_2026.json     # public holidays per Bundesland
+├── workers_2027.json
+└── students.json         # university holidays (13 universities)
 ```
 
 ### Adding a New Year (existing country)
