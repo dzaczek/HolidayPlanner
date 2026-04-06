@@ -219,7 +219,7 @@ header .badge { background: var(--accent); color: #000; padding: 2px 8px; border
     </div>
     <div>
       <label>Gemeinde</label><br>
-      <select id="sel-gemeinde"><option value="">— per region —</option></select>
+      <select id="sel-gemeinde"><option value="">All (region level)</option></select>
     </div>
     <div style="margin-left:auto; display:flex; gap:6px; align-items:flex-end;">
       <button class="btn btn-primary" onclick="addHoliday()">+ Add holiday</button>
@@ -242,6 +242,21 @@ header .badge { background: var(--accent); color: #000; padding: 2px 8px; border
 <div class="modal-overlay" id="modal">
   <div class="modal">
     <h3 id="modal-title">Add Holiday</h3>
+    <div class="form-group" id="m-scope-group">
+      <label>Scope</label>
+      <select id="m-scope" onchange="onScopeChange()">
+        <option value="region">Entire region (canton/Bundesland)</option>
+        <option value="gemeinde">Specific Gemeinde only</option>
+      </select>
+    </div>
+    <div class="form-group" id="m-region-group">
+      <label>Region</label>
+      <select id="m-region"></select>
+    </div>
+    <div class="form-group" id="m-gemeinde-group" style="display:none">
+      <label>Gemeinde</label>
+      <select id="m-gemeinde"></select>
+    </div>
     <div class="form-group"><label>Name (de)</label><input id="m-name-de"></div>
     <div class="form-group"><label>Name (en)</label><input id="m-name-en"></div>
     <div class="form-group"><label>Name (fr)</label><input id="m-name-fr"></div>
@@ -290,7 +305,7 @@ async function init() {
   document.getElementById('sel-country').addEventListener('change', e => { state.country = e.target.value; loadData(); });
   document.getElementById('sel-category').addEventListener('change', e => { state.category = e.target.value; loadData(); });
   document.getElementById('sel-year').addEventListener('change', e => { state.year = parseInt(e.target.value); loadData(); });
-  document.getElementById('sel-region').addEventListener('change', e => { state.region = e.target.value; render(); });
+  document.getElementById('sel-region').addEventListener('change', e => { state.region = e.target.value; updateGemeindeSelect(); render(); });
   document.getElementById('sel-gemeinde').addEventListener('change', e => { state.gemeinde = e.target.value; render(); });
 }
 
@@ -308,30 +323,64 @@ function updateRegionSelect() {
     if (e.canton) regions.add(e.canton);
   }
   const sel = document.getElementById('sel-region');
+  const prevRegion = state.region;
   sel.innerHTML = '<option value="__all__">All regions</option>' +
     [...regions].sort().map(r => `<option value="${r}">${r}</option>`).join('');
-  state.region = '__all__';
+  // Restore previous selection if still valid
+  if (prevRegion !== '__all__' && regions.has(prevRegion)) {
+    sel.value = prevRegion;
+    state.region = prevRegion;
+  } else {
+    state.region = '__all__';
+  }
 
-  // Update gemeinde selector for student type
+  updateGemeindeSelect();
+}
+
+function updateGemeindeSelect() {
   const gSel = document.getElementById('sel-gemeinde');
+  const country = state.country.toUpperCase();
+
   if (state.category === 'student') {
+    // For students: show gemeinden that have data
     const gIds = [...new Set(state.data.map(e => e.gemeinde_id).filter(Boolean))];
     const gList = state.gemeinden.filter(g => gIds.includes(g.id));
     gSel.innerHTML = '<option value="">All</option>' + gList.map(g =>
       `<option value="${g.id}">${g.name} (${g.canton||''}, ${g.country||''})</option>`
     ).join('');
-    gSel.parentElement.style.display = '';
   } else {
-    gSel.innerHTML = '<option value="">— per region —</option>';
-    gSel.parentElement.style.display = 'none';
+    // For workers/school: show gemeinden filtered by selected region & country
+    let filtered = state.gemeinden.filter(g => (g.country||'').toUpperCase() === country);
+    if (state.region !== '__all__') {
+      filtered = filtered.filter(g => g.canton === state.region);
+    }
+    gSel.innerHTML = '<option value="">All (region level)</option>' +
+      filtered.slice(0, 200).map(g =>
+        `<option value="${g.id}">${g.name}${g.canton ? ' (' + g.canton + ')' : ''} — ${(g.plz||[])[0]||''}</option>`
+      ).join('');
+    if (filtered.length > 200) {
+      gSel.innerHTML += `<option disabled>... ${filtered.length - 200} more (select a region first)</option>`;
+    }
   }
+  state.gemeinde = '';
 }
 
 // === Rendering ===
 function getFilteredEntries() {
   let entries = state.data;
-  if (state.region !== '__all__') entries = entries.filter(e => e.canton === state.region);
-  if (state.gemeinde) entries = entries.filter(e => e.gemeinde_id === state.gemeinde);
+  if (state.gemeinde && state.category !== 'student') {
+    // When a specific gemeinde is selected for worker/school,
+    // find its canton and filter by that — holidays are stored at canton level
+    const g = state.gemeinden.find(x => x.id === state.gemeinde);
+    if (g && g.canton) {
+      entries = entries.filter(e => e.canton === g.canton);
+    }
+  } else if (state.region !== '__all__') {
+    entries = entries.filter(e => e.canton === state.region);
+  }
+  if (state.gemeinde && state.category === 'student') {
+    entries = entries.filter(e => e.gemeinde_id === state.gemeinde);
+  }
   return entries;
 }
 
@@ -359,7 +408,14 @@ function renderStats() {
   const pub = h.filter(x => x.type === 'public_holiday').length;
   const vac = h.filter(x => x.type === 'vacation').length;
   const bridge = h.filter(x => x.type === 'bridge_day').length;
+  let ctx = `${state.country.toUpperCase()}`;
+  if (state.region !== '__all__') ctx += ` / ${state.region}`;
+  if (state.gemeinde) {
+    const g = state.gemeinden.find(x => x.id === state.gemeinde);
+    if (g) ctx += ` / ${g.name}`;
+  }
   document.getElementById('stats').innerHTML =
+    `<span class="stat"><strong>${ctx}</strong></span>` +
     `<span class="stat"><span class="dot dot-pub"></span> ${pub} public holidays</span>` +
     `<span class="stat"><span class="dot dot-vac"></span> ${vac} vacation periods</span>` +
     `<span class="stat"><span class="dot dot-bridge"></span> ${bridge} bridge days</span>` +
@@ -422,19 +478,61 @@ function renderList() {
     return;
   }
   tbody.innerHTML = state.holidays.map((h, i) => {
-    const region = h.canton || h.gemeinde_id || '';
+    let region = h.canton || '';
+    if (h.gemeinde_id) {
+      const g = state.gemeinden.find(x => x.id === h.gemeinde_id);
+      region = g ? `${g.name} (${g.canton||''})` : h.gemeinde_id;
+    }
     return `<tr>
       <td>${esc(nameStr(h.name, 'de'))}</td>
       <td style="color:var(--text2)">${esc(nameStr(h.name, 'en'))}</td>
       <td>${h.start}</td><td>${h.end}</td>
       <td><span class="type-badge ${h.type}">${h.type.replace('_',' ')}</span></td>
-      <td>${region}</td>
+      <td>${esc(region)}</td>
       <td>
         <button class="btn btn-sm" onclick="editHoliday(${i})">Edit</button>
         <button class="btn btn-sm btn-danger" onclick="deleteHoliday(${i})">Del</button>
       </td>
     </tr>`;
   }).join('');
+}
+
+// === Modal helpers ===
+function populateModalRegions() {
+  const regions = new Set();
+  for (const e of state.data) { if (e.canton) regions.add(e.canton); }
+  const sel = document.getElementById('m-region');
+  sel.innerHTML = [...regions].sort().map(r => `<option value="${r}">${r}</option>`).join('');
+  return [...regions].sort();
+}
+
+function populateModalGemeinden(region) {
+  const country = state.country.toUpperCase();
+  let filtered = state.gemeinden.filter(g => (g.country||'').toUpperCase() === country);
+  if (region) filtered = filtered.filter(g => g.canton === region);
+  const sel = document.getElementById('m-gemeinde');
+  sel.innerHTML = filtered.slice(0, 300).map(g =>
+    `<option value="${g.id}">${g.name}${g.canton ? ' (' + g.canton + ')' : ''} — ${(g.plz||[])[0]||''}</option>`
+  ).join('');
+}
+
+function onScopeChange() {
+  const scope = document.getElementById('m-scope').value;
+  const isGemeinde = scope === 'gemeinde';
+  document.getElementById('m-gemeinde-group').style.display = isGemeinde ? '' : 'none';
+  // For student category, always show gemeinde
+  if (state.category === 'student') {
+    document.getElementById('m-gemeinde-group').style.display = '';
+    document.getElementById('m-region-group').style.display = 'none';
+    document.getElementById('m-scope-group').style.display = 'none';
+  } else {
+    document.getElementById('m-region-group').style.display = '';
+    document.getElementById('m-scope-group').style.display = '';
+  }
+  if (isGemeinde) {
+    const region = document.getElementById('m-region').value;
+    populateModalGemeinden(region);
+  }
 }
 
 // === CRUD ===
@@ -446,8 +544,33 @@ function addHoliday() {
   document.getElementById('m-name-it').value = '';
   document.getElementById('m-start').value = `${state.year}-01-01`;
   document.getElementById('m-end').value = `${state.year}-01-01`;
-  document.getElementById('m-type').value = 'public_holiday';
+  document.getElementById('m-type').value = state.category === 'worker' ? 'public_holiday' : 'vacation';
   document.getElementById('m-edit-idx').value = '-1';
+
+  // Populate region/gemeinde
+  const regions = populateModalRegions();
+  if (state.region !== '__all__') {
+    document.getElementById('m-region').value = state.region;
+  }
+
+  if (state.category === 'student') {
+    document.getElementById('m-scope').value = 'gemeinde';
+    populateModalGemeinden(null);
+    if (state.gemeinde) document.getElementById('m-gemeinde').value = state.gemeinde;
+  } else {
+    document.getElementById('m-scope').value = state.gemeinde ? 'gemeinde' : 'region';
+    if (state.gemeinde) {
+      populateModalGemeinden(state.region !== '__all__' ? state.region : null);
+      document.getElementById('m-gemeinde').value = state.gemeinde;
+    }
+  }
+  onScopeChange();
+  document.getElementById('m-region').addEventListener('change', function() {
+    if (document.getElementById('m-scope').value === 'gemeinde') {
+      populateModalGemeinden(this.value);
+    }
+  });
+
   document.getElementById('modal').classList.add('active');
 }
 
@@ -462,6 +585,19 @@ function editHoliday(idx) {
   document.getElementById('m-end').value = h.end;
   document.getElementById('m-type').value = h.type;
   document.getElementById('m-edit-idx').value = String(idx);
+
+  // Populate region/gemeinde from existing entry
+  populateModalRegions();
+  if (h.canton) document.getElementById('m-region').value = h.canton;
+  if (h.gemeinde_id) {
+    document.getElementById('m-scope').value = 'gemeinde';
+    populateModalGemeinden(h.canton || null);
+    document.getElementById('m-gemeinde').value = h.gemeinde_id;
+  } else {
+    document.getElementById('m-scope').value = 'region';
+  }
+  onScopeChange();
+
   document.getElementById('modal').classList.add('active');
 }
 
@@ -485,14 +621,22 @@ async function saveModal() {
   if (!holiday.name.de) { toast('Name (de) is required', true); return; }
   if (!holiday.start || !holiday.end) { toast('Dates are required', true); return; }
 
-  let targetRegion = state.region !== '__all__' ? state.region : null;
-  let targetGemeinde = state.gemeinde || null;
+  const scope = document.getElementById('m-scope').value;
+  let targetRegion = document.getElementById('m-region').value || null;
+  let targetGemeinde = null;
+
+  if (state.category === 'student' || scope === 'gemeinde') {
+    targetGemeinde = document.getElementById('m-gemeinde').value || null;
+    if (!targetGemeinde) { toast('Select a Gemeinde', true); return; }
+  } else {
+    if (!targetRegion) { toast('Select a region', true); return; }
+  }
 
   if (idx >= 0) {
-    // Edit existing
+    // Preserve original target from edited holiday
     const h = state.holidays[idx];
-    targetRegion = h.canton || targetRegion;
-    targetGemeinde = h.gemeinde_id || targetGemeinde;
+    if (!targetRegion && h.canton) targetRegion = h.canton;
+    if (!targetGemeinde && h.gemeinde_id) targetGemeinde = h.gemeinde_id;
   }
 
   const body = { country: state.country, category: state.category, year: state.year, region: targetRegion, gemeinde_id: targetGemeinde, holiday, editIdx: idx >= 0 ? findOriginalIdx(idx) : -1 };
@@ -664,7 +808,6 @@ class EditorHandler(http.server.BaseHTTPRequestHandler):
 
         file_path, all_data = self._resolve_file(country, category, year)
         if file_path is None:
-            # Create new file
             file_path = self._new_file_path(country, category, year)
             all_data = []
 
@@ -686,12 +829,26 @@ class EditorHandler(http.server.BaseHTTPRequestHandler):
             full_data = [e for e in full_data if not (e.get("gemeinde_id") == gemeinde_id and e.get("year") == year)]
             full_data.append(entry)
             save_json(file_path, full_data)
+        elif gemeinde_id:
+            # Gemeinde-level override for worker/school
+            # Stored as entry with gemeinde_id instead of canton
+            entry = next((e for e in all_data if e.get("gemeinde_id") == gemeinde_id), None)
+            if not entry:
+                entry = {"gemeinde_id": gemeinde_id, "year": year, "holidays": []}
+                if category == "school":
+                    entry["category"] = "school"
+                all_data.append(entry)
+            if edit_idx >= 0 and edit_idx < len(entry["holidays"]):
+                entry["holidays"][edit_idx] = holiday
+            else:
+                entry["holidays"].append(holiday)
+            save_json(file_path, all_data)
         else:
-            # Workers/school: find or create entry by canton
+            # Region-level (canton/Bundesland)
             if not region:
                 self._json_response({"ok": False, "error": "Region required"}, 400)
                 return
-            entry = next((e for e in all_data if e.get("canton") == region), None)
+            entry = next((e for e in all_data if e.get("canton") == region and not e.get("gemeinde_id")), None)
             if not entry:
                 entry = {"canton": region, "year": year, "holidays": []}
                 if category == "school":
@@ -723,7 +880,6 @@ class EditorHandler(http.server.BaseHTTPRequestHandler):
             entry = next((e for e in all_data if e.get("gemeinde_id") == gemeinde_id and e.get("year") == year), None)
             if entry and 0 <= delete_idx < len(entry["holidays"]):
                 entry["holidays"].pop(delete_idx)
-                # Save full students file
                 full_data = load_json(file_path) if file_path.exists() else []
                 full_data = [e for e in full_data if not (e.get("gemeinde_id") == gemeinde_id and e.get("year") == year)]
                 if entry["holidays"]:
@@ -732,8 +888,19 @@ class EditorHandler(http.server.BaseHTTPRequestHandler):
                 self._json_response({"ok": True})
             else:
                 self._json_response({"ok": False, "error": "Entry not found"}, 400)
+        elif gemeinde_id:
+            # Gemeinde-level entry
+            entry = next((e for e in all_data if e.get("gemeinde_id") == gemeinde_id), None)
+            if entry and 0 <= delete_idx < len(entry["holidays"]):
+                entry["holidays"].pop(delete_idx)
+                if not entry["holidays"]:
+                    all_data.remove(entry)
+                save_json(file_path, all_data)
+                self._json_response({"ok": True})
+            else:
+                self._json_response({"ok": False, "error": "Entry not found"}, 400)
         else:
-            entry = next((e for e in all_data if e.get("canton") == region), None)
+            entry = next((e for e in all_data if e.get("canton") == region and not e.get("gemeinde_id")), None)
             if entry and 0 <= delete_idx < len(entry["holidays"]):
                 entry["holidays"].pop(delete_idx)
                 if not entry["holidays"]:
