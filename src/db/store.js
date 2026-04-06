@@ -200,7 +200,7 @@ export async function deleteLeave(id) {
 
 // === Seed check ===
 
-const SEED_VERSION = 15; // bump this to force re-seed (DE university entries)
+const SEED_VERSION = 16; // bump this to force re-seed (fixed DE student break dates)
 
 export async function getSeedVersion() {
   try {
