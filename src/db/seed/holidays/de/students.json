@@ -5,15 +5,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-14",
-        "end": "2026-04-13",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-28",
+        "end": "2026-04-12",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-25",
-        "end": "2026-10-12",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-10",
+        "end": "2026-10-11",
         "type": "vacation"
       },
       {
@@ -30,15 +30,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-16",
-        "end": "2026-04-14",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-30",
+        "end": "2026-04-13",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-27",
-        "end": "2026-10-12",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-15",
+        "end": "2026-10-11",
         "type": "vacation"
       },
       {
@@ -55,15 +55,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-21",
-        "end": "2026-04-11",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-23",
+        "end": "2026-04-10",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-18",
-        "end": "2026-10-10",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-01",
+        "end": "2026-10-09",
         "type": "vacation"
       },
       {
@@ -80,15 +80,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-21",
-        "end": "2026-04-13",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-28",
+        "end": "2026-04-12",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-18",
-        "end": "2026-10-12",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-03",
+        "end": "2026-10-11",
         "type": "vacation"
       },
       {
@@ -105,15 +105,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-21",
-        "end": "2026-04-11",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-23",
+        "end": "2026-04-10",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-18",
-        "end": "2026-10-10",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-01",
+        "end": "2026-10-09",
         "type": "vacation"
       },
       {
@@ -130,15 +130,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-07",
-        "end": "2026-03-31",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-14",
+        "end": "2026-03-29",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-18",
-        "end": "2026-10-05",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-01",
+        "end": "2026-10-04",
         "type": "vacation"
       },
       {
@@ -155,15 +155,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-14",
-        "end": "2026-04-07",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-21",
+        "end": "2026-04-06",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-18",
-        "end": "2026-10-12",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-03",
+        "end": "2026-10-11",
         "type": "vacation"
       },
       {
@@ -180,15 +180,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-16",
-        "end": "2026-03-31",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-14",
+        "end": "2026-03-29",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-13",
-        "end": "2026-10-12",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-01",
+        "end": "2026-10-11",
         "type": "vacation"
       },
       {
@@ -205,15 +205,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-21",
-        "end": "2026-04-06",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-21",
+        "end": "2026-04-05",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-20",
-        "end": "2026-10-12",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-10",
+        "end": "2026-10-11",
         "type": "vacation"
       },
       {
@@ -230,15 +230,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-14",
-        "end": "2026-04-06",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-21",
+        "end": "2026-04-05",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-18",
-        "end": "2026-10-05",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-01",
+        "end": "2026-10-04",
         "type": "vacation"
       },
       {
@@ -255,15 +255,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-14",
-        "end": "2026-04-13",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-28",
+        "end": "2026-04-12",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-25",
-        "end": "2026-10-12",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-10",
+        "end": "2026-10-11",
         "type": "vacation"
       },
       {
@@ -280,15 +280,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-21",
-        "end": "2026-04-13",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-28",
+        "end": "2026-04-12",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-25",
-        "end": "2026-10-12",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-15",
+        "end": "2026-10-11",
         "type": "vacation"
       },
       {
@@ -305,15 +305,15 @@
     "category": "student",
     "holidays": [
       {
-        "name": { "de": "Semesterferien Winter", "en": "Winter semester break" },
-        "start": "2026-02-07",
-        "end": "2026-04-07",
+        "name": { "de": "Frühjahrsferien", "en": "Spring break" },
+        "start": "2026-03-21",
+        "end": "2026-04-06",
         "type": "vacation"
       },
       {
-        "name": { "de": "Semesterferien Sommer", "en": "Summer semester break" },
-        "start": "2026-07-18",
-        "end": "2026-10-05",
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-01",
+        "end": "2026-10-04",
         "type": "vacation"
       },
       {
