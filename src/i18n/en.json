@@ -97,5 +97,10 @@
   "about.howto.step4": "Use Backup to save your data or Share to send the calendar to family members.",
   "about.github": "GitHub",
   "about.issues": "Report a bug",
-  "about.version": "Version"
+  "about.version": "Version",
+  "pwa.update": "New version available!",
+  "pwa.refresh": "Refresh",
+  "pwa.dismiss": "Later",
+  "pwa.install": "Install app",
+  "pwa.installed": "Already installed"
 }

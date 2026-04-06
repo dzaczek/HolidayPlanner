@@ -1,9 +1,30 @@
 {
   "name": "Holiday Calendar Planner",
   "short_name": "HCP",
+  "description": "Swiss cantonal family holiday planner — find the best overlapping days off across cantons.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "any",
   "background_color": "#f5f5f5",
   "theme_color": "#2563eb",
-  "icons": []
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
 }

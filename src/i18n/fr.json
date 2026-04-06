@@ -97,5 +97,10 @@
   "about.howto.step4": "Utilisez Sauvegarde pour enregistrer vos données ou Partager pour envoyer le calendrier à vos proches.",
   "about.github": "GitHub",
   "about.issues": "Signaler un bug",
-  "about.version": "Version"
+  "about.version": "Version",
+  "pwa.update": "Nouvelle version disponible !",
+  "pwa.refresh": "Actualiser",
+  "pwa.dismiss": "Plus tard",
+  "pwa.install": "Installer l'app",
+  "pwa.installed": "Déjà installée"
 }

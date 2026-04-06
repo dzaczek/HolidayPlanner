@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Maskable icon: safe zone is inner 80% (51.2px padding at 512) -->
+  <rect width="512" height="512" fill="#2563eb"/>
+  <g transform="translate(76.8, 76.8) scale(5.6)">
+    <text x="8" y="20" font-size="14" font-family="sans-serif" font-weight="700" fill="white">HCP</text>
+    <rect x="8" y="26" width="48" height="4" rx="2" fill="#60a5fa"/>
+    <rect x="8" y="33" width="48" height="4" rx="2" fill="#93c5fd"/>
+    <rect x="8" y="40" width="48" height="4" rx="2" fill="#bfdbfe"/>
+    <circle cx="48" cy="14" r="10" fill="#facc15"/>
+    <path d="M48 6 l1.5 3 3.5.5-2.5 2.5.5 3.5-3-1.5-3 1.5.5-3.5-2.5-2.5 3.5-.5z" fill="#fde047"/>
+    <text x="32" y="58" text-anchor="middle" font-size="10" font-family="sans-serif" fill="#93c5fd">CH</text>
+  </g>
+</svg>

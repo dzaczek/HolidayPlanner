@@ -717,3 +717,63 @@ main {
     rgba(255,255,255,0.4) 6px
   );
 }
+
+/* PWA update banner */
+.pwa-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #1e293b;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.3);
+  animation: pwa-slide-up 0.3s ease-out;
+}
+
+@keyframes pwa-slide-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.pwa-banner span {
+  flex: 1;
+}
+
+.pwa-btn {
+  padding: 6px 14px;
+  border: 1px solid #475569;
+  border-radius: var(--radius);
+  background: transparent;
+  color: white;
+  font-family: var(--font);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.pwa-btn:hover {
+  background: #334155;
+}
+
+.pwa-btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.pwa-btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+.btn-install {
+  background: #059669;
+}
+
+.btn-install:hover {
+  background: #047857;
+}

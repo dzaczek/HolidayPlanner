@@ -97,5 +97,10 @@
   "about.howto.step4": "Usa Backup per salvare i dati o Condividi per inviare il calendario ai familiari.",
   "about.github": "GitHub",
   "about.issues": "Segnala un bug",
-  "about.version": "Versione"
+  "about.version": "Versione",
+  "pwa.update": "Nuova versione disponibile!",
+  "pwa.refresh": "Aggiorna",
+  "pwa.dismiss": "Dopo",
+  "pwa.install": "Installa app",
+  "pwa.installed": "Già installata"
 }
