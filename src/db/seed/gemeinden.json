@@ -182123,5 +182123,135 @@
     "plz": [
       "07751"
     ]
+  },
+  {
+    "id": "de-uni-lmu",
+    "name": "LMU München",
+    "canton": "BY",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "80539"
+    ]
+  },
+  {
+    "id": "de-uni-tum",
+    "name": "TU München",
+    "canton": "BY",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "80333"
+    ]
+  },
+  {
+    "id": "de-uni-fu-berlin",
+    "name": "FU Berlin",
+    "canton": "BE",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "14195"
+    ]
+  },
+  {
+    "id": "de-uni-hu-berlin",
+    "name": "HU Berlin",
+    "canton": "BE",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "10117"
+    ]
+  },
+  {
+    "id": "de-uni-tu-berlin",
+    "name": "TU Berlin",
+    "canton": "BE",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "10623"
+    ]
+  },
+  {
+    "id": "de-uni-koeln",
+    "name": "Universität zu Köln",
+    "canton": "NW",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "50923"
+    ]
+  },
+  {
+    "id": "de-uni-goethe",
+    "name": "Goethe-Universität Frankfurt",
+    "canton": "HE",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "60629"
+    ]
+  },
+  {
+    "id": "de-uni-hamburg",
+    "name": "Universität Hamburg",
+    "canton": "HH",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "20146"
+    ]
+  },
+  {
+    "id": "de-uni-rwth",
+    "name": "RWTH Aachen",
+    "canton": "NW",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "52062"
+    ]
+  },
+  {
+    "id": "de-uni-muenster",
+    "name": "WWU Münster",
+    "canton": "NW",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "48149"
+    ]
+  },
+  {
+    "id": "de-uni-heidelberg",
+    "name": "Universität Heidelberg",
+    "canton": "BW",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "69117"
+    ]
+  },
+  {
+    "id": "de-uni-stuttgart",
+    "name": "Universität Stuttgart",
+    "canton": "BW",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "70174"
+    ]
+  },
+  {
+    "id": "de-uni-tu-dresden",
+    "name": "TU Dresden",
+    "canton": "SN",
+    "country": "DE",
+    "language": "de",
+    "plz": [
+      "01069"
+    ]
   }
 ]
