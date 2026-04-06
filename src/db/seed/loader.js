@@ -48,7 +48,7 @@ export async function seedDatabase() {
   console.log('[HCP] Seeding Gemeinden...');
   await clearSeedStores();
   await addGemeindenBatch(gemeinden);
-  setSeedVersion(13);
+  setSeedVersion(14);
   console.log(`[HCP] Seeded ${gemeinden.length} Gemeinden`);
 }
 
