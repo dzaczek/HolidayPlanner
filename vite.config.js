@@ -13,6 +13,7 @@ export default defineConfig({
   root: '.',
   build: {
     outDir: 'dist',
+    chunkSizeWarningLimit: 2000, // gemeinden.json data chunk is ~1.9MB
   },
   define: {
     __APP_VERSION__: JSON.stringify(getVersion()),

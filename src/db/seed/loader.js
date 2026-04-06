@@ -1,5 +1,7 @@
 import { addGemeindenBatch, addTemplatesBatch, isSeeded, clearSeedStores, setSeedVersion, hasTemplatesForYear } from '../store.js';
-import gemeinden from './gemeinden.json';
+
+// Lazy-load gemeinden (large file, ~2MB) — only loaded during seed
+const loadGemeinden = () => import('./gemeinden.json').then(m => m.default || m);
 
 // Lazy imports per country - only loaded when needed
 const countryModules = {
@@ -25,9 +27,16 @@ const COUNTRIES = Object.keys(countryModules);
 
 // Canton/region -> gemeinde IDs (built once, keyed by country)
 let regionGemeinden = null;
+let gemeindenCache = null;
 
-function buildRegionMap() {
+async function getGemeinden() {
+  if (!gemeindenCache) gemeindenCache = await loadGemeinden();
+  return gemeindenCache;
+}
+
+async function buildRegionMap() {
   if (regionGemeinden) return regionGemeinden;
+  const gemeinden = await getGemeinden();
   regionGemeinden = {};
   for (const g of gemeinden) {
     if (!g.canton) continue;
@@ -47,6 +56,7 @@ export async function seedDatabase() {
 
   console.log('[HCP] Seeding Gemeinden...');
   await clearSeedStores();
+  const gemeinden = await getGemeinden();
   await addGemeindenBatch(gemeinden);
   setSeedVersion(14);
   console.log(`[HCP] Seeded ${gemeinden.length} Gemeinden`);
@@ -61,7 +71,7 @@ export async function ensureYearLoaded(year, onProgress) {
   if (await hasTemplatesForYear(year)) return;
 
   if (onProgress) onProgress('loading', 0);
-  const rMap = buildRegionMap();
+  const rMap = await buildRegionMap();
   const templates = [];
 
   for (const country of COUNTRIES) {
