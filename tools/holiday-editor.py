@@ -501,7 +501,13 @@ function renderList() {
 // === Modal helpers ===
 function populateModalRegions() {
   const regions = new Set();
+  // From existing data
   for (const e of state.data) { if (e.canton) regions.add(e.canton); }
+  // From gemeinden (so we can add to regions with no data yet)
+  const country = state.country.toUpperCase();
+  for (const g of state.gemeinden) {
+    if ((g.country||'').toUpperCase() === country && g.canton) regions.add(g.canton);
+  }
   const sel = document.getElementById('m-region');
   sel.innerHTML = [...regions].sort().map(r => `<option value="${r}">${r}</option>`).join('');
   return [...regions].sort();
@@ -837,10 +843,21 @@ class EditorHandler(http.server.BaseHTTPRequestHandler):
             save_json(file_path, full_data)
         elif scope == "country":
             # Add holiday to ALL region entries in the file
+            # If no region entries exist yet, create them from gemeinden data
             region_entries = [e for e in all_data if e.get("canton") and not e.get("gemeinde_id")]
             if not region_entries:
-                self._json_response({"ok": False, "error": "No region entries found in file"}, 400)
-                return
+                gemeinden = load_gemeinden()
+                regions = sorted({g["canton"] for g in gemeinden
+                                  if g.get("country", "").upper() == country.upper() and g.get("canton")})
+                if not regions:
+                    self._json_response({"ok": False, "error": "No regions found for this country"}, 400)
+                    return
+                for r in regions:
+                    entry = {"canton": r, "year": year, "holidays": []}
+                    if category == "school":
+                        entry["category"] = "school"
+                    all_data.append(entry)
+                region_entries = [e for e in all_data if e.get("canton") and not e.get("gemeinde_id")]
             count = 0
             for entry in region_entries:
                 entry["holidays"].append(holiday)
