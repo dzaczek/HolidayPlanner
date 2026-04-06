@@ -1,0 +1,1203 @@
+[
+  {
+    "canton": "BB",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-02",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Winterferien",
+          "en": "Winter holidays"
+        },
+        "start": "2026-02-02",
+        "end": "2026-02-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-30",
+        "end": "2026-04-10",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Variabler Ferientag",
+          "en": "Flexible holiday"
+        },
+        "start": "2026-05-15",
+        "end": "2026-05-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Pfingstferien",
+          "en": "Whitsun holidays"
+        },
+        "start": "2026-05-26",
+        "end": "2026-05-26",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-09",
+        "end": "2026-08-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-19",
+        "end": "2026-10-30",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-02",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "BE",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-02",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Winterferien",
+          "en": "Winter holidays"
+        },
+        "start": "2026-02-02",
+        "end": "2026-02-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-30",
+        "end": "2026-04-10",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Unterrichtsfreier Tag",
+          "en": "Day off school"
+        },
+        "start": "2026-05-15",
+        "end": "2026-05-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Pfingstferien",
+          "en": "Whitsun holidays"
+        },
+        "start": "2026-05-26",
+        "end": "2026-05-26",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-09",
+        "end": "2026-08-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-19",
+        "end": "2026-10-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-02",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "BW",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-05",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-30",
+        "end": "2026-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Pfingstferien",
+          "en": "Whitsun holidays"
+        },
+        "start": "2026-05-26",
+        "end": "2026-06-05",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-30",
+        "end": "2026-09-12",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-26",
+        "end": "2026-10-30",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Reformationsfest",
+          "en": "Reformation Day"
+        },
+        "start": "2026-10-31",
+        "end": "2026-10-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-09",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "BY",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-05",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühjahrsferien",
+          "en": "Spring break"
+        },
+        "start": "2026-02-16",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-30",
+        "end": "2026-04-10",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Pfingstferien",
+          "en": "Whitsun holidays"
+        },
+        "start": "2026-05-26",
+        "end": "2026-06-05",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-08-03",
+        "end": "2026-09-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-11-02",
+        "end": "2026-11-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Buß- und Bettag",
+          "en": "Repentance Day"
+        },
+        "start": "2026-11-18",
+        "end": "2026-11-18",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-24",
+        "end": "2027-01-08",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "HB",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-05",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Halbjahresferien",
+          "en": "Mid-year break"
+        },
+        "start": "2026-02-02",
+        "end": "2026-02-03",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-23",
+        "end": "2026-04-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Tag nach Himmelfahrt",
+          "en": "Day after Ascension"
+        },
+        "start": "2026-05-15",
+        "end": "2026-05-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Pfingstferien",
+          "en": "Whitsun holidays"
+        },
+        "start": "2026-05-26",
+        "end": "2026-05-26",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-02",
+        "end": "2026-08-12",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-12",
+        "end": "2026-10-24",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-09",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "HE",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-10",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-30",
+        "end": "2026-04-10",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-06-29",
+        "end": "2026-08-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-05",
+        "end": "2026-10-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-12",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "HH",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-17",
+        "end": "2026-01-02",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Halbjahrespause",
+          "en": "Mid-year break"
+        },
+        "start": "2026-01-30",
+        "end": "2026-01-30",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Frühjahrsferien",
+          "en": "Spring break"
+        },
+        "start": "2026-03-02",
+        "end": "2026-03-13",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Pfingstferien",
+          "en": "Whitsun holidays"
+        },
+        "start": "2026-05-11",
+        "end": "2026-05-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-09",
+        "end": "2026-08-19",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-19",
+        "end": "2026-10-30",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-21",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "MV",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-20",
+        "end": "2026-01-03",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-03",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Winterferien",
+          "en": "Winter holidays"
+        },
+        "start": "2026-02-09",
+        "end": "2026-02-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Winterferien",
+          "en": "Winter holidays"
+        },
+        "start": "2026-02-09",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-30",
+        "end": "2026-04-08",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-30",
+        "end": "2026-04-10",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Zusätzlicher Ferientag",
+          "en": "Additional holiday"
+        },
+        "start": "2026-05-15",
+        "end": "2026-05-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Pfingstferien",
+          "en": "Whitsun holidays"
+        },
+        "start": "2026-05-22",
+        "end": "2026-05-26",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-13",
+        "end": "2026-08-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-13",
+        "end": "2026-08-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-15",
+        "end": "2026-10-24",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-19",
+        "end": "2026-10-24",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Zusätzlicher Ferientag",
+          "en": "Additional holiday"
+        },
+        "start": "2026-11-26",
+        "end": "2026-11-26",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Zusätzlicher Ferientag",
+          "en": "Additional holiday"
+        },
+        "start": "2026-11-27",
+        "end": "2026-11-27",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-19",
+        "end": "2027-01-02",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-21",
+        "end": "2027-01-02",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "NI",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-05",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Halbjahresferien",
+          "en": "Mid-year break"
+        },
+        "start": "2026-02-02",
+        "end": "2026-02-03",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-23",
+        "end": "2026-04-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Tag nach Himmelfahrt",
+          "en": "Day after Ascension"
+        },
+        "start": "2026-05-15",
+        "end": "2026-05-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Pfingstferien",
+          "en": "Whitsun holidays"
+        },
+        "start": "2026-05-26",
+        "end": "2026-05-26",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-02",
+        "end": "2026-08-12",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-12",
+        "end": "2026-10-24",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-09",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "NW",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-30",
+        "end": "2026-04-11",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Pfingstferien",
+          "en": "Whitsun holidays"
+        },
+        "start": "2026-05-26",
+        "end": "2026-05-26",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-20",
+        "end": "2026-09-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-17",
+        "end": "2026-10-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-06",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "RP",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-30",
+        "end": "2026-04-10",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-06-29",
+        "end": "2026-08-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-05",
+        "end": "2026-10-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-08",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SH",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-19",
+        "end": "2026-01-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-26",
+        "end": "2026-04-10",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Himmelfahrt",
+          "en": "Ascension break"
+        },
+        "start": "2026-05-15",
+        "end": "2026-05-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-08",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-05",
+        "end": "2026-10-24",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-12",
+        "end": "2026-10-24",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-21",
+        "end": "2027-01-06",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SL",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-02",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Fastnachtsferien",
+          "en": "Carnival holidays"
+        },
+        "start": "2026-02-16",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-04-07",
+        "end": "2026-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-06-29",
+        "end": "2026-08-07",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-05",
+        "end": "2026-10-16",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-21",
+        "end": "2026-12-31",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SN",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-02",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Winterferien",
+          "en": "Winter holidays"
+        },
+        "start": "2026-02-09",
+        "end": "2026-02-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-04-03",
+        "end": "2026-04-10",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Unterrichtsfreier Tag",
+          "en": "Day off school"
+        },
+        "start": "2026-05-15",
+        "end": "2026-05-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-12",
+        "end": "2026-10-24",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-02",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "ST",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-05",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Winterferien",
+          "en": "Winter holidays"
+        },
+        "start": "2026-01-31",
+        "end": "2026-02-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-03-30",
+        "end": "2026-04-04",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Pfingstferien",
+          "en": "Whitsun holidays"
+        },
+        "start": "2026-05-26",
+        "end": "2026-05-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-19",
+        "end": "2026-10-30",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-21",
+        "end": "2027-01-02",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "TH",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2025-12-22",
+        "end": "2026-01-03",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Winterferien",
+          "en": "Winter holidays"
+        },
+        "start": "2026-02-16",
+        "end": "2026-02-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Osterferien",
+          "en": "Easter holidays"
+        },
+        "start": "2026-04-07",
+        "end": "2026-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Schulfreier Tag",
+          "en": "Day off school"
+        },
+        "start": "2026-05-15",
+        "end": "2026-05-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Sommerferien",
+          "en": "Summer holidays"
+        },
+        "start": "2026-07-04",
+        "end": "2026-08-14",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Herbstferien",
+          "en": "Autumn holidays"
+        },
+        "start": "2026-10-12",
+        "end": "2026-10-24",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-02",
+        "type": "vacation"
+      }
+    ]
+  }
+]

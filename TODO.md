@@ -14,9 +14,9 @@
 - [x] Dynamic DE public holiday computation in public-holidays.js (16 Bundesländer)
 - [ ] Parser: fetch DE public holidays from date.nager.at API → `workers_YYYY.json`
 - [ ] Parser: fetch DE public holidays from OpenHolidaysAPI → `workers_YYYY.json`
-- [ ] Parser: fetch DE school holidays from ferien-api.de API → `school_YYYY.json`
-- [ ] Parser: fetch DE school holidays from OpenHolidaysAPI → `school_YYYY.json`
-- [ ] Parser: fetch DE school holidays from KMK PDF → `school_YYYY.json`
+- [x] Parser: fetch DE school holidays from OpenHolidaysAPI → `school_YYYY.json` (tools/fetch_de_schulferien.py, 16 Bundesländer, 121+ periods/year)
+- [ ] Parser: fetch DE school holidays from ferien-api.de API → `school_YYYY.json` (alternative source)
+- [ ] Parser: fetch DE school holidays from KMK PDF → `school_YYYY.json` (authoritative source)
 
 ## Done - Multi-Country Support
 - [x] Multi-country loader (src/db/seed/loader.js) — dynamic per-country glob patterns
