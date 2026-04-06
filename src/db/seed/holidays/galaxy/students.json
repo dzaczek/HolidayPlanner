@@ -1,6 +1,6 @@
 [
   {
-    "gemeinde_id": "hg-101",
+    "gemeinde_id": "galaxy-101",
     "year": 2026,
     "category": "student",
     "holidays": [
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "gemeinde_id": "hg-201",
+    "gemeinde_id": "galaxy-201",
     "year": 2026,
     "category": "student",
     "holidays": [
