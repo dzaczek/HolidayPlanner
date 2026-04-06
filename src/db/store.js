@@ -200,7 +200,7 @@ export async function deleteLeave(id) {
 
 // === Seed check ===
 
-const SEED_VERSION = 14; // bump this to force re-seed (DE gemeinden from GeoNames)
+const SEED_VERSION = 15; // bump this to force re-seed (DE university entries)
 
 export async function getSeedVersion() {
   try {
