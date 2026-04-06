@@ -108,8 +108,9 @@ header .badge { background: var(--accent); color: #000; padding: 2px 8px; border
 .controls label { font-size: 13px; color: var(--text2); }
 .controls select, .controls input[type="number"] {
   background: var(--bg); color: var(--text); border: 1px solid var(--border);
-  padding: 6px 10px; border-radius: 6px; font-size: 14px;
+  padding: 6px 10px; border-radius: 6px; font-size: 14px; min-width: 120px;
 }
+#sel-country { min-width: 180px; font-weight: 600; }
 .controls select:focus, .controls input:focus { border-color: var(--accent); outline: none; }
 .btn { padding: 6px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; font-size: 13px; font-weight: 500; }
 .btn:hover { background: var(--border); }
@@ -349,7 +350,8 @@ async function api(path, opts={}) {
 async function init() {
   const meta = await api('/meta');
   const sel = document.getElementById('sel-country');
-  sel.innerHTML = meta.countries.map(c => `<option value="${c}">${c.toUpperCase()}</option>`).join('');
+  const countryLabels = { ch: 'CH — Switzerland', de: 'DE — Germany', at: 'AT — Austria', galaxy: 'GALAXY — Demo' };
+  sel.innerHTML = meta.countries.map(c => `<option value="${c}">${countryLabels[c] || c.toUpperCase()}</option>`).join('');
   state.country = meta.countries[0] || 'ch';
   state.gemeinden = meta.gemeinden;
   await loadData();
