@@ -1,4 +1,4 @@
-import { addGemeindenBatch, addTemplatesBatch, isSeeded, clearSeedStores, setSeedVersion, hasTemplatesForYear } from '../store.js';
+import { addGemeindenBatch, addTemplatesBatch, isSeeded, clearSeedStores, setSeedVersion, hasTemplatesForYear, SEED_VERSION } from '../store.js';
 
 // Lazy-load gemeinden (large file, ~2MB) — only loaded during seed
 const loadGemeinden = () => import('./gemeinden.json').then(m => m.default || m);
@@ -58,7 +58,7 @@ export async function seedDatabase() {
   await clearSeedStores();
   const gemeinden = await getGemeinden();
   await addGemeindenBatch(gemeinden);
-  setSeedVersion(15);
+  setSeedVersion(SEED_VERSION);
   console.log(`[HCP] Seeded ${gemeinden.length} Gemeinden`);
 }
 
