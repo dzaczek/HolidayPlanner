@@ -183,10 +183,35 @@ header .badge { background: var(--accent); color: #000; padding: 2px 8px; border
 .toast.show { display: block; animation: fadeInOut 2.5s ease; }
 @keyframes fadeInOut { 0%{opacity:0;transform:translateY(10px)} 15%{opacity:1;transform:translateY(0)} 80%{opacity:1} 100%{opacity:0} }
 
-/* Region/gemeinde filter tabs */
-.view-tabs { display: flex; gap: 6px; margin-bottom: 12px; }
-.view-tab { padding: 5px 12px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text2); cursor: pointer; font-size: 13px; }
-.view-tab.active { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 600; }
+/* View toggle */
+.view-toggle { display: flex; gap: 2px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 2px; margin-bottom: 12px; width: fit-content; }
+.view-toggle .vt-btn { padding: 6px 16px; border-radius: 6px; border: none; background: transparent; color: var(--text2); cursor: pointer; font-size: 13px; font-weight: 500; transition: all 0.15s; }
+.view-toggle .vt-btn.active { background: var(--accent); color: #000; font-weight: 600; }
+.view-toggle .vt-btn:hover:not(.active) { color: var(--text); }
+
+/* Spreadsheet table */
+.spreadsheet { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow-x: auto; }
+.spreadsheet table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.spreadsheet th { position: sticky; top: 0; background: var(--bg); text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border); color: var(--text2); font-weight: 600; font-size: 12px; cursor: pointer; user-select: none; white-space: nowrap; }
+.spreadsheet th:hover { color: var(--accent); }
+.spreadsheet th .sort-arrow { margin-left: 4px; font-size: 10px; }
+.spreadsheet td { padding: 0; border-bottom: 1px solid var(--border); }
+.spreadsheet tr:hover td { background: rgba(88,166,255,0.04); }
+.spreadsheet tr.editing td { background: rgba(88,166,255,0.08); }
+.spreadsheet .cell { padding: 6px 10px; min-height: 32px; cursor: text; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 240px; }
+.spreadsheet .cell:hover { background: rgba(88,166,255,0.06); }
+.spreadsheet .cell.active { outline: 2px solid var(--accent); outline-offset: -2px; background: var(--bg); }
+.spreadsheet .cell input, .spreadsheet .cell select {
+  width: 100%; background: var(--bg); color: var(--text); border: 1px solid var(--accent);
+  padding: 4px 6px; border-radius: 3px; font-size: 13px; font-family: inherit;
+}
+.spreadsheet .cell-readonly { color: var(--text2); }
+.spreadsheet .row-actions { display: flex; gap: 4px; padding: 4px 8px; white-space: nowrap; }
+.spreadsheet .row-num { color: var(--text2); text-align: right; padding: 6px 8px; font-size: 11px; font-variant-numeric: tabular-nums; border-right: 1px solid var(--border); min-width: 36px; }
+.spreadsheet .cell-dirty { position: relative; }
+.spreadsheet .cell-dirty::after { content: ''; position: absolute; top: 2px; right: 2px; width: 6px; height: 6px; background: var(--orange); border-radius: 50%; }
+.spreadsheet .toolbar { display: flex; gap: 8px; align-items: center; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+.spreadsheet .toolbar .info { font-size: 12px; color: var(--text2); margin-left: auto; }
 </style>
 </head>
 <body>
@@ -227,14 +252,40 @@ header .badge { background: var(--accent); color: #000; padding: 2px 8px; border
     </div>
   </div>
 
-  <div class="stats" id="stats"></div>
-  <div class="calendar-year" id="calendar"></div>
+  <div style="display:flex; align-items:center; gap:16px; margin-bottom:12px;">
+    <div class="view-toggle">
+      <button class="vt-btn active" data-view="calendar" onclick="switchView('calendar')">Calendar</button>
+      <button class="vt-btn" data-view="table" onclick="switchView('table')">Table</button>
+    </div>
+    <div class="stats" id="stats" style="margin-bottom:0"></div>
+  </div>
 
-  <div class="holiday-list" id="holiday-list">
-    <h3>Holidays <span id="list-count"></span></h3>
-    <table><thead><tr>
-      <th>Name (de)</th><th>Name (en)</th><th>Start</th><th>End</th><th>Type</th><th>Region</th><th></th>
-    </tr></thead><tbody id="holiday-tbody"></tbody></table>
+  <div id="view-calendar">
+    <div class="calendar-year" id="calendar"></div>
+    <div class="holiday-list" id="holiday-list">
+      <h3>Holidays <span id="list-count"></span></h3>
+      <table><thead><tr>
+        <th>Name (de)</th><th>Name (en)</th><th>Start</th><th>End</th><th>Type</th><th>Region</th><th></th>
+      </tr></thead><tbody id="holiday-tbody"></tbody></table>
+    </div>
+  </div>
+
+  <div id="view-table" style="display:none">
+    <div class="spreadsheet" id="spreadsheet">
+      <div class="toolbar">
+        <button class="btn btn-primary btn-sm" onclick="ssAddRow()">+ Add row</button>
+        <button class="btn btn-sm" onclick="ssDuplicateSelected()">Duplicate</button>
+        <button class="btn btn-danger btn-sm" onclick="ssDeleteSelected()">Delete selected</button>
+        <button class="btn btn-primary" onclick="ssSave()" id="ss-save-btn" style="display:none">Save changes</button>
+        <span class="info" id="ss-info"></span>
+      </div>
+      <div style="overflow-x:auto; max-height: 70vh; overflow-y: auto;">
+        <table>
+          <thead id="ss-thead"></thead>
+          <tbody id="ss-tbody"></tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -400,8 +451,12 @@ function getAllHolidays() {
 function render() {
   state.holidays = getAllHolidays();
   renderStats();
-  renderCalendar();
-  renderList();
+  if (currentView === 'calendar') {
+    renderCalendar();
+    renderList();
+  } else {
+    ssRender();
+  }
 }
 
 function renderStats() {
@@ -711,7 +766,352 @@ function toast(msg, err) {
   setTimeout(() => t.className = 'toast', 2500);
 }
 
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+// === View toggle ===
+let currentView = 'calendar';
+function switchView(view) {
+  currentView = view;
+  document.querySelectorAll('.vt-btn').forEach(b => b.classList.toggle('active', b.dataset.view === view));
+  document.getElementById('view-calendar').style.display = view === 'calendar' ? '' : 'none';
+  document.getElementById('view-table').style.display = view === 'table' ? '' : 'none';
+  if (view === 'table') ssRender();
+}
+
+// === Spreadsheet ===
+let ssData = []; // working copy of flattened holidays
+let ssDirty = new Set(); // indices of modified rows
+let ssSort = { col: 'start', asc: true };
+let ssSelected = new Set();
+
+const SS_COLS = [
+  { key: '_sel', label: '', width: '30px', type: 'checkbox' },
+  { key: '_num', label: '#', width: '36px', type: 'rownum' },
+  { key: 'region', label: 'Region', width: '70px', type: 'text' },
+  { key: 'name_de', label: 'Name (de)', width: '200px', type: 'text' },
+  { key: 'name_en', label: 'Name (en)', width: '180px', type: 'text' },
+  { key: 'name_fr', label: 'Name (fr)', width: '160px', type: 'text' },
+  { key: 'name_it', label: 'Name (it)', width: '160px', type: 'text' },
+  { key: 'start', label: 'Start', width: '120px', type: 'date' },
+  { key: 'end', label: 'End', width: '120px', type: 'date' },
+  { key: 'type', label: 'Type', width: '120px', type: 'select', options: ['public_holiday','vacation','bridge_day'] },
+];
+
+function ssFlatten() {
+  // Flatten entries into editable rows
+  const rows = [];
+  const entries = getFilteredEntries();
+  for (const e of entries) {
+    const region = e.canton || e.gemeinde_id || '';
+    for (let hi = 0; hi < (e.holidays||[]).length; hi++) {
+      const h = e.holidays[hi];
+      rows.push({
+        region,
+        name_de: nameStr(h.name, 'de'),
+        name_en: nameStr(h.name, 'en'),
+        name_fr: nameStr(h.name, 'fr'),
+        name_it: nameStr(h.name, 'it'),
+        start: h.start,
+        end: h.end,
+        type: h.type,
+        _entry: e,
+        _hi: hi,
+        _new: false,
+      });
+    }
+  }
+  return rows;
+}
+
+function ssRender() {
+  ssData = ssFlatten();
+  ssDirty.clear();
+  ssSelected.clear();
+  ssRenderTable();
+  ssUpdateInfo();
+}
+
+function ssRenderTable() {
+  // Header
+  const thead = document.getElementById('ss-thead');
+  thead.innerHTML = '<tr>' + SS_COLS.map(c => {
+    if (c.type === 'checkbox') return `<th style="width:${c.width}"><input type="checkbox" onchange="ssToggleAll(this.checked)"></th>`;
+    if (c.type === 'rownum') return `<th style="width:${c.width}">${c.label}</th>`;
+    const arrow = ssSort.col === c.key ? (ssSort.asc ? ' ▲' : ' ▼') : '';
+    return `<th style="width:${c.width};min-width:${c.width}" onclick="ssDoSort('${c.key}')">${c.label}<span class="sort-arrow">${arrow}</span></th>`;
+  }).join('') + '<th style="width:80px"></th></tr>';
+
+  // Sort
+  const sorted = [...ssData.keys()];
+  if (ssSort.col) {
+    sorted.sort((a, b) => {
+      const va = ssData[a][ssSort.col] || '';
+      const vb = ssData[b][ssSort.col] || '';
+      return ssSort.asc ? va.localeCompare(vb) : vb.localeCompare(va);
+    });
+  }
+
+  // Body
+  const tbody = document.getElementById('ss-tbody');
+  tbody.innerHTML = sorted.map(i => {
+    const r = ssData[i];
+    const dirty = ssDirty.has(i);
+    const sel = ssSelected.has(i);
+    return `<tr class="${dirty ? 'editing' : ''}" data-idx="${i}">` +
+      `<td><div class="row-num"><input type="checkbox" ${sel?'checked':''} onchange="ssToggleRow(${i},this.checked)"></div></td>` +
+      `<td><div class="row-num">${i+1}</div></td>` +
+      SS_COLS.filter(c => c.type !== 'checkbox' && c.type !== 'rownum').map(c => {
+        const val = r[c.key] || '';
+        const dirtyMark = dirty ? ' cell-dirty' : '';
+        if (c.key === 'region') return `<td><div class="cell cell-readonly${dirtyMark}">${esc(val)}</div></td>`;
+        return `<td><div class="cell${dirtyMark}" onclick="ssEditCell(this,${i},'${c.key}','${c.type}')" title="${esc(val)}">${esc(val)}</div></td>`;
+      }).join('') +
+      `<td><div class="row-actions">` +
+        `<button class="btn btn-sm" onclick="ssDuplicateRow(${i})">Dup</button>` +
+        `<button class="btn btn-sm btn-danger" onclick="ssDeleteRow(${i})">Del</button>` +
+      `</div></td></tr>`;
+  }).join('');
+
+  document.getElementById('ss-save-btn').style.display = ssDirty.size > 0 ? '' : 'none';
+}
+
+function ssEditCell(el, idx, key, type) {
+  if (el.querySelector('input, select')) return; // already editing
+  const val = ssData[idx][key] || '';
+
+  if (type === 'select') {
+    const col = SS_COLS.find(c => c.key === key);
+    el.innerHTML = `<select onchange="ssSetCell(${idx},'${key}',this.value); ssFinishEdit(this)" onblur="ssFinishEdit(this)">` +
+      col.options.map(o => `<option value="${o}" ${o===val?'selected':''}>${o.replace('_',' ')}</option>`).join('') + '</select>';
+    el.querySelector('select').focus();
+  } else if (type === 'date') {
+    el.innerHTML = `<input type="date" value="${val}" onchange="ssSetCell(${idx},'${key}',this.value); ssFinishEdit(this)" onblur="ssFinishEdit(this)">`;
+    el.querySelector('input').focus();
+  } else {
+    el.innerHTML = `<input type="text" value="${esc(val)}" onchange="ssSetCell(${idx},'${key}',this.value)" onblur="ssFinishEdit(this)" onkeydown="if(event.key==='Enter'){ssFinishEdit(this);}if(event.key==='Tab'){event.preventDefault();ssTabNext(this,${idx},'${key}',event.shiftKey);}">`;
+    const inp = el.querySelector('input');
+    inp.focus();
+    inp.select();
+  }
+  el.classList.add('active');
+}
+
+function ssFinishEdit(el) {
+  const cell = el.closest('.cell');
+  if (!cell) return;
+  const tr = el.closest('tr');
+  const idx = parseInt(tr.dataset.idx);
+  const val = el.value || '';
+  // Find which key this cell is
+  cell.classList.remove('active');
+  cell.innerHTML = esc(val);
+  if (ssDirty.has(idx)) cell.classList.add('cell-dirty');
+  ssUpdateInfo();
+}
+
+function ssTabNext(el, idx, key, shift) {
+  // Save current, finish edit, move to next/prev editable cell
+  ssFinishEdit(el);
+  const editableCols = SS_COLS.filter(c => c.type !== 'checkbox' && c.type !== 'rownum' && c.key !== 'region');
+  const ci = editableCols.findIndex(c => c.key === key);
+  const nextCi = shift ? ci - 1 : ci + 1;
+  let nextIdx = idx;
+  let nextCol;
+  if (nextCi >= 0 && nextCi < editableCols.length) {
+    nextCol = editableCols[nextCi];
+  } else if (!shift && nextCi >= editableCols.length && idx + 1 < ssData.length) {
+    nextIdx = idx + 1;
+    nextCol = editableCols[0];
+  } else if (shift && nextCi < 0 && idx > 0) {
+    nextIdx = idx - 1;
+    nextCol = editableCols[editableCols.length - 1];
+  }
+  if (nextCol) {
+    setTimeout(() => {
+      const row = document.querySelector(`tr[data-idx="${nextIdx}"]`);
+      if (row) {
+        const cells = row.querySelectorAll('.cell:not(.cell-readonly)');
+        const targetCi = editableCols.findIndex(c => c.key === nextCol.key);
+        if (cells[targetCi]) cells[targetCi].click();
+      }
+    }, 50);
+  }
+}
+
+function ssSetCell(idx, key, val) {
+  ssData[idx][key] = val;
+  ssDirty.add(idx);
+  document.getElementById('ss-save-btn').style.display = '';
+  ssUpdateInfo();
+}
+
+function ssDoSort(col) {
+  if (ssSort.col === col) ssSort.asc = !ssSort.asc;
+  else { ssSort.col = col; ssSort.asc = true; }
+  ssRenderTable();
+}
+
+function ssToggleAll(checked) {
+  if (checked) ssData.forEach((_, i) => ssSelected.add(i));
+  else ssSelected.clear();
+  ssRenderTable();
+}
+
+function ssToggleRow(idx, checked) {
+  if (checked) ssSelected.add(idx); else ssSelected.delete(idx);
+}
+
+function ssAddRow() {
+  const region = state.region !== '__all__' ? state.region : '';
+  ssData.push({
+    region: region,
+    name_de: '', name_en: '', name_fr: '', name_it: '',
+    start: `${state.year}-01-01`, end: `${state.year}-01-01`,
+    type: state.category === 'worker' ? 'public_holiday' : 'vacation',
+    _entry: null, _hi: -1, _new: true,
+  });
+  const idx = ssData.length - 1;
+  ssDirty.add(idx);
+  ssRenderTable();
+  // Scroll to new row and focus name
+  setTimeout(() => {
+    const row = document.querySelector(`tr[data-idx="${idx}"]`);
+    if (row) {
+      row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const firstCell = row.querySelector('.cell:not(.cell-readonly)');
+      if (firstCell) firstCell.click();
+    }
+  }, 100);
+}
+
+function ssDuplicateRow(idx) {
+  const src = ssData[idx];
+  const copy = { ...src, _entry: null, _hi: -1, _new: true };
+  ssData.push(copy);
+  ssDirty.add(ssData.length - 1);
+  ssRenderTable();
+}
+
+function ssDuplicateSelected() {
+  if (ssSelected.size === 0) { toast('Select rows first', true); return; }
+  for (const idx of [...ssSelected]) {
+    const copy = { ...ssData[idx], _entry: null, _hi: -1, _new: true };
+    ssData.push(copy);
+    ssDirty.add(ssData.length - 1);
+  }
+  ssSelected.clear();
+  ssRenderTable();
+  toast(`Duplicated ${ssSelected.size || 'rows'}`);
+}
+
+function ssDeleteRow(idx) {
+  const r = ssData[idx];
+  if (!confirm(`Delete "${r.name_de || '(empty)'}"?`)) return;
+  if (r._new) {
+    // New row, just remove from array
+    ssData.splice(idx, 1);
+    ssDirty.delete(idx);
+    // Re-index dirty/selected
+    const newDirty = new Set(); ssDirty.forEach(i => { if (i > idx) newDirty.add(i-1); else if (i < idx) newDirty.add(i); }); ssDirty = newDirty;
+    ssRenderTable();
+    toast('Row removed');
+  } else {
+    // Existing row — delete via API
+    const h = state.holidays.find(x => x.start === r.start && x.end === r.end && nameStr(x.name,'de') === r.name_de && (x.canton||x.gemeinde_id||'') === r.region);
+    if (h) {
+      const origIdx = findOriginalIdx(state.holidays.indexOf(h));
+      const body = { country: state.country, category: state.category, year: state.year, region: h.canton || null, gemeinde_id: h.gemeinde_id || null, deleteIdx: origIdx };
+      api('/holidays', { method: 'DELETE', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body) }).then(resp => {
+        if (resp.ok) { toast('Deleted'); loadData().then(() => { if (currentView === 'table') ssRender(); }); }
+        else toast(resp.error || 'Delete failed', true);
+      });
+    } else {
+      toast('Could not find matching entry', true);
+    }
+  }
+}
+
+function ssDeleteSelected() {
+  if (ssSelected.size === 0) { toast('Select rows first', true); return; }
+  if (!confirm(`Delete ${ssSelected.size} rows?`)) return;
+  // Delete from end to preserve indices
+  const indices = [...ssSelected].sort((a,b) => b - a);
+  let pending = 0;
+  for (const idx of indices) {
+    const r = ssData[idx];
+    if (r._new) {
+      ssData.splice(idx, 1);
+    } else {
+      pending++;
+      const h = state.holidays.find(x => x.start === r.start && x.end === r.end && nameStr(x.name,'de') === r.name_de);
+      if (h) {
+        const origIdx = findOriginalIdx(state.holidays.indexOf(h));
+        api('/holidays', { method: 'DELETE', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ country: state.country, category: state.category, year: state.year, region: h.canton||null, gemeinde_id: h.gemeinde_id||null, deleteIdx: origIdx }) });
+      }
+    }
+  }
+  ssSelected.clear();
+  ssDirty.clear();
+  if (pending > 0) {
+    setTimeout(() => loadData().then(() => { if (currentView === 'table') ssRender(); toast(`Deleted ${indices.length} rows`); }), 300);
+  } else {
+    ssRenderTable();
+    toast(`Removed ${indices.length} rows`);
+  }
+}
+
+async function ssSave() {
+  if (ssDirty.size === 0) return;
+  let saved = 0, errors = 0;
+  for (const idx of [...ssDirty]) {
+    const r = ssData[idx];
+    if (!r.name_de) { errors++; continue; }
+    const holiday = {
+      name: {},
+      start: r.start, end: r.end, type: r.type,
+    };
+    if (r.name_de) holiday.name.de = r.name_de;
+    if (r.name_en) holiday.name.en = r.name_en;
+    if (r.name_fr) holiday.name.fr = r.name_fr;
+    if (r.name_it) holiday.name.it = r.name_it;
+
+    const isNew = r._new || r._hi < 0;
+    const body = {
+      country: state.country, category: state.category, year: state.year,
+      region: r.region || null, gemeinde_id: null, holiday,
+      editIdx: isNew ? -1 : r._hi,
+      scope: 'region',
+    };
+    // Detect if region is a gemeinde_id
+    if (state.category === 'student') {
+      body.gemeinde_id = r.region;
+      body.region = null;
+    }
+    const resp = await api('/holidays', { method: 'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+    if (resp.ok) saved++; else errors++;
+  }
+  if (errors > 0) toast(`Saved ${saved}, ${errors} errors`, true);
+  else toast(`Saved ${saved} changes`);
+  await loadData();
+  if (currentView === 'table') ssRender();
+}
+
+function ssUpdateInfo() {
+  const el = document.getElementById('ss-info');
+  const dirtyCount = ssDirty.size;
+  const selCount = ssSelected.size;
+  let txt = `${ssData.length} rows`;
+  if (selCount > 0) txt += ` · ${selCount} selected`;
+  if (dirtyCount > 0) txt += ` · ${dirtyCount} unsaved`;
+  el.textContent = txt;
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
+  // Ctrl+S in table view = save
+  if (currentView === 'table' && (e.ctrlKey || e.metaKey) && e.key === 's') {
+    e.preventDefault();
+    ssSave();
+  }
+});
 init();
 </script>
 </body>
