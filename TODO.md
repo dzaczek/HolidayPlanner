@@ -12,8 +12,8 @@
 - [x] Parser: fetch DE municipalities from GeoNames postal codes → `gemeinden.json` (tools/fetch_de_gemeinden.py, 15549 Gemeinden, 17966 PLZ)
 - [x] Map DE Bundesland codes to short codes (BY, BW...) in gemeinden.json
 - [x] Dynamic DE public holiday computation in public-holidays.js (16 Bundesländer)
-- [ ] Parser: fetch DE public holidays from date.nager.at API → `workers_YYYY.json`
-- [ ] Parser: fetch DE public holidays from OpenHolidaysAPI → `workers_YYYY.json`
+- [x] Parser: fetch DE public holidays from OpenHolidaysAPI → `workers_YYYY.json` (tools/fetch_de_feiertage.py, 16 Bundesländer, 175 holidays/year)
+- [ ] Parser: fetch DE public holidays from date.nager.at API → `workers_YYYY.json` (alternative source)
 - [x] Parser: fetch DE school holidays from OpenHolidaysAPI → `school_YYYY.json` (tools/fetch_de_schulferien.py, 16 Bundesländer, 121+ periods/year)
 - [ ] Parser: fetch DE school holidays from ferien-api.de API → `school_YYYY.json` (alternative source)
 - [ ] Parser: fetch DE school holidays from KMK PDF → `school_YYYY.json` (authoritative source)

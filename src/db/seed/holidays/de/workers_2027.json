@@ -1,0 +1,1689 @@
+[
+  {
+    "canton": "BB",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostersonntag",
+          "en": "Easter Sunday"
+        },
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday"
+        },
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Reformationstag",
+          "en": "Reformation Day"
+        },
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "BE",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Internationaler Frauentag",
+          "en": "International Women's Day"
+        },
+        "start": "2027-03-08",
+        "end": "2027-03-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "BW",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany"
+        },
+        "start": "2027-01-06",
+        "end": "2027-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "en": "Corpus Christi"
+        },
+        "start": "2027-05-27",
+        "end": "2027-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "en": "All Saints' Day"
+        },
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "BY",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany"
+        },
+        "start": "2027-01-06",
+        "end": "2027-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "en": "Corpus Christi"
+        },
+        "start": "2027-05-27",
+        "end": "2027-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption of Mary"
+        },
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "en": "All Saints' Day"
+        },
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "HB",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Reformationstag",
+          "en": "Reformation Day"
+        },
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "HE",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "en": "Corpus Christi"
+        },
+        "start": "2027-05-27",
+        "end": "2027-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "HH",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Reformationstag",
+          "en": "Reformation Day"
+        },
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "MV",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Internationaler Frauentag",
+          "en": "International Women's Day"
+        },
+        "start": "2027-03-08",
+        "end": "2027-03-08",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Reformationstag",
+          "en": "Reformation Day"
+        },
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "NI",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Reformationstag",
+          "en": "Reformation Day"
+        },
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "NW",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "en": "Corpus Christi"
+        },
+        "start": "2027-05-27",
+        "end": "2027-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "en": "All Saints' Day"
+        },
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "RP",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "en": "Corpus Christi"
+        },
+        "start": "2027-05-27",
+        "end": "2027-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "en": "All Saints' Day"
+        },
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "SH",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Reformationstag",
+          "en": "Reformation Day"
+        },
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "SL",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Fronleichnam",
+          "en": "Corpus Christi"
+        },
+        "start": "2027-05-27",
+        "end": "2027-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption of Mary"
+        },
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Allerheiligen",
+          "en": "All Saints' Day"
+        },
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "SN",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Reformationstag",
+          "en": "Reformation Day"
+        },
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Buß- und Bettag",
+          "en": "Repentance and Prayer Day"
+        },
+        "start": "2027-11-17",
+        "end": "2027-11-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "ST",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany"
+        },
+        "start": "2027-01-06",
+        "end": "2027-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Reformationstag",
+          "en": "Reformation Day"
+        },
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "TH",
+    "year": 2027,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "de": "Neujahr",
+          "en": "New Year's Day"
+        },
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Karfreitag",
+          "en": "Good Friday"
+        },
+        "start": "2027-03-26",
+        "end": "2027-03-26",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Ostermontag",
+          "en": "Easter Monday"
+        },
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Arbeit",
+          "en": "Labour Day"
+        },
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Christi Himmelfahrt",
+          "en": "Ascension Day"
+        },
+        "start": "2027-05-06",
+        "end": "2027-05-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Pfingstmontag",
+          "en": "Whit Monday"
+        },
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weltkindertag",
+          "en": "World Children's Day"
+        },
+        "start": "2027-09-20",
+        "end": "2027-09-20",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Tag der Deutschen Einheit",
+          "en": "German Unity Day"
+        },
+        "start": "2027-10-03",
+        "end": "2027-10-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Reformationstag",
+          "en": "Reformation Day"
+        },
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "1. Weihnachtsfeiertag",
+          "en": "Christmas Day"
+        },
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "2. Weihnachtsfeiertag",
+          "en": "St. Stephen's Day"
+        },
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  }
+]
