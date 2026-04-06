@@ -337,6 +337,21 @@ function showAbout() {
       <li>${t('about.feature.clarity')}</li>
       <li>${t('about.feature.family')}</li>
     </ul>
+
+    <h4 style="margin-top:16px">${t('about.howto.title')}</h4>
+    <ol class="about-instructions">
+      <li>${t('about.howto.step1')}</li>
+      <li>${t('about.howto.step2')}</li>
+      <li>${t('about.howto.step3')}</li>
+      <li>${t('about.howto.step4')}</li>
+    </ol>
+
+    <div class="about-links" style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="https://github.com/dzaczek/HolidayPlanner" target="_blank" rel="noopener" class="btn btn-secondary">${t('about.github')}</a>
+      <a href="https://github.com/dzaczek/HolidayPlanner/issues" target="_blank" rel="noopener" class="btn btn-secondary">${t('about.issues')}</a>
+    </div>
+
+    <p class="about-version" style="margin-top:12px; font-size:12px; color:var(--text-muted);">${t('about.version')}: ${document.getElementById('app-version')?.textContent || '?'}</p>
     <div class="modal-actions">
       <button class="btn btn-secondary" id="modal-cancel">${t('btn.close')}</button>
     </div>

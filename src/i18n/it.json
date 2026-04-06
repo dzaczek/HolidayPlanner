@@ -89,5 +89,13 @@
   "about.intro": "Stufo di controllare cinque posti diversi per sapere se il tuo cantone è libero quando i bambini sono in vacanza? Questo calendario lo fa per te. Ideale per chi lavora in un cantone e vive o studia in un altro.",
   "about.feature.view": "Vista personalizzata: Scegli i cantoni che ti interessano e confrontali su un unico schermo.",
   "about.feature.clarity": "Chiarezza: Codici colore intuitivi per giorni festivi, feste locali e vacanze scolastiche.",
-  "about.feature.family": "Supporto familiare: Pianifica le gite insieme senza rischio di confondere le date delle vacanze invernali o primaverili."
+  "about.feature.family": "Supporto familiare: Pianifica le gite insieme senza rischio di confondere le date delle vacanze invernali o primaverili.",
+  "about.howto.title": "Istruzioni",
+  "about.howto.step1": "Aggiungi una persona — scegli nome, categoria (lavoratore, studente, alunno) e comune.",
+  "about.howto.step2": "Il calendario mostra automaticamente i giorni festivi e le vacanze scolastiche della regione.",
+  "about.howto.step3": "Aggiungi periodi di ferie per vedere dove i giorni liberi si sovrappongono.",
+  "about.howto.step4": "Usa Backup per salvare i dati o Condividi per inviare il calendario ai familiari.",
+  "about.github": "GitHub",
+  "about.issues": "Segnala un bug",
+  "about.version": "Versione"
 }

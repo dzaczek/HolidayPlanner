@@ -208,6 +208,27 @@ main {
   font-size: 0.9rem;
 }
 
+.about-instructions {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+.about-instructions li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+  font-size: 0.85rem;
+}
+
+.about-links .btn {
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.about-version {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
 .modal .modal-actions {
   display: flex;
   gap: 8px;

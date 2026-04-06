@@ -89,5 +89,13 @@
   "about.intro": "Haben Sie es satt, an fünf verschiedenen Stellen nachzuschauen, ob Ihr Kanton frei hat, wenn die Kinder Ferien haben? Dieser Kalender erledigt das für Sie. Ideal für Personen, die in einem Kanton arbeiten und in einem anderen wohnen oder zur Schule gehen.",
   "about.feature.view": "Personalisierte Ansicht: Wählen Sie die Kantone, die Sie interessieren, und vergleichen Sie sie auf einem Bildschirm.",
   "about.feature.clarity": "Übersichtlichkeit: Intuitive Farbkennzeichnungen für Feiertage, lokale Feiertage und Schulpausen.",
-  "about.feature.family": "Familienunterstützung: Planen Sie gemeinsame Ausflüge ohne Risiko, die Termine der Winter- oder Frühlingsferien zu verwechseln."
+  "about.feature.family": "Familienunterstützung: Planen Sie gemeinsame Ausflüge ohne Risiko, die Termine der Winter- oder Frühlingsferien zu verwechseln.",
+  "about.howto.title": "Anleitung",
+  "about.howto.step1": "Person hinzufügen — Name, Kategorie (Arbeiter, Student, Schüler) und Gemeinde wählen.",
+  "about.howto.step2": "Der Kalender zeigt automatisch Feiertage und Schulferien für die gewählte Region.",
+  "about.howto.step3": "Urlaub hinzufügen, um zu sehen, wo sich die freien Tage überschneiden.",
+  "about.howto.step4": "Backup zum Speichern oder Teilen-Funktion, um den Kalender an Familienmitglieder zu senden.",
+  "about.github": "GitHub",
+  "about.issues": "Fehler melden",
+  "about.version": "Version"
 }

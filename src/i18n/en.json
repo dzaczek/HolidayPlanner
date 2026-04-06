@@ -89,5 +89,13 @@
   "about.intro": "Tired of checking five different places to see if your canton has a day off when the kids are on holiday? This calendar does it for you. Perfect for people who work in one canton but live or study in another.",
   "about.feature.view": "Personalized view: Choose the cantons you're interested in and compare them on one screen.",
   "about.feature.clarity": "Clarity: Intuitive color coding for public holidays, local holidays, and school breaks.",
-  "about.feature.family": "Family support: Plan trips together without the risk of mixing up winter or spring break dates."
+  "about.feature.family": "Family support: Plan trips together without the risk of mixing up winter or spring break dates.",
+  "about.howto.title": "How to use",
+  "about.howto.step1": "Add a person — choose their name, category (worker, student, school pupil), and municipality.",
+  "about.howto.step2": "The calendar automatically shows public holidays and school breaks for their region.",
+  "about.howto.step3": "Add leave periods to see where everyone's time off overlaps.",
+  "about.howto.step4": "Use Backup to save your data or Share to send the calendar to family members.",
+  "about.github": "GitHub",
+  "about.issues": "Report a bug",
+  "about.version": "Version"
 }
