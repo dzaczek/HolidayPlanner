@@ -245,11 +245,12 @@ header .badge { background: var(--accent); color: #000; padding: 2px 8px; border
     <div class="form-group" id="m-scope-group">
       <label>Scope</label>
       <select id="m-scope" onchange="onScopeChange()">
-        <option value="region">Entire region (canton/Bundesland)</option>
+        <option value="country">Entire country (all regions)</option>
+        <option value="region">Single region (canton/Bundesland)</option>
         <option value="gemeinde">Specific Gemeinde only</option>
       </select>
     </div>
-    <div class="form-group" id="m-region-group">
+    <div class="form-group" id="m-region-group" style="display:none">
       <label>Region</label>
       <select id="m-region"></select>
     </div>
@@ -518,18 +519,18 @@ function populateModalGemeinden(region) {
 
 function onScopeChange() {
   const scope = document.getElementById('m-scope').value;
-  const isGemeinde = scope === 'gemeinde';
-  document.getElementById('m-gemeinde-group').style.display = isGemeinde ? '' : 'none';
   // For student category, always show gemeinde
   if (state.category === 'student') {
     document.getElementById('m-gemeinde-group').style.display = '';
     document.getElementById('m-region-group').style.display = 'none';
     document.getElementById('m-scope-group').style.display = 'none';
-  } else {
-    document.getElementById('m-region-group').style.display = '';
-    document.getElementById('m-scope-group').style.display = '';
+    populateModalGemeinden(null);
+    return;
   }
-  if (isGemeinde) {
+  document.getElementById('m-scope-group').style.display = '';
+  document.getElementById('m-region-group').style.display = scope === 'region' || scope === 'gemeinde' ? '' : 'none';
+  document.getElementById('m-gemeinde-group').style.display = scope === 'gemeinde' ? '' : 'none';
+  if (scope === 'gemeinde') {
     const region = document.getElementById('m-region').value;
     populateModalGemeinden(region);
   }
@@ -557,12 +558,14 @@ function addHoliday() {
     document.getElementById('m-scope').value = 'gemeinde';
     populateModalGemeinden(null);
     if (state.gemeinde) document.getElementById('m-gemeinde').value = state.gemeinde;
+  } else if (state.gemeinde) {
+    document.getElementById('m-scope').value = 'gemeinde';
+    populateModalGemeinden(state.region !== '__all__' ? state.region : null);
+    document.getElementById('m-gemeinde').value = state.gemeinde;
+  } else if (state.region !== '__all__') {
+    document.getElementById('m-scope').value = 'region';
   } else {
-    document.getElementById('m-scope').value = state.gemeinde ? 'gemeinde' : 'region';
-    if (state.gemeinde) {
-      populateModalGemeinden(state.region !== '__all__' ? state.region : null);
-      document.getElementById('m-gemeinde').value = state.gemeinde;
-    }
+    document.getElementById('m-scope').value = 'country';
   }
   onScopeChange();
   document.getElementById('m-region').addEventListener('change', function() {
@@ -628,20 +631,23 @@ async function saveModal() {
   if (state.category === 'student' || scope === 'gemeinde') {
     targetGemeinde = document.getElementById('m-gemeinde').value || null;
     if (!targetGemeinde) { toast('Select a Gemeinde', true); return; }
-  } else {
+  } else if (scope === 'region') {
     if (!targetRegion) { toast('Select a region', true); return; }
   }
+  // scope === 'country': targetRegion and targetGemeinde stay null — backend adds to all regions
 
   if (idx >= 0) {
-    // Preserve original target from edited holiday
     const h = state.holidays[idx];
     if (!targetRegion && h.canton) targetRegion = h.canton;
     if (!targetGemeinde && h.gemeinde_id) targetGemeinde = h.gemeinde_id;
   }
 
-  const body = { country: state.country, category: state.category, year: state.year, region: targetRegion, gemeinde_id: targetGemeinde, holiday, editIdx: idx >= 0 ? findOriginalIdx(idx) : -1 };
+  const body = { country: state.country, category: state.category, year: state.year, region: targetRegion, gemeinde_id: targetGemeinde, holiday, editIdx: idx >= 0 ? findOriginalIdx(idx) : -1, scope };
   const r = await api('/holidays', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body) });
-  if (r.ok) { toast(idx >= 0 ? 'Holiday updated' : 'Holiday added'); closeModal(); await loadData(); }
+  if (r.ok) {
+    const msg = scope === 'country' ? 'Holiday added to all regions' : (idx >= 0 ? 'Holiday updated' : 'Holiday added');
+    toast(msg); closeModal(); await loadData();
+  }
   else toast(r.error || 'Save failed', true);
 }
 
@@ -805,6 +811,7 @@ class EditorHandler(http.server.BaseHTTPRequestHandler):
         gemeinde_id = body.get("gemeinde_id")
         holiday = body["holiday"]
         edit_idx = body.get("editIdx", -1)
+        scope = body.get("scope", "region")
 
         file_path, all_data = self._resolve_file(country, category, year)
         if file_path is None:
@@ -824,14 +831,25 @@ class EditorHandler(http.server.BaseHTTPRequestHandler):
                 entry["holidays"][edit_idx] = holiday
             else:
                 entry["holidays"].append(holiday)
-            # Save full students file (includes all years)
             full_data = load_json(file_path) if file_path.exists() else []
             full_data = [e for e in full_data if not (e.get("gemeinde_id") == gemeinde_id and e.get("year") == year)]
             full_data.append(entry)
             save_json(file_path, full_data)
+        elif scope == "country":
+            # Add holiday to ALL region entries in the file
+            region_entries = [e for e in all_data if e.get("canton") and not e.get("gemeinde_id")]
+            if not region_entries:
+                self._json_response({"ok": False, "error": "No region entries found in file"}, 400)
+                return
+            count = 0
+            for entry in region_entries:
+                entry["holidays"].append(holiday)
+                count += 1
+            save_json(file_path, all_data)
+            self._json_response({"ok": True, "count": count})
+            return
         elif gemeinde_id:
-            # Gemeinde-level override for worker/school
-            # Stored as entry with gemeinde_id instead of canton
+            # Gemeinde-level override
             entry = next((e for e in all_data if e.get("gemeinde_id") == gemeinde_id), None)
             if not entry:
                 entry = {"gemeinde_id": gemeinde_id, "year": year, "holidays": []}
