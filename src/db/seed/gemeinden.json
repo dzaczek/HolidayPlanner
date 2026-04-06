@@ -24086,5 +24086,109 @@
       "8152",
       "8952"
     ]
+  },
+  {
+    "id": "hg-101",
+    "name": "Magrathea City",
+    "canton": "MG",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42001"]
+  },
+  {
+    "id": "hg-102",
+    "name": "Slartibartfast's Fjords",
+    "canton": "MG",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42002"]
+  },
+  {
+    "id": "hg-103",
+    "name": "Deep Thought Valley",
+    "canton": "MG",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42003"]
+  },
+  {
+    "id": "hg-201",
+    "name": "Betelgeuse Five",
+    "canton": "BT",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42101"]
+  },
+  {
+    "id": "hg-202",
+    "name": "Betelgeuse Seven",
+    "canton": "BT",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42102"]
+  },
+  {
+    "id": "hg-203",
+    "name": "Ford's Landing",
+    "canton": "BT",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42103"]
+  },
+  {
+    "id": "hg-301",
+    "name": "Vogsphere Central",
+    "canton": "VG",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42201"]
+  },
+  {
+    "id": "hg-302",
+    "name": "Vogon Poetry Hall",
+    "canton": "VG",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42202"]
+  },
+  {
+    "id": "hg-401",
+    "name": "Damogran Port",
+    "canton": "DM",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42301"]
+  },
+  {
+    "id": "hg-402",
+    "name": "Heart of Gold Dock",
+    "canton": "DM",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42302"]
+  },
+  {
+    "id": "hg-501",
+    "name": "Krikkit One",
+    "canton": "KK",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42401"]
+  },
+  {
+    "id": "hg-502",
+    "name": "Krikkit Two",
+    "canton": "KK",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42402"]
+  },
+  {
+    "id": "hg-601",
+    "name": "Milliways",
+    "canton": "MG",
+    "country": "HG",
+    "language": "en",
+    "plz": ["42999"]
   }
 ]

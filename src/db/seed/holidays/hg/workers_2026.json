@@ -1,0 +1,170 @@
+[
+  {
+    "canton": "MG",
+    "year": 2026,
+    "holidays": [
+      {
+        "name": { "de": "Tag der Antwort", "en": "Answer Day" },
+        "start": "2026-04-02",
+        "end": "2026-04-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Handtuchtag", "en": "Towel Day" },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Fjord-Feiertag", "en": "Fjord Appreciation Day" },
+        "start": "2026-03-11",
+        "end": "2026-03-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Magrathea-Gründungstag", "en": "Magrathea Foundation Day" },
+        "start": "2026-09-15",
+        "end": "2026-09-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Planetenbau-Pause", "en": "Planet Building Recess" },
+        "start": "2026-07-20",
+        "end": "2026-07-24",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "BT",
+    "year": 2026,
+    "holidays": [
+      {
+        "name": { "de": "Tag der Antwort", "en": "Answer Day" },
+        "start": "2026-04-02",
+        "end": "2026-04-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Handtuchtag", "en": "Towel Day" },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Ford-Prefect-Gedenktag", "en": "Ford Prefect Memorial Day" },
+        "start": "2026-01-18",
+        "end": "2026-01-18",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Zaphod-Wahltag", "en": "Zaphod Election Day" },
+        "start": "2026-11-03",
+        "end": "2026-11-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Pan-Galaktische Woche", "en": "Pan Galactic Gargle Blaster Week" },
+        "start": "2026-08-10",
+        "end": "2026-08-14",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "VG",
+    "year": 2026,
+    "holidays": [
+      {
+        "name": { "de": "Tag der Antwort", "en": "Answer Day" },
+        "start": "2026-04-02",
+        "end": "2026-04-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Handtuchtag", "en": "Towel Day" },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Vogonischer Poesietag", "en": "Vogon Poetry Day" },
+        "start": "2026-06-16",
+        "end": "2026-06-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Bürokratie-Feiertag", "en": "Bureaucracy Appreciation Day" },
+        "start": "2026-10-15",
+        "end": "2026-10-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Formular-Brückentag", "en": "Form-Filing Bridge Day" },
+        "start": "2026-10-16",
+        "end": "2026-10-16",
+        "type": "bridge_day"
+      }
+    ]
+  },
+  {
+    "canton": "DM",
+    "year": 2026,
+    "holidays": [
+      {
+        "name": { "de": "Tag der Antwort", "en": "Answer Day" },
+        "start": "2026-04-02",
+        "end": "2026-04-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Handtuchtag", "en": "Towel Day" },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Herz-aus-Gold-Tag", "en": "Heart of Gold Launch Day" },
+        "start": "2026-02-14",
+        "end": "2026-02-14",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Unwahrscheinlichkeitstag", "en": "Improbability Day" },
+        "start": "2026-12-31",
+        "end": "2026-12-31",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "KK",
+    "year": 2026,
+    "holidays": [
+      {
+        "name": { "de": "Tag der Antwort", "en": "Answer Day" },
+        "start": "2026-04-02",
+        "end": "2026-04-02",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Handtuchtag", "en": "Towel Day" },
+        "start": "2026-05-25",
+        "end": "2026-05-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": { "de": "Kricket-Saison", "en": "Krikkit Season" },
+        "start": "2026-06-01",
+        "end": "2026-06-07",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Friedenstag", "en": "Peace Treaty Day" },
+        "start": "2026-08-01",
+        "end": "2026-08-01",
+        "type": "public_holiday"
+      }
+    ]
+  }
+]
