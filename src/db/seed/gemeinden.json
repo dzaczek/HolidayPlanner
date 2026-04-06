@@ -182253,5 +182253,205 @@
     "plz": [
       "01069"
     ]
+  },
+  {
+    "id": "ch-uni-uzh",
+    "name": "Universität Zürich (UZH)",
+    "canton": "ZH",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "8001"
+    ]
+  },
+  {
+    "id": "ch-uni-eth",
+    "name": "ETH Zürich",
+    "canton": "ZH",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "8092"
+    ]
+  },
+  {
+    "id": "ch-uni-unige",
+    "name": "Université de Genève (UNIGE)",
+    "canton": "GE",
+    "country": "CH",
+    "language": "fr",
+    "plz": [
+      "1205"
+    ]
+  },
+  {
+    "id": "ch-uni-unil",
+    "name": "Université de Lausanne (UNIL)",
+    "canton": "VD",
+    "country": "CH",
+    "language": "fr",
+    "plz": [
+      "1015"
+    ]
+  },
+  {
+    "id": "ch-uni-epfl",
+    "name": "EPFL Lausanne",
+    "canton": "VD",
+    "country": "CH",
+    "language": "fr",
+    "plz": [
+      "1015"
+    ]
+  },
+  {
+    "id": "ch-uni-unibe",
+    "name": "Universität Bern (UNIBE)",
+    "canton": "BE",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "3012"
+    ]
+  },
+  {
+    "id": "ch-uni-unibas",
+    "name": "Universität Basel (UNIBAS)",
+    "canton": "BS",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "4051"
+    ]
+  },
+  {
+    "id": "ch-uni-unifr",
+    "name": "Université de Fribourg (UNIFR)",
+    "canton": "FR",
+    "country": "CH",
+    "language": "fr",
+    "plz": [
+      "1700"
+    ]
+  },
+  {
+    "id": "ch-uni-hsg",
+    "name": "Universität St. Gallen (HSG)",
+    "canton": "SG",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "9000"
+    ]
+  },
+  {
+    "id": "ch-uni-unilu",
+    "name": "Universität Luzern (UNILU)",
+    "canton": "LU",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "6003"
+    ]
+  },
+  {
+    "id": "ch-uni-unine",
+    "name": "Université de Neuchâtel (UNINE)",
+    "canton": "NE",
+    "country": "CH",
+    "language": "fr",
+    "plz": [
+      "2000"
+    ]
+  },
+  {
+    "id": "ch-uni-usi",
+    "name": "USI Lugano",
+    "canton": "TI",
+    "country": "CH",
+    "language": "it",
+    "plz": [
+      "6900"
+    ]
+  },
+  {
+    "id": "ch-uni-zhaw",
+    "name": "ZHAW Zürich",
+    "canton": "ZH",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "8005"
+    ]
+  },
+  {
+    "id": "ch-uni-bfh",
+    "name": "BFH Bern",
+    "canton": "BE",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "3012"
+    ]
+  },
+  {
+    "id": "ch-uni-zhdk",
+    "name": "ZHdK Zürich",
+    "canton": "ZH",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "8004"
+    ]
+  },
+  {
+    "id": "ch-uni-fhnw",
+    "name": "FHNW Windisch",
+    "canton": "AG",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "5210"
+    ]
+  },
+  {
+    "id": "ch-uni-ost",
+    "name": "OST Rapperswil",
+    "canton": "SG",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "8640"
+    ]
+  },
+  {
+    "id": "ch-uni-zhaw-w",
+    "name": "ZHAW Winterthur",
+    "canton": "ZH",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "8400"
+    ]
+  },
+  {
+    "id": "ch-uni-hslu",
+    "name": "HSLU Luzern",
+    "canton": "LU",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "6002"
+    ]
+  },
+  {
+    "id": "ch-uni-fhgr",
+    "name": "FH Graubünden",
+    "canton": "GR",
+    "country": "CH",
+    "language": "de",
+    "plz": [
+      "7000"
+    ]
   }
 ]

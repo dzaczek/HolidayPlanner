@@ -1,6 +1,6 @@
 [
   {
-    "gemeinde_id": "261",
+    "gemeinde_id": "ch-uni-uzh",
     "year": 2026,
     "category": "student",
     "holidays": [
@@ -24,6 +24,595 @@
       },
       {
         "name": { "de": "Weihnachtsferien", "fr": "Vacances de Noël", "it": "Vacanze di Natale", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-eth",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Semesterferien Frühling", "en": "Spring semester break" },
+        "start": "2026-02-09",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-12",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-08-03",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-unige",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "fr": "Vacances de février", "de": "Februarferien", "en": "February break" },
+        "start": "2026-02-16",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances de Pâques", "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances d'été", "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-13",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-unil",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "fr": "Vacances de février", "de": "Februarferien", "en": "February break" },
+        "start": "2026-02-16",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances de Pâques", "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-06",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances d'été", "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-06",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-epfl",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "fr": "Vacances de février", "de": "Februarferien", "en": "February break" },
+        "start": "2026-02-09",
+        "end": "2026-02-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances de Pâques", "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-06",
+        "end": "2026-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances d'été", "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-13",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-21",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-unibe",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Semesterferien Frühling", "en": "Spring semester break" },
+        "start": "2026-02-09",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-20",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-unibas",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Fasnachtsferien", "en": "Carnival break" },
+        "start": "2026-02-16",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-12",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-20",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-unifr",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "fr": "Vacances de février", "de": "Februarferien", "en": "February break" },
+        "start": "2026-02-09",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances de Pâques", "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances d'été", "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-13",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-hsg",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Semesterferien Frühling", "en": "Spring semester break" },
+        "start": "2026-02-16",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-12",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-27",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-unilu",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Semesterferien Frühling", "en": "Spring semester break" },
+        "start": "2026-02-09",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-20",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-unine",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "fr": "Vacances de février", "de": "Februarferien", "en": "February break" },
+        "start": "2026-02-23",
+        "end": "2026-02-27",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances de Pâques", "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-06",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances d'été", "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-06",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-usi",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "it": "Vacanze invernali", "de": "Winterferien", "en": "Winter break" },
+        "start": "2026-02-09",
+        "end": "2026-02-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "it": "Vacanze di Pasqua", "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-12",
+        "type": "vacation"
+      },
+      {
+        "name": { "it": "Vacanze estive", "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-06",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "it": "Vacanze di Natale", "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-zhaw",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Sportferien", "en": "Sport break" },
+        "start": "2026-02-09",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-20",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-bfh",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Sportferien", "en": "Sport break" },
+        "start": "2026-02-09",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-20",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-zhdk",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Sportferien", "en": "Sport break" },
+        "start": "2026-02-09",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-20",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-fhnw",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Sportferien", "en": "Sport break" },
+        "start": "2026-02-02",
+        "end": "2026-02-06",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-12",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-13",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-ost",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Sportferien", "en": "Sport break" },
+        "start": "2026-02-09",
+        "end": "2026-02-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-12",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-20",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-zhaw-w",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Sportferien", "en": "Sport break" },
+        "start": "2026-02-09",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-20",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-hslu",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Sportferien", "en": "Sport break" },
+        "start": "2026-02-09",
+        "end": "2026-02-20",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-19",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-13",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
+        "start": "2026-12-19",
+        "end": "2027-01-04",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "ch-uni-fhgr",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": { "de": "Sportferien", "en": "Sport break" },
+        "start": "2026-02-23",
+        "end": "2026-03-01",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Osterferien", "en": "Easter break" },
+        "start": "2026-04-03",
+        "end": "2026-04-12",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Sommerferien", "en": "Summer break" },
+        "start": "2026-07-13",
+        "end": "2026-09-13",
+        "type": "vacation"
+      },
+      {
+        "name": { "de": "Weihnachtsferien", "en": "Christmas break" },
         "start": "2026-12-19",
         "end": "2027-01-04",
         "type": "vacation"
