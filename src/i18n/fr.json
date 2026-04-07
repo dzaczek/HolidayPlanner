@@ -95,6 +95,8 @@
   "about.howto.step2": "Le calendrier affiche automatiquement les jours fériés et les vacances scolaires de la région.",
   "about.howto.step3": "Ajoutez des congés pour voir où les jours libres se chevauchent.",
   "about.howto.step4": "Utilisez Sauvegarde pour enregistrer vos données ou Partager pour envoyer le calendrier à vos proches.",
+  "about.opensource": "Ce projet est gratuit et open source sous licence MIT.",
+  "about.bugs": "L'application peut contenir des erreurs. Veuillez signaler les bugs, les donn\u00e9es manquantes ou vos suggestions via GitHub Issues.",
   "about.github": "GitHub",
   "about.issues": "Signaler un bug",
   "about.version": "Version",

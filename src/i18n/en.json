@@ -95,6 +95,8 @@
   "about.howto.step2": "The calendar automatically shows public holidays and school breaks for their region.",
   "about.howto.step3": "Add leave periods to see where everyone's time off overlaps.",
   "about.howto.step4": "Use Backup to save your data or Share to send the calendar to family members.",
+  "about.opensource": "This project is free and open source under the MIT License.",
+  "about.bugs": "The application may contain bugs. Please report errors, missing data, or suggestions via GitHub Issues.",
   "about.github": "GitHub",
   "about.issues": "Report a bug",
   "about.version": "Version",

@@ -346,7 +346,13 @@ function showAbout() {
       <li>${t('about.howto.step4')}</li>
     </ol>
 
-    <div class="about-links" style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+    <div style="margin-top:16px; padding:12px; background:#f0f9ff; border:1px solid #bae6fd; border-radius:var(--radius);">
+      <p style="font-size:0.85rem; font-weight:600; margin-bottom:6px;">Open Source — MIT License</p>
+      <p style="font-size:0.8rem; line-height:1.5;">${t('about.opensource')}</p>
+      <p style="font-size:0.8rem; line-height:1.5; margin-top:6px; color:#b45309; font-weight:500;">${t('about.bugs')}</p>
+    </div>
+
+    <div class="about-links" style="margin-top:12px; display:flex; gap:12px; flex-wrap:wrap;">
       <a href="https://github.com/dzaczek/HolidayPlanner" target="_blank" rel="noopener" class="btn btn-secondary">${t('about.github')}</a>
       <a href="https://github.com/dzaczek/HolidayPlanner/issues" target="_blank" rel="noopener" class="btn btn-secondary">${t('about.issues')}</a>
     </div>

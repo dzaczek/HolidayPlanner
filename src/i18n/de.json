@@ -95,6 +95,8 @@
   "about.howto.step2": "Der Kalender zeigt automatisch Feiertage und Schulferien für die gewählte Region.",
   "about.howto.step3": "Urlaub hinzufügen, um zu sehen, wo sich die freien Tage überschneiden.",
   "about.howto.step4": "Backup zum Speichern oder Teilen-Funktion, um den Kalender an Familienmitglieder zu senden.",
+  "about.opensource": "Dieses Projekt ist kostenlos und Open Source unter der MIT-Lizenz.",
+  "about.bugs": "Die Anwendung kann Fehler enthalten. Bitte melden Sie Fehler, fehlende Daten oder Verbesserungsvorschläge über GitHub Issues.",
   "about.github": "GitHub",
   "about.issues": "Fehler melden",
   "about.version": "Version",
