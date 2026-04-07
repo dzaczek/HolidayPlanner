@@ -58,6 +58,7 @@
   "reset.title": "Kalender zurücksetzen",
   "reset.warning": "Alle manuell eingegebenen Daten (Personen, Ferien, Urlaub) werden unwiderruflich gelöscht.",
   "reset.info": "Die kantonalen Feiertage und Schulferien aus der Datenbank werden beim nächsten Laden automatisch neu geladen. Alle persönlichen Einträge müssen erneut manuell erfasst werden.",
+  "reset.backup": "Vor dem Löschen wird automatisch ein Backup heruntergeladen.",
   "reset.confirm": "Alles löschen",
   "btn.close": "Schliessen",
   "months.0": "Januar",

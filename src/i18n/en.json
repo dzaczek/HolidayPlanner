@@ -58,6 +58,7 @@
   "reset.title": "Reset calendar",
   "reset.warning": "All manually entered data (persons, holidays, leave) will be permanently deleted.",
   "reset.info": "Cantonal public holidays and school holidays from the database will be reloaded automatically. All personal entries must be re-entered manually.",
+  "reset.backup": "A backup will be downloaded automatically before deleting.",
   "reset.confirm": "Delete everything",
   "btn.close": "Close",
   "months.0": "January",

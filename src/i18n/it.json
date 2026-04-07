@@ -58,6 +58,7 @@
   "reset.title": "Ripristina calendario",
   "reset.warning": "Tutti i dati inseriti manualmente (persone, ferie, congedi) verranno eliminati definitivamente.",
   "reset.info": "I giorni festivi cantonali e le vacanze scolastiche dal database verranno ricaricati automaticamente. Tutte le voci personali dovranno essere reinserite manualmente.",
+  "reset.backup": "Un backup verrà scaricato automaticamente prima dell'eliminazione.",
   "reset.confirm": "Elimina tutto",
   "btn.close": "Chiudi",
   "months.0": "Gennaio",

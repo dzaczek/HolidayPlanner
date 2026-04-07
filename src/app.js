@@ -7,7 +7,7 @@ import { renderLeavesPanel, showLeaveModal, buildLeaveMap } from './leaves/leave
 import { seedDatabase, ensureYearLoaded } from './db/seed/loader.js';
 import { getAllPersons, carryOverPersons, getTemplates, addHolidaysBatch, getHolidaysForPerson, clearAllStores, clearUserStores, setSeedVersion } from './db/store.js';
 import { generateShareURL, importFromURL, applySharedData } from './share/share.js';
-import { showBackupModal } from './share/backup.js';
+import { showBackupModal, exportBackup } from './share/backup.js';
 import { exportPDF } from './share/pdf-export.js';
 
 let calendarContainer;
@@ -371,6 +371,7 @@ function showResetConfirm() {
     <h3>${t('reset.title')}</h3>
     <p class="reset-warning">${t('reset.warning')}</p>
     <p class="reset-info">${t('reset.info')}</p>
+    <p class="reset-info" style="margin-top:8px; color:#16a34a; font-weight:500;">${t('reset.backup')}</p>
     <div class="modal-actions">
       <button class="btn btn-secondary" id="modal-cancel">${t('btn.cancel')}</button>
       <button class="btn btn-danger" id="reset-confirm">${t('reset.confirm')}</button>
@@ -380,6 +381,7 @@ function showResetConfirm() {
 
   document.getElementById('modal-cancel').addEventListener('click', hideModal);
   document.getElementById('reset-confirm').addEventListener('click', async () => {
+    await exportBackup();
     await clearAllStores();
     setSeedVersion(0);
     hideModal();

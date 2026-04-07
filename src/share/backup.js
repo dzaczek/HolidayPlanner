@@ -7,7 +7,7 @@ import { exportPDF } from './pdf-export.js';
 /**
  * Export all user data (persons, holidays, leaves) as JSON file download.
  */
-async function exportBackup() {
+export async function exportBackup() {
   const db = await getDB();
   const data = {
     version: 1,
