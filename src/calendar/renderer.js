@@ -1,11 +1,13 @@
 import { getMonthName, getWeekdayName, getLang } from '../i18n/i18n.js';
 import { getLayoutClass } from './layouts.js';
 import { renderDayHolidays } from './day-cell.js';
+import { showDayDetail } from './day-detail.js';
 
 let currentYear = new Date().getFullYear();
 let currentLayout = '3x4';
 let holidayMap = {};
 let leaveMap = {};
+let onDayChanged = null;
 
 export function setYear(year) {
   currentYear = year;
@@ -29,6 +31,10 @@ export function setHolidayMap(map) {
 
 export function setLeaveMap(map) {
   leaveMap = map;
+}
+
+export function setDayChangedCallback(fn) {
+  onDayChanged = fn;
 }
 
 export function renderCalendar(container) {
@@ -134,6 +140,11 @@ function createMonthBlock(month) {
     if (tipParts.length > 0) {
       cell.title = tipParts.join('\n');
     }
+
+    // Click to show day detail popup
+    cell.addEventListener('click', () => {
+      showDayDetail(dateStr, holidayMap, leaveMap, currentYear, onDayChanged);
+    });
 
     daysGrid.appendChild(cell);
   }

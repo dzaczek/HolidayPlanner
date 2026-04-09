@@ -1,5 +1,5 @@
 import { setLang, getLang, applyTranslations, t } from './i18n/i18n.js';
-import { renderCalendar, setYear, getYear, setLayout, setHolidayMap, setLeaveMap } from './calendar/renderer.js';
+import { renderCalendar, setYear, getYear, setLayout, setHolidayMap, setLeaveMap, setDayChangedCallback } from './calendar/renderer.js';
 import { renderPersonsList, showPersonModal } from './persons/person-manager.js';
 import { buildHolidayMap } from './holidays/holiday-source.js';
 import { showHolidayPicker } from './holidays/holiday-picker.js';
@@ -45,6 +45,7 @@ export async function initApp() {
     document.getElementById('layout-select').value = '12x1';
   }
 
+  setDayChangedCallback(() => refreshAll());
   applyTranslations();
   bindControls();
   await refreshAll();

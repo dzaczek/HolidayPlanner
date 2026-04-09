@@ -63,12 +63,12 @@ export async function renderLeavesPanel(year, persons, onChange) {
   }
 }
 
-export async function showLeaveModal(year, persons, existingLeave, onChange) {
+export async function showLeaveModal(year, persons, existingLeave, onChange, prefillDate) {
   const isEdit = !!existingLeave;
   const leave = existingLeave || {
     label: '',
-    startDate: `${year}-01-01`,
-    endDate: `${year}-01-05`,
+    startDate: prefillDate || `${year}-01-01`,
+    endDate: prefillDate || `${year}-01-05`,
     personIds: [],
     year,
   };
