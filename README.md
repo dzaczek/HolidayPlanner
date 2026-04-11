@@ -1,4 +1,4 @@
-# HCP - Swiss Holiday Calendar Planner
+# HCP - Holiday Calendar Planner Swiss & German 
 
 Plan smarter, rest longer!
 
