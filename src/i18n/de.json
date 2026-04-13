@@ -136,5 +136,8 @@
   "pwa.refresh": "Aktualisieren",
   "pwa.dismiss": "Später",
   "pwa.install": "App installieren",
-  "pwa.installed": "Bereits installiert"
+  "pwa.installed": "Bereits installiert",
+  "holidays.clearManual": "Alle manuellen löschen",
+  "holidays.clearAll": "Alle Tage löschen",
+  "holidays.clearConfirm": "Alle manuell hinzugefügten Tage löschen?"
 }

@@ -1,5 +1,5 @@
 import { t, getLang } from '../i18n/i18n.js';
-import { addHolidaysBatch, getHolidaysForPerson, deleteHoliday } from '../db/store.js';
+import { addHolidaysBatch, getHolidaysForPerson, deleteHoliday, deleteManualHolidaysForPerson } from '../db/store.js';
 import { getAvailableTemplates, expandTemplateToDates } from './holiday-source.js';
 import { showModal, hideModal } from '../app.js';
 import { startPlacementMode } from '../calendar/drag-drop.js';
@@ -111,7 +111,10 @@ export async function showHolidayPicker(person, year, onDone, { autoChecked = tr
     <div id="tab-manual" class="picker-tab-content" style="display:none;">
       ${manualGroups.length > 0 ? `
         <div class="manual-existing">
-          <h4>${t('holidays.existing')}</h4>
+          <div class="manual-existing-header">
+            <h4>${t('holidays.existing')}</h4>
+            <button class="btn btn-danger btn-sm" id="btn-clear-all-manual">${t('holidays.clearManual')}</button>
+          </div>
           ${manualListHtml}
         </div>
         <hr class="manual-divider" />
@@ -205,6 +208,14 @@ export async function showHolidayPicker(person, year, onDone, { autoChecked = tr
       deletedGroups.add(gi);
       btn.closest('.manual-entry').remove();
     });
+  });
+
+  // Clear all manual holidays at once
+  document.getElementById('btn-clear-all-manual')?.addEventListener('click', async () => {
+    if (!confirm(t('holidays.clearConfirm'))) return;
+    await deleteManualHolidaysForPerson(person.id);
+    hideModal();
+    if (onDone) onDone();
   });
 
   // Manual mode toggle

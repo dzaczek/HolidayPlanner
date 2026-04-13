@@ -107,6 +107,16 @@ export async function deleteHolidaysForPerson(personId) {
   await tx.done;
 }
 
+export async function deleteManualHolidaysForPerson(personId) {
+  const db = await getDB();
+  const holidays = await db.getAllFromIndex('holidays', 'by-person', personId);
+  const tx = db.transaction('holidays', 'readwrite');
+  for (const h of holidays) {
+    if (h.source === 'manual') await tx.store.delete(h.id);
+  }
+  await tx.done;
+}
+
 // === Holiday Templates ===
 
 export async function getTemplates(category, gemeinde, year) {

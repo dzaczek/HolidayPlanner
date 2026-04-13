@@ -146,6 +146,28 @@
   justify-content: center;
 }
 
+.person-item .btn-person-clear {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+}
+
+.person-item .btn-person-clear:hover {
+  background: var(--danger, #e53935);
+  color: white;
+  border-color: var(--danger, #e53935);
+  opacity: 1;
+}
+
 .person-days-off {
   font-size: 0.7rem;
   color: var(--primary);

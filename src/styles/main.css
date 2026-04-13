@@ -705,6 +705,17 @@ main {
   margin-bottom: 8px;
 }
 
+.manual-existing-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.manual-existing-header h4 {
+  margin-bottom: 0;
+}
+
 .manual-existing h4,
 #tab-manual h4 {
   font-size: 0.85rem;

@@ -97,7 +97,7 @@
   "about.howto.step3": "Ajoutez des congés pour voir où les jours libres se chevauchent.",
   "about.howto.step4": "Utilisez Sauvegarde pour enregistrer vos données ou Partager pour envoyer le calendrier à vos proches.",
   "about.opensource": "Ce projet est gratuit et open source sous licence MIT.",
-  "about.bugs": "L'application peut contenir des erreurs. Veuillez signaler les bugs, les donn\u00e9es manquantes ou vos suggestions via GitHub Issues.",
+  "about.bugs": "L'application peut contenir des erreurs. Veuillez signaler les bugs, les données manquantes ou vos suggestions via GitHub Issues.",
   "about.github": "GitHub",
   "about.issues": "Signaler un bug",
   "about.version": "Version",
@@ -136,5 +136,8 @@
   "pwa.refresh": "Actualiser",
   "pwa.dismiss": "Plus tard",
   "pwa.install": "Installer l'app",
-  "pwa.installed": "Déjà installée"
+  "pwa.installed": "Déjà installée",
+  "holidays.clearManual": "Supprimer tous les manuels",
+  "holidays.clearAll": "Effacer tous les jours",
+  "holidays.clearConfirm": "Supprimer tous les jours ajoutés manuellement?"
 }

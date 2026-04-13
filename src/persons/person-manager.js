@@ -1,6 +1,6 @@
 import { t } from '../i18n/i18n.js';
 import { sanitizeColor } from '../utils.js';
-import { addPerson, deletePerson, getAllPersons, updatePerson, getHolidaysForPerson, deleteHoliday } from '../db/store.js';
+import { addPerson, deletePerson, getAllPersons, updatePerson, getHolidaysForPerson, deleteHoliday, deleteHolidaysForPerson } from '../db/store.js';
 import { getAllGemeinden } from '../db/store.js';
 import { showModal, hideModal } from '../app.js';
 import { showHolidayPicker } from '../holidays/holiday-picker.js';
@@ -44,6 +44,7 @@ export async function renderPersonsList(year, onChange) {
       </div>
       <div class="person-actions">
         <button class="btn-person-add-days" title="${t('holidays.manual')}">+</button>
+        <button class="btn-person-clear" title="${t('holidays.clearAll')}">&#128465;</button>
         <button class="btn-person-edit" title="${t('persons.edit')}">&#9998;</button>
         <button class="btn-person-delete" title="${t('persons.remove')}">&#10005;</button>
       </div>
@@ -51,6 +52,12 @@ export async function renderPersonsList(year, onChange) {
 
     li.querySelector('.btn-person-add-days').addEventListener('click', () => {
       if (onChange) onChange('add-days', person);
+    });
+
+    li.querySelector('.btn-person-clear').addEventListener('click', async () => {
+      if (!confirm(t('holidays.clearConfirm'))) return;
+      await deleteHolidaysForPerson(person.id);
+      if (onChange) onChange('refresh');
     });
 
     li.querySelector('.btn-person-edit').addEventListener('click', () => {
