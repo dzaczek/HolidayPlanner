@@ -16,7 +16,7 @@
  *   wrangler deploy
  */
 
-const MAX_BLOB_BYTES  = 512 * 1024;   // 512 KB
+const MAX_BLOB_BYTES  = 256 * 1024;   // 256 KB
 const TTL_SECONDS     = 180 * 86400;  // 180 days
 const RATE_WINDOW_MS  = 10 * 60_000;  // 10 minutes
 const RATE_LIMIT      = 30;           // requests per window per IP
