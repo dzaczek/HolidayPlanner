@@ -358,14 +358,32 @@ async function applyPayloadToLocalDB(payload) {
  * @param {Function} onChanged  called on success
  * @returns {{ ok: boolean, error?: string }}
  */
-export async function quickSync(pushAfterMerge, onChanged) {
+/**
+ * Lightweight sync for header quick-buttons (no modal UI).
+ * mode: 'push'  — push local to remote (no pull)
+ *       'pull'  — pull remote, merge, apply locally (no push back)
+ *       'sync'  — pull + merge + apply + push (full sync)
+ */
+export async function quickSync(mode, onChanged) {
   const code = getFamilyCode();
   if (!code) return { ok: false, error: 'No family code' };
   try {
     const { calendarId, cryptoKey } = await parseFamilyCode(code);
     const local = await buildPayload();
 
-    if (pushAfterMerge) {
+    if (mode === 'push') {
+      const encrypted = await encryptPayload(cryptoKey, local);
+      await pushCalendar(calendarId, encrypted);
+
+    } else if (mode === 'pull') {
+      const remote = await pullCalendar(calendarId);
+      if (remote) {
+        const remotePayload = await decryptPayload(cryptoKey, remote);
+        const merged = mergePayloads(local, remotePayload);
+        await applyPayloadToLocalDB(merged);
+      }
+
+    } else { // 'sync'
       const remote = await pullCalendar(calendarId);
       if (remote) {
         const remotePayload = await decryptPayload(cryptoKey, remote);
@@ -377,9 +395,6 @@ export async function quickSync(pushAfterMerge, onChanged) {
         const encrypted = await encryptPayload(cryptoKey, local);
         await pushCalendar(calendarId, encrypted);
       }
-    } else {
-      const encrypted = await encryptPayload(cryptoKey, local);
-      await pushCalendar(calendarId, encrypted);
     }
 
     if (onChanged) onChanged();

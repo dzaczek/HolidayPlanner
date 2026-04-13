@@ -147,12 +147,16 @@ function bindControls() {
   });
 
   // ── Sync status bar quick-buttons ───────────────────────────────────────────
-  document.getElementById('sync-quick-push').addEventListener('click', async () => {
-    await doQuickSync(false);
+  document.getElementById('sync-quick-pull').addEventListener('click', async () => {
+    await doQuickSync('pull');
   });
 
-  document.getElementById('sync-quick-pull').addEventListener('click', async () => {
-    await doQuickSync(true);
+  document.getElementById('sync-quick-push').addEventListener('click', async () => {
+    await doQuickSync('push');
+  });
+
+  document.getElementById('sync-quick-sync').addEventListener('click', async () => {
+    await doQuickSync('sync');
   });
 
   document.getElementById('add-person-btn').addEventListener('click', () => {
@@ -194,29 +198,25 @@ export function updateSyncStatusBar() {
   }
 }
 
-async function doQuickSync(pullAndPush) {
-  const pushBtn = document.getElementById('sync-quick-push');
-  const pullBtn = document.getElementById('sync-quick-pull');
+async function doQuickSync(mode) {
+  const pullBtn  = document.getElementById('sync-quick-pull');
+  const pushBtn  = document.getElementById('sync-quick-push');
+  const syncBtn  = document.getElementById('sync-quick-sync');
   const bar = document.getElementById('sync-status-bar');
   const dot = document.getElementById('sync-bar-dot');
 
-  if (pushBtn) pushBtn.disabled = true;
-  if (pullBtn) pullBtn.disabled = true;
+  [pullBtn, pushBtn, syncBtn].forEach(b => { if (b) b.disabled = true; });
   if (dot) dot.className = 'sync-dot'; // neutral while running
 
-  const result = await quickSync(pullAndPush, () => refreshAll());
+  const result = await quickSync(mode, () => refreshAll());
 
   if (bar) {
-    if (result.ok) {
-      bar.classList.remove('sync-bar-error');
-    } else {
-      bar.classList.add('sync-bar-error');
-    }
+    if (result.ok) bar.classList.remove('sync-bar-error');
+    else           bar.classList.add('sync-bar-error');
   }
   updateSyncStatusBar();
 
-  if (pushBtn) pushBtn.disabled = false;
-  if (pullBtn) pullBtn.disabled = false;
+  [pullBtn, pushBtn, syncBtn].forEach(b => { if (b) b.disabled = false; });
 }
 
 async function handlePersonChange(action, person) {

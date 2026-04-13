@@ -996,6 +996,25 @@ main {
   font-size: 0.85rem;
 }
 
+.btn-dd-delete {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 2px 5px;
+  border-radius: 3px;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.btn-dd-delete:hover {
+  background: var(--danger);
+  color: white;
+  opacity: 1;
+}
+
 .dd-dot {
   width: 10px;
   height: 10px;

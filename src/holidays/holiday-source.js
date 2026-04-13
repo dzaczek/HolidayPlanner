@@ -21,6 +21,7 @@ export async function buildHolidayMap(year) {
 
     if (!map[h.date]) map[h.date] = [];
     map[h.date].push({
+      id: h.id,
       personId: h.personId,
       personName: person.name,
       color: person.color,

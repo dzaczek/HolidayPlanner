@@ -1,6 +1,6 @@
 import { t, getLang } from '../i18n/i18n.js';
 import { showModal, hideModal } from '../app.js';
-import { getAllPersons, addHolidaysBatch, getHolidaysForYear } from '../db/store.js';
+import { getAllPersons, addHolidaysBatch, getHolidaysForYear, deleteHoliday } from '../db/store.js';
 import { escapeHtml, sanitizeColor } from '../utils.js';
 import { showLeaveModal } from '../leaves/leave-manager.js';
 
@@ -19,12 +19,14 @@ export function showDayDetail(dateStr, holidayMap, leaveMap, year, onChanged) {
   const leaves = leaveMap[dateStr] || [];
 
   // Group holidays by person
-  const holidayRows = holidays.map(h => {
+  const holidayRows = holidays.map((h, i) => {
     const label = typeof h.label === 'object' ? (h.label[lang] || h.label.de || '') : (h.label || '');
-    return `<div class="dd-row">
+    const canDelete = h.source === 'manual' && h.id != null;
+    return `<div class="dd-row" data-h-index="${i}">
       <span class="dd-dot" style="background:${sanitizeColor(h.color)}"></span>
       <span class="dd-person">${escapeHtml(h.personName)}</span>
       <span class="dd-label">${escapeHtml(label)}</span>
+      ${canDelete ? `<button class="btn-dd-delete" data-h-id="${h.id}" title="${t('btn.delete')}">&#10005;</button>` : ''}
     </div>`;
   }).join('');
 
@@ -63,6 +65,16 @@ export function showDayDetail(dateStr, holidayMap, leaveMap, year, onChanged) {
 
   showModal(html);
   document.getElementById('modal-cancel').addEventListener('click', hideModal);
+
+  // Delete manual holidays directly from day detail
+  document.querySelectorAll('.btn-dd-delete').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const id = parseInt(btn.dataset.hId);
+      await deleteHoliday(id);
+      hideModal();
+      if (onChanged) onChanged();
+    });
+  });
 
   document.getElementById('dd-add-holiday').addEventListener('click', async () => {
     hideModal();
