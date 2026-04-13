@@ -139,5 +139,9 @@
   "pwa.installed": "Déjà installée",
   "holidays.clearManual": "Supprimer tous les manuels",
   "holidays.clearAll": "Effacer tous les jours",
-  "holidays.clearConfirm": "Supprimer tous les jours ajoutés manuellement?"
+  "holidays.clearConfirm": "Supprimer tous les jours ajoutés manuellement?",
+  "share.menu.family": "Sync Famille (E2EE)",
+  "share.menu.familyDesc": "Chiffré AES-256 — le serveur ne voit que du texte illisible, la clé reste chez vous. Partage en temps réel avec la famille.",
+  "share.menu.data": "Partager via lien",
+  "share.menu.dataDesc": "L'état actuel du calendrier est encodé dans une URL copiée dans le presse-papiers. Partage unique — sans serveur, sans synchronisation."
 }

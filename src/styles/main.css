@@ -322,6 +322,137 @@ main {
   background: #6d28d9;
 }
 
+.btn-share-menu {
+  background: #0f766e;
+}
+
+.btn-share-menu:hover {
+  background: #115e59;
+}
+
+/* Share dropdown menu */
+.share-dropdown-wrap {
+  position: relative;
+}
+
+.share-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  min-width: 280px;
+  z-index: 200;
+  overflow: hidden;
+}
+
+.share-menu.hidden {
+  display: none;
+}
+
+.share-menu-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font);
+  text-align: left;
+  transition: background 0.12s;
+}
+
+.share-menu-item:hover {
+  background: #f0f5ff;
+}
+
+.share-menu-icon {
+  font-size: 1.2rem;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+
+.share-menu-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.share-menu-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.share-menu-desc {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.share-menu-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+/* Sync status bar */
+.sync-status-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-radius: var(--radius);
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  color: #15803d;
+}
+
+.sync-status-bar.hidden {
+  display: none;
+}
+
+.sync-status-bar.sync-bar-error {
+  background: #fef2f2;
+  border-color: #fca5a5;
+  color: #b91c1c;
+}
+
+.sync-bar-date {
+  white-space: nowrap;
+  font-size: 0.75rem;
+  min-width: 28px;
+}
+
+.btn-sync-quick {
+  background: none;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: inherit;
+  padding: 2px 7px;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.btn-sync-quick:hover {
+  background: rgba(0,0,0,0.08);
+}
+
+.btn-sync-quick:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 /* Family Sync modal */
 .sync-tabs {
   display: flex;

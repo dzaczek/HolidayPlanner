@@ -139,5 +139,9 @@
   "pwa.installed": "Bereits installiert",
   "holidays.clearManual": "Alle manuellen löschen",
   "holidays.clearAll": "Alle Tage löschen",
-  "holidays.clearConfirm": "Alle manuell hinzugefügten Tage löschen?"
+  "holidays.clearConfirm": "Alle manuell hinzugefügten Tage löschen?",
+  "share.menu.family": "Family Sync (E2EE)",
+  "share.menu.familyDesc": "Kalender wird mit AES-256 verschlüsselt — der Server sieht nur unlesbaren Code, der Schlüssel bleibt bei Ihnen. Ideal für Echtzeit-Sharing mit der Familie.",
+  "share.menu.data": "Link teilen",
+  "share.menu.dataDesc": "Aktueller Kalender wird als URL kodiert und in die Zwischenablage kopiert. Einmalige Weitergabe — kein Server, keine Synchronisation."
 }

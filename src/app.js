@@ -8,7 +8,8 @@ import { seedDatabase, ensureYearLoaded } from './db/seed/loader.js';
 import { getAllPersons, carryOverPersons, getTemplates, addHolidaysBatch, getHolidaysForPerson, clearAllStores, clearUserStores, setSeedVersion } from './db/store.js';
 import { generateShareURL, importFromURL, applySharedData } from './share/share.js';
 import { showBackupModal, exportBackup } from './share/backup.js';
-import { showFamilySyncModal } from './sync/family-sync.js';
+import { showFamilySyncModal, quickSync } from './sync/family-sync.js';
+import { getFamilyCode, getLastSync } from './sync/cloud-store.js';
 import { exportPDF } from './share/pdf-export.js';
 
 let calendarContainer;
@@ -50,6 +51,7 @@ export async function initApp() {
   applyTranslations();
   bindControls();
   await refreshAll();
+  updateSyncStatusBar();
 }
 
 function bindControls() {
@@ -104,26 +106,53 @@ function bindControls() {
     showBackupModal(() => refreshAll());
   });
 
-  document.getElementById('family-btn').addEventListener('click', () => {
-    showFamilySyncModal(() => refreshAll());
+  // ── Share dropdown ──────────────────────────────────────────────────────────
+  const shareMenuBtn = document.getElementById('share-menu-btn');
+  const shareMenu = document.getElementById('share-menu');
+
+  shareMenuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    shareMenu.classList.toggle('hidden');
   });
 
-  document.getElementById('share-btn').addEventListener('click', async () => {
-    const btn = document.getElementById('share-btn');
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!document.getElementById('share-dropdown-wrap').contains(e.target)) {
+      shareMenu.classList.add('hidden');
+    }
+  });
+
+  document.getElementById('share-menu-family').addEventListener('click', () => {
+    shareMenu.classList.add('hidden');
+    showFamilySyncModal(() => { refreshAll(); updateSyncStatusBar(); });
+  });
+
+  document.getElementById('share-menu-data').addEventListener('click', async () => {
+    shareMenu.classList.add('hidden');
+    const btn = shareMenuBtn;
     btn.disabled = true;
+    const origHtml = btn.innerHTML;
     btn.textContent = '...';
     try {
       const url = await generateShareURL();
       await navigator.clipboard.writeText(url);
       btn.textContent = 'Copied!';
-      setTimeout(() => { btn.innerHTML = '&#8599; Share'; btn.disabled = false; }, 2000);
+      setTimeout(() => { btn.innerHTML = origHtml; btn.disabled = false; }, 2000);
     } catch (err) {
-      // Fallback: show in prompt
       const url = await generateShareURL();
       prompt('Share URL:', url);
-      btn.innerHTML = '&#8599; Share';
+      btn.innerHTML = origHtml;
       btn.disabled = false;
     }
+  });
+
+  // ── Sync status bar quick-buttons ───────────────────────────────────────────
+  document.getElementById('sync-quick-push').addEventListener('click', async () => {
+    await doQuickSync(false);
+  });
+
+  document.getElementById('sync-quick-pull').addEventListener('click', async () => {
+    await doQuickSync(true);
   });
 
   document.getElementById('add-person-btn').addEventListener('click', () => {
@@ -134,6 +163,60 @@ function bindControls() {
     const persons = await getAllPersons(getYear());
     showLeaveModal(getYear(), persons, null, handleLeaveChange);
   });
+}
+
+// ── Sync status bar ───────────────────────────────────────────────────────────
+
+export function updateSyncStatusBar() {
+  const bar = document.getElementById('sync-status-bar');
+  if (!bar) return;
+
+  const code = getFamilyCode();
+  if (!code) {
+    bar.classList.add('hidden');
+    bar.classList.remove('sync-bar-error');
+    return;
+  }
+
+  bar.classList.remove('hidden');
+  const dot = document.getElementById('sync-bar-dot');
+  const dateEl = document.getElementById('sync-bar-date');
+  const lastSync = getLastSync();
+
+  if (lastSync) {
+    const d = new Date(lastSync);
+    dateEl.textContent = `${d.getDate()}.${String(d.getMonth() + 1).padStart(2, '0')}`;
+    dot.className = 'sync-dot sync-dot-ok';
+    bar.classList.remove('sync-bar-error');
+  } else {
+    dateEl.textContent = '—';
+    dot.className = 'sync-dot sync-dot-ok';
+  }
+}
+
+async function doQuickSync(pullAndPush) {
+  const pushBtn = document.getElementById('sync-quick-push');
+  const pullBtn = document.getElementById('sync-quick-pull');
+  const bar = document.getElementById('sync-status-bar');
+  const dot = document.getElementById('sync-bar-dot');
+
+  if (pushBtn) pushBtn.disabled = true;
+  if (pullBtn) pullBtn.disabled = true;
+  if (dot) dot.className = 'sync-dot'; // neutral while running
+
+  const result = await quickSync(pullAndPush, () => refreshAll());
+
+  if (bar) {
+    if (result.ok) {
+      bar.classList.remove('sync-bar-error');
+    } else {
+      bar.classList.add('sync-bar-error');
+    }
+  }
+  updateSyncStatusBar();
+
+  if (pushBtn) pushBtn.disabled = false;
+  if (pullBtn) pullBtn.disabled = false;
 }
 
 async function handlePersonChange(action, person) {

@@ -52,8 +52,32 @@
       <button id="about-btn" class="btn-header btn-about" title="About">&#9432;</button>
       <button id="reset-btn" class="btn-header btn-reset" title="Reset">&#128465;</button>
       <button id="backup-btn" class="btn-header" title="Backup">&#128190; Backup</button>
-      <button id="family-btn" class="btn-header btn-family" title="Family Sync">&#128101; Family</button>
-      <button id="share-btn" class="btn-header btn-share" title="Share">&#8599; Share</button>
+      <div id="sync-status-bar" class="sync-status-bar hidden">
+        <span id="sync-bar-dot" class="sync-dot sync-dot-ok"></span>
+        <span id="sync-bar-date" class="sync-bar-date">—</span>
+        <button id="sync-quick-push" class="btn-sync-quick" title="Push">&#8679;</button>
+        <button id="sync-quick-pull" class="btn-sync-quick" title="Sync">&#8645;</button>
+      </div>
+      <div class="share-dropdown-wrap" id="share-dropdown-wrap">
+        <button id="share-menu-btn" class="btn-header btn-share-menu">&#8599; Share &#9660;</button>
+        <div id="share-menu" class="share-menu hidden">
+          <button id="share-menu-family" class="share-menu-item">
+            <span class="share-menu-icon">&#128272;</span>
+            <div class="share-menu-text">
+              <span class="share-menu-title" data-i18n="share.menu.family">Family Sync</span>
+              <span class="share-menu-desc" data-i18n="share.menu.familyDesc">E2EE encrypted, key-based</span>
+            </div>
+          </button>
+          <hr class="share-menu-divider">
+          <button id="share-menu-data" class="share-menu-item">
+            <span class="share-menu-icon">&#8599;</span>
+            <div class="share-menu-text">
+              <span class="share-menu-title" data-i18n="share.menu.data">Share Data</span>
+              <span class="share-menu-desc" data-i18n="share.menu.dataDesc">One-time link, not synced</span>
+            </div>
+          </button>
+        </div>
+      </div>
     </div>
   </header>
 

@@ -352,6 +352,44 @@ async function applyPayloadToLocalDB(payload) {
   if (payload.tombstones) saveTombstones(payload.tombstones);
 }
 
+/**
+ * Lightweight sync for header quick-buttons (no modal UI).
+ * @param {boolean} pushAfterMerge  true = pull+merge+push, false = push only
+ * @param {Function} onChanged  called on success
+ * @returns {{ ok: boolean, error?: string }}
+ */
+export async function quickSync(pushAfterMerge, onChanged) {
+  const code = getFamilyCode();
+  if (!code) return { ok: false, error: 'No family code' };
+  try {
+    const { calendarId, cryptoKey } = await parseFamilyCode(code);
+    const local = await buildPayload();
+
+    if (pushAfterMerge) {
+      const remote = await pullCalendar(calendarId);
+      if (remote) {
+        const remotePayload = await decryptPayload(cryptoKey, remote);
+        const merged = mergePayloads(local, remotePayload);
+        await applyPayloadToLocalDB(merged);
+        const encrypted = await encryptPayload(cryptoKey, merged);
+        await pushCalendar(calendarId, encrypted);
+      } else {
+        const encrypted = await encryptPayload(cryptoKey, local);
+        await pushCalendar(calendarId, encrypted);
+      }
+    } else {
+      const encrypted = await encryptPayload(cryptoKey, local);
+      await pushCalendar(calendarId, encrypted);
+    }
+
+    if (onChanged) onChanged();
+    return { ok: true };
+  } catch (err) {
+    console.error('[HCP Sync] quickSync failed:', err);
+    return { ok: false, error: err.message };
+  }
+}
+
 function buildIdRemap(originalPersons, mergedPersons, sigFn) {
   const map = new Map();
   for (const orig of originalPersons) {
