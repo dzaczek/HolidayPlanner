@@ -100,12 +100,13 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 1px;
+  /* Container context: each cell can query the grid width via cqi */
+  container-type: inline-size;
 }
 
 .day-cell {
   aspect-ratio: 1;
   border-radius: 2px;
-  font-size: 0.55rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +117,6 @@
   min-height: 18px;
 }
 
-
 .day-cell.empty {
   visibility: hidden;
 }
@@ -125,8 +125,12 @@
   position: relative;
   z-index: 2;
   font-weight: 500;
+  /* Scale with cell size: 3.5cqi ≈ 35% of (grid width / 10).
+     clamp keeps it readable on tiny cells and not huge on wide ones. */
+  font-size: clamp(0.55rem, 3.5cqi, 1.6rem);
   text-shadow: 0 0 2px rgba(255,255,255,0.8);
   pointer-events: none;
+  line-height: 1;
 }
 
 .day-cell:not(.empty):hover {
