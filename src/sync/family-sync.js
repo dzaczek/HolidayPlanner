@@ -326,16 +326,21 @@ function mergePayloads(local, remote) {
 /**
  * Write a payload (persons + holidays + leaves) into local IndexedDB,
  * replacing all existing user data for the current year.
+ *
+ * Persons keep their explicit numeric IDs (holidays reference them via personId).
+ * Holidays and leaves drop their id field so IDB auto-assigns a fresh key
+ * (prevents "not a valid key" error when id is undefined or stale).
  */
 async function applyPayloadToLocalDB(payload) {
   await clearUserStores();
-  for (const p of payload.persons) {
-    await addPerson({ ...p });
+  for (const { id, ...p } of payload.persons) {
+    await addPerson({ id, ...p });
   }
-  const holidays = payload.holidays.map(h => ({ ...h }));
+  // Strip id (was undefined from merge) so IDB autoIncrement works correctly
+  const holidays = payload.holidays.map(({ id: _id, ...h }) => h);
   if (holidays.length) await addHolidaysBatch(holidays);
-  for (const l of payload.leaves) {
-    await addLeave({ ...l });
+  for (const { id: _id, ...l } of payload.leaves) {
+    await addLeave(l);
   }
 }
 
