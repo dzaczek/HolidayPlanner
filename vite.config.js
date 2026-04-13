@@ -17,5 +17,6 @@ export default defineConfig({
   },
   define: {
     __APP_VERSION__: JSON.stringify(getVersion()),
+    __HCP_CLIENT_TOKEN__: JSON.stringify(process.env.VITE_HCP_CLIENT_TOKEN || ''),
   },
 });

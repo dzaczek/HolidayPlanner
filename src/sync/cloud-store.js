@@ -49,11 +49,19 @@ function setLastSync(ts) {
  * @param {string} calendarId
  * @param {{ iv: string, data: string }} encrypted
  */
+function clientHeaders() {
+  const token = typeof __HCP_CLIENT_TOKEN__ !== 'undefined' ? __HCP_CLIENT_TOKEN__ : '';
+  return {
+    'Content-Type': 'application/json',
+    ...(token ? { 'X-HCP-Client': token } : {}),
+  };
+}
+
 export async function pushCalendar(calendarId, encrypted) {
   const url = `${getEndpoint()}/v1/calendar/${encodeURIComponent(calendarId)}`;
   const res = await fetch(url, {
     method: 'PUT',
-    headers: { 'Content-Type': 'application/json' },
+    headers: clientHeaders(),
     body: JSON.stringify(encrypted),
   });
 
@@ -74,7 +82,7 @@ export async function pushCalendar(calendarId, encrypted) {
  */
 export async function pullCalendar(calendarId) {
   const url = `${getEndpoint()}/v1/calendar/${encodeURIComponent(calendarId)}`;
-  const res = await fetch(url);
+  const res = await fetch(url, { headers: clientHeaders() });
 
   if (res.status === 404) return null;
   if (!res.ok) {
