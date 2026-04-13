@@ -9,7 +9,7 @@
 
 import { t } from '../i18n/i18n.js';
 import { showModal, hideModal } from '../app.js';
-import { getAllPersons, getHolidaysForYear, getAllLeaves, addPerson, addHolidaysBatch, addLeave } from '../db/store.js';
+import { getAllPersons, getHolidaysForYear, getAllLeaves, addPerson, addHolidaysBatch, addLeave, clearUserStores } from '../db/store.js';
 import { getYear } from '../calendar/renderer.js';
 import { generateKey, generateCalendarId, encryptPayload, decryptPayload, buildFamilyCode, parseFamilyCode } from './crypto.js';
 import { pushCalendar, pullCalendar, getFamilyCode, setFamilyCode, clearFamilyCode, getLastSync, getEndpoint, setEndpoint } from './cloud-store.js';
@@ -122,6 +122,8 @@ function showSetupModal(onChanged) {
         const remotePayload = await decryptPayload(cryptoKey, remote);
         const local = await buildPayload();
         const merged = mergePayloads(local, remotePayload);
+        // Save merged data to local DB before pushing
+        await applyPayloadToLocalDB(merged);
         const mergedEnc = await encryptPayload(cryptoKey, merged);
         await pushCalendar(calendarId, mergedEnc);
       }
@@ -224,17 +226,18 @@ async function runSync({ code, pushAfterMerge, onChanged }) {
     const local = await buildPayload();
 
     if (pushAfterMerge) {
-      // Pull → merge → push
+      // Pull → merge → apply locally → push
       const remote = await pullCalendar(calendarId);
       let merged = local;
       if (remote) {
         const remotePayload = await decryptPayload(cryptoKey, remote);
         merged = mergePayloads(local, remotePayload);
+        await applyPayloadToLocalDB(merged);
       }
       const encrypted = await encryptPayload(cryptoKey, merged);
       await pushCalendar(calendarId, encrypted);
     } else {
-      // Push only (overwrite)
+      // Push only (overwrite remote with local — no local DB change)
       const encrypted = await encryptPayload(cryptoKey, local);
       await pushCalendar(calendarId, encrypted);
     }
@@ -318,6 +321,22 @@ function mergePayloads(local, remote) {
   const leaves = Array.from(leaveMap.values());
 
   return { year, persons, holidays, leaves, updatedAt: new Date().toISOString() };
+}
+
+/**
+ * Write a payload (persons + holidays + leaves) into local IndexedDB,
+ * replacing all existing user data for the current year.
+ */
+async function applyPayloadToLocalDB(payload) {
+  await clearUserStores();
+  for (const p of payload.persons) {
+    await addPerson({ ...p });
+  }
+  const holidays = payload.holidays.map(h => ({ ...h }));
+  if (holidays.length) await addHolidaysBatch(holidays);
+  for (const l of payload.leaves) {
+    await addLeave({ ...l });
+  }
 }
 
 function buildIdRemap(originalPersons, mergedPersons, sigFn) {
