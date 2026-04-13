@@ -4,6 +4,7 @@ import { addLeave, deleteLeave, getAllLeaves, updateLeave, getAllPersons } from 
 import { showModal, hideModal } from '../app.js';
 import { startPlacementMode, startLeaveDrag } from '../calendar/drag-drop.js';
 import { countLeaveWorkdaysForPerson } from '../holidays/workday-counter.js';
+import { recordLeaveDeletion } from '../sync/tombstone.js';
 
 export async function renderLeavesPanel(year, persons, onChange) {
   const panel = document.getElementById('leaves-panel');
@@ -55,6 +56,7 @@ export async function renderLeavesPanel(year, persons, onChange) {
     });
 
     li.querySelector('.btn-leave-delete').addEventListener('click', async () => {
+      recordLeaveDeletion(leave);
       await deleteLeave(leave.id);
       if (onChange) onChange('refresh');
     });
@@ -115,6 +117,7 @@ export async function showLeaveModal(year, persons, existingLeave, onChange, pre
 
   if (isEdit) {
     document.getElementById('leave-delete').addEventListener('click', async () => {
+      recordLeaveDeletion(leave);
       await deleteLeave(leave.id);
       hideModal();
       if (onChange) onChange('refresh');

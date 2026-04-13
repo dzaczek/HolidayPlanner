@@ -13,6 +13,7 @@ import { getAllPersons, getHolidaysForYear, getAllLeaves, addPerson, addHolidays
 import { getYear } from '../calendar/renderer.js';
 import { generateKey, generateCalendarId, encryptPayload, decryptPayload, buildFamilyCode, parseFamilyCode } from './crypto.js';
 import { pushCalendar, pullCalendar, getFamilyCode, setFamilyCode, clearFamilyCode, getLastSync, getEndpoint, setEndpoint } from './cloud-store.js';
+import { getTombstones, saveTombstones, mergeTombstones, leaveSig } from './tombstone.js';
 import { escapeHtml } from '../utils.js';
 
 // ── Public API ───────────────────────────────────────────────────────────────
@@ -259,7 +260,8 @@ async function buildPayload() {
   const persons = await getAllPersons(year);
   const holidays = await getHolidaysForYear(year);
   const leaves = await getAllLeaves(year);
-  return { year, persons, holidays, leaves, updatedAt: new Date().toISOString() };
+  const tombstones = getTombstones();
+  return { year, persons, holidays, leaves, tombstones, updatedAt: new Date().toISOString() };
 }
 
 /**
@@ -300,12 +302,16 @@ function mergePayloads(local, remote) {
   addHolidays(local.holidays, localRemap, false); // local wins on conflict
   const holidays = Array.from(holidayMap.values());
 
-  // Merge leaves: unique by label+startDate+endDate
-  const leaveSig = l => `${l.label}|${l.startDate}|${l.endDate}`;
+  // Merge tombstones from both sides
+  const tombstones = mergeTombstones(local.tombstones || [], remote.tombstones || []);
+  const tombstoneSet = new Set(tombstones.map(t => t.sig));
+
+  // Merge leaves: unique by label+startDate+endDate, exclude tombstoned entries
   const leaveMap = new Map();
   const addLeaves = (leaves, remap) => {
     for (const l of leaves) {
       const sig = leaveSig(l);
+      if (tombstoneSet.has(sig)) continue; // deleted — don't restore
       if (!leaveMap.has(sig)) {
         leaveMap.set(sig, {
           ...l,
@@ -320,7 +326,7 @@ function mergePayloads(local, remote) {
   addLeaves(remote.leaves, remoteRemap);
   const leaves = Array.from(leaveMap.values());
 
-  return { year, persons, holidays, leaves, updatedAt: new Date().toISOString() };
+  return { year, persons, holidays, leaves, tombstones, updatedAt: new Date().toISOString() };
 }
 
 /**
@@ -342,6 +348,8 @@ async function applyPayloadToLocalDB(payload) {
   for (const { id: _id, ...l } of payload.leaves) {
     await addLeave(l);
   }
+  // Persist merged tombstones so future syncs remember deletions
+  if (payload.tombstones) saveTombstones(payload.tombstones);
 }
 
 function buildIdRemap(originalPersons, mergedPersons, sigFn) {
