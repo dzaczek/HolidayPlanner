@@ -10,7 +10,7 @@
  *   PUT  <endpoint>/v1/calendar/:id  → body: { iv, data }      → { ok, updatedAt }
  */
 
-const DEFAULT_ENDPOINT = 'https://hcp-sync.your-worker.workers.dev';
+const DEFAULT_ENDPOINT = 'https://hcp-sync.sysop.cat';
 const LS_ENDPOINT_KEY = 'hcp-sync-endpoint';
 const LS_FAMILY_KEY   = 'hcp-family-code';
 const LS_LAST_SYNC    = 'hcp-last-sync';

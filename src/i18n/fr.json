@@ -102,7 +102,7 @@
   "about.issues": "Signaler un bug",
   "about.version": "Version",
   "sync.title": "Sync Famille",
-  "sync.intro": "Partagez votre calendrier avec la famille — chiffré de bout en bout. Le serveur ne stocke que des données chiffrées ; la clé reste chez vous.",
+  "sync.intro": "Partagez votre calendrier en famille — chiffré AES-256. Le serveur ne voit que des données illisibles ; votre clé ne quitte jamais votre appareil.",
   "sync.endpoint": "Adresse du serveur",
   "sync.endpointHint": "Cloudflare Worker ou VPS auto-hébergé.",
   "sync.create": "Créer",

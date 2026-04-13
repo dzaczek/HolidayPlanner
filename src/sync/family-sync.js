@@ -33,12 +33,6 @@ function showSetupModal(onChanged) {
     <h3>${t('sync.title')}</h3>
     <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:16px;">${t('sync.intro')}</p>
 
-    <div class="sync-endpoint-row">
-      <label style="font-size:0.8rem; font-weight:500;">${t('sync.endpoint')}</label>
-      <input type="url" id="sync-endpoint" value="${escapeHtml(getEndpoint())}" placeholder="https://..." style="margin-top:4px;" />
-      <p class="sync-hint">${t('sync.endpointHint')}</p>
-    </div>
-
     <div class="sync-tabs">
       <button class="sync-tab active" id="tab-create-btn">${t('sync.create')}</button>
       <button class="sync-tab" id="tab-join-btn">${t('sync.join')}</button>
@@ -89,7 +83,6 @@ function showSetupModal(onChanged) {
     status.textContent = t('sync.creating');
 
     try {
-      saveEndpoint();
       const calendarId = generateCalendarId();
       const cryptoKey = await generateKey();
       const code = await buildFamilyCode(calendarId, cryptoKey);
@@ -120,7 +113,6 @@ function showSetupModal(onChanged) {
     status.textContent = t('sync.joining');
 
     try {
-      saveEndpoint();
       const { calendarId, cryptoKey } = await parseFamilyCode(codeInput);
 
       // Pull remote

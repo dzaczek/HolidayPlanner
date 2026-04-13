@@ -102,7 +102,7 @@
   "about.issues": "Fehler melden",
   "about.version": "Version",
   "sync.title": "Family Sync",
-  "sync.intro": "Teilen Sie Ihren Kalender verschlüsselt mit der Familie. Der Server speichert nur verschlüsselte Daten — der Schlüssel bleibt bei Ihnen.",
+  "sync.intro": "Teilen Sie Ihren Kalender verschlüsselt mit der Familie. Daten werden AES-256 verschlüsselt — der Server sieht nur unlesbaren Code, der Schlüssel bleibt bei Ihnen.",
   "sync.endpoint": "Server-Adresse",
   "sync.endpointHint": "Cloudflare Worker oder eigener VPS. Leer lassen für Demo-Modus.",
   "sync.create": "Neu erstellen",

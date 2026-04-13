@@ -102,7 +102,7 @@
   "about.issues": "Segnala un bug",
   "about.version": "Versione",
   "sync.title": "Sync Famiglia",
-  "sync.intro": "Condividi il calendario con la famiglia — crittografato end-to-end. Il server memorizza solo blob cifrati; la chiave rimane da te.",
+  "sync.intro": "Condividi il calendario con la famiglia — crittografia AES-256. Il server vede solo dati illeggibili; la chiave non lascia mai il tuo dispositivo.",
   "sync.endpoint": "Indirizzo server",
   "sync.endpointHint": "Cloudflare Worker o VPS self-hosted.",
   "sync.create": "Crea nuovo",

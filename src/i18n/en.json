@@ -102,7 +102,7 @@
   "about.issues": "Report a bug",
   "about.version": "Version",
   "sync.title": "Family Sync",
-  "sync.intro": "Share your calendar with family — encrypted end-to-end. The server stores only encrypted blobs; the key stays with you.",
+  "sync.intro": "Share your calendar with family — AES-256 encrypted. The server only sees unreadable data; your key never leaves your device.",
   "sync.endpoint": "Server URL",
   "sync.endpointHint": "Cloudflare Worker or self-hosted VPS. Leave for demo mode.",
   "sync.create": "Create new",
