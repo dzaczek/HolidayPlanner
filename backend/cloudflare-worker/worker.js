@@ -111,6 +111,19 @@ async function handlePut(env, id, request, origin) {
     return json({ error: 'Invalid payload: expected { iv, data }' }, 400, origin);
   }
 
+  // Optimistic locking: if client sent prevUpdatedAt, reject if server state has changed.
+  // Prevents blind overwrites when two clients push concurrently.
+  // prevUpdatedAt is optional — omit for the very first push (calendar doesn't exist yet).
+  if (body.prevUpdatedAt !== undefined) {
+    const existing = await env.CALENDARS.get(id);
+    if (existing) {
+      const current = JSON.parse(existing);
+      if (current.updatedAt !== body.prevUpdatedAt) {
+        return json({ error: 'Conflict: calendar was updated by another client', updatedAt: current.updatedAt }, 409, origin);
+      }
+    }
+  }
+
   const updatedAt = new Date().toISOString();
   const stored = JSON.stringify({ iv: body.iv, data: body.data, updatedAt });
 

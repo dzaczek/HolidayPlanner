@@ -390,8 +390,24 @@ export async function quickSync(mode, onChanged) {
     const local = await buildPayload();
 
     if (mode === 'push') {
-      const encrypted = await encryptPayload(cryptoKey, local);
-      await pushCalendar(calendarId, encrypted);
+      try {
+        const encrypted = await encryptPayload(cryptoKey, local);
+        await pushCalendar(calendarId, encrypted);
+      } catch (err) {
+        if (err.message === 'sync.conflict') {
+          // Someone pushed since our last pull — auto-resolve: pull, merge, push
+          const remote = await pullCalendar(calendarId);
+          if (remote) {
+            const remotePayload = await decryptPayload(cryptoKey, remote);
+            const merged = mergePayloads(local, remotePayload);
+            await applyPayloadToLocalDB(merged);
+            const encrypted2 = await encryptPayload(cryptoKey, merged);
+            await pushCalendar(calendarId, encrypted2);
+          }
+        } else {
+          throw err;
+        }
+      }
 
     } else if (mode === 'pull') {
       const remote = await pullCalendar(calendarId);

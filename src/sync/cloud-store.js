@@ -13,7 +13,8 @@
 const DEFAULT_ENDPOINT = 'https://hcp-sync.sysop.cat';
 const LS_ENDPOINT_KEY = 'hcp-sync-endpoint';
 const LS_FAMILY_KEY   = 'hcp-family-code';
-const LS_LAST_SYNC    = 'hcp-last-sync';
+const LS_LAST_SYNC        = 'hcp-last-sync';
+const LS_REMOTE_UPDATED_AT = 'hcp-remote-updated-at';
 
 export function getEndpoint() {
   return localStorage.getItem(LS_ENDPOINT_KEY) || DEFAULT_ENDPOINT;
@@ -34,6 +35,16 @@ export function setFamilyCode(code) {
 export function clearFamilyCode() {
   localStorage.removeItem(LS_FAMILY_KEY);
   localStorage.removeItem(LS_LAST_SYNC);
+  localStorage.removeItem(LS_REMOTE_UPDATED_AT);
+}
+
+/** updatedAt received from the server on the last successful pull — sent as prevUpdatedAt on next push */
+export function getRemoteUpdatedAt() {
+  return localStorage.getItem(LS_REMOTE_UPDATED_AT) || undefined;
+}
+
+function setRemoteUpdatedAt(ts) {
+  if (ts) localStorage.setItem(LS_REMOTE_UPDATED_AT, ts);
 }
 
 export function getLastSync() {
@@ -59,11 +70,21 @@ function clientHeaders() {
 
 export async function pushCalendar(calendarId, encrypted) {
   const url = `${getEndpoint()}/v1/calendar/${encodeURIComponent(calendarId)}`;
+  const prevUpdatedAt = getRemoteUpdatedAt();
+  const body = prevUpdatedAt
+    ? { ...encrypted, prevUpdatedAt }
+    : encrypted;
+
   const res = await fetch(url, {
     method: 'PUT',
     headers: clientHeaders(),
-    body: JSON.stringify(encrypted),
+    body: JSON.stringify(body),
   });
+
+  if (res.status === 409) {
+    const json = await res.json().catch(() => ({}));
+    throw new Error(`sync.conflict`);
+  }
 
   if (!res.ok) {
     const text = await res.text().catch(() => res.status);
@@ -71,7 +92,9 @@ export async function pushCalendar(calendarId, encrypted) {
   }
 
   const json = await res.json();
-  setLastSync(json.updatedAt || new Date().toISOString());
+  const ts = json.updatedAt || new Date().toISOString();
+  setLastSync(ts);
+  setRemoteUpdatedAt(ts);
   return json;
 }
 
@@ -91,6 +114,8 @@ export async function pullCalendar(calendarId) {
   }
 
   const json = await res.json();
-  setLastSync(json.updatedAt || new Date().toISOString());
+  const ts = json.updatedAt || new Date().toISOString();
+  setLastSync(ts);
+  setRemoteUpdatedAt(ts);
   return json;
 }
