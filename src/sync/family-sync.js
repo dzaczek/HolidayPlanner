@@ -96,8 +96,9 @@ function showSetupModal(onChanged) {
       hideModal();
       await showSyncStatusModal(code, onChanged);
     } catch (err) {
+      console.error('[HCP Sync] Create failed:', err);
       status.className = 'sync-status-msg sync-error';
-      status.textContent = err.message;
+      status.textContent = `${err.message} (endpoint: ${getEndpoint()})`;
       btn.disabled = false;
       btn.textContent = t('sync.createBtn');
     }
