@@ -1,5 +1,8 @@
 'use strict';
 
+// Load .env file if present (ignored in Docker — use environment variables there)
+require('dotenv').config();
+
 /**
  * HCP Sync — Self-hosted VPS server (Node.js + SQLite)
  *
@@ -24,9 +27,10 @@ const helmet       = require('helmet');
 const cors         = require('cors');
 const path         = require('path');
 
-const PORT       = process.env.PORT || 3000;
-const DB_PATH    = process.env.DB_PATH || '/data/hcp.db';
-const MAX_BYTES  = 512 * 1024;
+const PORT       = process.env.PORT       || 3000;
+const DB_PATH    = process.env.DB_PATH    || '/data/hcp.db';
+const MAX_BYTES  = parseInt(process.env.MAX_BLOB_BYTES || String(512 * 1024));
+const CORS_ORIGIN = process.env.CORS_ORIGIN || '*';
 const ID_RE      = /^[A-Za-z0-9_-]{22}$/;
 
 // ── Database ─────────────────────────────────────────────────────────────────
@@ -59,7 +63,7 @@ const app = express();
 app.set('trust proxy', 1);
 
 app.use(helmet());
-app.use(cors({ origin: '*', methods: ['GET', 'PUT', 'OPTIONS'] }));
+app.use(cors({ origin: CORS_ORIGIN, methods: ['GET', 'PUT', 'OPTIONS'] }));
 app.use(express.json({ limit: `${MAX_BYTES}b` }));
 
 // Rate limit: 60 requests per 10 minutes per IP

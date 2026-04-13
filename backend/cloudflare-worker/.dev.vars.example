@@ -1,0 +1,10 @@
+# Wrangler local dev secrets — copy to .dev.vars (never commit .dev.vars)
+# cp .dev.vars.example .dev.vars
+#
+# For production secrets use:  wrangler secret put SECRET_NAME
+#
+# NOTE: The KV namespace ID in wrangler.toml is NOT a secret.
+# It's like a database name — access is controlled by your CF account auth.
+# Add any future API-level secrets here, e.g.:
+#
+# ADMIN_TOKEN=your-secret-admin-token

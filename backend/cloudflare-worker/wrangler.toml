@@ -2,10 +2,23 @@ name = "hcp-sync"
 main = "worker.js"
 compatibility_date = "2024-01-01"
 
+# KV namespace — NOT a secret (access controlled by your CF account)
+# Get the ID by running:  wrangler kv namespace create CALENDARS
 [[kv_namespaces]]
 binding = "CALENDARS"
 id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
 
-# Uncomment to restrict to your domain:
-# [env.production]
-# routes = [{ pattern = "hcp-sync.yourdomain.com/*", zone_name = "yourdomain.com" }]
+# Local dev KV (run: wrangler kv namespace create CALENDARS --preview)
+# [[kv_namespaces]]
+# binding = "CALENDARS"
+# id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+# preview_id = "REPLACE_WITH_PREVIEW_KV_ID"
+
+# Secrets (set via: wrangler secret put SECRET_NAME)
+# These are encrypted at rest in CF and injected as env vars at runtime.
+# See .dev.vars.example for local dev equivalents.
+
+# Optional: restrict to your own domain
+# [[routes]]
+# pattern = "hcp-sync.yourdomain.com/*"
+# zone_name = "yourdomain.com"

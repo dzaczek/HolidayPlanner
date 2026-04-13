@@ -5,3 +5,5 @@ dist/
 *.pdf
 .venv/
 .env
+backend/vps/.env
+backend/cloudflare-worker/.dev.vars
