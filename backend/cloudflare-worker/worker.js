@@ -41,13 +41,14 @@ export default {
 
     // 1. Origin check (browsers always send Origin for cross-origin requests)
     if (!ALLOWED_ORIGINS.includes(origin)) {
-      return json({ error: 'Forbidden' }, 403);
+      return json({ error: 'Forbidden' }, 403, '');
     }
 
     // 2. Client token check (stops scripts that fake Origin)
+    // Return CORS headers so browser can read the 403 response
     const clientToken = request.headers.get('X-HCP-Client') || '';
     if (env.HCP_CLIENT_TOKEN && clientToken !== env.HCP_CLIENT_TOKEN) {
-      return json({ error: 'Forbidden' }, 403);
+      return json({ error: 'Forbidden — invalid client token' }, 403, origin);
     }
 
     // 3. Rate limiting per IP
