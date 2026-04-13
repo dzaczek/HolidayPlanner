@@ -23,6 +23,8 @@ const RATE_LIMIT      = 30;           // requests per window per IP
 // Allowed browser origins — add your domain here
 const ALLOWED_ORIGINS = [
   'https://hcp.sysop.cat',
+  'http://localhost:5173',
+  'http://localhost:4173',
 ];
 
 const ID_RE = /^[A-Za-z0-9_-]{22}$/;
@@ -34,14 +36,16 @@ export default {
     // CORS preflight
     if (request.method === 'OPTIONS') {
       if (!ALLOWED_ORIGINS.includes(origin)) {
-        return new Response(null, { status: 403 });
+        // Include CORS headers so browser can read the 403 body
+        return json({ error: `Forbidden — origin not allowed: ${origin}` }, 403, origin);
       }
       return new Response(null, { status: 204, headers: corsHeaders(origin) });
     }
 
     // 1. Origin check (browsers always send Origin for cross-origin requests)
+    // Pass origin to json() so CORS headers are included and browser can read the error
     if (!ALLOWED_ORIGINS.includes(origin)) {
-      return json({ error: 'Forbidden' }, 403, '');
+      return json({ error: `Forbidden — origin not allowed: ${origin}` }, 403, origin);
     }
 
     // 2. Client token check (stops scripts that fake Origin)
