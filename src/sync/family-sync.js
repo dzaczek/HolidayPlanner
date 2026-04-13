@@ -115,30 +115,34 @@ function showSetupModal(onChanged) {
     status.textContent = t('sync.joining');
 
     try {
-      const { calendarId, cryptoKey } = await parseFamilyCode(codeInput);
-
-      // Pull remote
-      const remote = await pullCalendar(calendarId);
-      if (remote) {
-        const remotePayload = await decryptPayload(cryptoKey, remote);
-        const local = await buildPayload();
-        const merged = mergePayloads(local, remotePayload);
-        // Save merged data to local DB before pushing
-        await applyPayloadToLocalDB(merged);
-        const mergedEnc = await encryptPayload(cryptoKey, merged);
-        await pushCalendar(calendarId, mergedEnc);
-      }
-
-      setFamilyCode(codeInput);
-      hideModal();
-      if (onChanged) onChanged();
-      await showSyncStatusModal(codeInput, onChanged);
+      await joinFamilySyncCode(codeInput, onChanged);
     } catch (err) {
       status.className = 'sync-status-msg sync-error';
       status.textContent = err.message;
       btn.disabled = false;
     }
   });
+}
+
+export async function joinFamilySyncCode(codeInput, onChanged) {
+  const { calendarId, cryptoKey } = await parseFamilyCode(codeInput);
+
+  // Pull remote
+  const remote = await pullCalendar(calendarId);
+  if (remote) {
+    const remotePayload = await decryptPayload(cryptoKey, remote);
+    const local = await buildPayload();
+    const merged = mergePayloads(local, remotePayload);
+    // Save merged data to local DB before pushing
+    await applyPayloadToLocalDB(merged);
+    const mergedEnc = await encryptPayload(cryptoKey, merged);
+    await pushCalendar(calendarId, mergedEnc);
+  }
+
+  setFamilyCode(codeInput);
+  hideModal();
+  if (onChanged) onChanged();
+  await showSyncStatusModal(codeInput, onChanged);
 }
 
 function saveEndpoint() {
@@ -170,7 +174,10 @@ async function showSyncStatusModal(code, onChanged) {
       <label style="font-size:0.75rem; color:var(--text-muted);">${t('sync.familyCode')}</label>
       <div class="sync-code-display">
         <code id="sync-code-text" style="word-break:break-all; font-size:0.72rem;">${escapeHtml(code)}</code>
-        <button class="btn btn-secondary btn-sm" id="sync-copy-code" style="flex-shrink:0;">${t('sync.copy')}</button>
+      </div>
+      <div style="display:flex; gap:8px; margin-top:8px;">
+        <button class="btn btn-secondary btn-sm" id="sync-copy-code" style="flex:1;">${t('sync.copyCode')}</button>
+        <button class="btn btn-secondary btn-sm" id="sync-copy-link" style="flex:1;">${t('sync.copyLink')}</button>
       </div>
       <p class="sync-hint">${t('sync.codeHint')}</p>
     </div>
@@ -194,7 +201,18 @@ async function showSyncStatusModal(code, onChanged) {
   document.getElementById('sync-copy-code').addEventListener('click', () => {
     navigator.clipboard.writeText(code).then(() => {
       document.getElementById('sync-copy-code').textContent = '✓';
-      setTimeout(() => { document.getElementById('sync-copy-code').textContent = t('sync.copy'); }, 1500);
+      setTimeout(() => { document.getElementById('sync-copy-code').textContent = t('sync.copyCode'); }, 1500);
+    });
+  });
+
+  document.getElementById('sync-copy-link').addEventListener('click', () => {
+    const url = new URL(window.location.href);
+    url.hash = '';
+    url.search = '';
+    url.searchParams.set('sync', code);
+    navigator.clipboard.writeText(url.toString()).then(() => {
+      document.getElementById('sync-copy-link').textContent = '✓';
+      setTimeout(() => { document.getElementById('sync-copy-link').textContent = t('sync.copyLink'); }, 1500);
     });
   });
 

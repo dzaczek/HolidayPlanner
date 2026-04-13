@@ -8,7 +8,7 @@ import { seedDatabase, ensureYearLoaded } from './db/seed/loader.js';
 import { getAllPersons, carryOverPersons, getTemplates, addHolidaysBatch, getHolidaysForPerson, clearAllStores, clearUserStores, setSeedVersion } from './db/store.js';
 import { generateShareURL, importFromURL, applySharedData } from './share/share.js';
 import { showBackupModal, exportBackup } from './share/backup.js';
-import { showFamilySyncModal, quickSync } from './sync/family-sync.js';
+import { showFamilySyncModal, quickSync, joinFamilySyncCode } from './sync/family-sync.js';
 import { getFamilyCode, getLastSync } from './sync/cloud-store.js';
 import { exportPDF } from './share/pdf-export.js';
 
@@ -21,6 +21,10 @@ export async function initApp() {
 
   // Check for shared data in URL
   const shared = await importFromURL();
+
+  const params = new URLSearchParams(window.location.search);
+  const syncCode = params.get('sync');
+
   if (shared) {
     const accepted = await showShareImportConfirm();
     if (accepted) {
@@ -32,6 +36,13 @@ export async function initApp() {
       setYear(new Date().getFullYear());
     }
     window.history.replaceState({}, '', window.location.pathname);
+  } else if (syncCode) {
+    const accepted = await showSyncJoinConfirm();
+    if (accepted) {
+      await joinFamilySyncCode(syncCode, () => refreshAll());
+    }
+    window.history.replaceState({}, '', window.location.pathname);
+    setYear(new Date().getFullYear());
   } else {
     setYear(new Date().getFullYear());
   }
@@ -216,7 +227,9 @@ async function doQuickSync(mode) {
   }
   updateSyncStatusBar();
 
-  [pullBtn, pushBtn, syncBtn].forEach(b => { if (b) b.disabled = false; });
+  setTimeout(() => {
+    [pullBtn, pushBtn, syncBtn].forEach(b => { if (b) b.disabled = false; });
+  }, 5000);
 }
 
 async function handlePersonChange(action, person) {
@@ -408,6 +421,36 @@ function showShareImportConfirm() {
     });
 
     // Also handle overlay click as cancel
+    document.getElementById('modal-overlay').addEventListener('click', (e) => {
+      if (e.target === document.getElementById('modal-overlay')) {
+        hideModal();
+        resolve(false);
+      }
+    }, { once: true });
+  });
+}
+
+function showSyncJoinConfirm() {
+  return new Promise((resolve) => {
+    const html = `
+      <h3>${t('sync.joinConfirmTitle')}</h3>
+      <p class="reset-warning">${t('sync.joinConfirmWarning')}</p>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="sync-join-cancel">${t('btn.cancel')}</button>
+        <button class="btn btn-primary" id="sync-join-confirm">${t('sync.joinConfirmOk')}</button>
+      </div>
+    `;
+    showModal(html);
+
+    document.getElementById('sync-join-cancel').addEventListener('click', () => {
+      hideModal();
+      resolve(false);
+    });
+    document.getElementById('sync-join-confirm').addEventListener('click', () => {
+      hideModal();
+      resolve(true);
+    });
+
     document.getElementById('modal-overlay').addEventListener('click', (e) => {
       if (e.target === document.getElementById('modal-overlay')) {
         hideModal();
