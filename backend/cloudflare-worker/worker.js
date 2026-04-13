@@ -4,8 +4,9 @@
  * Security layers:
  *  1. Origin check      — only requests from ALLOWED_ORIGINS pass
  *  2. Client token      — X-HCP-Client header must match env.HCP_CLIENT_TOKEN
- *  3. Rate limiting     — 30 req / 10 min per IP (via KV)
- *  4. Payload validation — strict schema + size limit
+ *                         Worker refuses to start if HCP_CLIENT_TOKEN is not set
+ *  3. Rate limiting     — 30 req / 10 min per IP (via KV, fail-closed)
+ *  4. Payload validation — strict schema + size limit + Content-Type check
  *  5. Calendar ID       — 128-bit random, infeasible to enumerate
  *  6. Encryption        — AES-256-GCM done client-side, server sees only blobs
  *
@@ -33,46 +34,49 @@ export default {
   async fetch(request, env) {
     const origin = request.headers.get('Origin') || '';
 
+    // Guard: refuse to operate if the client token secret is not configured.
+    // Prevents accidental open deployment without authentication.
+    if (!env.HCP_CLIENT_TOKEN) {
+      return json({ error: 'Service misconfigured — HCP_CLIENT_TOKEN not set' }, 503, origin);
+    }
+
     // CORS preflight
     if (request.method === 'OPTIONS') {
       if (!ALLOWED_ORIGINS.includes(origin)) {
-        // Include CORS headers so browser can read the 403 body
-        return json({ error: `Forbidden — origin not allowed: ${origin}` }, 403, origin);
+        return json({ error: 'Forbidden' }, 403, origin);
       }
       return new Response(null, { status: 204, headers: corsHeaders(origin) });
     }
 
     // 1. Origin check (browsers always send Origin for cross-origin requests)
-    // Pass origin to json() so CORS headers are included and browser can read the error
     if (!ALLOWED_ORIGINS.includes(origin)) {
-      return json({ error: `Forbidden — origin not allowed: ${origin}` }, 403, origin);
+      return json({ error: 'Forbidden' }, 403, origin);
     }
 
     // 2. Client token check (stops scripts that fake Origin)
-    // Return CORS headers so browser can read the 403 response
     const clientToken = request.headers.get('X-HCP-Client') || '';
-    if (env.HCP_CLIENT_TOKEN && clientToken !== env.HCP_CLIENT_TOKEN) {
-      return json({ error: 'Forbidden — invalid client token' }, 403, origin);
+    if (clientToken !== env.HCP_CLIENT_TOKEN) {
+      return json({ error: 'Forbidden' }, 403, origin);
     }
 
-    // 3. Rate limiting per IP
+    // 3. Rate limiting per IP (fail-closed: block on KV error)
     const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
     if (!(await checkRateLimit(env, ip))) {
-      return json({ error: 'Rate limit exceeded — try again later' }, 429);
+      return json({ error: 'Rate limit exceeded — try again later' }, 429, origin);
     }
 
     // Route
     const url = new URL(request.url);
     const m = url.pathname.match(/^\/v1\/calendar\/([^/]+)$/);
-    if (!m) return json({ error: 'Not found' }, 404);
+    if (!m) return json({ error: 'Not found' }, 404, origin);
 
     const id = m[1];
-    if (!ID_RE.test(id)) return json({ error: 'Invalid calendar ID' }, 400);
+    if (!ID_RE.test(id)) return json({ error: 'Invalid calendar ID' }, 400, origin);
 
     if (request.method === 'GET')  return handleGet(env, id, origin);
     if (request.method === 'PUT')  return handlePut(env, id, request, origin);
 
-    return json({ error: 'Method not allowed' }, 405);
+    return json({ error: 'Method not allowed' }, 405, origin);
   },
 };
 
@@ -85,6 +89,12 @@ async function handleGet(env, id, origin) {
 }
 
 async function handlePut(env, id, request, origin) {
+  // Require JSON content-type
+  const ct = request.headers.get('content-type') || '';
+  if (!ct.includes('application/json')) {
+    return json({ error: 'Content-Type must be application/json' }, 415, origin);
+  }
+
   const contentLength = parseInt(request.headers.get('content-length') || '0');
   if (contentLength > MAX_BLOB_BYTES) {
     return json({ error: 'Payload too large' }, 413, origin);
@@ -121,7 +131,7 @@ function isValidBlob(body) {
   return true;
 }
 
-// ── Rate limiting (KV-backed, best-effort) ────────────────────────────────────
+// ── Rate limiting (KV-backed, fail-closed) ────────────────────────────────────
 
 async function checkRateLimit(env, ip) {
   const key = `rl:${ip}`;
@@ -143,7 +153,7 @@ async function checkRateLimit(env, ip) {
     });
     return true;
   } catch {
-    return true; // fail open on KV errors
+    return false; // fail-closed: block on KV error rather than open the gate
   }
 }
 
