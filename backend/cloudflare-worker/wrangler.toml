@@ -1,0 +1,11 @@
+name = "hcp-sync"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "CALENDARS"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# Uncomment to restrict to your domain:
+# [env.production]
+# routes = [{ pattern = "hcp-sync.yourdomain.com/*", zone_name = "yourdomain.com" }]

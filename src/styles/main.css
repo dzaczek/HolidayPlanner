@@ -314,6 +314,116 @@ main {
   background: #b91c1c;
 }
 
+.btn-family {
+  background: #7c3aed;
+}
+
+.btn-family:hover {
+  background: #6d28d9;
+}
+
+/* Family Sync modal */
+.sync-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.sync-tab {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: transparent;
+  cursor: pointer;
+  color: var(--text);
+  font-family: var(--font);
+  transition: all 0.15s;
+}
+
+.sync-tab.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.sync-endpoint-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sync-endpoint-row input {
+  margin-top: 4px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  font-family: monospace;
+}
+
+.sync-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.sync-status-card {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  margin-bottom: 14px;
+}
+
+.sync-status-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+.sync-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.sync-dot-ok { background: #16a34a; }
+.sync-dot-err { background: var(--danger); }
+
+.sync-code-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.sync-code-display {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+}
+
+.sync-status-msg {
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+}
+
+.sync-info  { background: #eff6ff; color: #1d4ed8; }
+.sync-ok    { background: #f0fdf4; color: #15803d; }
+.sync-error { background: #fef2f2; color: #b91c1c; }
+
 .reset-warning {
   font-size: 0.9rem;
   color: var(--danger);

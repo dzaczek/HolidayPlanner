@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  hcp-sync:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - hcp-data:/data
+    environment:
+      - PORT=3000
+      - DB_PATH=/data/hcp.db
+    # Optional: put behind nginx with HTTPS
+    # Uncomment if using nginx reverse proxy:
+    # ports: []
+    # expose:
+    #   - "3000"
+
+  # Optional nginx with Let's Encrypt
+  # nginx:
+  #   image: nginx:alpine
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - ./nginx.conf:/etc/nginx/conf.d/default.conf
+  #     - certbot-data:/etc/letsencrypt
+  #   depends_on:
+  #     - hcp-sync
+
+volumes:
+  hcp-data:

@@ -8,6 +8,7 @@ import { seedDatabase, ensureYearLoaded } from './db/seed/loader.js';
 import { getAllPersons, carryOverPersons, getTemplates, addHolidaysBatch, getHolidaysForPerson, clearAllStores, clearUserStores, setSeedVersion } from './db/store.js';
 import { generateShareURL, importFromURL, applySharedData } from './share/share.js';
 import { showBackupModal, exportBackup } from './share/backup.js';
+import { showFamilySyncModal } from './sync/family-sync.js';
 import { exportPDF } from './share/pdf-export.js';
 
 let calendarContainer;
@@ -101,6 +102,10 @@ function bindControls() {
 
   document.getElementById('backup-btn').addEventListener('click', () => {
     showBackupModal(() => refreshAll());
+  });
+
+  document.getElementById('family-btn').addEventListener('click', () => {
+    showFamilySyncModal(() => refreshAll());
   });
 
   document.getElementById('share-btn').addEventListener('click', async () => {
