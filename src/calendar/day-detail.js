@@ -21,7 +21,7 @@ export function showDayDetail(dateStr, holidayMap, leaveMap, year, onChanged) {
   // Group holidays by person
   const holidayRows = holidays.map((h, i) => {
     const label = typeof h.label === 'object' ? (h.label[lang] || h.label.de || '') : (h.label || '');
-    const canDelete = h.source === 'manual' && h.id != null;
+    const canDelete = h.id != null;
     return `<div class="dd-row" data-h-index="${i}">
       <span class="dd-dot" style="background:${sanitizeColor(h.color)}"></span>
       <span class="dd-person">${escapeHtml(h.personName)}</span>
