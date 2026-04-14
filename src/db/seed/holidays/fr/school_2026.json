@@ -1,0 +1,58 @@
+[
+  {
+    "canton": "Zone-A",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {"name": {"fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas holidays"}, "start": "2025-12-20", "end": "2026-01-04", "type": "vacation"},
+      {"name": {"fr": "Vacances d'Hiver", "de": "Winterferien", "en": "Winter holidays"}, "start": "2026-02-07", "end": "2026-02-22", "type": "vacation"},
+      {"name": {"fr": "Vacances de Printemps", "de": "Frühlingsferien", "en": "Spring holidays"}, "start": "2026-04-04", "end": "2026-04-19", "type": "vacation"},
+      {"name": {"fr": "Pont de l'Ascension", "de": "Brückentag Himmelfahrt", "en": "Ascension bridge"}, "start": "2026-05-14", "end": "2026-05-17", "type": "bridge_day"},
+      {"name": {"fr": "Vacances d'Été", "de": "Sommerferien", "en": "Summer holidays"}, "start": "2026-07-04", "end": "2026-08-31", "type": "vacation"},
+      {"name": {"fr": "Vacances de la Toussaint", "de": "Herbstferien", "en": "All Saints' holidays"}, "start": "2026-10-17", "end": "2026-11-01", "type": "vacation"},
+      {"name": {"fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas holidays"}, "start": "2026-12-19", "end": "2027-01-03", "type": "vacation"}
+    ]
+  },
+  {
+    "canton": "Zone-B",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {"name": {"fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas holidays"}, "start": "2025-12-20", "end": "2026-01-04", "type": "vacation"},
+      {"name": {"fr": "Vacances d'Hiver", "de": "Winterferien", "en": "Winter holidays"}, "start": "2026-02-14", "end": "2026-03-01", "type": "vacation"},
+      {"name": {"fr": "Vacances de Printemps", "de": "Frühlingsferien", "en": "Spring holidays"}, "start": "2026-04-11", "end": "2026-04-26", "type": "vacation"},
+      {"name": {"fr": "Pont de l'Ascension", "de": "Brückentag Himmelfahrt", "en": "Ascension bridge"}, "start": "2026-05-14", "end": "2026-05-17", "type": "bridge_day"},
+      {"name": {"fr": "Vacances d'Été", "de": "Sommerferien", "en": "Summer holidays"}, "start": "2026-07-04", "end": "2026-08-31", "type": "vacation"},
+      {"name": {"fr": "Vacances de la Toussaint", "de": "Herbstferien", "en": "All Saints' holidays"}, "start": "2026-10-17", "end": "2026-11-01", "type": "vacation"},
+      {"name": {"fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas holidays"}, "start": "2026-12-19", "end": "2027-01-03", "type": "vacation"}
+    ]
+  },
+  {
+    "canton": "Zone-B-AM",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {"name": {"fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas holidays"}, "start": "2025-12-20", "end": "2026-01-04", "type": "vacation"},
+      {"name": {"fr": "Vacances d'Hiver", "de": "Winterferien", "en": "Winter holidays"}, "start": "2026-02-14", "end": "2026-03-01", "type": "vacation"},
+      {"name": {"fr": "Vacances de Printemps", "de": "Frühlingsferien", "en": "Spring holidays"}, "start": "2026-04-11", "end": "2026-04-26", "type": "vacation"},
+      {"name": {"fr": "Pont de l'Ascension", "de": "Brückentag Himmelfahrt", "en": "Ascension bridge"}, "start": "2026-05-14", "end": "2026-05-17", "type": "bridge_day"},
+      {"name": {"fr": "Vacances d'Été", "de": "Sommerferien", "en": "Summer holidays"}, "start": "2026-07-04", "end": "2026-08-31", "type": "vacation"},
+      {"name": {"fr": "Vacances de la Toussaint", "de": "Herbstferien", "en": "All Saints' holidays"}, "start": "2026-10-17", "end": "2026-11-01", "type": "vacation"},
+      {"name": {"fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas holidays"}, "start": "2026-12-19", "end": "2027-01-03", "type": "vacation"}
+    ]
+  },
+  {
+    "canton": "Zone-C",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {"name": {"fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas holidays"}, "start": "2025-12-20", "end": "2026-01-04", "type": "vacation"},
+      {"name": {"fr": "Vacances d'Hiver", "de": "Winterferien", "en": "Winter holidays"}, "start": "2026-02-21", "end": "2026-03-08", "type": "vacation"},
+      {"name": {"fr": "Vacances de Printemps", "de": "Frühlingsferien", "en": "Spring holidays"}, "start": "2026-04-18", "end": "2026-05-03", "type": "vacation"},
+      {"name": {"fr": "Pont de l'Ascension", "de": "Brückentag Himmelfahrt", "en": "Ascension bridge"}, "start": "2026-05-14", "end": "2026-05-17", "type": "bridge_day"},
+      {"name": {"fr": "Vacances d'Été", "de": "Sommerferien", "en": "Summer holidays"}, "start": "2026-07-04", "end": "2026-08-31", "type": "vacation"},
+      {"name": {"fr": "Vacances de la Toussaint", "de": "Herbstferien", "en": "All Saints' holidays"}, "start": "2026-10-17", "end": "2026-11-01", "type": "vacation"},
+      {"name": {"fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas holidays"}, "start": "2026-12-19", "end": "2027-01-03", "type": "vacation"}
+    ]
+  }
+]

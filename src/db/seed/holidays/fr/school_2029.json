@@ -1,0 +1,26 @@
+[
+  {
+    "canton": "Zone-A",
+    "year": 2029,
+    "category": "school",
+    "holidays": []
+  },
+  {
+    "canton": "Zone-B",
+    "year": 2029,
+    "category": "school",
+    "holidays": []
+  },
+  {
+    "canton": "Zone-B-AM",
+    "year": 2029,
+    "category": "school",
+    "holidays": []
+  },
+  {
+    "canton": "Zone-C",
+    "year": 2029,
+    "category": "school",
+    "holidays": []
+  }
+]

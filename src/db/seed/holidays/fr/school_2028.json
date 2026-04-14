@@ -1,0 +1,50 @@
+[
+  {
+    "canton": "Zone-A",
+    "year": 2028,
+    "category": "school",
+    "holidays": [
+      {"name": {"fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas holidays"}, "start": "2027-12-18", "end": "2028-01-02", "type": "vacation"},
+      {"name": {"fr": "Vacances d'Hiver", "de": "Winterferien", "en": "Winter holidays"}, "start": "2028-02-19", "end": "2028-03-06", "type": "vacation"},
+      {"name": {"fr": "Vacances de Printemps", "de": "Frühlingsferien", "en": "Spring holidays"}, "start": "2028-04-22", "end": "2028-05-07", "type": "vacation"},
+      {"name": {"fr": "Pont de l'Ascension", "de": "Brückentag Himmelfahrt", "en": "Ascension bridge"}, "start": "2028-05-26", "end": "2028-05-26", "type": "bridge_day"},
+      {"name": {"fr": "Vacances d'Été", "de": "Sommerferien", "en": "Summer holidays"}, "start": "2028-07-01", "end": "2028-08-31", "type": "vacation"}
+    ]
+  },
+  {
+    "canton": "Zone-B",
+    "year": 2028,
+    "category": "school",
+    "holidays": [
+      {"name": {"fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas holidays"}, "start": "2027-12-18", "end": "2028-01-02", "type": "vacation"},
+      {"name": {"fr": "Vacances d'Hiver", "de": "Winterferien", "en": "Winter holidays"}, "start": "2028-02-05", "end": "2028-02-20", "type": "vacation"},
+      {"name": {"fr": "Vacances de Printemps", "de": "Frühlingsferien", "en": "Spring holidays"}, "start": "2028-04-08", "end": "2028-04-23", "type": "vacation"},
+      {"name": {"fr": "Pont de l'Ascension", "de": "Brückentag Himmelfahrt", "en": "Ascension bridge"}, "start": "2028-05-26", "end": "2028-05-26", "type": "bridge_day"},
+      {"name": {"fr": "Vacances d'Été", "de": "Sommerferien", "en": "Summer holidays"}, "start": "2028-07-01", "end": "2028-08-31", "type": "vacation"}
+    ]
+  },
+  {
+    "canton": "Zone-B-AM",
+    "year": 2028,
+    "category": "school",
+    "holidays": [
+      {"name": {"fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas holidays"}, "start": "2027-12-18", "end": "2028-01-02", "type": "vacation"},
+      {"name": {"fr": "Vacances d'Hiver", "de": "Winterferien", "en": "Winter holidays"}, "start": "2028-02-05", "end": "2028-02-20", "type": "vacation"},
+      {"name": {"fr": "Vacances de Printemps", "de": "Frühlingsferien", "en": "Spring holidays"}, "start": "2028-04-08", "end": "2028-04-23", "type": "vacation"},
+      {"name": {"fr": "Pont de l'Ascension", "de": "Brückentag Himmelfahrt", "en": "Ascension bridge"}, "start": "2028-05-26", "end": "2028-05-26", "type": "bridge_day"},
+      {"name": {"fr": "Vacances d'Été", "de": "Sommerferien", "en": "Summer holidays"}, "start": "2028-07-01", "end": "2028-08-31", "type": "vacation"}
+    ]
+  },
+  {
+    "canton": "Zone-C",
+    "year": 2028,
+    "category": "school",
+    "holidays": [
+      {"name": {"fr": "Vacances de Noël", "de": "Weihnachtsferien", "en": "Christmas holidays"}, "start": "2027-12-18", "end": "2028-01-02", "type": "vacation"},
+      {"name": {"fr": "Vacances d'Hiver", "de": "Winterferien", "en": "Winter holidays"}, "start": "2028-02-12", "end": "2028-02-27", "type": "vacation"},
+      {"name": {"fr": "Vacances de Printemps", "de": "Frühlingsferien", "en": "Spring holidays"}, "start": "2028-04-15", "end": "2028-04-30", "type": "vacation"},
+      {"name": {"fr": "Pont de l'Ascension", "de": "Brückentag Himmelfahrt", "en": "Ascension bridge"}, "start": "2028-05-26", "end": "2028-05-26", "type": "bridge_day"},
+      {"name": {"fr": "Vacances d'Été", "de": "Sommerferien", "en": "Summer holidays"}, "start": "2028-07-01", "end": "2028-08-31", "type": "vacation"}
+    ]
+  }
+]

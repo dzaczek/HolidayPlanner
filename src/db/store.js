@@ -210,7 +210,7 @@ export async function deleteLeave(id) {
 
 // === Seed check ===
 
-export const SEED_VERSION = 17; // bump this to force re-seed (CH + DE university entries)
+export const SEED_VERSION = 18; // bump this to force re-seed (added FR — 96 departments, zones A/B/B-AM/C)
 
 export async function getSeedVersion() {
   try {

@@ -182453,5 +182453,965 @@
     "plz": [
       "7000"
     ]
+  },
+  {
+    "id": "fr-01",
+    "name": "Ain",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "01000"
+    ]
+  },
+  {
+    "id": "fr-03",
+    "name": "Allier",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "03000"
+    ]
+  },
+  {
+    "id": "fr-07",
+    "name": "Ardèche",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "07000"
+    ]
+  },
+  {
+    "id": "fr-15",
+    "name": "Cantal",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "15000"
+    ]
+  },
+  {
+    "id": "fr-16",
+    "name": "Charente",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "16000"
+    ]
+  },
+  {
+    "id": "fr-17",
+    "name": "Charente-Maritime",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "17000"
+    ]
+  },
+  {
+    "id": "fr-19",
+    "name": "Corrèze",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "19000"
+    ]
+  },
+  {
+    "id": "fr-21",
+    "name": "Côte-d'Or",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "21000"
+    ]
+  },
+  {
+    "id": "fr-23",
+    "name": "Creuse",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "23000"
+    ]
+  },
+  {
+    "id": "fr-24",
+    "name": "Dordogne",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "24000"
+    ]
+  },
+  {
+    "id": "fr-25",
+    "name": "Doubs",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "25000"
+    ]
+  },
+  {
+    "id": "fr-26",
+    "name": "Drôme",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "26000"
+    ]
+  },
+  {
+    "id": "fr-33",
+    "name": "Gironde",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "33000"
+    ]
+  },
+  {
+    "id": "fr-38",
+    "name": "Isère",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "38000"
+    ]
+  },
+  {
+    "id": "fr-39",
+    "name": "Jura",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "39000"
+    ]
+  },
+  {
+    "id": "fr-40",
+    "name": "Landes",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "40000"
+    ]
+  },
+  {
+    "id": "fr-42",
+    "name": "Loire",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "42000"
+    ]
+  },
+  {
+    "id": "fr-43",
+    "name": "Haute-Loire",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "43000"
+    ]
+  },
+  {
+    "id": "fr-47",
+    "name": "Lot-et-Garonne",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "47000"
+    ]
+  },
+  {
+    "id": "fr-58",
+    "name": "Nièvre",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "58000"
+    ]
+  },
+  {
+    "id": "fr-63",
+    "name": "Puy-de-Dôme",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "63000"
+    ]
+  },
+  {
+    "id": "fr-64",
+    "name": "Pyrénées-Atlantiques",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "64000"
+    ]
+  },
+  {
+    "id": "fr-69",
+    "name": "Rhône",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "69000"
+    ]
+  },
+  {
+    "id": "fr-70",
+    "name": "Haute-Saône",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "70000"
+    ]
+  },
+  {
+    "id": "fr-71",
+    "name": "Saône-et-Loire",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "71000"
+    ]
+  },
+  {
+    "id": "fr-73",
+    "name": "Savoie",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "73000"
+    ]
+  },
+  {
+    "id": "fr-74",
+    "name": "Haute-Savoie",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "74000"
+    ]
+  },
+  {
+    "id": "fr-79",
+    "name": "Deux-Sèvres",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "79000"
+    ]
+  },
+  {
+    "id": "fr-86",
+    "name": "Vienne",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "86000"
+    ]
+  },
+  {
+    "id": "fr-87",
+    "name": "Haute-Vienne",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "87000"
+    ]
+  },
+  {
+    "id": "fr-89",
+    "name": "Yonne",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "89000"
+    ]
+  },
+  {
+    "id": "fr-90",
+    "name": "Territoire de Belfort",
+    "canton": "Zone-A",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "90000"
+    ]
+  },
+  {
+    "id": "fr-02",
+    "name": "Aisne",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "02000"
+    ]
+  },
+  {
+    "id": "fr-04",
+    "name": "Alpes-de-Haute-Provence",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "04000"
+    ]
+  },
+  {
+    "id": "fr-05",
+    "name": "Hautes-Alpes",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "05000"
+    ]
+  },
+  {
+    "id": "fr-06",
+    "name": "Alpes-Maritimes",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "06000"
+    ]
+  },
+  {
+    "id": "fr-08",
+    "name": "Ardennes",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "08000"
+    ]
+  },
+  {
+    "id": "fr-10",
+    "name": "Aube",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "10000"
+    ]
+  },
+  {
+    "id": "fr-13",
+    "name": "Bouches-du-Rhône",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "13000"
+    ]
+  },
+  {
+    "id": "fr-14",
+    "name": "Calvados",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "14000"
+    ]
+  },
+  {
+    "id": "fr-18",
+    "name": "Cher",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "18000"
+    ]
+  },
+  {
+    "id": "fr-22",
+    "name": "Côtes-d'Armor",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "22000"
+    ]
+  },
+  {
+    "id": "fr-27",
+    "name": "Eure",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "27000"
+    ]
+  },
+  {
+    "id": "fr-28",
+    "name": "Eure-et-Loir",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "28000"
+    ]
+  },
+  {
+    "id": "fr-29",
+    "name": "Finistère",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "29000"
+    ]
+  },
+  {
+    "id": "fr-35",
+    "name": "Ille-et-Vilaine",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "35000"
+    ]
+  },
+  {
+    "id": "fr-36",
+    "name": "Indre",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "36000"
+    ]
+  },
+  {
+    "id": "fr-37",
+    "name": "Indre-et-Loire",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "37000"
+    ]
+  },
+  {
+    "id": "fr-41",
+    "name": "Loir-et-Cher",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "41000"
+    ]
+  },
+  {
+    "id": "fr-44",
+    "name": "Loire-Atlantique",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "44000"
+    ]
+  },
+  {
+    "id": "fr-45",
+    "name": "Loiret",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "45000"
+    ]
+  },
+  {
+    "id": "fr-49",
+    "name": "Maine-et-Loire",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "49000"
+    ]
+  },
+  {
+    "id": "fr-50",
+    "name": "Manche",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "50000"
+    ]
+  },
+  {
+    "id": "fr-51",
+    "name": "Marne",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "51000"
+    ]
+  },
+  {
+    "id": "fr-52",
+    "name": "Haute-Marne",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "52000"
+    ]
+  },
+  {
+    "id": "fr-53",
+    "name": "Mayenne",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "53000"
+    ]
+  },
+  {
+    "id": "fr-54",
+    "name": "Meurthe-et-Moselle",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "54000"
+    ]
+  },
+  {
+    "id": "fr-55",
+    "name": "Meuse",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "55000"
+    ]
+  },
+  {
+    "id": "fr-56",
+    "name": "Morbihan",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "56000"
+    ]
+  },
+  {
+    "id": "fr-59",
+    "name": "Nord",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "59000"
+    ]
+  },
+  {
+    "id": "fr-60",
+    "name": "Oise",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "60000"
+    ]
+  },
+  {
+    "id": "fr-61",
+    "name": "Orne",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "61000"
+    ]
+  },
+  {
+    "id": "fr-62",
+    "name": "Pas-de-Calais",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "62000"
+    ]
+  },
+  {
+    "id": "fr-72",
+    "name": "Sarthe",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "72000"
+    ]
+  },
+  {
+    "id": "fr-76",
+    "name": "Seine-Maritime",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "76000"
+    ]
+  },
+  {
+    "id": "fr-80",
+    "name": "Somme",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "80000"
+    ]
+  },
+  {
+    "id": "fr-83",
+    "name": "Var",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "83000"
+    ]
+  },
+  {
+    "id": "fr-84",
+    "name": "Vaucluse",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "84000"
+    ]
+  },
+  {
+    "id": "fr-85",
+    "name": "Vendée",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "85000"
+    ]
+  },
+  {
+    "id": "fr-88",
+    "name": "Vosges",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "88000"
+    ]
+  },
+  {
+    "id": "fr-2a",
+    "name": "Corse-du-Sud",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "20000"
+    ]
+  },
+  {
+    "id": "fr-2b",
+    "name": "Haute-Corse",
+    "canton": "Zone-B",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "20200"
+    ]
+  },
+  {
+    "id": "fr-57",
+    "name": "Moselle",
+    "canton": "Zone-B-AM",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "57000"
+    ]
+  },
+  {
+    "id": "fr-67",
+    "name": "Bas-Rhin",
+    "canton": "Zone-B-AM",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "67000"
+    ]
+  },
+  {
+    "id": "fr-68",
+    "name": "Haut-Rhin",
+    "canton": "Zone-B-AM",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "68000"
+    ]
+  },
+  {
+    "id": "fr-09",
+    "name": "Ariège",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "09000"
+    ]
+  },
+  {
+    "id": "fr-11",
+    "name": "Aude",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "11000"
+    ]
+  },
+  {
+    "id": "fr-12",
+    "name": "Aveyron",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "12000"
+    ]
+  },
+  {
+    "id": "fr-30",
+    "name": "Gard",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "30000"
+    ]
+  },
+  {
+    "id": "fr-31",
+    "name": "Haute-Garonne",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "31000"
+    ]
+  },
+  {
+    "id": "fr-32",
+    "name": "Gers",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "32000"
+    ]
+  },
+  {
+    "id": "fr-34",
+    "name": "Hérault",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "34000"
+    ]
+  },
+  {
+    "id": "fr-46",
+    "name": "Lot",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "46000"
+    ]
+  },
+  {
+    "id": "fr-48",
+    "name": "Lozère",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "48000"
+    ]
+  },
+  {
+    "id": "fr-65",
+    "name": "Hautes-Pyrénées",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "65000"
+    ]
+  },
+  {
+    "id": "fr-66",
+    "name": "Pyrénées-Orientales",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "66000"
+    ]
+  },
+  {
+    "id": "fr-75",
+    "name": "Paris",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "75001"
+    ]
+  },
+  {
+    "id": "fr-77",
+    "name": "Seine-et-Marne",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "77000"
+    ]
+  },
+  {
+    "id": "fr-78",
+    "name": "Yvelines",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "78000"
+    ]
+  },
+  {
+    "id": "fr-81",
+    "name": "Tarn",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "81000"
+    ]
+  },
+  {
+    "id": "fr-82",
+    "name": "Tarn-et-Garonne",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "82000"
+    ]
+  },
+  {
+    "id": "fr-91",
+    "name": "Essonne",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "91000"
+    ]
+  },
+  {
+    "id": "fr-92",
+    "name": "Hauts-de-Seine",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "92000"
+    ]
+  },
+  {
+    "id": "fr-93",
+    "name": "Seine-Saint-Denis",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "93000"
+    ]
+  },
+  {
+    "id": "fr-94",
+    "name": "Val-de-Marne",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "94000"
+    ]
+  },
+  {
+    "id": "fr-95",
+    "name": "Val-d'Oise",
+    "canton": "Zone-C",
+    "country": "FR",
+    "language": "fr",
+    "plz": [
+      "95000"
+    ]
   }
 ]
