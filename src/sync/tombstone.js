@@ -59,6 +59,39 @@ export function savePersonTombstones(tombstones) {
   localStorage.setItem(LS_KEY_PERSONS, JSON.stringify(tombstones));
 }
 
+// ── Manually-cleared persons (prevent auto-assign re-adding holidays) ─────────
+
+const LS_KEY_CLEARED = 'hcp-person-cleared';
+
+/** Mark a person's holidays as manually cleared — auto-assign will skip them. */
+export function markPersonManuallyCleared(personId) {
+  try {
+    const raw = localStorage.getItem(LS_KEY_CLEARED);
+    const set = raw ? new Set(JSON.parse(raw)) : new Set();
+    set.add(personId);
+    localStorage.setItem(LS_KEY_CLEARED, JSON.stringify([...set]));
+  } catch { /* ignore */ }
+}
+
+/** Check if a person's holidays were manually cleared. */
+export function isPersonManuallyCleared(personId) {
+  try {
+    const raw = localStorage.getItem(LS_KEY_CLEARED);
+    if (!raw) return false;
+    return JSON.parse(raw).includes(personId);
+  } catch { return false; }
+}
+
+/** Clear the "manually cleared" flag for a person (called when holidays are re-added). */
+export function unmarkPersonManuallyCleared(personId) {
+  try {
+    const raw = localStorage.getItem(LS_KEY_CLEARED);
+    if (!raw) return;
+    const arr = JSON.parse(raw).filter(id => id !== personId);
+    localStorage.setItem(LS_KEY_CLEARED, JSON.stringify(arr));
+  } catch { /* ignore */ }
+}
+
 // ── Shared helpers ────────────────────────────────────────────────────────────
 
 function _load(key) {

@@ -7,6 +7,7 @@
   "persons.gemeinde": "Commune",
   "persons.color": "Couleur",
   "persons.remove": "Supprimer",
+  "persons.confirmDelete": "Supprimer cette personne ? Tous ses jours fériés seront également supprimés.",
   "persons.edit": "Modifier",
   "category.worker": "Employé",
   "category.student": "Étudiant",

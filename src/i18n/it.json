@@ -7,6 +7,7 @@
   "persons.gemeinde": "Comune",
   "persons.color": "Colore",
   "persons.remove": "Rimuovere",
+  "persons.confirmDelete": "Eliminare questa persona? Tutti i giorni festivi associati verranno eliminati.",
   "persons.edit": "Modificare",
   "category.worker": "Lavoratore",
   "category.student": "Studente",

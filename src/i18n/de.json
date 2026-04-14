@@ -7,6 +7,7 @@
   "persons.gemeinde": "Gemeinde",
   "persons.color": "Farbe",
   "persons.remove": "Entfernen",
+  "persons.confirmDelete": "Diese Person wirklich löschen? Alle zugehörigen Ferien werden ebenfalls gelöscht.",
   "persons.edit": "Bearbeiten",
   "category.worker": "Arbeitnehmer",
   "category.student": "Student",

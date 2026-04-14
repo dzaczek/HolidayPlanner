@@ -7,6 +7,7 @@
   "persons.gemeinde": "Municipality",
   "persons.color": "Color",
   "persons.remove": "Remove",
+  "persons.confirmDelete": "Delete this person? All their holidays will also be removed.",
   "persons.edit": "Edit",
   "category.worker": "Worker",
   "category.student": "Student",

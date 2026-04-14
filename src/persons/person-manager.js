@@ -58,6 +58,7 @@ export async function renderPersonsList(year, onChange) {
     li.querySelector('.btn-person-clear').addEventListener('click', async () => {
       if (!confirm(t('holidays.clearConfirm'))) return;
       await deleteHolidaysForPerson(person.id);
+      markPersonManuallyCleared(person.id);
       if (onChange) onChange('refresh');
     });
 
@@ -66,6 +67,7 @@ export async function renderPersonsList(year, onChange) {
     });
 
     li.querySelector('.btn-person-delete').addEventListener('click', async () => {
+      if (!confirm(t('persons.confirmDelete'))) return;
       recordPersonDeletion(person);
       await deletePerson(person.id);
       if (onChange) onChange('refresh');

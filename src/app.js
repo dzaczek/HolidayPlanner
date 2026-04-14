@@ -11,6 +11,7 @@ import { showBackupModal, exportBackup } from './share/backup.js';
 import { showFamilySyncModal, quickSync, joinFamilySyncCode } from './sync/family-sync.js';
 import { getFamilyCode, getLastSync } from './sync/cloud-store.js';
 import { exportPDF } from './share/pdf-export.js';
+import { isPersonManuallyCleared, unmarkPersonManuallyCleared } from './sync/tombstone.js';
 
 let calendarContainer;
 
@@ -292,6 +293,9 @@ async function autoAssignHolidays(year) {
     // Skip if already has holidays
     const existing = await getHolidaysForPerson(person.id, year);
     if (existing.length > 0) continue;
+
+    // Skip if user manually cleared this person's holidays (don't re-assign)
+    if (isPersonManuallyCleared(person.id)) continue;
 
     // Get templates for person's own category
     const templates = await getTemplates(person.category, person.gemeinde, year);
