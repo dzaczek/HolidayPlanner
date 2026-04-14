@@ -5,6 +5,7 @@ import { getAllGemeinden } from '../db/store.js';
 import { showModal, hideModal } from '../app.js';
 import { showHolidayPicker } from '../holidays/holiday-picker.js';
 import { countTotalDaysOff } from '../holidays/workday-counter.js';
+import { recordPersonDeletion } from '../sync/tombstone.js';
 
 // 12 pastel colors, mutually contrasting, calendar-friendly
 const PERSON_COLORS = [
@@ -65,6 +66,7 @@ export async function renderPersonsList(year, onChange) {
     });
 
     li.querySelector('.btn-person-delete').addEventListener('click', async () => {
+      recordPersonDeletion(person);
       await deletePerson(person.id);
       if (onChange) onChange('refresh');
     });
