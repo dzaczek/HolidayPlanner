@@ -9,7 +9,7 @@ import { getAllPersons, carryOverPersons, getTemplates, addHolidaysBatch, getHol
 import { generateShareURL, importFromURL, applySharedData } from './share/share.js';
 import { showBackupModal, exportBackup } from './share/backup.js';
 import { showFamilySyncModal, quickSync, joinFamilySyncCode } from './sync/family-sync.js';
-import { getFamilyCode, getLastSync } from './sync/cloud-store.js';
+import { getFamilyCode, getLastSync, markLocalChange, isCalendarDirty } from './sync/cloud-store.js';
 import { exportPDF } from './share/pdf-export.js';
 import { isPersonManuallyCleared, unmarkPersonManuallyCleared } from './sync/tombstone.js';
 
@@ -203,7 +203,9 @@ export function updateSyncStatusBar() {
   header?.classList.add('e2ee-active');
   const dot = document.getElementById('sync-bar-dot');
   const dateEl = document.getElementById('sync-bar-date');
+  const pushBtn = document.getElementById('sync-quick-push');
   const lastSync = getLastSync();
+  const dirty = isCalendarDirty();
 
   if (lastSync) {
     const d = new Date(lastSync);
@@ -213,6 +215,17 @@ export function updateSyncStatusBar() {
   } else {
     dateEl.textContent = '—';
     dot.className = 'sync-dot sync-dot-ok';
+  }
+
+  // Show dirty indicator on Push button when local calendar differs from remote
+  if (pushBtn) {
+    if (dirty) {
+      pushBtn.classList.add('btn-sync-dirty');
+      pushBtn.title = '↑ Push (unsaved local changes)';
+    } else {
+      pushBtn.classList.remove('btn-sync-dirty');
+      pushBtn.title = 'Push (wyślij)';
+    }
   }
 }
 
@@ -240,8 +253,9 @@ async function doQuickSync(mode) {
 }
 
 async function handlePersonChange(action, person) {
+  markLocalChange();
   if (action === 'add-days' && person) {
-    showHolidayPicker(person, getYear(), () => refreshAll(), { autoChecked: false });
+    showHolidayPicker(person, getYear(), () => { markLocalChange(); refreshAll(); updateSyncStatusBar(); }, { autoChecked: false });
   } else if (action === 'reassign' && person) {
     // Category or Gemeinde changed — re-assign holidays from new templates
     await autoAssignSinglePerson(person, getYear());
@@ -249,6 +263,7 @@ async function handlePersonChange(action, person) {
   } else {
     await refreshAll();
   }
+  updateSyncStatusBar();
 }
 
 async function autoAssignSinglePerson(person, year) {
@@ -274,7 +289,9 @@ async function autoAssignSinglePerson(person, year) {
 }
 
 async function handleLeaveChange() {
+  markLocalChange();
   await refreshAll();
+  updateSyncStatusBar();
 }
 
 async function tryCarryOver(fromYear, toYear) {

@@ -3,6 +3,7 @@ import { showModal, hideModal } from '../app.js';
 import { getAllPersons, addHolidaysBatch, getHolidaysForYear, deleteHoliday } from '../db/store.js';
 import { escapeHtml, sanitizeColor } from '../utils.js';
 import { showLeaveModal } from '../leaves/leave-manager.js';
+import { markLocalChange } from '../sync/cloud-store.js';
 
 /**
  * Show a day-detail popup when clicking a calendar day cell.
@@ -71,6 +72,7 @@ export function showDayDetail(dateStr, holidayMap, leaveMap, year, onChanged) {
     btn.addEventListener('click', async () => {
       const id = parseInt(btn.dataset.hId);
       await deleteHoliday(id);
+      markLocalChange();
       hideModal();
       if (onChanged) onChanged();
     });
@@ -160,6 +162,7 @@ async function showAddHolidayForDay(dateStr, year, onChanged) {
     }));
 
     await addHolidaysBatch(holidays);
+    markLocalChange();
     hideModal();
     if (onChanged) onChanged();
   });

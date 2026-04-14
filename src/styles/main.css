@@ -493,6 +493,22 @@ main {
   background: #b91c1c;
 }
 
+/* Push button — unsaved local changes indicator */
+.btn-sync-quick.btn-sync-dirty {
+  background: #f59e0b;
+  box-shadow: 0 0 0 2px #fcd34d;
+  animation: dirty-pulse 1.8s ease-in-out infinite;
+}
+
+.btn-sync-quick.btn-sync-dirty:hover {
+  background: #d97706;
+}
+
+@keyframes dirty-pulse {
+  0%, 100% { box-shadow: 0 0 0 2px #fcd34d; }
+  50%       { box-shadow: 0 0 0 5px rgba(252, 211, 77, 0); }
+}
+
 /* Family Sync modal */
 .sync-tabs {
   display: flex;

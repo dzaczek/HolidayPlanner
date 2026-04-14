@@ -15,6 +15,25 @@ const LS_ENDPOINT_KEY = 'hcp-sync-endpoint';
 const LS_FAMILY_KEY   = 'hcp-family-code';
 const LS_LAST_SYNC        = 'hcp-last-sync';
 const LS_REMOTE_UPDATED_AT = 'hcp-remote-updated-at';
+const LS_LAST_MODIFIED = 'hcp-last-modified';
+
+/** Call whenever user modifies local calendar data (persons, holidays, leaves). */
+export function markLocalChange() {
+  localStorage.setItem(LS_LAST_MODIFIED, new Date().toISOString());
+}
+
+export function getLastModified() {
+  return localStorage.getItem(LS_LAST_MODIFIED) || null;
+}
+
+/** Returns true if local calendar has unsaved changes (modified after last sync). */
+export function isCalendarDirty() {
+  const modified = getLastModified();
+  if (!modified) return false;
+  const synced = getLastSync();
+  if (!synced) return true; // never synced but has changes
+  return modified > synced;
+}
 
 export function getEndpoint() {
   return localStorage.getItem(LS_ENDPOINT_KEY) || DEFAULT_ENDPOINT;
@@ -36,6 +55,7 @@ export function clearFamilyCode() {
   localStorage.removeItem(LS_FAMILY_KEY);
   localStorage.removeItem(LS_LAST_SYNC);
   localStorage.removeItem(LS_REMOTE_UPDATED_AT);
+  localStorage.removeItem(LS_LAST_MODIFIED);
 }
 
 /** updatedAt received from the server on the last successful pull — sent as prevUpdatedAt on next push */
