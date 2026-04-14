@@ -13,13 +13,13 @@ goaccess /var/log/nginx/access.log \
   --log-format=COMBINED \
   --real-time-html \
   --output=/var/www/goaccess/index.html \
-  --port=7890 \
-  --ws-url=ws://localhost:7890 &
+  --port=7892 \
+  --ws-url=ws://localhost:7892 &
 
 # Wait for HTML to be generated
 sleep 2
 
-echo "Starting HTTP server on :7891..."
+echo "Starting HTTP server on :7893..."
 
-# Serve the HTML dashboard on port 7891
-exec darkhttpd /var/www/goaccess --port 7891 --no-listing
+# Serve the HTML dashboard on port 7893
+exec darkhttpd /var/www/goaccess --port 7893 --no-listing

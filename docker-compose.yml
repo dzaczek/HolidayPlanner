@@ -22,9 +22,8 @@ services:
   goaccess:
     build: ./goaccess
     ports:
-      - "7891"
-    expose:
-      - "7890"
+      - "127.0.0.1:7893:7893"
+      - "127.0.0.1:7892:7892"
     volumes:
       - nginx-logs:/var/log/nginx:ro
     depends_on:
