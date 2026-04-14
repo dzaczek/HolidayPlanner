@@ -15,7 +15,7 @@ import { exportPDF } from './share/pdf-export.js';
 let calendarContainer;
 
 export async function initApp() {
-  await seedDatabase();
+  const seedPromise = seedDatabase(showLoadingProgress);
 
   calendarContainer = document.getElementById('calendar-container');
 
@@ -63,6 +63,9 @@ export async function initApp() {
   bindControls();
   await refreshAll();
   updateSyncStatusBar();
+
+  // Note: seedDatabase is running in background (seedPromise)
+  // and will report progress via showLoadingProgress
 }
 
 function bindControls() {

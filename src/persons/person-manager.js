@@ -1,6 +1,6 @@
 import { t } from '../i18n/i18n.js';
 import { sanitizeColor } from '../utils.js';
-import { addPerson, deletePerson, getAllPersons, updatePerson, getHolidaysForPerson, deleteHoliday, deleteHolidaysForPerson } from '../db/store.js';
+import { addPerson, deletePerson, getAllPersons, updatePerson, getHolidaysForPerson, deleteHoliday, deleteHolidaysForPerson, isSeeded } from '../db/store.js';
 import { getAllGemeinden } from '../db/store.js';
 import { showModal, hideModal } from '../app.js';
 import { showHolidayPicker } from '../holidays/holiday-picker.js';
@@ -74,7 +74,18 @@ export async function renderPersonsList(year, onChange) {
 }
 
 export async function showPersonModal(year, existingPerson, onChange) {
-  const gemeinden = await getAllGemeinden();
+  let gemeinden = await getAllGemeinden();
+
+  // If no gemeinden yet, wait for seed to finish (progressive load support)
+  if (gemeinden.length === 0 && !(await isSeeded())) {
+    console.log('[HCP] showPersonModal: waiting for gemeinden seed...');
+    // We could use a more elegant event-based wait, but a simple retry-loop is robust here
+    while (gemeinden.length === 0) {
+      await new Promise(r => setTimeout(r, 500));
+      gemeinden = await getAllGemeinden();
+    }
+  }
+
   const isEdit = !!existingPerson;
   const person = existingPerson || {
     name: '',
