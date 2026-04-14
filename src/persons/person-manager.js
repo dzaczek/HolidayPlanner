@@ -5,7 +5,7 @@ import { getAllGemeinden } from '../db/store.js';
 import { showModal, hideModal } from '../app.js';
 import { showHolidayPicker } from '../holidays/holiday-picker.js';
 import { countTotalDaysOff } from '../holidays/workday-counter.js';
-import { recordPersonDeletion } from '../sync/tombstone.js';
+import { recordPersonDeletion, markPersonManuallyCleared } from '../sync/tombstone.js';
 
 // 12 pastel colors, mutually contrasting, calendar-friendly
 const PERSON_COLORS = [
@@ -24,6 +24,16 @@ const PERSON_COLORS = [
 ];
 let colorIndex = 0;
 
+function getPersonFlag(canton, country) {
+  if (country === 'CH' && canton) {
+    // Assets in public/ are served from the root. Assets in src/assets need to be handled by Vite.
+    // Since we are generating HTML dynamically, we use the root-relative path which Vite handles.
+    return `<img class="person-flag" src="/assets/flags/ch/${canton.toUpperCase()}.svg" alt="${canton}" />`;
+  }
+  const emoji = { CH: '🇨🇭', DE: '🇩🇪', FR: '🇫🇷' }[country] ?? '🌍';
+  return `<span class="person-flag-emoji" aria-hidden="true">${emoji}</span>`;
+}
+
 export async function renderPersonsList(year, onChange) {
   const list = document.getElementById('persons-list');
   list.innerHTML = '';
@@ -38,24 +48,45 @@ export async function renderPersonsList(year, onChange) {
 
     li.innerHTML = `
       <div class="person-color-dot" style="background-color: ${sanitizeColor(person.color)}"></div>
+      ${getPersonFlag(person.canton, person.country)}
       <div class="person-info">
         <div class="person-name">${escapeHtml(person.name)}</div>
         <div class="person-meta">${t(`category.${person.category}`)} / ${escapeHtml(person.gemeindeName || person.gemeinde)}</div>
         <div class="person-days-off">${t('persons.daysOff')}: ${total} <span class="days-off-detail">(${holidayWorkdays} + ${leaveNetWorkdays})</span></div>
       </div>
       <div class="person-actions">
-        <button class="btn-person-add-days" title="${t('holidays.manual')}">+</button>
-        <button class="btn-person-clear" title="${t('holidays.clearAll')}">&#128465;</button>
-        <button class="btn-person-edit" title="${t('persons.edit')}">&#9998;</button>
-        <button class="btn-person-delete" title="${t('persons.remove')}">&#10005;</button>
+        <button class="btn-person-menu" aria-label="${t('btn.actions')}">&#8942;</button>
+        <div class="person-menu-popup hidden">
+          <button class="btn-person-add-days">${t('holidays.manual')}</button>
+          <button class="btn-person-edit">${t('persons.edit')}</button>
+          <button class="btn-person-clear">${t('holidays.clearAll')}</button>
+          <button class="btn-person-delete">${t('persons.remove')}</button>
+        </div>
       </div>
     `;
 
+    const menuBtn = li.querySelector('.btn-person-menu');
+    const menuPopup = li.querySelector('.person-menu-popup');
+
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isHidden = menuPopup.classList.contains('hidden');
+
+      // Close all other menus
+      document.querySelectorAll('.person-menu-popup').forEach(m => m.classList.add('hidden'));
+
+      if (isHidden) {
+        menuPopup.classList.remove('hidden');
+      }
+    });
+
     li.querySelector('.btn-person-add-days').addEventListener('click', () => {
+      menuPopup.classList.add('hidden');
       if (onChange) onChange('add-days', person);
     });
 
     li.querySelector('.btn-person-clear').addEventListener('click', async () => {
+      menuPopup.classList.add('hidden');
       if (!confirm(t('holidays.clearConfirm'))) return;
       await deleteHolidaysForPerson(person.id);
       markPersonManuallyCleared(person.id);
@@ -63,10 +94,12 @@ export async function renderPersonsList(year, onChange) {
     });
 
     li.querySelector('.btn-person-edit').addEventListener('click', () => {
+      menuPopup.classList.add('hidden');
       showPersonModal(year, person, onChange);
     });
 
     li.querySelector('.btn-person-delete').addEventListener('click', async () => {
+      menuPopup.classList.add('hidden');
       if (!confirm(t('persons.confirmDelete'))) return;
       recordPersonDeletion(person);
       await deletePerson(person.id);
@@ -74,6 +107,19 @@ export async function renderPersonsList(year, onChange) {
     });
 
     list.appendChild(li);
+  }
+
+  // Global listeners for menu closing
+  if (!window._personMenuInitialized) {
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.person-menu-popup').forEach(m => m.classList.add('hidden'));
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.person-menu-popup').forEach(m => m.classList.add('hidden'));
+      }
+    });
+    window._personMenuInitialized = true;
   }
 }
 
@@ -223,6 +269,8 @@ export async function showPersonModal(year, existingPerson, onChange) {
       category: document.getElementById('modal-person-category').value,
       gemeinde,
       gemeindeName: gemeindeObj?.name || gemeinde,
+      canton: gemeindeObj?.canton || '',
+      country: gemeindeObj?.country || '',
       color: document.getElementById('modal-person-color').value,
       year,
     };
