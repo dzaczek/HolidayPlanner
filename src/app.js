@@ -188,16 +188,19 @@ function bindControls() {
 
 export function updateSyncStatusBar() {
   const bar = document.getElementById('sync-status-bar');
+  const header = document.getElementById('app-header');
   if (!bar) return;
 
   const code = getFamilyCode();
   if (!code) {
     bar.classList.add('hidden');
     bar.classList.remove('sync-bar-error');
+    header?.classList.remove('e2ee-active');
     return;
   }
 
   bar.classList.remove('hidden');
+  header?.classList.add('e2ee-active');
   const dot = document.getElementById('sync-bar-dot');
   const dateEl = document.getElementById('sync-bar-date');
   const lastSync = getLastSync();
