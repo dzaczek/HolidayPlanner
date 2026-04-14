@@ -39,16 +39,23 @@ export async function renderPersonsList(year, onChange) {
   list.innerHTML = '';
 
   const persons = await getAllPersons(year);
+  const gemeinden = await getAllGemeinden();
+  const gemeindeMap = new Map(gemeinden.map(g => [g.id, g]));
 
   for (const person of persons) {
     const { holidayWorkdays, leaveNetWorkdays, total } = await countTotalDaysOff(person, year);
+
+    // Fall back to gemeinde data for persons saved before PR #8
+    const gemeindeObj = gemeindeMap.get(person.gemeinde);
+    const canton = person.canton || gemeindeObj?.canton || '';
+    const country = person.country || gemeindeObj?.country || '';
 
     const li = document.createElement('li');
     li.className = 'person-item';
 
     li.innerHTML = `
       <div class="person-color-dot" style="background-color: ${sanitizeColor(person.color)}"></div>
-      ${getPersonFlag(person.canton, person.country)}
+      ${getPersonFlag(canton, country)}
       <div class="person-info">
         <div class="person-name">${escapeHtml(person.name)}</div>
         <div class="person-meta">${t(`category.${person.category}`)} / ${escapeHtml(person.gemeindeName || person.gemeinde)}</div>
