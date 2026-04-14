@@ -70,6 +70,21 @@
   border: 1px solid rgba(0,0,0,0.15);
 }
 
+.person-flag {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.person-flag-emoji {
+  font-size: 1.1rem;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 18px;
+  text-align: center;
+}
+
 .person-info {
   flex: 1;
   min-width: 0;
@@ -92,23 +107,74 @@
 }
 
 .person-actions {
+  position: relative;
   display: flex;
   gap: 4px;
 }
 
-.person-actions button {
+.btn-person-menu {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 0.8rem;
-  padding: 2px 4px;
-  border-radius: 3px;
+  font-size: 1.2rem;
+  padding: 4px 8px;
+  border-radius: var(--radius);
   color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
 }
 
-.person-actions button:hover {
+.btn-person-menu:hover {
   background: var(--border);
   color: var(--text);
+}
+
+.person-menu-popup {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg, 0 10px 15px -3px rgba(0, 0, 0, 0.1));
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  padding: 4px 0;
+  margin-top: 4px;
+}
+
+.person-menu-popup.hidden {
+  display: none;
+}
+
+.person-menu-popup button {
+  background: none;
+  border: none;
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: var(--text);
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+}
+
+.person-menu-popup button:hover {
+  background: var(--border);
+}
+
+.person-menu-popup .btn-person-delete {
+  color: var(--danger, #e53935);
+}
+
+.person-menu-popup .btn-person-delete:hover {
+  background: #fff5f5;
 }
 
 .gemeinde-dropdown {
@@ -132,41 +198,6 @@
   background: #e8f0fe;
 }
 
-.person-item .btn-person-add-days {
-  background: var(--primary);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 22px;
-  height: 22px;
-  font-size: 0.85rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.person-item .btn-person-clear {
-  background: transparent;
-  color: var(--text-muted);
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  width: 22px;
-  height: 22px;
-  font-size: 0.75rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.6;
-}
-
-.person-item .btn-person-clear:hover {
-  background: var(--danger, #e53935);
-  color: white;
-  border-color: var(--danger, #e53935);
-  opacity: 1;
-}
 
 .person-days-off {
   font-size: 0.7rem;
