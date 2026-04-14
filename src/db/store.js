@@ -87,7 +87,7 @@ export async function addHolidaysBatch(holidays) {
   const db = await getDB();
   const tx = db.transaction('holidays', 'readwrite');
   for (const h of holidays) {
-    await tx.store.add(h);
+    tx.store.add(h);
   }
   await tx.done;
 }
@@ -155,7 +155,7 @@ export async function addTemplatesBatch(templates) {
   const db = await getDB();
   const tx = db.transaction('holidayTemplates', 'readwrite');
   for (const t of templates) {
-    await tx.store.add(t);
+    tx.store.add(t);
   }
   await tx.done;
 }
@@ -181,7 +181,7 @@ export async function addGemeindenBatch(gemeinden) {
   const db = await getDB();
   const tx = db.transaction('gemeinden', 'readwrite');
   for (const g of gemeinden) {
-    await tx.store.put(g);
+    tx.store.put(g);
   }
   await tx.done;
 }

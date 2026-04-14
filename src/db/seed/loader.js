@@ -56,15 +56,27 @@ async function buildRegionMap() {
 /**
  * Initial seed: only Gemeinden (once).
  */
-export async function seedDatabase() {
+export async function seedDatabase(onProgress) {
   if (await isSeeded()) return;
 
   console.log('[HCP] Seeding Gemeinden...');
+  if (onProgress) onProgress('loading', 0);
   await clearSeedStores();
   const gemeinden = await getGemeinden();
-  await addGemeindenBatch(gemeinden);
+
+  // Seed in chunks to allow UI to breathe and show progress
+  const CHUNK = 3000;
+  for (let i = 0; i < gemeinden.length; i += CHUNK) {
+    const chunk = gemeinden.slice(i, i + CHUNK);
+    await addGemeindenBatch(chunk);
+    if (onProgress) {
+      onProgress('loading', Math.round((i / gemeinden.length) * 100));
+    }
+  }
+
   setSeedVersion(SEED_VERSION);
   console.log(`[HCP] Seeded ${gemeinden.length} Gemeinden`);
+  if (onProgress) onProgress('done', 100);
 }
 
 /**
