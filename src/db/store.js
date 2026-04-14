@@ -210,7 +210,7 @@ export async function deleteLeave(id) {
 
 // === Seed check ===
 
-export const SEED_VERSION = 18; // bump this to force re-seed (added FR — 96 departments, zones A/B/B-AM/C)
+export const SEED_VERSION = 19; // bump this to force re-seed (fix race condition: seed must complete before ensureYearLoaded)
 
 export async function getSeedVersion() {
   try {

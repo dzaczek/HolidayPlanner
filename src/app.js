@@ -15,7 +15,10 @@ import { exportPDF } from './share/pdf-export.js';
 let calendarContainer;
 
 export async function initApp() {
-  const seedPromise = seedDatabase(showLoadingProgress);
+  // Must await seed before refreshAll — otherwise clearSeedStores (triggered by
+  // version bump) races with ensureYearLoaded and may delete freshly-built templates,
+  // causing missing holidays for newly-added countries (e.g. FR).
+  await seedDatabase(showLoadingProgress);
 
   calendarContainer = document.getElementById('calendar-container');
 
@@ -63,9 +66,6 @@ export async function initApp() {
   bindControls();
   await refreshAll();
   updateSyncStatusBar();
-
-  // Note: seedDatabase is running in background (seedPromise)
-  // and will report progress via showLoadingProgress
 }
 
 function bindControls() {
