@@ -134,16 +134,8 @@ export async function hasTemplatesForYear(year) {
   // Check if worker templates exist for this year
   const tx = db.transaction('holidayTemplates', 'readonly');
   const index = tx.store.index('by-year');
-  let hasWorker = false;
-  let cursor = await index.openCursor(year);
-  while (cursor) {
-    if (cursor.value.category === 'worker') {
-      hasWorker = true;
-      break;
-    }
-    cursor = await cursor.continue();
-  }
-  return hasWorker;
+  const all = await index.getAll(year);
+  return all.some(t => t.category === 'worker');
 }
 
 export async function addTemplate(template) {
