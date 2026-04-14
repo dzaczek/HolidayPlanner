@@ -62,6 +62,7 @@
   "reset.backup": "A backup will be downloaded automatically before deleting.",
   "reset.confirm": "Delete everything",
   "btn.close": "Close",
+  "btn.actions": "Actions",
   "months.0": "January",
   "months.1": "February",
   "months.2": "March",

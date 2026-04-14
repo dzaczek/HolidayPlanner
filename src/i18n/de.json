@@ -62,6 +62,7 @@
   "reset.backup": "Vor dem Löschen wird automatisch ein Backup heruntergeladen.",
   "reset.confirm": "Alles löschen",
   "btn.close": "Schliessen",
+  "btn.actions": "Aktionen",
   "months.0": "Januar",
   "months.1": "Februar",
   "months.2": "März",

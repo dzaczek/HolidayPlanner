@@ -62,6 +62,7 @@
   "reset.backup": "Une sauvegarde sera téléchargée automatiquement avant la suppression.",
   "reset.confirm": "Tout supprimer",
   "btn.close": "Fermer",
+  "btn.actions": "Actions",
   "months.0": "Janvier",
   "months.1": "Février",
   "months.2": "Mars",
