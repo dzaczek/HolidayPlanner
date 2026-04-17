@@ -42,8 +42,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -96,7 +96,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -105,8 +105,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -130,8 +130,8 @@
       },
       {
         "name": {
-          "de": "Internationaler Frauentag",
-          "en": "International Women's Day"
+          "de": "Frauentag",
+          "en": "Women's Day"
         },
         "start": "2026-03-08",
         "end": "2026-03-08",
@@ -157,8 +157,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -193,7 +193,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -202,8 +202,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -254,8 +254,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -308,7 +308,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -317,8 +317,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -369,8 +369,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -405,15 +405,6 @@
       },
       {
         "name": {
-          "de": "Mariä Himmelfahrt",
-          "en": "Assumption of Mary"
-        },
-        "start": "2026-08-15",
-        "end": "2026-08-15",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
           "de": "Tag der Deutschen Einheit",
           "en": "German Unity Day"
         },
@@ -432,7 +423,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -441,8 +432,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -484,8 +475,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -529,7 +520,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -538,8 +529,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -581,8 +572,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -626,7 +617,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -635,8 +626,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -678,8 +669,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -723,7 +714,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -732,8 +723,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -757,8 +748,8 @@
       },
       {
         "name": {
-          "de": "Internationaler Frauentag",
-          "en": "International Women's Day"
+          "de": "Frauentag",
+          "en": "Women's Day"
         },
         "start": "2026-03-08",
         "end": "2026-03-08",
@@ -784,8 +775,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -829,7 +820,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -838,8 +829,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -881,8 +872,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -926,7 +917,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -935,8 +926,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -978,8 +969,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -1032,7 +1023,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -1041,8 +1032,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -1084,8 +1075,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -1138,7 +1129,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -1147,8 +1138,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -1190,8 +1181,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -1235,7 +1226,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -1244,8 +1235,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -1287,8 +1278,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -1324,7 +1315,7 @@
       {
         "name": {
           "de": "Mariä Himmelfahrt",
-          "en": "Assumption of Mary"
+          "en": "Assumption Day"
         },
         "start": "2026-08-15",
         "end": "2026-08-15",
@@ -1350,7 +1341,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -1359,8 +1350,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -1402,8 +1393,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -1456,7 +1447,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -1465,8 +1456,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -1517,8 +1508,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -1562,7 +1553,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -1571,8 +1562,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",
@@ -1614,8 +1605,8 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
+          "de": "Erster Mai",
+          "en": "Labor Day"
         },
         "start": "2026-05-01",
         "end": "2026-05-01",
@@ -1668,7 +1659,7 @@
       },
       {
         "name": {
-          "de": "1. Weihnachtsfeiertag",
+          "de": "Erster Weihnachtstag",
           "en": "Christmas Day"
         },
         "start": "2026-12-25",
@@ -1677,8 +1668,8 @@
       },
       {
         "name": {
-          "de": "2. Weihnachtsfeiertag",
-          "en": "St. Stephen's Day"
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas"
         },
         "start": "2026-12-26",
         "end": "2026-12-26",

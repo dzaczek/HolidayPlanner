@@ -18,9 +18,9 @@
       {
         "name": {
           "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
+          "fr": "Saint-Berchtold",
+          "it": "Giorno di Bertoldo",
+          "en": "Saint Berchtold's Day"
         },
         "start": "2028-01-02",
         "end": "2028-01-02",
@@ -30,7 +30,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -41,7 +41,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -51,9 +51,9 @@
       {
         "name": {
           "de": "Tag der Arbeit",
-          "fr": "Fête du travail",
+          "fr": "Fête du Travail",
           "it": "Festa del lavoro",
-          "en": "Labour Day"
+          "en": "Labor Day"
         },
         "start": "2028-05-01",
         "end": "2028-05-01",
@@ -63,7 +63,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -83,10 +83,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -94,7 +94,29 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Knabenschiessen",
+          "fr": "Knabenschiessen",
+          "it": "Knabenschiessen",
+          "en": "Knabenschiessen"
+        },
+        "start": "2028-09-09",
+        "end": "2028-09-09",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Knabenschiessen",
+          "fr": "Knabenschiessen",
+          "it": "Knabenschiessen",
+          "en": "Knabenschiessen"
+        },
+        "start": "2028-09-10",
+        "end": "2028-09-10",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -107,8 +129,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -135,9 +157,9 @@
       {
         "name": {
           "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
+          "fr": "Saint-Berchtold",
+          "it": "Giorno di Bertoldo",
+          "en": "Saint Berchtold's Day"
         },
         "start": "2028-01-02",
         "end": "2028-01-02",
@@ -147,7 +169,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -158,7 +180,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -169,7 +191,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -189,10 +211,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -200,7 +222,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -213,8 +235,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -241,9 +263,9 @@
       {
         "name": {
           "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
+          "fr": "Saint-Berchtold",
+          "it": "Giorno di Bertoldo",
+          "en": "Saint Berchtold's Day"
         },
         "start": "2028-01-02",
         "end": "2028-01-02",
@@ -253,7 +275,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -264,7 +286,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -275,7 +297,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -306,10 +328,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -319,8 +341,8 @@
         "name": {
           "de": "Mariä Himmelfahrt",
           "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
+          "it": "Assunzione di Maria",
+          "en": "Assumption Day"
         },
         "start": "2028-08-15",
         "end": "2028-08-15",
@@ -341,7 +363,7 @@
         "name": {
           "de": "Mariä Empfängnis",
           "fr": "Immaculée Conception",
-          "it": "Immacolata",
+          "it": "Immacolata Concezione",
           "en": "Immaculate Conception"
         },
         "start": "2028-12-08",
@@ -350,7 +372,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -363,8 +385,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -390,7 +412,7 @@
       },
       {
         "name": {
-          "de": "Dreikönigstag",
+          "de": "Heilige Drei Könige",
           "fr": "Épiphanie",
           "it": "Epifania",
           "en": "Epiphany"
@@ -401,10 +423,10 @@
       },
       {
         "name": {
-          "de": "Josephstag",
+          "de": "Josefstag",
           "fr": "Saint-Joseph",
           "it": "San Giuseppe",
-          "en": "St. Joseph's Day"
+          "en": "Saint Joseph's Day"
         },
         "start": "2028-03-19",
         "end": "2028-03-19",
@@ -414,7 +436,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -425,7 +447,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -436,7 +458,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -467,10 +489,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -480,8 +502,8 @@
         "name": {
           "de": "Mariä Himmelfahrt",
           "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
+          "it": "Assunzione di Maria",
+          "en": "Assumption Day"
         },
         "start": "2028-08-15",
         "end": "2028-08-15",
@@ -502,7 +524,7 @@
         "name": {
           "de": "Mariä Empfängnis",
           "fr": "Immaculée Conception",
-          "it": "Immacolata",
+          "it": "Immacolata Concezione",
           "en": "Immaculate Conception"
         },
         "start": "2028-12-08",
@@ -511,24 +533,13 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
         },
         "start": "2028-12-25",
         "end": "2028-12-25",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Stephanstag",
-          "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
-        },
-        "start": "2028-12-26",
-        "end": "2028-12-26",
         "type": "public_holiday"
       }
     ]
@@ -551,7 +562,7 @@
       },
       {
         "name": {
-          "de": "Dreikönigstag",
+          "de": "Heilige Drei Könige",
           "fr": "Épiphanie",
           "it": "Epifania",
           "en": "Epiphany"
@@ -562,10 +573,10 @@
       },
       {
         "name": {
-          "de": "Josephstag",
+          "de": "Josefstag",
           "fr": "Saint-Joseph",
           "it": "San Giuseppe",
-          "en": "St. Joseph's Day"
+          "en": "Saint Joseph's Day"
         },
         "start": "2028-03-19",
         "end": "2028-03-19",
@@ -575,7 +586,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -586,7 +597,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -597,7 +608,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -628,10 +639,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -641,8 +652,8 @@
         "name": {
           "de": "Mariä Himmelfahrt",
           "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
+          "it": "Assunzione di Maria",
+          "en": "Assumption Day"
         },
         "start": "2028-08-15",
         "end": "2028-08-15",
@@ -663,7 +674,7 @@
         "name": {
           "de": "Mariä Empfängnis",
           "fr": "Immaculée Conception",
-          "it": "Immacolata",
+          "it": "Immacolata Concezione",
           "en": "Immaculate Conception"
         },
         "start": "2028-12-08",
@@ -672,7 +683,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -685,8 +696,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -712,31 +723,9 @@
       },
       {
         "name": {
-          "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
-        },
-        "start": "2028-01-02",
-        "end": "2028-01-02",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Josephstag",
-          "fr": "Saint-Joseph",
-          "it": "San Giuseppe",
-          "en": "St. Joseph's Day"
-        },
-        "start": "2028-03-19",
-        "end": "2028-03-19",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -745,35 +734,13 @@
       },
       {
         "name": {
-          "de": "Ostermontag",
-          "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
-          "en": "Easter Monday"
-        },
-        "start": "2028-04-17",
-        "end": "2028-04-17",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
         "end": "2028-05-25",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Pfingstmontag",
-          "fr": "Lundi de Pentecôte",
-          "it": "Lunedì di Pentecoste",
-          "en": "Whit Monday"
-        },
-        "start": "2028-06-05",
-        "end": "2028-06-05",
         "type": "public_holiday"
       },
       {
@@ -789,10 +756,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -802,8 +769,8 @@
         "name": {
           "de": "Mariä Himmelfahrt",
           "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
+          "it": "Assunzione di Maria",
+          "en": "Assumption Day"
         },
         "start": "2028-08-15",
         "end": "2028-08-15",
@@ -812,9 +779,9 @@
       {
         "name": {
           "de": "Bruder Klaus",
-          "fr": "Saint Nicolas de Flüe",
-          "it": "San Nicola della Flüe",
-          "en": "Brother Klaus"
+          "fr": "Fête de Saint-Nicolas-de-Flüe",
+          "it": "San Nicolao della Flue",
+          "en": "Saint Nicholas of Flüe"
         },
         "start": "2028-09-25",
         "end": "2028-09-25",
@@ -835,7 +802,7 @@
         "name": {
           "de": "Mariä Empfängnis",
           "fr": "Immaculée Conception",
-          "it": "Immacolata",
+          "it": "Immacolata Concezione",
           "en": "Immaculate Conception"
         },
         "start": "2028-12-08",
@@ -844,24 +811,13 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
         },
         "start": "2028-12-25",
         "end": "2028-12-25",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Stephanstag",
-          "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
-        },
-        "start": "2028-12-26",
-        "end": "2028-12-26",
         "type": "public_holiday"
       }
     ]
@@ -884,10 +840,10 @@
       },
       {
         "name": {
-          "de": "Josephstag",
+          "de": "Josefstag",
           "fr": "Saint-Joseph",
           "it": "San Giuseppe",
-          "en": "St. Joseph's Day"
+          "en": "Saint Joseph's Day"
         },
         "start": "2028-03-19",
         "end": "2028-03-19",
@@ -897,7 +853,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -906,35 +862,13 @@
       },
       {
         "name": {
-          "de": "Ostermontag",
-          "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
-          "en": "Easter Monday"
-        },
-        "start": "2028-04-17",
-        "end": "2028-04-17",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
         "end": "2028-05-25",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Pfingstmontag",
-          "fr": "Lundi de Pentecôte",
-          "it": "Lunedì di Pentecoste",
-          "en": "Whit Monday"
-        },
-        "start": "2028-06-05",
-        "end": "2028-06-05",
         "type": "public_holiday"
       },
       {
@@ -950,10 +884,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -963,8 +897,8 @@
         "name": {
           "de": "Mariä Himmelfahrt",
           "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
+          "it": "Assunzione di Maria",
+          "en": "Assumption Day"
         },
         "start": "2028-08-15",
         "end": "2028-08-15",
@@ -985,7 +919,7 @@
         "name": {
           "de": "Mariä Empfängnis",
           "fr": "Immaculée Conception",
-          "it": "Immacolata",
+          "it": "Immacolata Concezione",
           "en": "Immaculate Conception"
         },
         "start": "2028-12-08",
@@ -994,24 +928,13 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
         },
         "start": "2028-12-25",
         "end": "2028-12-25",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Stephanstag",
-          "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
-        },
-        "start": "2028-12-26",
-        "end": "2028-12-26",
         "type": "public_holiday"
       }
     ]
@@ -1034,20 +957,20 @@
       },
       {
         "name": {
-          "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
+          "de": "Näfelser Fahrt",
+          "fr": "Fahrtsfest",
+          "it": "Battaglia di Näfels",
+          "en": "Battle of Naefels Victory Day"
         },
-        "start": "2028-01-02",
-        "end": "2028-01-02",
+        "start": "2028-04-06",
+        "end": "2028-04-06",
         "type": "public_holiday"
       },
       {
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -1058,7 +981,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -1069,7 +992,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -1089,10 +1012,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -1111,7 +1034,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -1124,8 +1047,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -1151,20 +1074,9 @@
       },
       {
         "name": {
-          "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
-        },
-        "start": "2028-01-02",
-        "end": "2028-01-02",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -1173,35 +1085,13 @@
       },
       {
         "name": {
-          "de": "Ostermontag",
-          "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
-          "en": "Easter Monday"
-        },
-        "start": "2028-04-17",
-        "end": "2028-04-17",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
         "end": "2028-05-25",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Pfingstmontag",
-          "fr": "Lundi de Pentecôte",
-          "it": "Lunedì di Pentecoste",
-          "en": "Whit Monday"
-        },
-        "start": "2028-06-05",
-        "end": "2028-06-05",
         "type": "public_holiday"
       },
       {
@@ -1217,10 +1107,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -1230,8 +1120,8 @@
         "name": {
           "de": "Mariä Himmelfahrt",
           "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
+          "it": "Assunzione di Maria",
+          "en": "Assumption Day"
         },
         "start": "2028-08-15",
         "end": "2028-08-15",
@@ -1252,7 +1142,7 @@
         "name": {
           "de": "Mariä Empfängnis",
           "fr": "Immaculée Conception",
-          "it": "Immacolata",
+          "it": "Immacolata Concezione",
           "en": "Immaculate Conception"
         },
         "start": "2028-12-08",
@@ -1261,24 +1151,13 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
         },
         "start": "2028-12-25",
         "end": "2028-12-25",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Stephanstag",
-          "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
-        },
-        "start": "2028-12-26",
-        "end": "2028-12-26",
         "type": "public_holiday"
       }
     ]
@@ -1301,20 +1180,9 @@
       },
       {
         "name": {
-          "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
-        },
-        "start": "2028-01-02",
-        "end": "2028-01-02",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -1323,20 +1191,9 @@
       },
       {
         "name": {
-          "de": "Ostermontag",
-          "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
-          "en": "Easter Monday"
-        },
-        "start": "2028-04-17",
-        "end": "2028-04-17",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -1345,32 +1202,10 @@
       },
       {
         "name": {
-          "de": "Pfingstmontag",
-          "fr": "Lundi de Pentecôte",
-          "it": "Lunedì di Pentecoste",
-          "en": "Whit Monday"
-        },
-        "start": "2028-06-05",
-        "end": "2028-06-05",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Fronleichnam",
-          "fr": "Fête-Dieu",
-          "it": "Corpus Domini",
-          "en": "Corpus Christi"
-        },
-        "start": "2028-06-15",
-        "end": "2028-06-15",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -1378,57 +1213,13 @@
       },
       {
         "name": {
-          "de": "Mariä Himmelfahrt",
-          "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
-        },
-        "start": "2028-08-15",
-        "end": "2028-08-15",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Allerheiligen",
-          "fr": "Toussaint",
-          "it": "Ognissanti",
-          "en": "All Saints' Day"
-        },
-        "start": "2028-11-01",
-        "end": "2028-11-01",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Mariä Empfängnis",
-          "fr": "Immaculée Conception",
-          "it": "Immacolata",
-          "en": "Immaculate Conception"
-        },
-        "start": "2028-12-08",
-        "end": "2028-12-08",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
         },
         "start": "2028-12-25",
         "end": "2028-12-25",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Stephanstag",
-          "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
-        },
-        "start": "2028-12-26",
-        "end": "2028-12-26",
         "type": "public_holiday"
       }
     ]
@@ -1453,7 +1244,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -1462,20 +1253,9 @@
       },
       {
         "name": {
-          "de": "Tag der Arbeit",
-          "fr": "Fête du travail",
-          "it": "Festa del lavoro",
-          "en": "Labour Day"
-        },
-        "start": "2028-05-01",
-        "end": "2028-05-01",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -1484,21 +1264,10 @@
       },
       {
         "name": {
-          "de": "Fronleichnam",
-          "fr": "Fête-Dieu",
-          "it": "Corpus Domini",
-          "en": "Corpus Christi"
-        },
-        "start": "2028-06-15",
-        "end": "2028-06-15",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -1506,29 +1275,7 @@
       },
       {
         "name": {
-          "de": "Mariä Himmelfahrt",
-          "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
-        },
-        "start": "2028-08-15",
-        "end": "2028-08-15",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Allerheiligen",
-          "fr": "Toussaint",
-          "it": "Ognissanti",
-          "en": "All Saints' Day"
-        },
-        "start": "2028-11-01",
-        "end": "2028-11-01",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -1559,7 +1306,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -1570,7 +1317,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -1580,9 +1327,9 @@
       {
         "name": {
           "de": "Tag der Arbeit",
-          "fr": "Fête du travail",
+          "fr": "Fête du Travail",
           "it": "Festa del lavoro",
-          "en": "Labour Day"
+          "en": "Labor Day"
         },
         "start": "2028-05-01",
         "end": "2028-05-01",
@@ -1592,7 +1339,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -1612,10 +1359,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -1623,7 +1370,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -1636,8 +1383,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -1665,7 +1412,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -1676,7 +1423,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -1686,9 +1433,9 @@
       {
         "name": {
           "de": "Tag der Arbeit",
-          "fr": "Fête du travail",
+          "fr": "Fête du Travail",
           "it": "Festa del lavoro",
-          "en": "Labour Day"
+          "en": "Labor Day"
         },
         "start": "2028-05-01",
         "end": "2028-05-01",
@@ -1698,7 +1445,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -1718,10 +1465,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -1729,7 +1476,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -1742,8 +1489,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -1769,20 +1516,9 @@
       },
       {
         "name": {
-          "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
-        },
-        "start": "2028-01-02",
-        "end": "2028-01-02",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -1793,7 +1529,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -1803,9 +1539,9 @@
       {
         "name": {
           "de": "Tag der Arbeit",
-          "fr": "Fête du travail",
+          "fr": "Fête du Travail",
           "it": "Festa del lavoro",
-          "en": "Labour Day"
+          "en": "Labor Day"
         },
         "start": "2028-05-01",
         "end": "2028-05-01",
@@ -1815,7 +1551,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -1835,10 +1571,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -1846,7 +1582,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -1859,8 +1595,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -1888,7 +1624,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -1899,7 +1635,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -1910,7 +1646,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -1930,10 +1666,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -1941,24 +1677,13 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
         },
         "start": "2028-12-25",
         "end": "2028-12-25",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Stephanstag",
-          "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
-        },
-        "start": "2028-12-26",
-        "end": "2028-12-26",
         "type": "public_holiday"
       }
     ]
@@ -1983,7 +1708,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -1994,7 +1719,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -2005,7 +1730,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -2036,10 +1761,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -2049,8 +1774,8 @@
         "name": {
           "de": "Mariä Himmelfahrt",
           "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
+          "it": "Assunzione di Maria",
+          "en": "Assumption Day"
         },
         "start": "2028-08-15",
         "end": "2028-08-15",
@@ -2071,7 +1796,7 @@
         "name": {
           "de": "Mariä Empfängnis",
           "fr": "Immaculée Conception",
-          "it": "Immacolata",
+          "it": "Immacolata Concezione",
           "en": "Immaculate Conception"
         },
         "start": "2028-12-08",
@@ -2080,24 +1805,13 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
         },
         "start": "2028-12-25",
         "end": "2028-12-25",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Stephanstag",
-          "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
-        },
-        "start": "2028-12-26",
-        "end": "2028-12-26",
         "type": "public_holiday"
       }
     ]
@@ -2122,7 +1836,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -2133,7 +1847,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -2144,7 +1858,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -2164,10 +1878,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -2186,7 +1900,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -2199,8 +1913,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -2226,31 +1940,9 @@
       },
       {
         "name": {
-          "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
-        },
-        "start": "2028-01-02",
-        "end": "2028-01-02",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Karfreitag",
-          "fr": "Vendredi saint",
-          "it": "Venerdì santo",
-          "en": "Good Friday"
-        },
-        "start": "2028-04-14",
-        "end": "2028-04-14",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -2261,7 +1953,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -2281,10 +1973,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -2292,7 +1984,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -2305,8 +1997,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -2333,9 +2025,9 @@
       {
         "name": {
           "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
+          "fr": "Saint-Berchtold",
+          "it": "Giorno di Bertoldo",
+          "en": "Saint Berchtold's Day"
         },
         "start": "2028-01-02",
         "end": "2028-01-02",
@@ -2345,7 +2037,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -2356,7 +2048,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -2365,9 +2057,20 @@
       },
       {
         "name": {
+          "de": "Tag der Arbeit",
+          "fr": "Fête du Travail",
+          "it": "Festa del lavoro",
+          "en": "Labor Day"
+        },
+        "start": "2028-05-01",
+        "end": "2028-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -2398,10 +2101,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -2411,8 +2114,8 @@
         "name": {
           "de": "Mariä Himmelfahrt",
           "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
+          "it": "Assunzione di Maria",
+          "en": "Assumption Day"
         },
         "start": "2028-08-15",
         "end": "2028-08-15",
@@ -2433,7 +2136,7 @@
         "name": {
           "de": "Mariä Empfängnis",
           "fr": "Immaculée Conception",
-          "it": "Immacolata",
+          "it": "Immacolata Concezione",
           "en": "Immaculate Conception"
         },
         "start": "2028-12-08",
@@ -2442,7 +2145,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -2455,8 +2158,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -2483,9 +2186,9 @@
       {
         "name": {
           "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
+          "fr": "Saint-Berchtold",
+          "it": "Giorno di Bertoldo",
+          "en": "Saint Berchtold's Day"
         },
         "start": "2028-01-02",
         "end": "2028-01-02",
@@ -2495,7 +2198,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -2506,7 +2209,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -2516,9 +2219,9 @@
       {
         "name": {
           "de": "Tag der Arbeit",
-          "fr": "Fête du travail",
+          "fr": "Fête du Travail",
           "it": "Festa del lavoro",
-          "en": "Labour Day"
+          "en": "Labor Day"
         },
         "start": "2028-05-01",
         "end": "2028-05-01",
@@ -2528,7 +2231,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -2548,10 +2251,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -2559,7 +2262,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -2572,8 +2275,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -2599,7 +2302,7 @@
       },
       {
         "name": {
-          "de": "Dreikönigstag",
+          "de": "Heilige Drei Könige",
           "fr": "Épiphanie",
           "it": "Epifania",
           "en": "Epiphany"
@@ -2610,10 +2313,10 @@
       },
       {
         "name": {
-          "de": "Josephstag",
+          "de": "Josefstag",
           "fr": "Saint-Joseph",
           "it": "San Giuseppe",
-          "en": "St. Joseph's Day"
+          "en": "Saint Joseph's Day"
         },
         "start": "2028-03-19",
         "end": "2028-03-19",
@@ -2623,7 +2326,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -2633,9 +2336,9 @@
       {
         "name": {
           "de": "Tag der Arbeit",
-          "fr": "Fête du travail",
+          "fr": "Fête du Travail",
           "it": "Festa del lavoro",
-          "en": "Labour Day"
+          "en": "Labor Day"
         },
         "start": "2028-05-01",
         "end": "2028-05-01",
@@ -2645,7 +2348,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -2677,8 +2380,8 @@
       {
         "name": {
           "de": "Peter und Paul",
-          "fr": "Saints Pierre et Paul",
-          "it": "San Pietro e Paolo",
+          "fr": "Saint-Pierre et Paul",
+          "it": "Santi Pietro e Paolo",
           "en": "Saints Peter and Paul"
         },
         "start": "2028-06-29",
@@ -2687,10 +2390,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -2700,8 +2403,8 @@
         "name": {
           "de": "Mariä Himmelfahrt",
           "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
+          "it": "Assunzione di Maria",
+          "en": "Assumption Day"
         },
         "start": "2028-08-15",
         "end": "2028-08-15",
@@ -2722,7 +2425,7 @@
         "name": {
           "de": "Mariä Empfängnis",
           "fr": "Immaculée Conception",
-          "it": "Immacolata",
+          "it": "Immacolata Concezione",
           "en": "Immaculate Conception"
         },
         "start": "2028-12-08",
@@ -2731,7 +2434,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -2744,8 +2447,8 @@
         "name": {
           "de": "Stephanstag",
           "fr": "Saint-Étienne",
-          "it": "Santo Stefano",
-          "en": "St. Stephen's Day"
+          "it": "Giorno di Santo Stefano",
+          "en": "Saint Stephen's Day"
         },
         "start": "2028-12-26",
         "end": "2028-12-26",
@@ -2772,9 +2475,9 @@
       {
         "name": {
           "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
+          "fr": "Saint-Berchtold",
+          "it": "Giorno di Bertoldo",
+          "en": "Saint Berchtold's Day"
         },
         "start": "2028-01-02",
         "end": "2028-01-02",
@@ -2784,7 +2487,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -2795,7 +2498,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -2806,7 +2509,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -2826,10 +2529,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -2837,7 +2540,18 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Bettagsmontag",
+          "fr": "Lundi du Jeûne fédéral",
+          "it": "Lunedì del digiuno federal",
+          "en": "Prayer Monday"
+        },
+        "start": "2028-09-18",
+        "end": "2028-09-18",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -2866,10 +2580,10 @@
       },
       {
         "name": {
-          "de": "Josephstag",
+          "de": "Josefstag",
           "fr": "Saint-Joseph",
           "it": "San Giuseppe",
-          "en": "St. Joseph's Day"
+          "en": "Saint Joseph's Day"
         },
         "start": "2028-03-19",
         "end": "2028-03-19",
@@ -2877,35 +2591,13 @@
       },
       {
         "name": {
-          "de": "Ostermontag",
-          "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
-          "en": "Easter Monday"
-        },
-        "start": "2028-04-17",
-        "end": "2028-04-17",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
         "end": "2028-05-25",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "de": "Pfingstmontag",
-          "fr": "Lundi de Pentecôte",
-          "it": "Lunedì di Pentecoste",
-          "en": "Whit Monday"
-        },
-        "start": "2028-06-05",
-        "end": "2028-06-05",
         "type": "public_holiday"
       },
       {
@@ -2921,10 +2613,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -2934,8 +2626,8 @@
         "name": {
           "de": "Mariä Himmelfahrt",
           "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
+          "it": "Assunzione di Maria",
+          "en": "Assumption Day"
         },
         "start": "2028-08-15",
         "end": "2028-08-15",
@@ -2956,7 +2648,7 @@
         "name": {
           "de": "Mariä Empfängnis",
           "fr": "Immaculée Conception",
-          "it": "Immacolata",
+          "it": "Immacolata Concezione",
           "en": "Immaculate Conception"
         },
         "start": "2028-12-08",
@@ -2965,7 +2657,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -2994,20 +2686,20 @@
       },
       {
         "name": {
-          "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
+          "de": "Jahrestag der Ausrufung der Republik",
+          "fr": "Instauration de la République",
+          "it": "Giorno della Repubblica",
+          "en": "Republic Day"
         },
-        "start": "2028-01-02",
-        "end": "2028-01-02",
+        "start": "2028-03-01",
+        "end": "2028-03-01",
         "type": "public_holiday"
       },
       {
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -3017,9 +2709,9 @@
       {
         "name": {
           "de": "Tag der Arbeit",
-          "fr": "Fête du travail",
+          "fr": "Fête du Travail",
           "it": "Festa del lavoro",
-          "en": "Labour Day"
+          "en": "Labor Day"
         },
         "start": "2028-05-01",
         "end": "2028-05-01",
@@ -3029,7 +2721,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -3049,10 +2741,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -3060,7 +2752,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -3091,7 +2783,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -3102,7 +2794,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -3113,7 +2805,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -3133,10 +2825,10 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -3144,7 +2836,18 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Genfer Bettag",
+          "fr": "Jeûne genevois",
+          "it": "Digiuno ginevrino",
+          "en": "Genevan Fast"
+        },
+        "start": "2028-09-07",
+        "end": "2028-09-07",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"
@@ -3155,10 +2858,10 @@
       },
       {
         "name": {
-          "de": "Restauration der Republik",
+          "de": "Wiederherstellung der Republik",
           "fr": "Restauration de la République",
           "it": "Restaurazione della Repubblica",
-          "en": "Restoration of the Republic"
+          "en": "Restoration Day"
         },
         "start": "2028-12-31",
         "end": "2028-12-31",
@@ -3185,9 +2888,9 @@
       {
         "name": {
           "de": "Berchtoldstag",
-          "fr": "2 janvier",
-          "it": "2 gennaio",
-          "en": "Berchtold's Day"
+          "fr": "Saint-Berchtold",
+          "it": "Giorno di Bertoldo",
+          "en": "Saint Berchtold's Day"
         },
         "start": "2028-01-02",
         "end": "2028-01-02",
@@ -3197,7 +2900,7 @@
         "name": {
           "de": "Karfreitag",
           "fr": "Vendredi saint",
-          "it": "Venerdì santo",
+          "it": "Venerdì Santo",
           "en": "Good Friday"
         },
         "start": "2028-04-14",
@@ -3208,7 +2911,7 @@
         "name": {
           "de": "Ostermontag",
           "fr": "Lundi de Pâques",
-          "it": "Lunedì di Pasqua",
+          "it": "Lunedì dell'Angelo",
           "en": "Easter Monday"
         },
         "start": "2028-04-17",
@@ -3218,9 +2921,9 @@
       {
         "name": {
           "de": "Tag der Arbeit",
-          "fr": "Fête du travail",
+          "fr": "Fête du Travail",
           "it": "Festa del lavoro",
-          "en": "Labour Day"
+          "en": "Labor Day"
         },
         "start": "2028-05-01",
         "end": "2028-05-01",
@@ -3230,7 +2933,7 @@
         "name": {
           "de": "Auffahrt",
           "fr": "Ascension",
-          "it": "Ascensione",
+          "it": "Ascensione di Gesù",
           "en": "Ascension Day"
         },
         "start": "2028-05-25",
@@ -3261,10 +2964,21 @@
       },
       {
         "name": {
-          "de": "Bundesfeiertag",
+          "de": "Fest der Unabhängigkeit",
+          "fr": "Commémoration du plébiscite",
+          "it": "Festa dell'Indipendenza",
+          "en": "Independence Day"
+        },
+        "start": "2028-06-23",
+        "end": "2028-06-23",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "de": "Nationalfeiertag",
           "fr": "Fête nationale",
           "it": "Festa nazionale",
-          "en": "Swiss National Day"
+          "en": "National Day"
         },
         "start": "2028-08-01",
         "end": "2028-08-01",
@@ -3274,8 +2988,8 @@
         "name": {
           "de": "Mariä Himmelfahrt",
           "fr": "Assomption",
-          "it": "Assunzione",
-          "en": "Assumption of Mary"
+          "it": "Assunzione di Maria",
+          "en": "Assumption Day"
         },
         "start": "2028-08-15",
         "end": "2028-08-15",
@@ -3294,7 +3008,7 @@
       },
       {
         "name": {
-          "de": "Weihnachtstag",
+          "de": "Weihnachten",
           "fr": "Noël",
           "it": "Natale",
           "en": "Christmas Day"

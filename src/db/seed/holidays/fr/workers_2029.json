@@ -6,7 +6,7 @@
     "holidays": [
       {
         "name": {
-          "fr": "Jour de l'An",
+          "fr": "Jour de l'an",
           "de": "Neujahrstag",
           "en": "New Year's Day"
         },
@@ -36,7 +36,7 @@
       },
       {
         "name": {
-          "fr": "Victoire 1945",
+          "fr": "Fête de la Victoire",
           "de": "Tag des Sieges 1945",
           "en": "Victory in Europe Day"
         },
@@ -66,7 +66,7 @@
       },
       {
         "name": {
-          "fr": "Fête Nationale",
+          "fr": "Fête nationale",
           "de": "Nationalfeiertag",
           "en": "Bastille Day"
         },
@@ -96,7 +96,7 @@
       },
       {
         "name": {
-          "fr": "Armistice 1918",
+          "fr": "Armistice",
           "de": "Waffenstillstand 1918",
           "en": "Armistice Day"
         },
@@ -123,7 +123,7 @@
     "holidays": [
       {
         "name": {
-          "fr": "Jour de l'An",
+          "fr": "Jour de l'an",
           "de": "Neujahrstag",
           "en": "New Year's Day"
         },
@@ -153,7 +153,7 @@
       },
       {
         "name": {
-          "fr": "Victoire 1945",
+          "fr": "Fête de la Victoire",
           "de": "Tag des Sieges 1945",
           "en": "Victory in Europe Day"
         },
@@ -183,7 +183,7 @@
       },
       {
         "name": {
-          "fr": "Fête Nationale",
+          "fr": "Fête nationale",
           "de": "Nationalfeiertag",
           "en": "Bastille Day"
         },
@@ -213,7 +213,7 @@
       },
       {
         "name": {
-          "fr": "Armistice 1918",
+          "fr": "Armistice",
           "de": "Waffenstillstand 1918",
           "en": "Armistice Day"
         },
@@ -229,143 +229,6 @@
         },
         "start": "2029-12-25",
         "end": "2029-12-25",
-        "type": "public_holiday"
-      }
-    ]
-  },
-  {
-    "canton": "Zone-B-AM",
-    "year": 2029,
-    "category": "worker",
-    "holidays": [
-      {
-        "name": {
-          "fr": "Jour de l'An",
-          "de": "Neujahrstag",
-          "en": "New Year's Day"
-        },
-        "start": "2029-01-01",
-        "end": "2029-01-01",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "fr": "Vendredi Saint",
-          "de": "Karfreitag",
-          "en": "Good Friday"
-        },
-        "start": "2029-03-30",
-        "end": "2029-03-30",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "fr": "Lundi de Pâques",
-          "de": "Ostermontag",
-          "en": "Easter Monday"
-        },
-        "start": "2029-04-02",
-        "end": "2029-04-02",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "fr": "Fête du Travail",
-          "de": "Tag der Arbeit",
-          "en": "Labour Day"
-        },
-        "start": "2029-05-01",
-        "end": "2029-05-01",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "fr": "Victoire 1945",
-          "de": "Tag des Sieges 1945",
-          "en": "Victory in Europe Day"
-        },
-        "start": "2029-05-08",
-        "end": "2029-05-08",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "fr": "Ascension",
-          "de": "Christi Himmelfahrt",
-          "en": "Ascension Day"
-        },
-        "start": "2029-05-10",
-        "end": "2029-05-10",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "fr": "Lundi de Pentecôte",
-          "de": "Pfingstmontag",
-          "en": "Whit Monday"
-        },
-        "start": "2029-05-21",
-        "end": "2029-05-21",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "fr": "Fête Nationale",
-          "de": "Nationalfeiertag",
-          "en": "Bastille Day"
-        },
-        "start": "2029-07-14",
-        "end": "2029-07-14",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "fr": "Assomption",
-          "de": "Mariä Himmelfahrt",
-          "en": "Assumption of Mary"
-        },
-        "start": "2029-08-15",
-        "end": "2029-08-15",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "fr": "Toussaint",
-          "de": "Allerheiligen",
-          "en": "All Saints' Day"
-        },
-        "start": "2029-11-01",
-        "end": "2029-11-01",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "fr": "Armistice 1918",
-          "de": "Waffenstillstand 1918",
-          "en": "Armistice Day"
-        },
-        "start": "2029-11-11",
-        "end": "2029-11-11",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "fr": "Noël",
-          "de": "Weihnachtstag",
-          "en": "Christmas Day"
-        },
-        "start": "2029-12-25",
-        "end": "2029-12-25",
-        "type": "public_holiday"
-      },
-      {
-        "name": {
-          "fr": "2ème jour de Noël",
-          "de": "2. Weihnachtstag",
-          "en": "2nd Christmas Day"
-        },
-        "start": "2029-12-26",
-        "end": "2029-12-26",
         "type": "public_holiday"
       }
     ]
@@ -377,7 +240,7 @@
     "holidays": [
       {
         "name": {
-          "fr": "Jour de l'An",
+          "fr": "Jour de l'an",
           "de": "Neujahrstag",
           "en": "New Year's Day"
         },
@@ -407,7 +270,7 @@
       },
       {
         "name": {
-          "fr": "Victoire 1945",
+          "fr": "Fête de la Victoire",
           "de": "Tag des Sieges 1945",
           "en": "Victory in Europe Day"
         },
@@ -437,7 +300,7 @@
       },
       {
         "name": {
-          "fr": "Fête Nationale",
+          "fr": "Fête nationale",
           "de": "Nationalfeiertag",
           "en": "Bastille Day"
         },
@@ -467,7 +330,7 @@
       },
       {
         "name": {
-          "fr": "Armistice 1918",
+          "fr": "Armistice",
           "de": "Waffenstillstand 1918",
           "en": "Armistice Day"
         },
