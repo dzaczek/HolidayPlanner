@@ -141,19 +141,28 @@ async function icalDecrypt(keyRaw, { iv, data }) {
 
 // ── ICS builder ───────────────────────────────────────────────────────────────
 
+// label może być stringiem lub obiektem {de, en, fr, it} z seed data
+function labelStr(label) {
+  if (!label) return '';
+  if (typeof label === 'string') return label;
+  if (typeof label === 'object') return label.de || label.en || label.fr || label.it || Object.values(label)[0] || '';
+  return String(label);
+}
+
 function buildICSFromPayload({ year, persons = [], holidays = [], leaves = [] }, calUrl) {
   const events = [];
 
   for (const person of persons) {
     const ph = holidays.filter(h => h.personId === person.id);
     for (const r of groupRanges(ph)) {
-      events.push(vevent(`${person.name}: ${r.label}`, r.start, r.end, null, calUrl));
+      events.push(vevent(`${person.name}: ${labelStr(r.label)}`, r.start, r.end, null, calUrl));
     }
   }
 
   for (const leave of leaves) {
     const names = persons.filter(p => (leave.personIds || []).includes(p.id)).map(p => p.name).join(', ');
-    events.push(vevent(leave.label || 'Urlaub', leave.startDate, leave.endDate, names || null, calUrl));
+    const summary = `Urlop: ${labelStr(leave.label) || 'Urlop'}`;
+    events.push(vevent(summary, leave.startDate, leave.endDate, names || null, calUrl));
   }
 
   return [
