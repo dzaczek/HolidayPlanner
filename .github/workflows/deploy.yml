@@ -1,0 +1,28 @@
+name: Deploy to Mikrus VPS
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'backend/vps/**'
+      - '.github/workflows/deploy.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.MIKRUS_HOST }}
+          username: ${{ secrets.MIKRUS_USER }}
+          key: ${{ secrets.MIKRUS_SSH_KEY }}
+          port: ${{ secrets.MIKRUS_PORT || 22 }}
+          script: |
+            set -e
+            cd ~/HolidayPlanner
+            git pull origin main
+            cd backend/vps
+            docker compose pull --quiet 2>/dev/null || true
+            docker compose up -d --build --remove-orphans
+            docker compose ps

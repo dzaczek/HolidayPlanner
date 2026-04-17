@@ -16,6 +16,7 @@ const LS_FAMILY_KEY   = 'hcp-family-code';
 const LS_LAST_SYNC        = 'hcp-last-sync';
 const LS_REMOTE_UPDATED_AT = 'hcp-remote-updated-at';
 const LS_LAST_MODIFIED = 'hcp-last-modified';
+const LS_WEBCAL_TOKEN  = 'hcp-webcal-token';
 
 /** Call whenever user modifies local calendar data (persons, holidays, leaves). */
 export function markLocalChange() {
@@ -56,6 +57,43 @@ export function clearFamilyCode() {
   localStorage.removeItem(LS_LAST_SYNC);
   localStorage.removeItem(LS_REMOTE_UPDATED_AT);
   localStorage.removeItem(LS_LAST_MODIFIED);
+}
+
+export function getWebcalToken() {
+  return localStorage.getItem(LS_WEBCAL_TOKEN) || null;
+}
+
+export function setWebcalToken(token) {
+  localStorage.setItem(LS_WEBCAL_TOKEN, token);
+}
+
+export function clearWebcalToken() {
+  localStorage.removeItem(LS_WEBCAL_TOKEN);
+}
+
+export function getWebcalUrl(token) {
+  const endpoint = getEndpoint();
+  return endpoint.replace(/^https?:\/\//, 'webcal://') + `/v1/ical/${token}`;
+}
+
+export function getIcalHttpUrl(token) {
+  return `${getEndpoint()}/v1/ical/${token}`;
+}
+
+export async function pushIcalFeed(token, icsContent) {
+  const url = `${getEndpoint()}/v1/ical/${encodeURIComponent(token)}`;
+  const res = await fetch(url, {
+    method: 'PUT',
+    headers: { ...clientHeaders(), 'Content-Type': 'text/calendar; charset=utf-8' },
+    body: icsContent,
+  });
+  if (!res.ok) throw new Error(`ICS push failed: ${res.status}`);
+}
+
+export async function deleteIcalFeed(token) {
+  const url = `${getEndpoint()}/v1/ical/${encodeURIComponent(token)}`;
+  const res = await fetch(url, { method: 'DELETE', headers: clientHeaders() });
+  if (!res.ok && res.status !== 404) throw new Error(`ICS delete failed: ${res.status}`);
 }
 
 /** updatedAt received from the server on the last successful pull — sent as prevUpdatedAt on next push */

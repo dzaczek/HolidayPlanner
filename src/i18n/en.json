@@ -151,5 +151,13 @@
   "share.menu.familyDesc": "Calendar encrypted with AES-256 — server only sees ciphertext, key never leaves your device. Real-time sharing with family members.",
   "share.menu.data": "Share via Link",
   "share.menu.dataDesc": "Current calendar state encoded in a URL and copied to clipboard. One-time share — no server, no synchronisation.",
-  "sync.conflict": "Conflict detected — auto-merged with remote"
+  "sync.conflict": "Conflict detected — auto-merged with remote",
+  "sync.webcal.title": "Calendar subscription (webcal)",
+  "sync.webcal.enable": "Enable",
+  "sync.webcal.hint": "Subscribe in Outlook, Apple Calendar, Gmail and other calendar apps.",
+  "sync.webcal.copy": "Copy URL",
+  "sync.webcal.refresh": "Refresh feed",
+  "sync.webcal.active": "Feed active",
+  "sync.webcal.disabled": "Feed disabled",
+  "sync.webcal.refreshed": "Feed updated"
 }

@@ -59,7 +59,7 @@ function groupHolidaysIntoRanges(holidays) {
   return ranges;
 }
 
-function buildVEvent(summary, startDate, endDate, description) {
+function buildVEvent(summary, startDate, endDate, description, calUrl) {
   const dtstart = formatICSDate(startDate);
   const dtend = nextDay(endDate);
   return [
@@ -70,6 +70,7 @@ function buildVEvent(summary, startDate, endDate, description) {
     `DTEND;VALUE=DATE:${dtend}`,
     `SUMMARY:${escapeICS(summary)}`,
     description ? `DESCRIPTION:${escapeICS(description)}` : null,
+    calUrl ? `URL:${calUrl}` : null,
     'TRANSP:TRANSPARENT',
     'END:VEVENT',
   ].filter(Boolean).join('\r\n');
@@ -100,9 +101,10 @@ function downloadFile(content, filename, mimeType) {
 }
 
 /**
- * Export all persons' holidays + leaves as a single ICS file.
+ * Build ICS content string for all persons' holidays + leaves.
+ * @param {{ calUrl?: string }} options  calUrl — if set, added as URL: field to every VEVENT
  */
-export async function exportICS() {
+export async function buildICSContent({ calUrl } = {}) {
   const year = getYear();
   const persons = await getAllPersons(year);
   const leaves = await getAllLeaves(year);
@@ -111,10 +113,8 @@ export async function exportICS() {
   for (const person of persons) {
     const holidays = await getHolidaysForPerson(person.id, year);
     const ranges = groupHolidaysIntoRanges(holidays);
-
     for (const range of ranges) {
-      const summary = `${person.name}: ${range.label}`;
-      events.push(buildVEvent(summary, range.start, range.end));
+      events.push(buildVEvent(`${person.name}: ${range.label}`, range.start, range.end, null, calUrl));
     }
   }
 
@@ -123,14 +123,20 @@ export async function exportICS() {
       .filter(p => (leave.personIds || []).includes(p.id))
       .map(p => p.name)
       .join(', ');
-    const summary = leave.label || 'Urlaub';
     const desc = assignedNames ? `Personen: ${assignedNames}` : '';
-    events.push(buildVEvent(summary, leave.startDate, leave.endDate, desc));
+    events.push(buildVEvent(leave.label || 'Urlaub', leave.startDate, leave.endDate, desc, calUrl));
   }
 
-  const ics = buildICS(events, `HCP ${year}`);
-  downloadFile(ics, `hcp-calendar-${year}.ics`, 'text/calendar;charset=utf-8');
-  return events.length;
+  return { ics: buildICS(events, `HCP ${year}`), count: events.length };
+}
+
+/**
+ * Export all persons' holidays + leaves as a single ICS file.
+ */
+export async function exportICS() {
+  const { ics, count } = await buildICSContent();
+  downloadFile(ics, `hcp-calendar-${getYear()}.ics`, 'text/calendar;charset=utf-8');
+  return count;
 }
 
 /**
@@ -147,9 +153,8 @@ export async function exportLeavesICS() {
       .filter(p => (leave.personIds || []).includes(p.id))
       .map(p => p.name)
       .join(', ');
-    const summary = leave.label || 'Urlaub';
     const desc = assignedNames ? `Personen: ${assignedNames}` : '';
-    events.push(buildVEvent(summary, leave.startDate, leave.endDate, desc));
+    events.push(buildVEvent(leave.label || 'Urlaub', leave.startDate, leave.endDate, desc));
   }
 
   const ics = buildICS(events, `HCP Urlaub ${year}`);

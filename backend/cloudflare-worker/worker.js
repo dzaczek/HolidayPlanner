@@ -33,9 +33,16 @@ const ID_RE = /^[A-Za-z0-9_-]{22}$/;
 export default {
   async fetch(request, env) {
     const origin = request.headers.get('Origin') || '';
+    const url = new URL(request.url);
+
+    // Public: ical feed GET — calendar apps (Outlook, Apple, Gmail) don't send Origin or auth.
+    // The token acts as the sole credential; 128-bit random makes it unguessable.
+    const icalToken = url.pathname.match(/^\/v1\/ical\/([A-Za-z0-9_-]{22})$/)?.[1];
+    if (icalToken && request.method === 'GET') {
+      return handleIcalGet(env, icalToken);
+    }
 
     // Guard: refuse to operate if the client token secret is not configured.
-    // Prevents accidental open deployment without authentication.
     if (!env.HCP_CLIENT_TOKEN) {
       return json({ error: 'Service misconfigured — HCP_CLIENT_TOKEN not set' }, 503, origin);
     }
@@ -48,12 +55,12 @@ export default {
       return new Response(null, { status: 204, headers: corsHeaders(origin) });
     }
 
-    // 1. Origin check (browsers always send Origin for cross-origin requests)
+    // 1. Origin check
     if (!ALLOWED_ORIGINS.includes(origin)) {
       return json({ error: 'Forbidden' }, 403, origin);
     }
 
-    // 2. Client token check (stops scripts that fake Origin)
+    // 2. Client token check
     const clientToken = request.headers.get('X-HCP-Client') || '';
     if (clientToken !== env.HCP_CLIENT_TOKEN) {
       return json({ error: 'Forbidden' }, 403, origin);
@@ -65,8 +72,14 @@ export default {
       return json({ error: 'Rate limit exceeded — try again later' }, 429, origin);
     }
 
-    // Route
-    const url = new URL(request.url);
+    // Route: ical feed management (authenticated PUT / DELETE)
+    if (icalToken) {
+      if (request.method === 'PUT')    return handleIcalPut(env, icalToken, request, origin);
+      if (request.method === 'DELETE') return handleIcalDelete(env, icalToken, origin);
+      return json({ error: 'Method not allowed' }, 405, origin);
+    }
+
+    // Route: calendar blobs
     const m = url.pathname.match(/^\/v1\/calendar\/([^/]+)$/);
     if (!m) return json({ error: 'Not found' }, 404, origin);
 
@@ -81,6 +94,37 @@ export default {
 };
 
 // ── Handlers ──────────────────────────────────────────────────────────────────
+
+async function handleIcalGet(env, token) {
+  const val = await env.CALENDARS.get(`ical:${token}`);
+  if (!val) return new Response('Feed not found', { status: 404, headers: { 'Content-Type': 'text/plain' } });
+  return new Response(val, {
+    status: 200,
+    headers: {
+      'Content-Type': 'text/calendar; charset=utf-8',
+      'Content-Disposition': 'attachment; filename="hcp-calendar.ics"',
+      'Cache-Control': 'no-cache, no-store',
+    },
+  });
+}
+
+async function handleIcalPut(env, token, request, origin) {
+  const ct = request.headers.get('content-type') || '';
+  if (!ct.includes('text/calendar')) {
+    return json({ error: 'Content-Type must be text/calendar' }, 415, origin);
+  }
+  const body = await request.text();
+  if (body.length > MAX_BLOB_BYTES) {
+    return json({ error: 'Payload too large' }, 413, origin);
+  }
+  await env.CALENDARS.put(`ical:${token}`, body, { expirationTtl: TTL_SECONDS });
+  return json({ ok: true }, 200, origin);
+}
+
+async function handleIcalDelete(env, token, origin) {
+  await env.CALENDARS.delete(`ical:${token}`);
+  return json({ ok: true }, 200, origin);
+}
 
 async function handleGet(env, id, origin) {
   const val = await env.CALENDARS.get(id);
@@ -144,13 +188,19 @@ function isValidBlob(body) {
   return true;
 }
 
-// ── Rate limiting (KV-backed, fail-closed) ────────────────────────────────────
+// ── Rate limiting (separate KV namespace, fail-closed) ───────────────────────
+
+function normalizeIP(ip) {
+  // IPv6: bucket to /64 prefix to prevent per-address evasion
+  if (ip.includes(':')) return ip.split(':').slice(0, 4).join(':');
+  return ip;
+}
 
 async function checkRateLimit(env, ip) {
-  const key = `rl:${ip}`;
+  const key = `rl:${normalizeIP(ip)}`;
   const now = Date.now();
   try {
-    const raw = await env.CALENDARS.get(key);
+    const raw = await env.RATE_LIMITS.get(key);
     const state = raw ? JSON.parse(raw) : { count: 0, windowStart: now };
 
     if (now - state.windowStart > RATE_WINDOW_MS) {
@@ -159,12 +209,15 @@ async function checkRateLimit(env, ip) {
     }
 
     state.count++;
-    if (state.count > RATE_LIMIT) return false;
 
-    await env.CALENDARS.put(key, JSON.stringify(state), {
-      expirationTtl: Math.ceil(RATE_WINDOW_MS / 1000),
-    });
-    return true;
+    // Stop writing once already blocked — avoids burning KV ops on repeat offenders
+    if (state.count <= RATE_LIMIT + 1) {
+      await env.RATE_LIMITS.put(key, JSON.stringify(state), {
+        expirationTtl: Math.ceil(RATE_WINDOW_MS / 1000),
+      });
+    }
+
+    return state.count <= RATE_LIMIT;
   } catch {
     return false; // fail-closed: block on KV error rather than open the gate
   }
@@ -175,7 +228,7 @@ async function checkRateLimit(env, ip) {
 function corsHeaders(origin) {
   return {
     'Access-Control-Allow-Origin': origin,
-    'Access-Control-Allow-Methods': 'GET, PUT, OPTIONS',
+    'Access-Control-Allow-Methods': 'GET, PUT, DELETE, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, X-HCP-Client',
     'Vary': 'Origin',
   };

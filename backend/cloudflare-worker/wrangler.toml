@@ -2,22 +2,22 @@ name = "hcp-sync"
 main = "worker.js"
 compatibility_date = "2024-01-01"
 
-# KV namespace — NOT a secret (access controlled by your CF account)
-# Get the ID by running:  wrangler kv namespace create CALENDARS
+# Calendar data namespace (E2EE blobs only)
+# wrangler kv namespace create CALENDARS
 [[kv_namespaces]]
 binding = "CALENDARS"
 id = "2ccb440b3fca44fcb40867bd187b59cb"
-# Local dev KV (run: wrangler kv namespace create CALENDARS --preview)
-# [[kv_namespaces]]
-# binding = "CALENDARS"
-# id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
-# preview_id = "REPLACE_WITH_PREVIEW_KV_ID"
+
+# Rate-limit counters — separate namespace so IP flooding never touches calendar data
+# wrangler kv namespace create RATE_LIMITS  → paste generated ID below
+[[kv_namespaces]]
+binding = "RATE_LIMITS"
+id = "3b72d73ac7ad496d9f6f4435d9a3c36f"
 
 # Secrets (set via: wrangler secret put SECRET_NAME)
 # These are encrypted at rest in CF and injected as env vars at runtime.
 # See .dev.vars.example for local dev equivalents.
 
-# Optional: restrict to your own domain
-# [[routes]]
-# pattern = "hcp-sync.yourdomain.com/*"
-# zone_name = "yourdomain.com"
+[[routes]]
+pattern = "hcp.sysop.cat/v1/*"
+zone_name = "sysop.cat"

@@ -151,5 +151,13 @@
   "share.menu.familyDesc": "Kalender wird mit AES-256 verschlüsselt — der Server sieht nur unlesbaren Code, der Schlüssel bleibt bei Ihnen. Ideal für Echtzeit-Sharing mit der Familie.",
   "share.menu.data": "Link teilen",
   "share.menu.dataDesc": "Aktueller Kalender wird als URL kodiert und in die Zwischenablage kopiert. Einmalige Weitergabe — kein Server, keine Synchronisation.",
-  "sync.conflict": "Konflikt erkannt — automatisch zusammengeführt"
+  "sync.conflict": "Konflikt erkannt — automatisch zusammengeführt",
+  "sync.webcal.title": "Kalenderabonnement (webcal)",
+  "sync.webcal.enable": "Aktivieren",
+  "sync.webcal.hint": "In Outlook, Apple-Kalender, Gmail und anderen Kalender-Apps abonnieren.",
+  "sync.webcal.copy": "URL kopieren",
+  "sync.webcal.refresh": "Feed aktualisieren",
+  "sync.webcal.active": "Feed aktiv",
+  "sync.webcal.disabled": "Feed deaktiviert",
+  "sync.webcal.refreshed": "Feed aktualisiert"
 }

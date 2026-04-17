@@ -46,6 +46,12 @@ db.exec(`
   );
 
   CREATE INDEX IF NOT EXISTS idx_updated ON calendars(updated_at);
+
+  CREATE TABLE IF NOT EXISTS ical_feeds (
+    token      TEXT    PRIMARY KEY,
+    content    TEXT    NOT NULL,
+    updated_at TEXT    NOT NULL
+  );
 `);
 
 // Cleanup job: remove entries older than 180 days (runs hourly)
@@ -63,8 +69,11 @@ const app = express();
 app.set('trust proxy', 1);
 
 app.use(helmet());
-app.use(cors({ origin: CORS_ORIGIN, methods: ['GET', 'PUT', 'OPTIONS'] }));
+const HCP_CLIENT_TOKEN = process.env.HCP_CLIENT_TOKEN || '';
+
+app.use(cors({ origin: CORS_ORIGIN, methods: ['GET', 'PUT', 'DELETE', 'OPTIONS'] }));
 app.use(express.json({ limit: `${MAX_BYTES}b` }));
+app.use(express.text({ type: 'text/calendar', limit: `${MAX_BYTES}b` }));
 
 // Rate limit: 60 requests per 10 minutes per IP
 app.use('/v1/', rateLimit({
@@ -74,6 +83,14 @@ app.use('/v1/', rateLimit({
   legacyHeaders: false,
   message: { error: 'Rate limit exceeded' },
 }));
+
+// ── Auth middleware ───────────────────────────────────────────────────────────
+
+function requireClientToken(req, res, next) {
+  if (!HCP_CLIENT_TOKEN) return res.status(503).json({ error: 'HCP_CLIENT_TOKEN not configured' });
+  if (req.headers['x-hcp-client'] !== HCP_CLIENT_TOKEN) return res.status(403).json({ error: 'Forbidden' });
+  next();
+}
 
 // ── Routes ────────────────────────────────────────────────────────────────────
 
@@ -110,6 +127,40 @@ function isValidBlob(iv, data) {
   if (typeof data !== 'string' || data.length < 32 || data.length > MAX_BYTES) return false;
   return true;
 }
+
+// ── iCal feed routes ─────────────────────────────────────────────────────────
+
+// Public read — calendar apps (Outlook, Apple, Gmail) don't send auth headers
+app.get('/v1/ical/:token', (req, res) => {
+  const { token } = req.params;
+  if (!ID_RE.test(token)) return res.status(400).send('Invalid token');
+  const row = db.prepare('SELECT content FROM ical_feeds WHERE token = ?').get(token);
+  if (!row) return res.status(404).send('Feed not found');
+  res.setHeader('Content-Type', 'text/calendar; charset=utf-8');
+  res.setHeader('Content-Disposition', 'attachment; filename="hcp-calendar.ics"');
+  res.setHeader('Cache-Control', 'no-cache, no-store');
+  res.send(row.content);
+});
+
+app.put('/v1/ical/:token', requireClientToken, (req, res) => {
+  const { token } = req.params;
+  if (!ID_RE.test(token)) return res.status(400).json({ error: 'Invalid token' });
+  const content = req.body;
+  if (typeof content !== 'string' || content.length < 10 || content.length > MAX_BYTES) {
+    return res.status(400).json({ error: 'Invalid ICS content' });
+  }
+  const updatedAt = new Date().toISOString();
+  db.prepare('INSERT OR REPLACE INTO ical_feeds (token, content, updated_at) VALUES (?, ?, ?)')
+    .run(token, content, updatedAt);
+  res.json({ ok: true, updatedAt });
+});
+
+app.delete('/v1/ical/:token', requireClientToken, (req, res) => {
+  const { token } = req.params;
+  if (!ID_RE.test(token)) return res.status(400).json({ error: 'Invalid token' });
+  db.prepare('DELETE FROM ical_feeds WHERE token = ?').run(token);
+  res.json({ ok: true });
+});
 
 // ── Start ─────────────────────────────────────────────────────────────────────
 
