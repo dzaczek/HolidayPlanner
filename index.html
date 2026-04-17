@@ -62,12 +62,12 @@
     </div>
     <div class="header-controls">
       <div class="year-selector">
-        <button id="prev-year" aria-label="Previous year" data-tooltip="Poprzedni rok">&laquo;</button>
+        <button id="prev-year" aria-label="Previous year" data-i18n-tooltip="tooltip.prevYear">&laquo;</button>
         <span id="current-year">2026</span>
-        <button id="next-year" aria-label="Next year" data-tooltip="Następny rok">&raquo;</button>
+        <button id="next-year" aria-label="Next year" data-i18n-tooltip="tooltip.nextYear">&raquo;</button>
       </div>
       <div class="layout-selector">
-        <select id="layout-select" data-tooltip="Układ kalendarza">
+        <select id="layout-select" data-i18n-tooltip="tooltip.layout">
           <option value="3x4">3 &times; 4</option>
           <option value="2x6">2 &times; 6</option>
           <option value="4x3">4 &times; 3</option>
@@ -77,7 +77,7 @@
         </select>
       </div>
       <div class="lang-selector">
-        <select id="lang-select" data-tooltip="Język interfejsu">
+        <select id="lang-select" data-i18n-tooltip="tooltip.language">
           <option value="de">Deutsch</option>
           <option value="fr">Français</option>
           <option value="it">Italiano</option>
@@ -88,16 +88,16 @@
         <span class="sync-e2ee-badge">&#128274; E2EE</span>
         <span id="sync-bar-dot" class="sync-dot sync-dot-ok"></span>
         <span id="sync-bar-date" class="sync-bar-date">—</span>
-        <button id="sync-quick-pull" class="btn-sync-quick" data-tooltip="Pobierz zmiany z serwera">&#8681;</button>
-        <button id="sync-quick-push" class="btn-sync-quick" data-tooltip="Wyślij lokalne zmiany na serwer">&#8679;</button>
-        <button id="sync-quick-sync" class="btn-sync-quick" data-tooltip="Synchronizuj (pobierz + wyślij)">&#8645;</button>
+        <button id="sync-quick-pull" class="btn-sync-quick" data-i18n-tooltip="tooltip.pull">&#8681;</button>
+        <button id="sync-quick-push" class="btn-sync-quick" data-i18n-tooltip="tooltip.push">&#8679;</button>
+        <button id="sync-quick-sync" class="btn-sync-quick" data-i18n-tooltip="tooltip.sync">&#8645;</button>
       </div>
-      <button id="pdf-btn" class="btn-header btn-pdf" data-tooltip="Eksportuj do PDF">&#128196; PDF</button>
-      <button id="about-btn" class="btn-header btn-about" data-tooltip="O aplikacji">&#9432;</button>
-      <button id="reset-btn" class="btn-header btn-reset" data-tooltip="Resetuj wszystkie dane">&#128465;</button>
-      <button id="backup-btn" class="btn-header" data-tooltip="Kopia zapasowa / Przywróć">&#128190; Backup</button>
+      <button id="pdf-btn" class="btn-header btn-pdf" data-i18n-tooltip="tooltip.pdf">&#128196; PDF</button>
+      <button id="about-btn" class="btn-header btn-about" data-i18n-tooltip="tooltip.about">&#9432;</button>
+      <button id="reset-btn" class="btn-header btn-reset" data-i18n-tooltip="tooltip.reset">&#128465;</button>
+      <button id="backup-btn" class="btn-header" data-i18n-tooltip="tooltip.backup">&#128190; Backup</button>
       <div class="share-dropdown-wrap" id="share-dropdown-wrap">
-        <button id="share-menu-btn" class="btn-header btn-share-menu" data-tooltip="Udostępnij kalendarz">&#8599; Share &#9660;</button>
+        <button id="share-menu-btn" class="btn-header btn-share-menu" data-i18n-tooltip="tooltip.share">&#8599; Share &#9660;</button>
         <div id="share-menu" class="share-menu hidden">
           <button id="share-menu-family" class="share-menu-item">
             <span class="share-menu-icon">&#128272;</span>

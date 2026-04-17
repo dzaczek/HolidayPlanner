@@ -49,4 +49,7 @@ export function applyTranslations() {
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
     el.placeholder = t(el.dataset.i18nPlaceholder);
   });
+  document.querySelectorAll('[data-i18n-tooltip]').forEach(el => {
+    el.dataset.tooltip = t(el.dataset.i18nTooltip);
+  });
 }

@@ -159,5 +159,17 @@
   "sync.webcal.refresh": "Actualiser le flux",
   "sync.webcal.active": "Flux actif",
   "sync.webcal.disabled": "Flux désactivé",
-  "sync.webcal.refreshed": "Flux mis à jour"
+  "sync.webcal.refreshed": "Flux mis à jour",
+  "tooltip.prevYear": "Année précédente",
+  "tooltip.nextYear": "Année suivante",
+  "tooltip.layout": "Disposition du calendrier",
+  "tooltip.language": "Langue de l'interface",
+  "tooltip.pull": "Récupérer les modifications du serveur",
+  "tooltip.push": "Envoyer les modifications locales",
+  "tooltip.sync": "Synchroniser (récupérer + envoyer)",
+  "tooltip.pdf": "Exporter en PDF",
+  "tooltip.about": "À propos",
+  "tooltip.reset": "Réinitialiser toutes les données",
+  "tooltip.backup": "Sauvegarde / Restaurer",
+  "tooltip.share": "Partager le calendrier"
 }

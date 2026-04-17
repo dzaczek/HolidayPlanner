@@ -159,5 +159,17 @@
   "sync.webcal.refresh": "Refresh feed",
   "sync.webcal.active": "Feed active",
   "sync.webcal.disabled": "Feed disabled",
-  "sync.webcal.refreshed": "Feed updated"
+  "sync.webcal.refreshed": "Feed updated",
+  "tooltip.prevYear": "Previous year",
+  "tooltip.nextYear": "Next year",
+  "tooltip.layout": "Calendar layout",
+  "tooltip.language": "Interface language",
+  "tooltip.pull": "Fetch changes from server",
+  "tooltip.push": "Send local changes to server",
+  "tooltip.sync": "Synchronise (fetch + send)",
+  "tooltip.pdf": "Export to PDF",
+  "tooltip.about": "About the app",
+  "tooltip.reset": "Reset all data",
+  "tooltip.backup": "Backup / Restore data",
+  "tooltip.share": "Share calendar"
 }
