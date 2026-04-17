@@ -420,14 +420,16 @@ main {
 .sync-status-bar {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
   background: #dcfce7;
   border: 1.5px solid #16a34a;
   border-radius: var(--radius);
-  padding: 5px 12px;
+  padding: 4px 8px;
   font-size: 0.78rem;
   color: #15803d;
   font-weight: 500;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .sync-status-bar.hidden {
@@ -467,13 +469,13 @@ main {
   border: none;
   border-radius: 5px;
   color: #fff;
-  padding: 4px 10px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  line-height: 1.3;
+  padding: 4px 7px;
+  font-size: 1rem;
+  line-height: 1;
   cursor: pointer;
   transition: background 0.12s, opacity 0.12s;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .btn-sync-quick:hover {
