@@ -13,6 +13,7 @@ import { getAllPersons, getHolidaysForYear, getAllLeaves, addPerson, addHolidays
 import { getYear } from '../calendar/renderer.js';
 import { generateKey, generateCalendarId, encryptPayload, decryptPayload, buildFamilyCode, parseFamilyCode } from './crypto.js';
 import { pushCalendar, pullCalendar, getFamilyCode, setFamilyCode, clearFamilyCode, getLastSync, getEndpoint, setEndpoint, isWebcalEnabled, setWebcalEnabled, getWebcalUrl } from './cloud-store.js';
+import { exportBackup } from '../share/backup.js';
 import { getTombstones, saveTombstones, mergeTombstones, leaveSig, getPersonTombstones, savePersonTombstones, personSig } from './tombstone.js';
 import { escapeHtml } from '../utils.js';
 
@@ -246,7 +247,8 @@ async function showSyncStatusModal(code, onChanged) {
     await runSync({ code, pushAfterMerge: false, onChanged });
   });
 
-  document.getElementById('sync-leave').addEventListener('click', () => {
+  document.getElementById('sync-leave').addEventListener('click', async () => {
+    await exportBackup().catch(() => {});
     setWebcalEnabled(false);
     clearFamilyCode();
     hideModal();
