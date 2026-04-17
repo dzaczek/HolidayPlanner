@@ -170,7 +170,7 @@ function buildICS(payload, calUrl, syncUrl) {
 
 function groupRanges(holidays) {
   const byLabel = {};
-  for (const h of holidays) (byLabel[h.label || 'Holiday'] ??= []).push(h.date);
+  for (const h of holidays) (byLabel[labelStr(h.label) || 'Holiday'] ??= []).push(h.date);
   const ranges = [];
   for (const [label, dates] of Object.entries(byLabel)) {
     const sorted = [...dates].sort();
