@@ -103,7 +103,10 @@ async function handleIcalGet(env, token) {
     return icalError(400, 'Decryption failed — wrong key or corrupted data');
   }
 
-  const ics = buildICSFromPayload(payload, `https://${new URL('https://placeholder').host}/v1/ical/${token}`);
+  const reqOrigin = new URL(request.url).origin;
+  const calUrl  = `${reqOrigin}/v1/ical/${token}`;
+  const syncUrl = `${reqOrigin}/?sync=hcp_${calendarId}_${keyRaw}`;
+  const ics = buildICSFromPayload(payload, calUrl, syncUrl);
   return new Response(ics, {
     status: 200,
     headers: {
@@ -149,20 +152,21 @@ function labelStr(label) {
   return String(label);
 }
 
-function buildICSFromPayload({ year, persons = [], holidays = [], leaves = [] }, calUrl) {
+function buildICSFromPayload({ year, persons = [], holidays = [], leaves = [] }, calUrl, syncUrl) {
+  const withSync = desc => [desc, syncUrl].filter(Boolean).join('\n');
   const events = [];
 
   for (const person of persons) {
     const ph = holidays.filter(h => h.personId === person.id);
     for (const r of groupRanges(ph)) {
-      events.push(vevent(`${person.name}: ${labelStr(r.label)}`, r.start, r.end, null, calUrl));
+      events.push(vevent(`${person.name}: ${labelStr(r.label)}`, r.start, r.end, withSync(null), calUrl));
     }
   }
 
   for (const leave of leaves) {
     const names = persons.filter(p => (leave.personIds || []).includes(p.id)).map(p => p.name).join(', ');
     const summary = `Urlop: ${labelStr(leave.label) || 'Urlop'}`;
-    events.push(vevent(summary, leave.startDate, leave.endDate, names || null, calUrl));
+    events.push(vevent(summary, leave.startDate, leave.endDate, withSync(names || null), calUrl));
   }
 
   return [
