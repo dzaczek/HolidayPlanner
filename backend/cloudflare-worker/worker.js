@@ -39,7 +39,7 @@ export default {
     // Worker fetches the encrypted blob from KV, decrypts on-the-fly, returns ICS.
     const icalMatch = url.pathname.match(/^\/v1\/ical\/([A-Za-z0-9_-]{65})$/);
     if (icalMatch && request.method === 'GET') {
-      return handleIcalGet(env, icalMatch[1]);
+      return handleIcalGet(env, icalMatch[1], request);
     }
 
     // Guard: refuse to operate if the client token secret is not configured.
@@ -88,7 +88,7 @@ export default {
 
 // ── Handlers ──────────────────────────────────────────────────────────────────
 
-async function handleIcalGet(env, token) {
+async function handleIcalGet(env, token, request) {
   const calendarId = token.slice(0, 22);
   const keyRaw     = token.slice(22);       // 43-char base64url AES-256 key
 
