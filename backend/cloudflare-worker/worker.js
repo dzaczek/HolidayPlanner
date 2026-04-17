@@ -35,11 +35,11 @@ export default {
     const origin = request.headers.get('Origin') || '';
     const url = new URL(request.url);
 
-    // Public: ical feed GET — calendar apps (Outlook, Apple, Gmail) don't send Origin or auth.
-    // The token acts as the sole credential; 128-bit random makes it unguessable.
-    const icalToken = url.pathname.match(/^\/v1\/ical\/([A-Za-z0-9_-]{22})$/)?.[1];
-    if (icalToken && request.method === 'GET') {
-      return handleIcalGet(env, icalToken);
+    // Public: ical feed GET — token = calendarId(22) + keyRaw(43), no auth header needed.
+    // Worker fetches the encrypted blob from KV, decrypts on-the-fly, returns ICS.
+    const icalMatch = url.pathname.match(/^\/v1\/ical\/([A-Za-z0-9_-]{65})$/);
+    if (icalMatch && request.method === 'GET') {
+      return handleIcalGet(env, icalMatch[1]);
     }
 
     // Guard: refuse to operate if the client token secret is not configured.
@@ -72,13 +72,6 @@ export default {
       return json({ error: 'Rate limit exceeded — try again later' }, 429, origin);
     }
 
-    // Route: ical feed management (authenticated PUT / DELETE)
-    if (icalToken) {
-      if (request.method === 'PUT')    return handleIcalPut(env, icalToken, request, origin);
-      if (request.method === 'DELETE') return handleIcalDelete(env, icalToken, origin);
-      return json({ error: 'Method not allowed' }, 405, origin);
-    }
-
     // Route: calendar blobs
     const m = url.pathname.match(/^\/v1\/calendar\/([^/]+)$/);
     if (!m) return json({ error: 'Not found' }, 404, origin);
@@ -96,9 +89,22 @@ export default {
 // ── Handlers ──────────────────────────────────────────────────────────────────
 
 async function handleIcalGet(env, token) {
-  const val = await env.CALENDARS.get(`ical:${token}`);
-  if (!val) return new Response('Feed not found', { status: 404, headers: { 'Content-Type': 'text/plain' } });
-  return new Response(val, {
+  const calendarId = token.slice(0, 22);
+  const keyRaw     = token.slice(22);       // 43-char base64url AES-256 key
+
+  const raw = await env.CALENDARS.get(calendarId);
+  if (!raw) return icalError(404, 'Calendar not found');
+
+  let payload;
+  try {
+    const blob = JSON.parse(raw);
+    payload = await icalDecrypt(keyRaw, blob);
+  } catch {
+    return icalError(400, 'Decryption failed — wrong key or corrupted data');
+  }
+
+  const ics = buildICSFromPayload(payload, `https://${new URL('https://placeholder').host}/v1/ical/${token}`);
+  return new Response(ics, {
     status: 200,
     headers: {
       'Content-Type': 'text/calendar; charset=utf-8',
@@ -108,22 +114,94 @@ async function handleIcalGet(env, token) {
   });
 }
 
-async function handleIcalPut(env, token, request, origin) {
-  const ct = request.headers.get('content-type') || '';
-  if (!ct.includes('text/calendar')) {
-    return json({ error: 'Content-Type must be text/calendar' }, 415, origin);
-  }
-  const body = await request.text();
-  if (body.length > MAX_BLOB_BYTES) {
-    return json({ error: 'Payload too large' }, 413, origin);
-  }
-  await env.CALENDARS.put(`ical:${token}`, body, { expirationTtl: TTL_SECONDS });
-  return json({ ok: true }, 200, origin);
+function icalError(status, msg) {
+  return new Response(msg, { status, headers: { 'Content-Type': 'text/plain' } });
 }
 
-async function handleIcalDelete(env, token, origin) {
-  await env.CALENDARS.delete(`ical:${token}`);
-  return json({ ok: true }, 200, origin);
+// ── Worker-side AES-256-GCM decrypt ──────────────────────────────────────────
+
+function b64urlToBytes(s) {
+  const b64 = s.replace(/-/g, '+').replace(/_/g, '/');
+  const pad = b64 + '='.repeat((4 - b64.length % 4) % 4);
+  const str = atob(pad);
+  const buf = new Uint8Array(str.length);
+  for (let i = 0; i < str.length; i++) buf[i] = str.charCodeAt(i);
+  return buf;
+}
+
+async function icalDecrypt(keyRaw, { iv, data }) {
+  const key = await crypto.subtle.importKey(
+    'raw', b64urlToBytes(keyRaw), { name: 'AES-GCM' }, false, ['decrypt'],
+  );
+  const plain = await crypto.subtle.decrypt(
+    { name: 'AES-GCM', iv: b64urlToBytes(iv) }, key, b64urlToBytes(data),
+  );
+  return JSON.parse(new TextDecoder().decode(plain));
+}
+
+// ── ICS builder ───────────────────────────────────────────────────────────────
+
+function buildICSFromPayload({ year, persons = [], holidays = [], leaves = [] }, calUrl) {
+  const events = [];
+
+  for (const person of persons) {
+    const ph = holidays.filter(h => h.personId === person.id);
+    for (const r of groupRanges(ph)) {
+      events.push(vevent(`${person.name}: ${r.label}`, r.start, r.end, null, calUrl));
+    }
+  }
+
+  for (const leave of leaves) {
+    const names = persons.filter(p => (leave.personIds || []).includes(p.id)).map(p => p.name).join(', ');
+    events.push(vevent(leave.label || 'Urlaub', leave.startDate, leave.endDate, names || null, calUrl));
+  }
+
+  return [
+    'BEGIN:VCALENDAR', 'VERSION:2.0',
+    'PRODID:-//HCP//Holiday Calendar Planner//EN',
+    'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
+    `X-WR-CALNAME:HCP ${year}`,
+    ...events,
+    'END:VCALENDAR',
+  ].join('\r\n');
+}
+
+function groupRanges(holidays) {
+  const byLabel = {};
+  for (const h of holidays) {
+    (byLabel[h.label || 'Holiday'] ??= []).push(h.date);
+  }
+  const ranges = [];
+  for (const [label, dates] of Object.entries(byLabel)) {
+    const sorted = [...dates].sort();
+    let start = sorted[0], end = sorted[0];
+    for (let i = 1; i < sorted.length; i++) {
+      const diff = (new Date(sorted[i]) - new Date(end)) / 86400000;
+      if (diff === 1) { end = sorted[i]; } else { ranges.push({ label, start, end }); start = end = sorted[i]; }
+    }
+    ranges.push({ label, start, end });
+  }
+  return ranges;
+}
+
+function vevent(summary, start, end, description, url) {
+  const fmt = s => s.replace(/-/g, '');
+  const nextDay = s => { const d = new Date(s + 'T00:00:00'); d.setDate(d.getDate() + 1); return fmt(d.toISOString().slice(0, 10)); };
+  const esc = s => (s || '').replace(/[\\;,]/g, c => '\\' + c).replace(/\n/g, '\\n');
+  const dtstamp = new Date().toISOString().replace(/[-:.]/g, '').slice(0, 15) + 'Z';
+  const uid = `${Date.now()}-${Math.random().toString(36).slice(2, 7)}@hcp`;
+  return [
+    'BEGIN:VEVENT',
+    `UID:${uid}`,
+    `DTSTAMP:${dtstamp}`,
+    `DTSTART;VALUE=DATE:${fmt(start)}`,
+    `DTEND;VALUE=DATE:${nextDay(end)}`,
+    `SUMMARY:${esc(summary)}`,
+    description ? `DESCRIPTION:${esc(description)}` : null,
+    url ? `URL:${url}` : null,
+    'TRANSP:TRANSPARENT',
+    'END:VEVENT',
+  ].filter(Boolean).join('\r\n');
 }
 
 async function handleGet(env, id, origin) {

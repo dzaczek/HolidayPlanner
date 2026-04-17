@@ -12,8 +12,7 @@ import { showModal, hideModal } from '../app.js';
 import { getAllPersons, getHolidaysForYear, getAllLeaves, addPerson, addHolidaysBatch, addLeave, clearUserStores } from '../db/store.js';
 import { getYear } from '../calendar/renderer.js';
 import { generateKey, generateCalendarId, encryptPayload, decryptPayload, buildFamilyCode, parseFamilyCode } from './crypto.js';
-import { pushCalendar, pullCalendar, getFamilyCode, setFamilyCode, clearFamilyCode, getLastSync, getEndpoint, setEndpoint, getWebcalToken, setWebcalToken, clearWebcalToken, getWebcalUrl, getIcalHttpUrl, pushIcalFeed, deleteIcalFeed } from './cloud-store.js';
-import { buildICSContent } from '../share/ics-export.js';
+import { pushCalendar, pullCalendar, getFamilyCode, setFamilyCode, clearFamilyCode, getLastSync, getEndpoint, setEndpoint, isWebcalEnabled, setWebcalEnabled, getWebcalUrl } from './cloud-store.js';
 import { getTombstones, saveTombstones, mergeTombstones, leaveSig, getPersonTombstones, savePersonTombstones, personSig } from './tombstone.js';
 import { escapeHtml } from '../utils.js';
 
@@ -154,9 +153,11 @@ function saveEndpoint() {
 // ── Status modal (already paired) ───────────────────────────────────────────
 
 async function showSyncStatusModal(code, onChanged) {
-  const { calendarId } = await parseFamilyCode(code);
+  const { calendarId, keyRaw } = await parseFamilyCode(code);
   const lastSync = getLastSync();
   const lastSyncStr = lastSync ? new Date(lastSync).toLocaleString() : '—';
+  const webcalEnabled = isWebcalEnabled();
+  const webcalUrl = getWebcalUrl(calendarId, keyRaw);
 
   const html = `
     <h3>${t('sync.title')}</h3>
@@ -196,22 +197,18 @@ async function showSyncStatusModal(code, onChanged) {
       <div style="display:flex; align-items:center; justify-content:space-between;">
         <span style="font-size:0.8rem; font-weight:600;">📅 ${t('sync.webcal.title')}</span>
         <label style="display:flex; align-items:center; gap:6px; cursor:pointer; font-size:0.8rem;">
-          <input type="checkbox" id="webcal-toggle" ${getWebcalToken() ? 'checked' : ''}>
+          <input type="checkbox" id="webcal-toggle" ${webcalEnabled ? 'checked' : ''}>
           ${t('sync.webcal.enable')}
         </label>
       </div>
       <p style="font-size:0.72rem; color:var(--text-muted); margin:4px 0 8px;">${t('sync.webcal.hint')}</p>
-      <div id="webcal-url-block" style="${getWebcalToken() ? '' : 'display:none;'}">
+      <div id="webcal-url-block" style="${webcalEnabled ? '' : 'display:none;'}">
         <input type="text" readonly id="webcal-url-input"
-          value="${getWebcalToken() ? escapeHtml(getWebcalUrl(getWebcalToken())) : ''}"
+          value="${escapeHtml(webcalUrl)}"
           style="font-size:0.7rem; width:100%; box-sizing:border-box; font-family:monospace;"
           onclick="this.select()">
-        <div style="display:flex; gap:6px; margin-top:6px;">
-          <button class="btn btn-secondary btn-sm" id="webcal-copy-url" style="flex:1;">${t('sync.webcal.copy')}</button>
-          <button class="btn btn-secondary btn-sm" id="webcal-refresh" style="flex:1;">${t('sync.webcal.refresh')}</button>
-        </div>
+        <button class="btn btn-secondary btn-sm" id="webcal-copy-url" style="width:100%; margin-top:6px;">${t('sync.webcal.copy')}</button>
       </div>
-      <div id="webcal-status" class="sync-status-msg" style="display:none; margin-top:6px;"></div>
     </div>
 
     <div class="modal-actions">
@@ -250,91 +247,22 @@ async function showSyncStatusModal(code, onChanged) {
   });
 
   document.getElementById('sync-leave').addEventListener('click', () => {
-    const token = getWebcalToken();
-    if (token) deleteIcalFeed(token).catch(() => {});
-    clearWebcalToken();
+    setWebcalEnabled(false);
     clearFamilyCode();
     hideModal();
   });
 
-  // Webcal toggle
-  document.getElementById('webcal-toggle').addEventListener('change', async (e) => {
-    const wcStatus = document.getElementById('webcal-status');
-    const urlBlock = document.getElementById('webcal-url-block');
-    wcStatus.style.display = '';
-    wcStatus.className = 'sync-status-msg sync-info';
-    wcStatus.textContent = '…';
-
-    try {
-      if (e.target.checked) {
-        const token = generateWebcalToken();
-        setWebcalToken(token);
-        const webcalUrl = getWebcalUrl(token);
-        const httpUrl = getIcalHttpUrl(token);
-        const { ics } = await buildICSContent({ calUrl: httpUrl });
-        await pushIcalFeed(token, ics);
-        document.getElementById('webcal-url-input').value = webcalUrl;
-        urlBlock.style.display = '';
-        wcStatus.className = 'sync-status-msg sync-ok';
-        wcStatus.textContent = '✓ ' + t('sync.webcal.active');
-      } else {
-        const token = getWebcalToken();
-        if (token) await deleteIcalFeed(token);
-        clearWebcalToken();
-        urlBlock.style.display = 'none';
-        wcStatus.className = 'sync-status-msg sync-info';
-        wcStatus.textContent = t('sync.webcal.disabled');
-      }
-    } catch (err) {
-      wcStatus.className = 'sync-status-msg sync-error';
-      wcStatus.textContent = err.message;
-      e.target.checked = !e.target.checked;
-    }
+  document.getElementById('webcal-toggle').addEventListener('change', (e) => {
+    setWebcalEnabled(e.target.checked);
+    document.getElementById('webcal-url-block').style.display = e.target.checked ? '' : 'none';
   });
 
   document.getElementById('webcal-copy-url')?.addEventListener('click', () => {
-    const val = document.getElementById('webcal-url-input')?.value;
-    if (!val) return;
-    navigator.clipboard.writeText(val).then(() => {
+    navigator.clipboard.writeText(webcalUrl).then(() => {
       const btn = document.getElementById('webcal-copy-url');
       if (btn) { btn.textContent = '✓'; setTimeout(() => { btn.textContent = t('sync.webcal.copy'); }, 1500); }
     });
   });
-
-  document.getElementById('webcal-refresh')?.addEventListener('click', async () => {
-    const btn = document.getElementById('webcal-refresh');
-    const wcStatus = document.getElementById('webcal-status');
-    if (btn) btn.disabled = true;
-    wcStatus.style.display = '';
-    wcStatus.className = 'sync-status-msg sync-info';
-    wcStatus.textContent = '…';
-    try {
-      await pushWebcalIfEnabled();
-      wcStatus.className = 'sync-status-msg sync-ok';
-      wcStatus.textContent = '✓ ' + t('sync.webcal.refreshed');
-    } catch (err) {
-      wcStatus.className = 'sync-status-msg sync-error';
-      wcStatus.textContent = err.message;
-    } finally {
-      if (btn) btn.disabled = false;
-    }
-  });
-}
-
-// ── Webcal helpers ───────────────────────────────────────────────────────────
-
-function generateWebcalToken() {
-  const bytes = new Uint8Array(16);
-  crypto.getRandomValues(bytes);
-  return btoa(String.fromCharCode(...bytes)).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-}
-
-export async function pushWebcalIfEnabled() {
-  const token = getWebcalToken();
-  if (!token) return;
-  const httpUrl = getIcalHttpUrl(token);
-  const { ics } = await buildICSContent({ calUrl: httpUrl });
-  await pushIcalFeed(token, ics);
 }
 
 // ── Sync logic ───────────────────────────────────────────────────────────────
@@ -368,7 +296,6 @@ async function runSync({ code, pushAfterMerge, onChanged }) {
       await pushCalendar(calendarId, encrypted);
     }
 
-    await pushWebcalIfEnabled().catch(() => {});
     if (status) { status.className = 'sync-status-msg sync-ok'; status.textContent = '✓ ' + t('sync.done'); }
     if (onChanged) onChanged();
   } catch (err) {
@@ -548,7 +475,6 @@ export async function quickSync(mode, onChanged) {
       }
     }
 
-    await pushWebcalIfEnabled().catch(() => {});
     if (onChanged) onChanged();
     return { ok: true };
   } catch (err) {
