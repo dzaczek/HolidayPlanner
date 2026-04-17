@@ -209,7 +209,9 @@ export function updateSyncStatusBar() {
 
   if (lastSync) {
     const d = new Date(lastSync);
-    dateEl.textContent = `${d.getDate()}.${String(d.getMonth() + 1).padStart(2, '0')}`;
+    const datePart = `${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}.${d.getFullYear()}`;
+    const timePart = `${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+    dateEl.innerHTML = `${datePart}<br>${timePart}`;
     dot.className = 'sync-dot sync-dot-ok';
     bar.classList.remove('sync-bar-error');
   } else {
