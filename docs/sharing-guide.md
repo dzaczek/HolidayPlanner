@@ -105,14 +105,24 @@ sequenceDiagram
 No. When using Family Sync, all data is encrypted on your device before it is sent to the server. The server never sees your names, holidays, or dates.
 
 **What if I lose the family code?**
-Don't worry! You can copy it again at any time from the **Family Sync** status screen in your app.
+If the Family Sync status screen is still open, copy the code from there. If the app was closed and you have no saved copy, access cannot be recovered — we do not hold a copy of your encryption key. In that case, start a new Family Sync and share the new code with your family. Always save the code somewhere safe (a password manager, a secure note).
 
 **What happens after 180 days?**
-If nobody uses the calendar for 180 days, the server deletes the encrypted backup to save space. To refresh it, simply click "Push" or "Sync" in the app.
+If no device syncs for 180 consecutive days, the server deletes the encrypted backup. Your local browser data is unaffected. To keep the sync alive, simply click **Sync** or **Push** once in a while — even without making changes.
 
 **Is the "Copy Link" safe to share publicly?**
-No. The link contains your calendar data in a readable (though compressed) format. Only share it with people you trust. For private sharing, always use **Family Sync**.
+No. The link contains your calendar data in a compressed but unencrypted form. Anyone with the link can read it. Only share it with people you trust. For private sharing, always use **Family Sync**.
+
+**Can I revoke access after sharing the family code?**
+Not directly. To cut off access, click **Leave** in the Family Sync screen, create a new Family Sync (which generates a new key and ID), and share the new code only with the people you still want to include.
+
+**What if two people edit the calendar at the same time?**
+Family Sync handles this automatically using optimistic locking. If two devices push simultaneously, the second one detects a conflict (HTTP 409), re-fetches the latest version, merges changes locally, and pushes again — all without any action from you.
+
+**How many people can join a Family Sync?**
+There is no limit. Anyone who has the family code can join and sync.
 
 ---
 
-*For more technical details, see the [Technical Architecture Guide](./technical-architecture.md).*
+*For more answers, see the full [FAQ](./faq.md).*
+*For technical implementation details, see the [Technical Architecture Guide](./technical-architecture.md).*

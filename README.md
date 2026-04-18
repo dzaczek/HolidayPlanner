@@ -90,6 +90,26 @@ German, French, Italian, and English — the app auto-detects your browser langu
 ### Share your calendar
 Share your entire calendar setup with family members via a compressed URL link. They can open it in their browser and see the same view. You can also export a PDF with a QR code for easy sharing on paper.
 
+### Private calendar sync with End-to-End Encryption (E2EE)
+
+Previously, you could share your calendar via a simple link. Now you can go a step further with **Family Sync** — optional end-to-end encrypted synchronization that combines the convenience of live sync with absolute privacy.
+
+**What changed?**
+Before, you shared a one-time snapshot of your calendar. The new E2EE Family Sync creates a secure, persistent connection:
+
+- **Your data, your ownership.** In E2EE mode, data is encrypted *before* it ever leaves your browser. The encryption key is generated locally on your device — only you decide who receives it.
+- **Secure sync across apps.** Because the key travels inside the family code, you can add your calendar to Outlook, Gmail, or other apps. They display your events, but nobody in between — not even us as developers — can read them.
+- **Powered by Cloudflare KV.** We use Cloudflare's fast, globally distributed key-value store so your sync is near-instant on every device.
+
+**Why choose E2EE?**
+A plain share link is convenient, but E2EE is like a door with your own lock. Even if someone intercepted the encrypted data on the server, without the key — which only you and the people you shared it with hold — they would see nothing but random noise.
+
+**Important notes:**
+- **Guard your family code.** If you lose it and have no backup, access cannot be recovered — the data is encrypted so thoroughly that we cannot see it either.
+- **Automatic clean-up.** E2EE calendars that are unused (no sync activity) for 180 days are automatically deleted to keep things tidy and secure.
+
+See the full [Sharing Guide](docs/sharing-guide.md) for a step-by-step walkthrough and a comparison between Family Sync and plain link sharing. Common questions are answered in the [FAQ](docs/faq.md).
+
 ### Your data stays private
 Everything is stored locally in your browser (IndexedDB). No account needed, no server, works completely offline. Use the Backup/Restore feature to save or transfer your data as a JSON file.
 
