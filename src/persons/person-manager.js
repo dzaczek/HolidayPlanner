@@ -1,3 +1,4 @@
+import { logger } from '../utils.js';
 import { t } from '../i18n/i18n.js';
 import { sanitizeColor } from '../utils.js';
 import { addPerson, deletePerson, getAllPersons, updatePerson, getHolidaysForPerson, deleteHoliday, deleteHolidaysForPerson, isSeeded } from '../db/store.js';
@@ -135,7 +136,7 @@ export async function showPersonModal(year, existingPerson, onChange) {
 
   // If no gemeinden yet, wait for seed to finish (progressive load support)
   if (gemeinden.length === 0 && !(await isSeeded())) {
-    console.log('[HCP] showPersonModal: waiting for gemeinden seed...');
+    logger.debug('[HCP] showPersonModal: waiting for gemeinden seed...');
     // We could use a more elegant event-based wait, but a simple retry-loop is robust here
     while (gemeinden.length === 0) {
       await new Promise(r => setTimeout(r, 500));
@@ -215,7 +216,7 @@ export async function showPersonModal(year, existingPerson, onChange) {
   const hiddenInput = document.getElementById('modal-person-gemeinde');
   const dropdown = document.getElementById('gemeinde-dropdown');
 
-  console.log(`[HCP] Gemeinden loaded for autocomplete: ${gemeinden.length}`);
+  logger.debug(`[HCP] Gemeinden loaded for autocomplete: ${gemeinden.length}`);
 
   function renderDropdown(query) {
     const q = (query || '').toLowerCase().trim();

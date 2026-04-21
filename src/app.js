@@ -11,6 +11,7 @@ import { showBackupModal, exportBackup } from './share/backup.js';
 import { showFamilySyncModal, quickSync, joinFamilySyncCode } from './sync/family-sync.js';
 import { getFamilyCode, getLastSync, markLocalChange, isCalendarDirty } from './sync/cloud-store.js';
 import { exportPDF } from './share/pdf-export.js';
+import { logger } from './utils.js';
 import { isPersonManuallyCleared, unmarkPersonManuallyCleared } from './sync/tombstone.js';
 
 let calendarContainer;
@@ -321,7 +322,7 @@ async function autoAssignHolidays(year) {
 
     // Get templates for person's own category
     const templates = await getTemplates(person.category, person.gemeinde, year);
-    console.log(`[HCP] autoAssign ${person.name} (${person.category}, gem=${person.gemeinde}): ${templates.length} templates`);
+    logger.debug(`[HCP] autoAssign ${person.name} (${person.category}, gem=${person.gemeinde}): ${templates.length} templates`);
 
     // School kids and students also get public holidays (worker category)
     let extraTemplates = [];
@@ -357,7 +358,7 @@ async function autoAssignHolidays(year) {
   }
 
   if (assigned > 0) {
-    console.log(`[HCP] Auto-assigned holidays for ${assigned} persons in ${year}`);
+    logger.debug(`[HCP] Auto-assigned holidays for ${assigned} persons in ${year}`);
   }
 }
 

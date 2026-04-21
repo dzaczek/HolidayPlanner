@@ -1,4 +1,5 @@
 import { getDB } from './schema.js';
+import { logger } from '../utils.js';
 
 // === Persons ===
 
@@ -37,12 +38,12 @@ export async function carryOverPersons(sourceYear, targetYear) {
     const key = `${p.name}|${p.category}|${p.gemeinde}`;
     const exists = existingKeys.has(key);
     if (exists) {
-      console.log(`[HCP] carryOver skip (exists): ${key}`);
+      logger.debug(`[HCP] carryOver skip (exists): ${key}`);
     }
     return !exists;
   });
 
-  console.log(`[HCP] carryOver ${sourceYear}→${targetYear}: source=${source.length}, existing=${existing.length}, toAdd=${toAdd.length}`);
+  logger.debug(`[HCP] carryOver ${sourceYear}→${targetYear}: source=${source.length}, existing=${existing.length}, toAdd=${toAdd.length}`);
   if (toAdd.length === 0) return 0;
 
   const tx = db.transaction('persons', 'readwrite');
