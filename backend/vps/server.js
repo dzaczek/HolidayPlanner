@@ -190,7 +190,7 @@ function vevent(summary, start, end, description, url) {
   const esc = s => (s || '').replace(/[\\;,]/g, c => '\\' + c).replace(/\n/g, '\\n');
   return [
     'BEGIN:VEVENT',
-    `UID:${Date.now()}-${Math.random().toString(36).slice(2, 7)}@hcp`,
+    `UID:${crypto.randomUUID()}@hcp`,
     `DTSTAMP:${new Date().toISOString().replace(/[-:.]/g, '').slice(0, 15)}Z`,
     `DTSTART;VALUE=DATE:${fmt(start)}`,
     `DTEND;VALUE=DATE:${nextDay(end)}`,

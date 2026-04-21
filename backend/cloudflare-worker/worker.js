@@ -203,7 +203,7 @@ function vevent(summary, start, end, description, url) {
   const nextDay = s => { const d = new Date(s + 'T00:00:00'); d.setDate(d.getDate() + 1); return fmt(d.toISOString().slice(0, 10)); };
   const esc = s => (s || '').replace(/[\\;,]/g, c => '\\' + c).replace(/\n/g, '\\n');
   const dtstamp = new Date().toISOString().replace(/[-:.]/g, '').slice(0, 15) + 'Z';
-  const uid = `${Date.now()}-${Math.random().toString(36).slice(2, 7)}@hcp`;
+  const uid = `${crypto.randomUUID()}@hcp`;
   return [
     'BEGIN:VEVENT',
     `UID:${uid}`,
