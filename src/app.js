@@ -145,30 +145,49 @@ function bindControls() {
   });
 
   document.getElementById('about-btn').addEventListener('click', () => {
+    document.getElementById('settings-menu').classList.add('hidden');
     showAbout();
   });
 
   document.getElementById('reset-btn').addEventListener('click', () => {
+    document.getElementById('settings-menu').classList.add('hidden');
     showResetConfirm();
   });
 
   document.getElementById('backup-btn').addEventListener('click', () => {
+    document.getElementById('settings-menu').classList.add('hidden');
     showBackupModal(() => refreshAll());
   });
 
   // ── Share dropdown ──────────────────────────────────────────────────────────
+
+  // Settings Dropdown Logic
+  const settingsMenuBtn = document.getElementById('settings-menu-btn');
+  const settingsMenu = document.getElementById('settings-menu');
+
+  settingsMenuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    settingsMenu.classList.toggle('hidden');
+    // Close share menu if open
+    shareMenu.classList.add('hidden');
+  });
+
   const shareMenuBtn = document.getElementById('share-menu-btn');
   const shareMenu = document.getElementById('share-menu');
 
   shareMenuBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     shareMenu.classList.toggle('hidden');
+    if (typeof settingsMenu !== 'undefined') settingsMenu.classList.add('hidden');
   });
 
   // Close dropdown when clicking outside
   document.addEventListener('click', (e) => {
-    if (!document.getElementById('share-dropdown-wrap').contains(e.target)) {
+    if (document.getElementById('share-dropdown-wrap') && !document.getElementById('share-dropdown-wrap').contains(e.target)) {
       shareMenu.classList.add('hidden');
+    }
+    if (document.getElementById('settings-dropdown-wrap') && !document.getElementById('settings-dropdown-wrap').contains(e.target)) {
+      settingsMenu.classList.add('hidden');
     }
   });
 

@@ -30,7 +30,7 @@ body {
 #app-header {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
-  padding: 12px 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,6 +41,12 @@ body {
   z-index: 100;
 }
 
+.header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .header-title {
   display: flex;
   align-items: center;
@@ -48,58 +54,49 @@ body {
 }
 
 #app-header h1 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 600;
   white-space: nowrap;
+  color: var(--text);
 }
 
 .app-version {
-  font-size: 0.6rem;
+  font-size: 0.65rem;
+  font-weight: 500;
   color: var(--text-muted);
   background: var(--border);
-  padding: 1px 6px;
-  border-radius: 8px;
+  padding: 2px 6px;
+  border-radius: 4px;
   white-space: nowrap;
 }
 
 .title-flags {
-  font-size: 1rem;
-  letter-spacing: 0.1em;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
   line-height: 1;
 }
 
 .app-motto {
   font-size: 0.75rem;
   color: var(--text-muted);
-  font-style: italic;
   white-space: nowrap;
 }
 
-@media (max-width: 900px) {
-  .app-motto {
-    display: none;
-  }
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 
-  #app-header {
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 8px 12px;
-  }
-
-  #app-header h1 {
-    font-size: 1rem;
-  }
-
-  .header-controls {
-    flex-wrap: wrap;
-    gap: 6px;
-  }
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .header-controls {
   display: flex;
   align-items: center;
-  gap: 12px;
 }
 
 .year-selector {
@@ -109,9 +106,9 @@ body {
 }
 
 .year-selector button {
-  background: var(--primary);
-  color: white;
-  border: none;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   width: 32px;
   height: 32px;
@@ -120,10 +117,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.15s;
 }
 
 .year-selector button:hover {
-  background: var(--primary-hover);
+  background: var(--border);
 }
 
 #current-year {
@@ -141,6 +139,8 @@ select {
   font-family: var(--font);
   font-size: 0.9rem;
   cursor: pointer;
+  height: 32px;
+  color: var(--text);
 }
 
 main {
@@ -293,20 +293,36 @@ main {
 }
 
 .btn-header {
-  padding: 6px 14px;
-  background: #1e293b;
-  color: white;
-  border: none;
+  padding: 0 12px;
+  height: 32px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   font-family: var(--font);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 500;
   cursor: pointer;
   white-space: nowrap;
-  transition: background 0.15s;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-header:hover {
-  background: #334155;
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.btn-icon {
+  padding: 0;
+  width: 32px;
+  color: var(--text-muted);
+}
+
+.btn-icon:hover {
+  color: var(--text);
 }
 
 .btn-header:disabled {
@@ -314,101 +330,115 @@ main {
   cursor: default;
 }
 
-.btn-reset {
-  background: var(--danger);
-}
 
-.btn-reset:hover {
-  background: #b91c1c;
-}
-
-.btn-family {
-  background: #7c3aed;
-}
-
-.btn-family:hover {
-  background: #6d28d9;
-}
 
 .btn-share-menu {
   background: #0f766e;
+  color: white;
+  border-color: #0f766e;
 }
-
 .btn-share-menu:hover {
   background: #115e59;
+  border-color: #115e59;
+  color: white;
 }
 
-/* Share dropdown menu */
-.share-dropdown-wrap {
+/* Dropdowns */
+.share-dropdown-wrap, .settings-dropdown-wrap {
   position: relative;
 }
 
-.share-menu {
+.share-menu, .settings-menu {
   position: absolute;
   right: 0;
   top: calc(100% + 6px);
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-  min-width: 280px;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+  min-width: 240px;
   z-index: 200;
   overflow: hidden;
 }
 
-.share-menu.hidden {
+.share-menu.hidden, .settings-menu.hidden {
   display: none;
 }
 
-.share-menu-item {
+.share-menu-item, .settings-menu-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
   width: 100%;
-  padding: 14px 16px;
+  padding: 12px 16px;
   background: none;
   border: none;
   cursor: pointer;
   font-family: var(--font);
   text-align: left;
-  transition: background 0.12s;
+  transition: background 0.1s;
+  color: var(--text);
 }
 
-.share-menu-item:hover {
-  background: #f0f5ff;
+.share-menu-item:hover, .settings-menu-item:not(.no-hover):hover {
+  background: #f1f5f9;
 }
 
-.share-menu-icon {
-  font-size: 1.2rem;
-  width: 24px;
-  text-align: center;
+.settings-menu-item.no-hover {
+  cursor: default;
+}
+
+.settings-menu-item.danger {
+  color: var(--danger);
+}
+.settings-menu-item.danger:hover {
+  background: #fef2f2;
+}
+
+.share-menu-icon, .settings-menu-icon {
+  width: 18px;
   flex-shrink: 0;
-  padding-top: 1px;
+  color: var(--text-muted);
+}
+.settings-menu-item.danger .settings-menu-icon {
+  color: var(--danger);
 }
 
 .share-menu-text {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
 }
 
-.share-menu-title {
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--text);
-  line-height: 1.2;
+.settings-menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+.share-menu-title, .settings-menu-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: inherit;
 }
 
 .share-menu-desc {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
-  line-height: 1.45;
 }
 
-.share-menu-divider {
+.share-menu-divider, .settings-menu-divider {
   border: none;
   border-top: 1px solid var(--border);
   margin: 0;
+}
+
+.settings-select {
+  width: 100%;
+  height: 32px;
+  padding: 4px 8px;
+  font-size: 0.85rem;
 }
 
 /* ── CSS Tooltips ────────────────────────────────────────────────────────── */
