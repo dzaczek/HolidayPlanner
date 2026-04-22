@@ -1,4 +1,5 @@
 import { addGemeindenBatch, addTemplatesBatch, isSeeded, clearSeedStores, setSeedVersion, hasTemplatesForYear, SEED_VERSION } from '../store.js';
+import { logger } from '../../utils.js';
 
 // Lazy-load gemeinden (large file, ~2MB) — only loaded during seed
 const loadGemeinden = () => import('./gemeinden.json').then(m => m.default || m);
@@ -59,7 +60,7 @@ async function buildRegionMap() {
 export async function seedDatabase(onProgress) {
   if (await isSeeded()) return;
 
-  console.log('[HCP] Seeding Gemeinden...');
+  logger.debug('[HCP] Seeding Gemeinden...');
   if (onProgress) onProgress('loading', 0);
   await clearSeedStores();
   const gemeinden = await getGemeinden();
@@ -75,7 +76,7 @@ export async function seedDatabase(onProgress) {
   }
 
   setSeedVersion(SEED_VERSION);
-  console.log(`[HCP] Seeded ${gemeinden.length} Gemeinden`);
+  logger.debug(`[HCP] Seeded ${gemeinden.length} Gemeinden`);
   if (onProgress) onProgress('done', 100);
 }
 
@@ -142,7 +143,7 @@ export async function ensureYearLoaded(year, onProgress) {
       await addTemplatesBatch(templates.slice(i, i + CHUNK));
       if (onProgress) onProgress('saving', 70 + Math.round((i / templates.length) * 30));
     }
-    console.log(`[HCP] Loaded ${templates.length} templates for ${year}`);
+    logger.debug(`[HCP] Loaded ${templates.length} templates for ${year}`);
   }
 
   if (onProgress) onProgress('done', 100);
