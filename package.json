@@ -2,7 +2,7 @@
   "name": "hcp-holiday-calendar-planner",
   "description": "Holiday Calendar Planner for Switzerland, Germany and France — optimize vacation decisions when family members work or attend school in different regions",
   "private": true,
-  "version": "1.5.1",
+  "version": "1.5.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
