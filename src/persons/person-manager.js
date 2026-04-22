@@ -8,18 +8,18 @@ import { recordPersonDeletion, markPersonManuallyCleared } from '../sync/tombsto
 
 // 12 pastel colors, mutually contrasting, calendar-friendly
 const PERSON_COLORS = [
-  '#7CB9E8', // pastel blue
-  '#F4A6A0', // pastel red/coral
-  '#A8D5A2', // pastel green
-  '#F6C87E', // pastel orange
-  '#C3A6D8', // pastel purple
-  '#80D4C1', // pastel teal
-  '#F9B4D6', // pastel pink
-  '#B8C97E', // pastel olive
-  '#8ECAE6', // pastel sky
-  '#E8B87E', // pastel amber
-  '#A0C4E8', // pastel steel
-  '#D4A8C0', // pastel mauve
+  '#DF7A7A', // red
+  '#DFAD7A', // orange
+  '#DFDC7A', // yellow
+  '#ADDF7A', // lime
+  '#7ADFA4', // green
+  '#7ADFCB', // teal
+  '#7ADFDF', // cyan
+  '#7AAADF', // blue
+  '#887ADF', // indigo
+  '#C37ADF', // purple
+  '#DF7AC1', // magenta
+  '#DF7A94', // rose
 ];
 let colorIndex = 0;
 
@@ -29,7 +29,7 @@ function getPersonFlag(canton, country) {
     // Since we are generating HTML dynamically, we use the root-relative path which Vite handles.
     return `<img class="person-flag" src="/assets/flags/ch/${canton.toUpperCase()}.svg" alt="${canton}" />`;
   }
-  const emoji = { CH: '🇨🇭', DE: '🇩🇪', FR: '🇫🇷' }[country] ?? '🌍';
+  const emoji = { CH: '🇨🇭', DE: '🇩🇪', FR: '🇫🇷', PL: '🇵🇱' }[country] ?? '🌍';
   return `<span class="person-flag-emoji" aria-hidden="true">${emoji}</span>`;
 }
 

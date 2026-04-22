@@ -1,10 +1,9 @@
-/* View Toggle — segmented control, matches year-selector button sizing */
+/* ── View Toggle ──────────────────────────────────────────── */
 .view-toggle {
   display: flex;
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--border);
-  gap: 0;
 }
 .btn-view {
   background: var(--surface);
@@ -20,29 +19,19 @@
   transition: background 0.15s, color 0.15s;
   border-right: 1px solid var(--border);
 }
-.btn-view:last-child {
-  border-right: none;
-}
-.btn-view:hover:not(.active) {
-  background: var(--border);
-  color: var(--text);
-}
-.btn-view.active {
-  background: var(--primary);
-  color: #fff;
-}
+.btn-view:last-child { border-right: none; }
+.btn-view:hover:not(.active) { background: var(--border); color: var(--text); }
+.btn-view.active { background: var(--primary); color: #fff; }
 
-/* Tasks Container */
+/* ── Tasks container ──────────────────────────────────────── */
 #tasks-container {
-  padding: 16px;
-  max-width: 600px;
-  margin: 0 auto;
+  padding: 20px 16px;
   width: 100%;
-}
-#tasks-container.hidden {
-  display: none;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
+/* ── Header ───────────────────────────────────────────────── */
 .tasks-header {
   display: flex;
   justify-content: space-between;
@@ -51,71 +40,314 @@
 }
 .tasks-header h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.btn-new-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s;
+  box-shadow: 0 1px 3px rgba(0,0,0,.18);
+}
+.btn-new-list:hover {
+  background: var(--primary-hover);
+  box-shadow: 0 2px 6px rgba(0,0,0,.22);
 }
 
-/* Tasklist Cards */
+/* ── Grid of cards ────────────────────────────────────────── */
 .tasklists {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
+  align-items: start;
 }
+@media (max-width: 540px) {
+  .tasklists { grid-template-columns: 1fr; gap: 12px; }
+}
+
+.tasks-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* ── Card — Keep-style clear border + shadow ─────────────── */
 .tasklist-card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  padding: 16px;
-  border: 1px solid var(--border-color);
+  background: #fff;
+  border: 1.5px solid #c8c8c8;
+  border-radius: 10px;
+  overflow: hidden;          /* clips inset box-shadow accent */
+  padding: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  transition: box-shadow 0.18s, border-color 0.18s;
 }
+.tasklist-card:hover {
+  box-shadow: 0 3px 12px rgba(0,0,0,.15);
+  border-color: #aaa;
+}
+.tasklist-card-new {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(37,99,235,.15), 0 1px 3px rgba(0,0,0,.08);
+}
+
+/* Inner padding wrapper so overflow:hidden + inset shadow work */
+.card-inner {
+  padding: 14px 14px 10px;
+}
+
+/* ── Card header ──────────────────────────────────────────── */
 .tasklist-header {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  gap: 6px;
 }
-.tasklist-header h3 {
-  margin: 0;
-  font-size: 1.2rem;
+.tasklist-title {
+  flex: 1;
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: var(--text);
+  outline: none;
+  border-radius: 4px;
+  padding: 2px 4px;
+  min-width: 0;
+  word-break: break-word;
+  cursor: text;
+  line-height: 1.4;
+}
+.tasklist-title:empty::before {
+  content: attr(data-placeholder);
+  color: var(--text-muted);
+  font-weight: 400;
+}
+.tasklist-title:focus { background: rgba(0,0,0,0.04); }
+
+.tasklist-new-title {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: var(--text);
+  background: transparent;
+  padding: 2px 4px;
 }
 
-/* Tasks */
-.tasks {
+.btn-delete-list {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.15s, background 0.15s;
 }
+.tasklist-card:hover .btn-delete-list,
+.tasklist-card-new .btn-delete-list { opacity: 1; }
+.btn-delete-list:hover { background: rgba(0,0,0,.07); color: var(--text); }
+
+/* ── Person assignment row (list level) ───────────────────── */
+.list-person-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.list-person-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-right: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.person-assign-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #fff;
+  transition: transform 0.12s, box-shadow 0.12s;
+  outline: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.person-assign-dot:hover { transform: scale(1.18); }
+.person-assign-dot.selected {
+  box-shadow: 0 0 0 2.5px #fff, 0 0 0 4.5px currentColor;
+  transform: scale(1.1);
+}
+
+/* ── Task list ────────────────────────────────────────────── */
+.tasks-list { display: flex; flex-direction: column; }
+
 .task-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 8px;
-  background: #f9fafa;
+  gap: 9px;
+  padding: 5px 6px;
   border-radius: 6px;
-  border: 1px solid var(--border-color);
+  transition: background 0.1s;
+  border-left: 3px solid transparent;
 }
+.task-item:hover { background: rgba(0,0,0,.035); }
+.task-item:hover .btn-delete-task { opacity: 1; }
+.task-item:hover .task-person-dot { opacity: 1; }
+
+/* Checkbox */
+.task-checkbox {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+/* Task text */
 .task-text {
   flex: 1;
+  font-size: 0.91rem;
+  color: var(--text);
+  outline: none;
+  word-break: break-word;
+  min-width: 0;
+  cursor: text;
+  border-radius: 3px;
+  padding: 1px 2px;
+  line-height: 1.45;
+}
+.task-text:focus { background: rgba(0,0,0,.04); }
+.task-item.is-done .task-text {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+/* Person dot per task */
+.task-person-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+  font-size: 0.58rem;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s, opacity 0.15s;
+  opacity: 0;
+  border: 1.5px dashed #bbb;
+  box-sizing: border-box;
+}
+.task-person-dot.has-person {
+  border: none;
+  opacity: 0.7;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.task-item:hover .task-person-dot { opacity: 1; }
+.task-person-dot:hover { transform: scale(1.25); }
+
+/* Delete task */
+.btn-delete-task {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  opacity: 0;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: opacity 0.15s, background 0.15s;
+}
+.btn-delete-task:hover { background: rgba(0,0,0,.08); color: var(--text); }
+
+/* ── Completed section ────────────────────────────────────── */
+.tasks-done-section {
+  margin-top: 8px;
+  border-top: 1px solid #eee;
+  padding-top: 4px;
+}
+.tasks-done-section summary {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 5px 6px;
+  list-style: none;
+  user-select: none;
+}
+.tasks-done-section summary::-webkit-details-marker { display: none; }
+.tasks-done-section summary::before {
+  content: '▶ ';
+  font-size: 0.65rem;
+  display: inline-block;
+  transition: transform 0.15s;
+  margin-right: 2px;
+}
+.tasks-done-section[open] summary::before { transform: rotate(90deg); }
+
+/* ── Add item row ─────────────────────────────────────────── */
+.task-add-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 6px;
+  margin-top: 2px;
+  border-radius: 6px;
+  cursor: text;
+}
+.task-add-row:hover { background: rgba(0,0,0,.035); }
+.task-add-icon {
+  color: #aaa;
   font-size: 1rem;
-}
-.task-done {
-  text-decoration: line-through;
-  opacity: 0.6;
-}
-.task-impossible {
-  color: var(--danger-color);
-  text-decoration: line-through;
-  opacity: 0.8;
-}
-
-.add-task-btn {
-  width: 100%;
-  padding: 10px;
-}
-
-.empty-state {
+  width: 16px;
   text-align: center;
-  padding: 40px 20px;
-  color: #666;
-  font-style: italic;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.task-add-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.91rem;
+  color: var(--text);
+  padding: 0;
+}
+.task-add-input::placeholder { color: #bbb; }
+.task-add-input:disabled { cursor: default; }
+
+/* ── Card footer divider (between tasks & add-row) ───────── */
+.card-add-divider {
+  border: none;
+  border-top: 1px solid #f0f0f0;
+  margin: 6px 0 2px;
 }

@@ -1,0 +1,994 @@
+[
+  {
+    "canton": "DS",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-01-19",
+        "end": "2026-02-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "KP",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-02-16",
+        "end": "2026-03-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "LU",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-02-02",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "LB",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-02-16",
+        "end": "2026-03-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "LD",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-01-19",
+        "end": "2026-02-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "MA",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-02-02",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "MZ",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-02-16",
+        "end": "2026-03-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "OP",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-01-19",
+        "end": "2026-02-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "PK",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-02-02",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "PD",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-02-09",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "PM",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-02-09",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SL",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-02-09",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "SK",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-02-02",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "WN",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-02-16",
+        "end": "2026-03-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "WP",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-02-09",
+        "end": "2026-02-22",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "canton": "ZP",
+    "year": 2026,
+    "category": "school",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2025-12-23",
+        "end": "2026-01-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie zimowe",
+          "de": "Winterferien",
+          "en": "Winter holidays",
+          "fr": "Vacances d'hiver"
+        },
+        "start": "2026-01-19",
+        "end": "2026-02-01",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "de": "Osterferien",
+          "en": "Easter break",
+          "fr": "Vacances de Pâques"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje letnie",
+          "de": "Sommerferien",
+          "en": "Summer holidays",
+          "fr": "Grandes vacances"
+        },
+        "start": "2026-06-21",
+        "end": "2026-08-31",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Ferie świąteczne",
+          "de": "Weihnachtsferien",
+          "en": "Christmas holidays",
+          "fr": "Vacances de Noël"
+        },
+        "start": "2026-12-23",
+        "end": "2027-01-01",
+        "type": "vacation"
+      }
+    ]
+  }
+]

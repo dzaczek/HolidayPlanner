@@ -1,0 +1,2402 @@
+[
+  {
+    "canton": "DS",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "KP",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "LU",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "LB",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "LD",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "MA",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "MZ",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "OP",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "PK",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "PD",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "PM",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "SL",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "SK",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "WN",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "WP",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  },
+  {
+    "canton": "ZP",
+    "year": 2032,
+    "category": "worker",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Nowy Rok",
+          "de": "Neujahr",
+          "en": "New Year's Day",
+          "fr": "Nouvel An"
+        },
+        "start": "2032-01-01",
+        "end": "2032-01-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Trzech Króli",
+          "de": "Heilige Drei Könige",
+          "en": "Epiphany",
+          "fr": "Épiphanie"
+        },
+        "start": "2032-01-06",
+        "end": "2032-01-06",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wielkanoc",
+          "de": "Ostersonntag",
+          "en": "Easter Sunday",
+          "fr": "Pâques"
+        },
+        "start": "2032-03-28",
+        "end": "2032-03-28",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Poniedziałek Wielkanocny",
+          "de": "Ostermontag",
+          "en": "Easter Monday",
+          "fr": "Lundi de Pâques"
+        },
+        "start": "2032-03-29",
+        "end": "2032-03-29",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Pracy",
+          "de": "Tag der Arbeit",
+          "en": "Labour Day",
+          "fr": "Fête du Travail"
+        },
+        "start": "2032-05-01",
+        "end": "2032-05-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Konstytucji 3 Maja",
+          "de": "Verfassungstag",
+          "en": "Constitution Day",
+          "fr": "Jour de la Constitution"
+        },
+        "start": "2032-05-03",
+        "end": "2032-05-03",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Zielone Świątki",
+          "de": "Pfingstsonntag",
+          "en": "Whit Sunday",
+          "fr": "Pentecôte"
+        },
+        "start": "2032-05-16",
+        "end": "2032-05-16",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Ciało",
+          "de": "Fronleichnam",
+          "en": "Corpus Christi",
+          "fr": "Fête-Dieu"
+        },
+        "start": "2032-05-27",
+        "end": "2032-05-27",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wniebowzięcie NMP",
+          "de": "Mariä Himmelfahrt",
+          "en": "Assumption Day",
+          "fr": "Assomption"
+        },
+        "start": "2032-08-15",
+        "end": "2032-08-15",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Wszystkich Świętych",
+          "de": "Allerheiligen",
+          "en": "All Saints' Day",
+          "fr": "Toussaint"
+        },
+        "start": "2032-11-01",
+        "end": "2032-11-01",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Święto Niepodległości",
+          "de": "Unabhängigkeitstag",
+          "en": "Independence Day",
+          "fr": "Jour de l'Indépendance"
+        },
+        "start": "2032-11-11",
+        "end": "2032-11-11",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Boże Narodzenie",
+          "de": "Erster Weihnachtstag",
+          "en": "Christmas Day",
+          "fr": "Noël"
+        },
+        "start": "2032-12-25",
+        "end": "2032-12-25",
+        "type": "public_holiday"
+      },
+      {
+        "name": {
+          "pl": "Drugi dzień Bożego Narodzenia",
+          "de": "Zweiter Weihnachtstag",
+          "en": "Second Day of Christmas",
+          "fr": "Lendemain de Noël"
+        },
+        "start": "2032-12-26",
+        "end": "2032-12-26",
+        "type": "public_holiday"
+      }
+    ]
+  }
+]

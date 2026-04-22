@@ -53,14 +53,18 @@
     <div class="spinner"></div>
     <p>Loading HCP…</p>
   </div>
+
   <header id="app-header">
-    <div class="header-title">
-      <h1 data-i18n="app.title">Holiday Calendar Planner</h1>
-      <span class="title-flags" aria-hidden="true">🇨🇭🇩🇪🇫🇷</span>
-      <span id="app-version" class="app-version"></span>
+    <div class="header-left">
+      <div class="header-title">
+        <h1 data-i18n="app.title">Holiday Calendar Planner</h1>
+        <span class="title-flags" aria-hidden="true">🇨🇭🇩🇪🇫🇷🇵🇱</span>
+        <span id="app-version" class="app-version"></span>
+      </div>
       <span id="app-motto" class="app-motto" data-i18n="about.motto">Planuj mądrzej, odpoczywaj dłużej!</span>
     </div>
-    <div class="header-controls">
+
+    <div class="header-center">
       <div class="year-selector">
         <button id="prev-year" aria-label="Previous year" data-i18n-tooltip="tooltip.prevYear">&laquo;</button>
         <span id="current-year">2026</span>
@@ -87,8 +91,19 @@
           </svg>
         </button>
       </div>
-      <div class="layout-selector">
+    </div>
 
+    <div class="header-right header-controls">
+      <div id="sync-status-bar" class="sync-status-bar hidden">
+        <span class="sync-e2ee-badge">&#128274; E2EE</span>
+        <span id="sync-bar-dot" class="sync-dot sync-dot-ok"></span>
+        <span id="sync-bar-date" class="sync-bar-date">—</span>
+        <button id="sync-quick-pull" class="btn-sync-quick" data-i18n-tooltip="tooltip.pull">&#8681;</button>
+        <button id="sync-quick-push" class="btn-sync-quick" data-i18n-tooltip="tooltip.push">&#8679;</button>
+        <button id="sync-quick-sync" class="btn-sync-quick" data-i18n-tooltip="tooltip.sync">&#8645;</button>
+      </div>
+
+      <div class="layout-selector">
         <select id="layout-select" data-i18n-tooltip="tooltip.layout">
           <option value="3x4">3 &times; 4</option>
           <option value="2x6">2 &times; 6</option>
@@ -98,28 +113,31 @@
           <option value="12x1">12 &times; 1</option>
         </select>
       </div>
-      <div class="lang-selector">
-        <select id="lang-select" data-i18n-tooltip="tooltip.language">
-          <option value="de">Deutsch</option>
-          <option value="fr">Français</option>
-          <option value="it">Italiano</option>
-          <option value="en">English</option>
-        </select>
-      </div>
-      <div id="sync-status-bar" class="sync-status-bar hidden">
-        <span class="sync-e2ee-badge">&#128274; E2EE</span>
-        <span id="sync-bar-dot" class="sync-dot sync-dot-ok"></span>
-        <span id="sync-bar-date" class="sync-bar-date">—</span>
-        <button id="sync-quick-pull" class="btn-sync-quick" data-i18n-tooltip="tooltip.pull">&#8681;</button>
-        <button id="sync-quick-push" class="btn-sync-quick" data-i18n-tooltip="tooltip.push">&#8679;</button>
-        <button id="sync-quick-sync" class="btn-sync-quick" data-i18n-tooltip="tooltip.sync">&#8645;</button>
-      </div>
-      <button id="pdf-btn" class="btn-header btn-pdf" data-i18n-tooltip="tooltip.pdf">&#128196; PDF</button>
-      <button id="about-btn" class="btn-header btn-about" data-i18n-tooltip="tooltip.about">&#9432;</button>
-      <button id="reset-btn" class="btn-header btn-reset" data-i18n-tooltip="tooltip.reset">&#128465;</button>
-      <button id="backup-btn" class="btn-header" data-i18n-tooltip="tooltip.backup">&#128190; Backup</button>
+
+      <button id="pdf-btn" class="btn-header btn-icon btn-pdf" data-i18n-tooltip="tooltip.pdf" aria-label="PDF">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+      </button>
+
       <div class="share-dropdown-wrap" id="share-dropdown-wrap">
-        <button id="share-menu-btn" class="btn-header btn-share-menu" data-i18n-tooltip="tooltip.share">&#8599; Share &#9660;</button>
+        <button id="share-menu-btn" class="btn-header btn-share-menu" data-i18n-tooltip="tooltip.share">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px;vertical-align:text-bottom;">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+          Share
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:2px;vertical-align:text-bottom;">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
         <div id="share-menu" class="share-menu hidden">
           <button id="share-menu-family" class="share-menu-item">
             <span class="share-menu-icon">&#128272;</span>
@@ -138,8 +156,61 @@
           </button>
         </div>
       </div>
+
+      <div class="settings-dropdown-wrap" id="settings-dropdown-wrap">
+        <button id="settings-menu-btn" class="btn-header btn-icon" title="Settings" aria-label="Settings">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+        <div id="settings-menu" class="settings-menu hidden">
+          <div class="settings-menu-item no-hover">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="settings-menu-icon">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <div class="settings-menu-content">
+              <label for="lang-select" class="settings-menu-title" data-i18n="tooltip.language">Language</label>
+              <select id="lang-select" class="settings-select">
+                <option value="de">Deutsch</option>
+                <option value="fr">Français</option>
+                <option value="it">Italiano</option>
+                <option value="en">English</option>
+              </select>
+            </div>
+          </div>
+          <hr class="settings-menu-divider">
+          <button id="backup-btn" class="settings-menu-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="settings-menu-icon">
+              <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+              <polyline points="17 21 17 13 7 13 7 21"></polyline>
+              <polyline points="7 3 7 8 15 8"></polyline>
+            </svg>
+            <span class="settings-menu-title" data-i18n="tooltip.backup">Backup</span>
+          </button>
+          <button id="about-btn" class="settings-menu-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="settings-menu-icon">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span class="settings-menu-title" data-i18n="tooltip.about">About</span>
+          </button>
+          <hr class="settings-menu-divider">
+          <button id="reset-btn" class="settings-menu-item danger">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="settings-menu-icon">
+              <polyline points="3 6 5 6 21 6"></polyline>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            </svg>
+            <span class="settings-menu-title" data-i18n="tooltip.reset">Reset App</span>
+          </button>
+        </div>
+      </div>
     </div>
   </header>
+
 
   <main>
     <aside id="sidebar">

@@ -1,218 +1,380 @@
 import { getAllTaskLists, saveTaskList, deleteTaskList, getAllPersons } from '../db/store.js';
 import { recordTaskListDeletion } from '../sync/tombstone.js';
 import { markLocalChange } from '../sync/cloud-store.js';
-import { t } from '../i18n/i18n.js';
-import { escapeHtml } from '../utils.js';
-import { showModal, hideModal } from '../app.js';
+import { sanitizeColor, escapeHtml } from '../utils.js';
 
-let containerElement;
+let containerEl;
+let cachedPersons = [];
 
 export async function initTasksManager(containerId) {
-  containerElement = document.getElementById(containerId);
+  containerEl = document.getElementById(containerId);
   await renderTaskLists();
 }
 
 export async function renderTaskLists() {
-  if (!containerElement) return;
+  if (!containerEl) return;
 
-  const taskLists = await getAllTaskLists();
-  // Always get persons for current year? Actually tasks are global, but we fetch persons from local to show colors.
-  const currentYear = new Date().getFullYear();
-  // Wait, getYear from calendar renderer is better, but this file shouldn't import renderer to avoid circular deps if not needed.
-  // We can just use the DOM year or just get persons without year if possible, but store.js requires year.
-  // Actually, we can dynamically import renderer or just get all persons from the first available year?
-  // Let's import getYear from calendar.
   const { getYear } = await import('../calendar/renderer.js').catch(() => ({ getYear: () => new Date().getFullYear() }));
-  const year = getYear();
-  const persons = await getAllPersons(year);
-  const personMap = new Map(persons.map(p => [p.id, p]));
+  cachedPersons = await getAllPersons(getYear());
 
-  let html = `
-    <div class="tasks-header">
-      <h2>Tasks</h2>
-      <button class="btn btn-primary" id="add-tasklist-btn">+</button>
-    </div>
-    <div class="tasklists">
-  `;
+  const lists = await getAllTaskLists();
+  lists.sort((a, b) => (b.updatedAt || 0) - (a.updatedAt || 0));
 
-  if (taskLists.length === 0) {
-    html += `<div class="empty-state">No task lists yet. Click + to add one.</div>`;
+  containerEl.innerHTML = '';
+
+  const header = document.createElement('div');
+  header.className = 'tasks-header';
+  header.innerHTML = `<h2>Tasks</h2>`;
+  const addListBtn = document.createElement('button');
+  addListBtn.className = 'btn-new-list';
+  addListBtn.innerHTML = `
+    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+      <line x1="6.5" y1="1" x2="6.5" y2="12"/><line x1="1" y1="6.5" x2="12" y2="6.5"/>
+    </svg> New list`;
+  addListBtn.addEventListener('click', () => createNewList());
+  header.appendChild(addListBtn);
+  containerEl.appendChild(header);
+
+  const grid = document.createElement('div');
+  grid.className = 'tasklists';
+  containerEl.appendChild(grid);
+
+  if (lists.length === 0) {
+    grid.innerHTML = `<div class="tasks-empty">No lists yet. Click "New list" to start.</div>`;
   } else {
-    for (const tl of taskLists) {
-      html += `
-        <div class="tasklist-card">
-          <div class="tasklist-header">
-            <h3>${escapeHtml(tl.n)}</h3>
-            <button class="btn-icon delete-tasklist-btn" data-id="${tl.id}">🗑️</button>
-          </div>
-          <div class="tasks">
-      `;
-      const tasks = tl.t || [];
-      for (let i = 0; i < tasks.length; i++) {
-        const task = tasks[i];
-        const p = personMap.get(task.p);
-        const colorStyle = p ? `border-left: 4px solid ${escapeHtml(p.color)};` : '';
-        const statusIcon = task.s === 1 ? '✅' : task.s === 2 ? '❌' : '⬜';
-        const textClass = task.s === 1 ? 'task-done' : task.s === 2 ? 'task-impossible' : '';
-        html += `
-          <div class="task-item" style="${colorStyle}">
-            <button class="btn-icon task-status-btn" data-tlid="${tl.id}" data-tidx="${i}">${statusIcon}</button>
-            <span class="task-text ${textClass}">${escapeHtml(task.x)}</span>
-            <button class="btn-icon delete-task-btn" data-tlid="${tl.id}" data-tidx="${i}">✖</button>
-          </div>
-        `;
-      }
-      html += `
-          </div>
-          <button class="btn btn-secondary add-task-btn" data-tlid="${tl.id}">+ Add Task</button>
-        </div>
-      `;
+    for (const tl of lists) {
+      grid.appendChild(buildCard(tl));
     }
   }
-
-  html += `</div>`;
-  containerElement.innerHTML = html;
-  attachTaskListeners(personMap);
 }
 
-function attachTaskListeners(personMap) {
-  const addBtn = document.getElementById('add-tasklist-btn');
-  if (addBtn) addBtn.addEventListener('click', showAddTaskListModal);
-
-  document.querySelectorAll('.delete-tasklist-btn').forEach(btn => {
-    btn.addEventListener('click', async (e) => {
-      if (!confirm('Are you sure you want to delete this list?')) return;
-      const id = e.currentTarget.dataset.id;
-      const tl = await import('../db/store.js').then(m => m.getTaskList(id));
-      if (tl) recordTaskListDeletion(tl);
-      await import('../db/store.js').then(m => m.deleteTaskList(id));
-      markLocalChange();
-      renderTaskLists();
-    });
-  });
-
-  document.querySelectorAll('.add-task-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const tlId = e.currentTarget.dataset.tlid;
-      showAddTaskModal(tlId, personMap);
-    });
-  });
-
-  document.querySelectorAll('.delete-task-btn').forEach(btn => {
-    btn.addEventListener('click', async (e) => {
-      const tlId = e.currentTarget.dataset.tlid;
-      const tIdx = parseInt(e.currentTarget.dataset.tidx, 10);
-      const tl = await import('../db/store.js').then(m => m.getTaskList(tlId));
-      if (tl && tl.t) {
-        tl.t.splice(tIdx, 1);
-        tl.updatedAt = Date.now();
-        await import('../db/store.js').then(m => m.saveTaskList(tl));
-        markLocalChange();
-        renderTaskLists();
-      }
-    });
-  });
-
-  document.querySelectorAll('.task-status-btn').forEach(btn => {
-    btn.addEventListener('click', async (e) => {
-      const tlId = e.currentTarget.dataset.tlid;
-      const tIdx = parseInt(e.currentTarget.dataset.tidx, 10);
-      const tl = await import('../db/store.js').then(m => m.getTaskList(tlId));
-      if (tl && tl.t) {
-        let s = tl.t[tIdx].s;
-        s = (s + 1) % 3; // 0 -> 1 -> 2 -> 0
-        tl.t[tIdx].s = s;
-        tl.updatedAt = Date.now();
-        await import('../db/store.js').then(m => m.saveTaskList(tl));
-        markLocalChange();
-        renderTaskLists();
-      }
-    });
-  });
+// Returns the color of the assigned person (for list or task)
+function personColor(personId) {
+  const p = cachedPersons.find(p => p.id === personId);
+  return p ? sanitizeColor(p.color) : null;
 }
 
-function showAddTaskListModal() {
-  const html = `
-    <h3>New Task List</h3>
-    <div class="form-group">
-      <label>List Name</label>
-      <input type="text" id="tasklist-name-input" class="form-control" autocomplete="off" />
-    </div>
-    <div class="modal-actions">
-      <button class="btn btn-secondary" id="modal-cancel">Cancel</button>
-      <button class="btn btn-primary" id="save-tasklist-btn">Save</button>
-    </div>
-  `;
-  showModal(html);
+function personInitial(personId) {
+  const p = cachedPersons.find(p => p.id === personId);
+  return p ? escapeHtml(p.name.charAt(0).toUpperCase()) : '?';
+}
 
-  document.getElementById('modal-cancel').addEventListener('click', hideModal);
-  document.getElementById('save-tasklist-btn').addEventListener('click', async () => {
-    const name = document.getElementById('tasklist-name-input').value.trim();
-    if (!name) return;
-    const tl = {
-      id: crypto.randomUUID(),
-      n: name,
-      t: [],
-      updatedAt: Date.now()
-    };
-    await import('../db/store.js').then(m => m.saveTaskList(tl));
+function personName(personId) {
+  const p = cachedPersons.find(p => p.id === personId);
+  return p ? escapeHtml(p.name) : '';
+}
+
+// ── Card ──────────────────────────────────────────────────────────────────────
+function buildCard(tl) {
+  const assignedColor = tl.p ? personColor(tl.p) : null;
+
+  const card = document.createElement('div');
+  card.className = 'tasklist-card';
+  card.dataset.id = tl.id;
+  // Color accent via inset box-shadow — no border-width change = no layout shift
+  if (assignedColor) {
+    card.style.boxShadow = `inset 0 4px 0 ${assignedColor}, 0 1px 3px rgba(0,0,0,.08)`;
+  }
+
+  // Inner wrapper for padding (so overflow:hidden clips the inset shadow cleanly)
+  const inner = document.createElement('div');
+  inner.className = 'card-inner';
+  card.appendChild(inner);
+
+  // ── Header ──
+  const cardHeader = document.createElement('div');
+  cardHeader.className = 'tasklist-header';
+
+  const title = document.createElement('div');
+  title.className = 'tasklist-title';
+  title.contentEditable = 'true';
+  title.textContent = tl.n;
+  title.dataset.placeholder = 'List title';
+  title.addEventListener('blur', async () => {
+    const val = title.textContent.trim();
+    if (!val) { title.textContent = tl.n; return; }
+    if (val === tl.n) return;
+    tl.n = val;
+    tl.updatedAt = Date.now();
+    await saveTaskList(tl);
     markLocalChange();
-    hideModal();
-    renderTaskLists();
   });
-}
+  title.addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); title.blur(); }
+    if (e.key === 'Escape') { title.textContent = tl.n; title.blur(); }
+  });
 
-function showAddTaskModal(tlId, personMap) {
-  let personOptions = '<option value="">None</option>';
-  for (const [id, p] of personMap.entries()) {
-    personOptions += `<option value="${id}">${escapeHtml(p.name)}</option>`;
-  }
-
-  const html = `
-    <h3>Add Task</h3>
-    <div class="form-group">
-      <label>Task</label>
-      <input type="text" id="task-text-input" class="form-control" autocomplete="off" />
-    </div>
-    <div class="form-group">
-      <label>Assign to Person</label>
-      <select id="task-person-select" class="form-control">
-        ${personOptions}
-      </select>
-    </div>
-    <div class="form-group">
-      <label>Status</label>
-      <select id="task-status-select" class="form-control">
-        <option value="0">To Do</option>
-        <option value="1">Done</option>
-        <option value="2">Impossible</option>
-      </select>
-    </div>
-    <div class="modal-actions">
-      <button class="btn btn-secondary" id="modal-cancel">Cancel</button>
-      <button class="btn btn-primary" id="save-task-btn">Save</button>
-    </div>
-  `;
-  showModal(html);
-
-  document.getElementById('modal-cancel').addEventListener('click', hideModal);
-  document.getElementById('save-task-btn').addEventListener('click', async () => {
-    const text = document.getElementById('task-text-input').value.trim();
-    const pidStr = document.getElementById('task-person-select').value;
-    const pId = pidStr ? parseInt(pidStr, 10) : null;
-    const status = parseInt(document.getElementById('task-status-select').value, 10);
-
-    if (!text) return;
-
-    const tl = await import('../db/store.js').then(m => m.getTaskList(tlId));
-    if (tl) {
-      if (!tl.t) tl.t = [];
-      tl.t.push({ x: text, p: pId, s: status });
-      tl.updatedAt = Date.now();
-      await import('../db/store.js').then(m => m.saveTaskList(tl));
-      markLocalChange();
-      hideModal();
-      renderTaskLists();
+  const deleteBtn = document.createElement('button');
+  deleteBtn.className = 'btn-delete-list';
+  deleteBtn.title = 'Delete list';
+  deleteBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+    <polyline points="1,3 13,3"/><path d="M5,3V2h4v1"/><path d="M2,3l1,9h8l1-9"/>
+    <line x1="5.5" y1="6" x2="5.5" y2="10"/><line x1="8.5" y1="6" x2="8.5" y2="10"/>
+  </svg>`;
+  deleteBtn.addEventListener('click', async () => {
+    if (!confirm(`Delete "${tl.n}"?`)) return;
+    recordTaskListDeletion(tl);
+    await deleteTaskList(tl.id);
+    markLocalChange();
+    card.remove();
+    const grid = containerEl.querySelector('.tasklists');
+    if (grid && !grid.querySelector('.tasklist-card')) {
+      grid.innerHTML = `<div class="tasks-empty">No lists yet. Click "New list" to start.</div>`;
     }
   });
+
+  cardHeader.appendChild(title);
+  cardHeader.appendChild(deleteBtn);
+  inner.appendChild(cardHeader);
+
+  // ── Person assignment row for the list ──
+  if (cachedPersons.length > 0) {
+    const personRow = document.createElement('div');
+    personRow.className = 'list-person-row';
+
+    const label = document.createElement('span');
+    label.className = 'list-person-label';
+    label.textContent = 'For:';
+    personRow.appendChild(label);
+
+    for (const p of cachedPersons) {
+      const dot = document.createElement('button');
+      dot.className = 'person-assign-dot' + (tl.p === p.id ? ' selected' : '');
+      dot.style.background = sanitizeColor(p.color);
+      dot.title = p.name;
+      dot.innerHTML = `<span>${escapeHtml(p.name.charAt(0).toUpperCase())}</span>`;
+      dot.addEventListener('click', async () => {
+        tl.p = (tl.p === p.id) ? null : p.id;
+        tl.updatedAt = Date.now();
+        await saveTaskList(tl);
+        markLocalChange();
+        card.replaceWith(buildCard(tl));
+      });
+      personRow.appendChild(dot);
+    }
+
+    inner.appendChild(personRow);
+  }
+
+  // ── Tasks ──
+  const tasks = tl.t || [];
+  const pending = tasks.map((t, i) => ({ t, i })).filter(({ t }) => t.s !== 1);
+  const done    = tasks.map((t, i) => ({ t, i })).filter(({ t }) => t.s === 1);
+
+  const pendingList = document.createElement('div');
+  pendingList.className = 'tasks-list';
+  for (const { t, i } of pending) {
+    pendingList.appendChild(buildTaskRow(tl, t, i));
+  }
+  inner.appendChild(pendingList);
+
+  if (done.length > 0) {
+    const details = document.createElement('details');
+    details.className = 'tasks-done-section';
+    const summary = document.createElement('summary');
+    summary.textContent = `${done.length} completed`;
+    details.appendChild(summary);
+    for (const { t, i } of done) {
+      details.appendChild(buildTaskRow(tl, t, i));
+    }
+    inner.appendChild(details);
+  }
+
+  // ── Divider + Add item row ──
+  const divider = document.createElement('hr');
+  divider.className = 'card-add-divider';
+  inner.appendChild(divider);
+
+  const addRow = document.createElement('div');
+  addRow.className = 'task-add-row';
+  const addIcon = document.createElement('span');
+  addIcon.className = 'task-add-icon';
+  addIcon.textContent = '+';
+  const addInput = document.createElement('input');
+  addInput.type = 'text';
+  addInput.className = 'task-add-input';
+  addInput.placeholder = 'Add item';
+  addInput.addEventListener('keydown', async (e) => {
+    if (e.key === 'Enter') {
+      const text = addInput.value.trim();
+      if (!text) return;
+      if (!tl.t) tl.t = [];
+      tl.t.push({ x: text, s: 0, p: tl.p || null });
+      tl.updatedAt = Date.now();
+      await saveTaskList(tl);
+      markLocalChange();
+      addInput.value = '';
+      const newPending = tl.t.map((t, i) => ({ t, i })).filter(({ t }) => t.s !== 1);
+      pendingList.innerHTML = '';
+      for (const { t, i } of newPending) {
+        pendingList.appendChild(buildTaskRow(tl, t, i));
+      }
+    }
+    if (e.key === 'Escape') addInput.blur();
+  });
+  addRow.appendChild(addIcon);
+  addRow.appendChild(addInput);
+  inner.appendChild(addRow);
+
+  return card;
+}
+
+// ── Task row ──────────────────────────────────────────────────────────────────
+function buildTaskRow(tl, task, idx) {
+  const row = document.createElement('div');
+  row.className = 'task-item' + (task.s === 1 ? ' is-done' : '');
+
+  const checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
+  checkbox.className = 'task-checkbox';
+  checkbox.checked = task.s === 1;
+  checkbox.addEventListener('change', async () => {
+    task.s = checkbox.checked ? 1 : 0;
+    tl.updatedAt = Date.now();
+    await saveTaskList(tl);
+    markLocalChange();
+    const card = row.closest('.tasklist-card');
+    if (card) card.replaceWith(buildCard(tl));
+  });
+
+  const text = document.createElement('span');
+  text.className = 'task-text';
+  text.contentEditable = 'true';
+  text.textContent = task.x;
+  text.addEventListener('blur', async () => {
+    const val = text.textContent.trim();
+    if (!val) {
+      tl.t.splice(idx, 1);
+    } else {
+      task.x = val;
+    }
+    tl.updatedAt = Date.now();
+    await saveTaskList(tl);
+    markLocalChange();
+    if (!val) row.remove();
+  });
+  text.addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); text.blur(); }
+    if (e.key === 'Escape') { text.textContent = task.x; text.blur(); }
+  });
+
+  // Person dot for task — cycles through persons on click
+  if (cachedPersons.length > 0) {
+    const pDot = document.createElement('button');
+    pDot.className = 'task-person-dot';
+    const setDotAppearance = () => {
+      const color = task.p ? personColor(task.p) : null;
+      pDot.style.background = color || '';
+      pDot.title = task.p ? personName(task.p) : 'Assign person';
+      pDot.textContent = task.p ? personInitial(task.p) : '';
+      pDot.classList.toggle('has-person', !!task.p);
+    };
+    setDotAppearance();
+    pDot.addEventListener('click', async () => {
+      const ids = [null, ...cachedPersons.map(p => p.id)];
+      const current = ids.indexOf(task.p ?? null);
+      task.p = ids[(current + 1) % ids.length];
+      tl.updatedAt = Date.now();
+      await saveTaskList(tl);
+      markLocalChange();
+      setDotAppearance();
+      row.style.borderLeftColor = task.p ? personColor(task.p) : 'transparent';
+    });
+    row.style.borderLeft = task.p ? `3px solid ${personColor(task.p)}` : '3px solid transparent';
+    row.appendChild(checkbox);
+    row.appendChild(text);
+    row.appendChild(pDot);
+  } else {
+    row.appendChild(checkbox);
+    row.appendChild(text);
+  }
+
+  const del = document.createElement('button');
+  del.className = 'btn-delete-task';
+  del.title = 'Delete';
+  del.innerHTML = `<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <line x1="1" y1="1" x2="11" y2="11"/><line x1="11" y1="1" x2="1" y2="11"/>
+  </svg>`;
+  del.addEventListener('click', async () => {
+    tl.t.splice(idx, 1);
+    tl.updatedAt = Date.now();
+    await saveTaskList(tl);
+    markLocalChange();
+    row.remove();
+  });
+  row.appendChild(del);
+
+  return row;
+}
+
+// ── New list inline ────────────────────────────────────────────────────────────
+function createNewList() {
+  const grid = containerEl.querySelector('.tasklists');
+  if (!grid) return;
+
+  const empty = grid.querySelector('.tasks-empty');
+  if (empty) empty.remove();
+
+  const tempCard = document.createElement('div');
+  tempCard.className = 'tasklist-card tasklist-card-new';
+
+  const inner = document.createElement('div');
+  inner.className = 'card-inner';
+  tempCard.appendChild(inner);
+
+  const hdr = document.createElement('div');
+  hdr.className = 'tasklist-header';
+
+  const titleInput = document.createElement('input');
+  titleInput.type = 'text';
+  titleInput.className = 'tasklist-new-title';
+  titleInput.placeholder = 'List title…';
+
+  const cancelBtn = document.createElement('button');
+  cancelBtn.className = 'btn-delete-list';
+  cancelBtn.title = 'Cancel';
+  cancelBtn.textContent = '×';
+  cancelBtn.addEventListener('mousedown', e => e.preventDefault());
+  cancelBtn.addEventListener('click', () => {
+    tempCard.remove();
+    if (!grid.querySelector('.tasklist-card')) {
+      grid.innerHTML = `<div class="tasks-empty">No lists yet. Click "New list" to start.</div>`;
+    }
+  });
+
+  hdr.appendChild(titleInput);
+  hdr.appendChild(cancelBtn);
+  inner.appendChild(hdr);
+
+  const addRow = document.createElement('div');
+  addRow.className = 'task-add-row';
+  addRow.innerHTML = `<span class="task-add-icon">+</span><input type="text" class="task-add-input" placeholder="Add item" disabled />`;
+  inner.appendChild(addRow);
+
+  let saved = false;
+  const save = async () => {
+    if (saved) return;
+    saved = true;
+    const name = titleInput.value.trim();
+    tempCard.remove();
+    if (!name) {
+      if (!grid.querySelector('.tasklist-card')) {
+        grid.innerHTML = `<div class="tasks-empty">No lists yet. Click "New list" to start.</div>`;
+      }
+      return;
+    }
+    const tl = { id: crypto.randomUUID(), n: name, t: [], updatedAt: Date.now() };
+    await saveTaskList(tl);
+    markLocalChange();
+    grid.prepend(buildCard(tl));
+  };
+
+  titleInput.addEventListener('blur', save);
+  titleInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); titleInput.blur(); }
+    if (e.key === 'Escape') { titleInput.value = ''; titleInput.blur(); }
+  });
+
+  grid.prepend(tempCard);
+  titleInput.focus();
 }
