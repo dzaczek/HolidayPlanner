@@ -208,6 +208,11 @@ export function updateSyncStatusBar() {
   const lastSync = getLastSync();
   const dirty = isCalendarDirty();
 
+  const m = code.match(/^hcp_([A-Za-z0-9_-]{22})_/);
+  if (m) {
+    dateEl.title = `Calendar ID: ${m[1]}`;
+  }
+
   if (lastSync) {
     const d = new Date(lastSync);
     const datePart = `${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}.${d.getFullYear()}`;
