@@ -88,15 +88,13 @@ export async function initApp() {
   const langSelect = document.getElementById('lang-select');
   langSelect.value = getLang();
 
-  // Default to 12x1 on mobile
-  if (window.innerWidth <= 900) {
-    setLayout('12x1');
-
   document.getElementById('btn-view-calendar').addEventListener('click', () => switchView('calendar'));
   document.getElementById('btn-view-tasks').addEventListener('click', () => switchView('tasks'));
 
-  document.getElementById('layout-select')
-.value = '12x1';
+  // Default to 12x1 on mobile
+  if (window.innerWidth <= 900) {
+    setLayout('12x1');
+    document.getElementById('layout-select').value = '12x1';
   }
 
   setDayChangedCallback(() => refreshAll());

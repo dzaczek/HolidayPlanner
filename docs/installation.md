@@ -21,7 +21,7 @@ docker-compose up -d
 | Service | Port | Description |
 |---------|------|-------------|
 | **HCP** | [localhost:8080](http://localhost:8080) | Calendar app (nginx, read-only) |
-| **GoAccess** | [localhost:7891](http://localhost:7891) | Real-time access log dashboard |
+| **GoAccess** | [localhost:7893](http://localhost:7893) | Real-time access log dashboard |
 
 Logs are persisted in a shared Docker volume (`nginx-logs`) between the HCP and GoAccess containers.
 
