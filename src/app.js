@@ -8,12 +8,38 @@ import { seedDatabase, ensureYearLoaded } from './db/seed/loader.js';
 import { getAllPersons, carryOverPersons, getTemplates, addHolidaysBatch, getHolidaysForPerson, clearAllStores, clearUserStores, setSeedVersion } from './db/store.js';
 import { generateShareURL, importFromURL, applySharedData } from './share/share.js';
 import { showBackupModal, exportBackup } from './share/backup.js';
+import { initTasksManager, renderTaskLists } from './tasks/task-manager.js';
 import { showFamilySyncModal, quickSync, joinFamilySyncCode } from './sync/family-sync.js';
 import { getFamilyCode, getLastSync, markLocalChange, isCalendarDirty } from './sync/cloud-store.js';
 import { exportPDF } from './share/pdf-export.js';
 import { isPersonManuallyCleared, unmarkPersonManuallyCleared } from './sync/tombstone.js';
 
 let calendarContainer;
+let tasksContainer;
+let currentView = 'calendar';
+
+
+export function switchView(view) {
+  currentView = view;
+  const btnCal = document.getElementById('btn-view-calendar');
+  const btnTasks = document.getElementById('btn-view-tasks');
+  const sidebar = document.getElementById('sidebar');
+
+  if (view === 'calendar') {
+    calendarContainer.classList.remove('hidden');
+    tasksContainer.classList.add('hidden');
+    sidebar.classList.remove('hidden');
+    btnCal.classList.add('active');
+    btnTasks.classList.remove('active');
+  } else {
+    calendarContainer.classList.add('hidden');
+    tasksContainer.classList.remove('hidden');
+    sidebar.classList.add('hidden');
+    btnTasks.classList.add('active');
+    btnCal.classList.remove('active');
+    renderTaskLists();
+  }
+}
 
 export async function initApp() {
   // Must await seed before refreshAll — otherwise clearSeedStores (triggered by
@@ -21,7 +47,12 @@ export async function initApp() {
   // causing missing holidays for newly-added countries (e.g. FR).
   await seedDatabase(showLoadingProgress);
 
+
   calendarContainer = document.getElementById('calendar-container');
+  tasksContainer = document.getElementById('tasks-container');
+
+  await initTasksManager('tasks-container');
+
 
   // Check for shared data in URL
   const shared = await importFromURL();
@@ -59,7 +90,12 @@ export async function initApp() {
   // Default to 12x1 on mobile
   if (window.innerWidth <= 900) {
     setLayout('12x1');
-    document.getElementById('layout-select').value = '12x1';
+
+  document.getElementById('btn-view-calendar').addEventListener('click', () => switchView('calendar'));
+  document.getElementById('btn-view-tasks').addEventListener('click', () => switchView('tasks'));
+
+  document.getElementById('layout-select')
+.value = '12x1';
   }
 
   setDayChangedCallback(() => refreshAll());

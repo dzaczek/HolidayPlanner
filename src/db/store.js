@@ -261,3 +261,26 @@ export async function clearAllStores() {
   }
   await tx.done;
 }
+
+
+// --- Tasks ---
+
+export async function getAllTaskLists() {
+  const db = await getDB();
+  return db.getAll('taskLists');
+}
+
+export async function saveTaskList(taskList) {
+  const db = await getDB();
+  await db.put('taskLists', taskList);
+}
+
+export async function deleteTaskList(id) {
+  const db = await getDB();
+  await db.delete('taskLists', id);
+}
+
+export async function getTaskList(id) {
+  const db = await getDB();
+  return db.get('taskLists', id);
+}

@@ -1,7 +1,7 @@
 import { openDB } from 'idb';
 
 const DB_NAME = 'hcp-calendar';
-const DB_VERSION = 2;
+const DB_VERSION = 3;
 
 export async function getDB() {
   return openDB(DB_NAME, DB_VERSION, {
@@ -43,6 +43,11 @@ export async function getDB() {
       if (!db.objectStoreNames.contains('leaves')) {
         const leaveStore = db.createObjectStore('leaves', { keyPath: 'id', autoIncrement: true });
         leaveStore.createIndex('by-year', 'year');
+      }
+
+      // Tasks (to-do lists, global)
+      if (!db.objectStoreNames.contains('taskLists')) {
+        db.createObjectStore('taskLists', { keyPath: 'id' });
       }
     },
   });

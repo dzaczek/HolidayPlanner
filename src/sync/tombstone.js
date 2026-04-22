@@ -119,3 +119,23 @@ export function mergeTombstones(a, b) {
   }
   return Array.from(map.values());
 }
+
+
+export function taskListSig(taskList) {
+  return taskList.id;
+}
+
+export function recordTaskListDeletion(taskList) {
+  const ts = getTaskListTombstones();
+  ts.push({ sig: taskListSig(taskList), deletedAt: new Date().toISOString() });
+  saveTaskListTombstones(ts);
+}
+
+export function getTaskListTombstones() {
+  const t = localStorage.getItem('hcp-tasklist-tombstones');
+  return t ? JSON.parse(t) : [];
+}
+
+export function saveTaskListTombstones(ts) {
+  localStorage.setItem('hcp-tasklist-tombstones', JSON.stringify(ts));
+}
