@@ -71,8 +71,15 @@ function buildCard(tl) {
   const card = document.createElement('div');
   card.className = 'tasklist-card';
   card.dataset.id = tl.id;
-  card.style.borderTopColor = assignedColor || 'var(--border)';
-  card.style.borderTopWidth = assignedColor ? '3px' : '1px';
+  // Color accent via inset box-shadow — no border-width change = no layout shift
+  if (assignedColor) {
+    card.style.boxShadow = `inset 0 4px 0 ${assignedColor}, 0 1px 3px rgba(0,0,0,.08)`;
+  }
+
+  // Inner wrapper for padding (so overflow:hidden clips the inset shadow cleanly)
+  const inner = document.createElement('div');
+  inner.className = 'card-inner';
+  card.appendChild(inner);
 
   // ── Header ──
   const cardHeader = document.createElement('div');
@@ -118,7 +125,7 @@ function buildCard(tl) {
 
   cardHeader.appendChild(title);
   cardHeader.appendChild(deleteBtn);
-  card.appendChild(cardHeader);
+  inner.appendChild(cardHeader);
 
   // ── Person assignment row for the list ──
   if (cachedPersons.length > 0) {
@@ -135,20 +142,18 @@ function buildCard(tl) {
       dot.className = 'person-assign-dot' + (tl.p === p.id ? ' selected' : '');
       dot.style.background = sanitizeColor(p.color);
       dot.title = p.name;
-      dot.dataset.initial = p.name.charAt(0).toUpperCase();
       dot.innerHTML = `<span>${escapeHtml(p.name.charAt(0).toUpperCase())}</span>`;
       dot.addEventListener('click', async () => {
         tl.p = (tl.p === p.id) ? null : p.id;
         tl.updatedAt = Date.now();
         await saveTaskList(tl);
         markLocalChange();
-        // Rebuild just this card
         card.replaceWith(buildCard(tl));
       });
       personRow.appendChild(dot);
     }
 
-    card.appendChild(personRow);
+    inner.appendChild(personRow);
   }
 
   // ── Tasks ──
@@ -159,9 +164,9 @@ function buildCard(tl) {
   const pendingList = document.createElement('div');
   pendingList.className = 'tasks-list';
   for (const { t, i } of pending) {
-    pendingList.appendChild(buildTaskRow(tl, t, i, pendingList));
+    pendingList.appendChild(buildTaskRow(tl, t, i));
   }
-  card.appendChild(pendingList);
+  inner.appendChild(pendingList);
 
   if (done.length > 0) {
     const details = document.createElement('details');
@@ -170,12 +175,16 @@ function buildCard(tl) {
     summary.textContent = `${done.length} completed`;
     details.appendChild(summary);
     for (const { t, i } of done) {
-      details.appendChild(buildTaskRow(tl, t, i, details));
+      details.appendChild(buildTaskRow(tl, t, i));
     }
-    card.appendChild(details);
+    inner.appendChild(details);
   }
 
-  // ── Add item row ──
+  // ── Divider + Add item row ──
+  const divider = document.createElement('hr');
+  divider.className = 'card-add-divider';
+  inner.appendChild(divider);
+
   const addRow = document.createElement('div');
   addRow.className = 'task-add-row';
   const addIcon = document.createElement('span');
@@ -190,30 +199,28 @@ function buildCard(tl) {
       const text = addInput.value.trim();
       if (!text) return;
       if (!tl.t) tl.t = [];
-      // Inherit list's person assignment as default for new task
       tl.t.push({ x: text, s: 0, p: tl.p || null });
       tl.updatedAt = Date.now();
       await saveTaskList(tl);
       markLocalChange();
       addInput.value = '';
-      // Rebuild pending rows only
       const newPending = tl.t.map((t, i) => ({ t, i })).filter(({ t }) => t.s !== 1);
       pendingList.innerHTML = '';
       for (const { t, i } of newPending) {
-        pendingList.appendChild(buildTaskRow(tl, t, i, pendingList));
+        pendingList.appendChild(buildTaskRow(tl, t, i));
       }
     }
     if (e.key === 'Escape') addInput.blur();
   });
   addRow.appendChild(addIcon);
   addRow.appendChild(addInput);
-  card.appendChild(addRow);
+  inner.appendChild(addRow);
 
   return card;
 }
 
 // ── Task row ──────────────────────────────────────────────────────────────────
-function buildTaskRow(tl, task, idx, parentEl) {
+function buildTaskRow(tl, task, idx) {
   const row = document.createElement('div');
   row.className = 'task-item' + (task.s === 1 ? ' is-done' : '');
 
@@ -257,10 +264,10 @@ function buildTaskRow(tl, task, idx, parentEl) {
     pDot.className = 'task-person-dot';
     const setDotAppearance = () => {
       const color = task.p ? personColor(task.p) : null;
-      pDot.style.background = color || 'transparent';
-      pDot.style.border = color ? 'none' : '1.5px dashed var(--border)';
+      pDot.style.background = color || '';
       pDot.title = task.p ? personName(task.p) : 'Assign person';
       pDot.textContent = task.p ? personInitial(task.p) : '';
+      pDot.classList.toggle('has-person', !!task.p);
     };
     setDotAppearance();
     pDot.addEventListener('click', async () => {
@@ -311,6 +318,10 @@ function createNewList() {
   const tempCard = document.createElement('div');
   tempCard.className = 'tasklist-card tasklist-card-new';
 
+  const inner = document.createElement('div');
+  inner.className = 'card-inner';
+  tempCard.appendChild(inner);
+
   const hdr = document.createElement('div');
   hdr.className = 'tasklist-header';
 
@@ -333,12 +344,12 @@ function createNewList() {
 
   hdr.appendChild(titleInput);
   hdr.appendChild(cancelBtn);
-  tempCard.appendChild(hdr);
+  inner.appendChild(hdr);
 
   const addRow = document.createElement('div');
   addRow.className = 'task-add-row';
   addRow.innerHTML = `<span class="task-add-icon">+</span><input type="text" class="task-add-input" placeholder="Add item" disabled />`;
-  tempCard.appendChild(addRow);
+  inner.appendChild(addRow);
 
   let saved = false;
   const save = async () => {
