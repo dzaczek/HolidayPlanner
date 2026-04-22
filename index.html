@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+<script>
+  window.addEventListener('error', e => console.error('GLOBAL_ERROR:', e.message, e.error));
+  window.addEventListener('unhandledrejection', e => console.error('GLOBAL_REJECTION:', e.reason));
+</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://hcp-sync.sysop.cat; worker-src 'self'; upgrade-insecure-requests;" />
@@ -66,7 +70,13 @@
         <span id="current-year">2026</span>
         <button id="next-year" aria-label="Next year" data-i18n-tooltip="tooltip.nextYear">&raquo;</button>
       </div>
+
+      <div class="view-toggle">
+        <button id="btn-view-calendar" class="btn-view active" title="Calendar View">📅</button>
+        <button id="btn-view-tasks" class="btn-view" title="Tasks View">✓</button>
+      </div>
       <div class="layout-selector">
+
         <select id="layout-select" data-i18n-tooltip="tooltip.layout">
           <option value="3x4">3 &times; 4</option>
           <option value="2x6">2 &times; 6</option>
@@ -151,7 +161,10 @@
       </div>
     </aside>
 
+
     <section id="calendar-container"></section>
+    <section id="tasks-container" class="hidden"></section>
+
   </main>
 
   <footer id="app-footer">

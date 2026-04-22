@@ -9,12 +9,12 @@
 
 import { t } from '../i18n/i18n.js';
 import { showModal, hideModal } from '../app.js';
-import { getAllPersons, getHolidaysForYear, getAllLeaves, addPerson, addHolidaysBatch, addLeave, clearUserStores } from '../db/store.js';
+import { getAllPersons, getHolidaysForYear, getAllLeaves, getAllTaskLists, saveTaskList, deleteTaskList, getTaskList, addPerson, addHolidaysBatch, addLeave, clearUserStores } from '../db/store.js';
 import { getYear } from '../calendar/renderer.js';
 import { generateKey, generateCalendarId, encryptPayload, decryptPayload, buildFamilyCode, parseFamilyCode } from './crypto.js';
 import { pushCalendar, pullCalendar, getFamilyCode, setFamilyCode, clearFamilyCode, getLastSync, getEndpoint, setEndpoint, isWebcalEnabled, setWebcalEnabled, getWebcalUrl } from './cloud-store.js';
 import { exportBackup } from '../share/backup.js';
-import { getTombstones, saveTombstones, mergeTombstones, leaveSig, getPersonTombstones, savePersonTombstones, personSig } from './tombstone.js';
+import { getTaskListTombstones, saveTaskListTombstones, taskListSig, getTombstones, saveTombstones, mergeTombstones, leaveSig, getPersonTombstones, savePersonTombstones, personSig } from './tombstone.js';
 import { escapeHtml } from '../utils.js';
 
 // ── Public API ───────────────────────────────────────────────────────────────
@@ -315,9 +315,11 @@ async function buildPayload() {
   const persons = await getAllPersons(year);
   const holidays = await getHolidaysForYear(year);
   const leaves = await getAllLeaves(year);
+  const taskLists = await getAllTaskLists();
+  const taskListTombstones = getTaskListTombstones();
   const tombstones = getTombstones();
   const personTombstones = getPersonTombstones();
-  return { year, persons, holidays, leaves, tombstones, personTombstones, updatedAt: new Date().toISOString() };
+  return { year, persons, holidays, leaves, tombstones, personTombstones, taskLists, taskListTombstones, updatedAt: new Date().toISOString() };
 }
 
 /**
@@ -413,6 +415,7 @@ async function applyPayloadToLocalDB(payload) {
   }
   // Persist merged tombstones so future syncs remember deletions
   if (payload.tombstones) saveTombstones(payload.tombstones);
+  if (payload.taskListTombstones) saveTaskListTombstones(payload.taskListTombstones);
   if (payload.personTombstones) savePersonTombstones(payload.personTombstones);
 }
 
