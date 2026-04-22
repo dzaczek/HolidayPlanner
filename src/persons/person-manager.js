@@ -1,8 +1,6 @@
-import { logger } from '../utils.js';
+import { logger, sanitizeColor } from '../utils.js';
 import { t } from '../i18n/i18n.js';
-import { sanitizeColor } from '../utils.js';
-import { addPerson, deletePerson, getAllPersons, updatePerson, getHolidaysForPerson, deleteHoliday, deleteHolidaysForPerson, isSeeded } from '../db/store.js';
-import { getAllGemeinden } from '../db/store.js';
+import { addPerson, deletePerson, getAllPersons, updatePerson, getHolidaysForPerson, deleteHoliday, deleteHolidaysForPerson, isSeeded, getAllGemeinden } from '../db/store.js';
 import { showModal, hideModal } from '../app.js';
 import { showHolidayPicker } from '../holidays/holiday-picker.js';
 import { countTotalDaysOff } from '../holidays/workday-counter.js';
