@@ -302,5 +302,537 @@
         "type": "holiday"
       }
     ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-os-ljubljana",
+    "year": 2029,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2029-12-20",
+        "end": "2030-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2029-07-01",
+        "end": "2029-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-pd-maribor",
+    "year": 2029,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2029-12-20",
+        "end": "2030-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2029-07-01",
+        "end": "2029-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-ok-koper",
+    "year": 2029,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2029-12-20",
+        "end": "2030-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2029-07-01",
+        "end": "2029-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-jv-novo-mesto",
+    "year": 2029,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2029-12-20",
+        "end": "2030-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2029-07-01",
+        "end": "2029-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-os-ljubljana",
+    "year": 2030,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2030-12-20",
+        "end": "2031-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2030-07-01",
+        "end": "2030-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-pd-maribor",
+    "year": 2030,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2030-12-20",
+        "end": "2031-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2030-07-01",
+        "end": "2030-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-ok-koper",
+    "year": 2030,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2030-12-20",
+        "end": "2031-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2030-07-01",
+        "end": "2030-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-jv-novo-mesto",
+    "year": 2030,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2030-12-20",
+        "end": "2031-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2030-07-01",
+        "end": "2030-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-os-ljubljana",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-12-20",
+        "end": "2032-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-07-01",
+        "end": "2031-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-pd-maribor",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-12-20",
+        "end": "2032-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-07-01",
+        "end": "2031-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-ok-koper",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-12-20",
+        "end": "2032-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-07-01",
+        "end": "2031-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-jv-novo-mesto",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-12-20",
+        "end": "2032-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-07-01",
+        "end": "2031-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-os-ljubljana",
+    "year": 2032,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2032-12-20",
+        "end": "2033-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2032-07-01",
+        "end": "2032-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-pd-maribor",
+    "year": 2032,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2032-12-20",
+        "end": "2033-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2032-07-01",
+        "end": "2032-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-ok-koper",
+    "year": 2032,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2032-12-20",
+        "end": "2033-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2032-07-01",
+        "end": "2032-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-jv-novo-mesto",
+    "year": 2032,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2032-12-20",
+        "end": "2033-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2032-07-01",
+        "end": "2032-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-os-ljubljana",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-12-20",
+        "end": "2034-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-07-01",
+        "end": "2033-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-pd-maribor",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-12-20",
+        "end": "2034-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-07-01",
+        "end": "2033-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-ok-koper",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-12-20",
+        "end": "2034-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-07-01",
+        "end": "2033-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-jv-novo-mesto",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-12-20",
+        "end": "2034-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-07-01",
+        "end": "2033-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-os-ljubljana",
+    "year": 2034,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2034-12-20",
+        "end": "2035-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2034-07-01",
+        "end": "2034-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-pd-maribor",
+    "year": 2034,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2034-12-20",
+        "end": "2035-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2034-07-01",
+        "end": "2034-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-ok-koper",
+    "year": 2034,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2034-12-20",
+        "end": "2035-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2034-07-01",
+        "end": "2034-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-jv-novo-mesto",
+    "year": 2034,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2034-12-20",
+        "end": "2035-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2034-07-01",
+        "end": "2034-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-os-ljubljana",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-12-20",
+        "end": "2036-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-07-01",
+        "end": "2035-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-pd-maribor",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-12-20",
+        "end": "2036-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-07-01",
+        "end": "2035-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-ok-koper",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-12-20",
+        "end": "2036-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-07-01",
+        "end": "2035-08-31",
+        "type": "holiday"
+      }
+    ]
+  },
+  {
+    "category": "student",
+    "gemeinde_id": "si-jv-novo-mesto",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-12-20",
+        "end": "2036-01-10",
+        "type": "holiday"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-07-01",
+        "end": "2035-08-31",
+        "type": "holiday"
+      }
+    ]
   }
 ]

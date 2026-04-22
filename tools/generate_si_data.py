@@ -211,7 +211,7 @@ UNIVERSITIES = [
 ]
 
 students_data = []
-for year in range(2025, 2029):
+for year in range(2025, 2036):
     for gid, name, canton in UNIVERSITIES:
         students_data.append({
             "category": "student",
