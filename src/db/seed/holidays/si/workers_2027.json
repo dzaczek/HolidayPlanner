@@ -1,0 +1,1154 @@
+[
+  {
+    "canton": "OS",
+    "year": 2027,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2027-01-02",
+        "end": "2027-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2027-04-27",
+        "end": "2027-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-02",
+        "end": "2027-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2027-06-25",
+        "end": "2027-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "GO",
+    "year": 2027,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2027-01-02",
+        "end": "2027-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2027-04-27",
+        "end": "2027-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-02",
+        "end": "2027-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2027-06-25",
+        "end": "2027-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "PD",
+    "year": 2027,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2027-01-02",
+        "end": "2027-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2027-04-27",
+        "end": "2027-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-02",
+        "end": "2027-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2027-06-25",
+        "end": "2027-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "SA",
+    "year": 2027,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2027-01-02",
+        "end": "2027-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2027-04-27",
+        "end": "2027-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-02",
+        "end": "2027-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2027-06-25",
+        "end": "2027-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "KO",
+    "year": 2027,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2027-01-02",
+        "end": "2027-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2027-04-27",
+        "end": "2027-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-02",
+        "end": "2027-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2027-06-25",
+        "end": "2027-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "PO",
+    "year": 2027,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2027-01-02",
+        "end": "2027-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2027-04-27",
+        "end": "2027-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-02",
+        "end": "2027-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2027-06-25",
+        "end": "2027-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "ZA",
+    "year": 2027,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2027-01-02",
+        "end": "2027-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2027-04-27",
+        "end": "2027-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-02",
+        "end": "2027-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2027-06-25",
+        "end": "2027-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "PS",
+    "year": 2027,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2027-01-02",
+        "end": "2027-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2027-04-27",
+        "end": "2027-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-02",
+        "end": "2027-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2027-06-25",
+        "end": "2027-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "JV",
+    "year": 2027,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2027-01-02",
+        "end": "2027-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2027-04-27",
+        "end": "2027-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-02",
+        "end": "2027-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2027-06-25",
+        "end": "2027-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "GR",
+    "year": 2027,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2027-01-02",
+        "end": "2027-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2027-04-27",
+        "end": "2027-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-02",
+        "end": "2027-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2027-06-25",
+        "end": "2027-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "OK",
+    "year": 2027,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2027-01-02",
+        "end": "2027-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2027-04-27",
+        "end": "2027-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-02",
+        "end": "2027-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2027-06-25",
+        "end": "2027-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "PN",
+    "year": 2027,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2027-01-01",
+        "end": "2027-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2027-01-02",
+        "end": "2027-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2027-03-28",
+        "end": "2027-03-28",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2027-04-27",
+        "end": "2027-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-01",
+        "end": "2027-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2027-05-02",
+        "end": "2027-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2027-05-16",
+        "end": "2027-05-16",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2027-06-25",
+        "end": "2027-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2027-08-15",
+        "end": "2027-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2027-11-01",
+        "end": "2027-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2027-12-25",
+        "end": "2027-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2027-12-26",
+        "end": "2027-12-26",
+        "type": "public"
+      }
+    ]
+  }
+]

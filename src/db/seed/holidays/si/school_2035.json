@@ -1,0 +1,434 @@
+[
+  {
+    "canton": "OS",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-02-18",
+        "end": "2035-02-22",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2035-04-28",
+        "end": "2035-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-06-27",
+        "end": "2035-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2035-10-28",
+        "end": "2035-11-01",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2035-12-22",
+        "end": "2036-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "GO",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-02-18",
+        "end": "2035-02-22",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2035-04-28",
+        "end": "2035-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-06-27",
+        "end": "2035-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2035-10-28",
+        "end": "2035-11-01",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2035-12-22",
+        "end": "2036-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PD",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-02-25",
+        "end": "2035-03-01",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2035-04-28",
+        "end": "2035-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-06-27",
+        "end": "2035-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2035-10-28",
+        "end": "2035-11-01",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2035-12-22",
+        "end": "2036-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "SA",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-02-25",
+        "end": "2035-03-01",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2035-04-28",
+        "end": "2035-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-06-27",
+        "end": "2035-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2035-10-28",
+        "end": "2035-11-01",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2035-12-22",
+        "end": "2036-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "KO",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-02-18",
+        "end": "2035-02-22",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2035-04-28",
+        "end": "2035-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-06-27",
+        "end": "2035-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2035-10-28",
+        "end": "2035-11-01",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2035-12-22",
+        "end": "2036-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PO",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-02-25",
+        "end": "2035-03-01",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2035-04-28",
+        "end": "2035-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-06-27",
+        "end": "2035-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2035-10-28",
+        "end": "2035-11-01",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2035-12-22",
+        "end": "2036-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "ZA",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-02-25",
+        "end": "2035-03-01",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2035-04-28",
+        "end": "2035-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-06-27",
+        "end": "2035-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2035-10-28",
+        "end": "2035-11-01",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2035-12-22",
+        "end": "2036-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PS",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-02-25",
+        "end": "2035-03-01",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2035-04-28",
+        "end": "2035-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-06-27",
+        "end": "2035-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2035-10-28",
+        "end": "2035-11-01",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2035-12-22",
+        "end": "2036-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "JV",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-02-25",
+        "end": "2035-03-01",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2035-04-28",
+        "end": "2035-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-06-27",
+        "end": "2035-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2035-10-28",
+        "end": "2035-11-01",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2035-12-22",
+        "end": "2036-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "GR",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-02-25",
+        "end": "2035-03-01",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2035-04-28",
+        "end": "2035-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-06-27",
+        "end": "2035-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2035-10-28",
+        "end": "2035-11-01",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2035-12-22",
+        "end": "2036-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "OK",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-02-25",
+        "end": "2035-03-01",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2035-04-28",
+        "end": "2035-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-06-27",
+        "end": "2035-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2035-10-28",
+        "end": "2035-11-01",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2035-12-22",
+        "end": "2036-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PN",
+    "year": 2035,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2035-02-18",
+        "end": "2035-02-22",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2035-04-28",
+        "end": "2035-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2035-06-27",
+        "end": "2035-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2035-10-28",
+        "end": "2035-11-01",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2035-12-22",
+        "end": "2036-01-02",
+        "type": "school"
+      }
+    ]
+  }
+]

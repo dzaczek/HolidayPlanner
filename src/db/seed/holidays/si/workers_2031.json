@@ -1,0 +1,1154 @@
+[
+  {
+    "canton": "OS",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2031-01-01",
+        "end": "2031-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2031-01-02",
+        "end": "2031-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2031-02-08",
+        "end": "2031-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2031-04-13",
+        "end": "2031-04-13",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2031-04-14",
+        "end": "2031-04-14",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2031-04-27",
+        "end": "2031-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-01",
+        "end": "2031-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-02",
+        "end": "2031-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2031-06-01",
+        "end": "2031-06-01",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2031-06-25",
+        "end": "2031-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2031-08-15",
+        "end": "2031-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2031-10-31",
+        "end": "2031-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2031-11-01",
+        "end": "2031-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2031-12-25",
+        "end": "2031-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2031-12-26",
+        "end": "2031-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "GO",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2031-01-01",
+        "end": "2031-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2031-01-02",
+        "end": "2031-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2031-02-08",
+        "end": "2031-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2031-04-13",
+        "end": "2031-04-13",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2031-04-14",
+        "end": "2031-04-14",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2031-04-27",
+        "end": "2031-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-01",
+        "end": "2031-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-02",
+        "end": "2031-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2031-06-01",
+        "end": "2031-06-01",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2031-06-25",
+        "end": "2031-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2031-08-15",
+        "end": "2031-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2031-10-31",
+        "end": "2031-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2031-11-01",
+        "end": "2031-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2031-12-25",
+        "end": "2031-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2031-12-26",
+        "end": "2031-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "PD",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2031-01-01",
+        "end": "2031-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2031-01-02",
+        "end": "2031-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2031-02-08",
+        "end": "2031-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2031-04-13",
+        "end": "2031-04-13",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2031-04-14",
+        "end": "2031-04-14",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2031-04-27",
+        "end": "2031-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-01",
+        "end": "2031-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-02",
+        "end": "2031-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2031-06-01",
+        "end": "2031-06-01",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2031-06-25",
+        "end": "2031-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2031-08-15",
+        "end": "2031-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2031-10-31",
+        "end": "2031-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2031-11-01",
+        "end": "2031-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2031-12-25",
+        "end": "2031-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2031-12-26",
+        "end": "2031-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "SA",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2031-01-01",
+        "end": "2031-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2031-01-02",
+        "end": "2031-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2031-02-08",
+        "end": "2031-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2031-04-13",
+        "end": "2031-04-13",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2031-04-14",
+        "end": "2031-04-14",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2031-04-27",
+        "end": "2031-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-01",
+        "end": "2031-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-02",
+        "end": "2031-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2031-06-01",
+        "end": "2031-06-01",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2031-06-25",
+        "end": "2031-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2031-08-15",
+        "end": "2031-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2031-10-31",
+        "end": "2031-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2031-11-01",
+        "end": "2031-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2031-12-25",
+        "end": "2031-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2031-12-26",
+        "end": "2031-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "KO",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2031-01-01",
+        "end": "2031-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2031-01-02",
+        "end": "2031-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2031-02-08",
+        "end": "2031-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2031-04-13",
+        "end": "2031-04-13",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2031-04-14",
+        "end": "2031-04-14",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2031-04-27",
+        "end": "2031-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-01",
+        "end": "2031-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-02",
+        "end": "2031-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2031-06-01",
+        "end": "2031-06-01",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2031-06-25",
+        "end": "2031-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2031-08-15",
+        "end": "2031-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2031-10-31",
+        "end": "2031-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2031-11-01",
+        "end": "2031-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2031-12-25",
+        "end": "2031-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2031-12-26",
+        "end": "2031-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "PO",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2031-01-01",
+        "end": "2031-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2031-01-02",
+        "end": "2031-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2031-02-08",
+        "end": "2031-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2031-04-13",
+        "end": "2031-04-13",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2031-04-14",
+        "end": "2031-04-14",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2031-04-27",
+        "end": "2031-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-01",
+        "end": "2031-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-02",
+        "end": "2031-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2031-06-01",
+        "end": "2031-06-01",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2031-06-25",
+        "end": "2031-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2031-08-15",
+        "end": "2031-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2031-10-31",
+        "end": "2031-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2031-11-01",
+        "end": "2031-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2031-12-25",
+        "end": "2031-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2031-12-26",
+        "end": "2031-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "ZA",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2031-01-01",
+        "end": "2031-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2031-01-02",
+        "end": "2031-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2031-02-08",
+        "end": "2031-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2031-04-13",
+        "end": "2031-04-13",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2031-04-14",
+        "end": "2031-04-14",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2031-04-27",
+        "end": "2031-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-01",
+        "end": "2031-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-02",
+        "end": "2031-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2031-06-01",
+        "end": "2031-06-01",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2031-06-25",
+        "end": "2031-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2031-08-15",
+        "end": "2031-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2031-10-31",
+        "end": "2031-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2031-11-01",
+        "end": "2031-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2031-12-25",
+        "end": "2031-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2031-12-26",
+        "end": "2031-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "PS",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2031-01-01",
+        "end": "2031-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2031-01-02",
+        "end": "2031-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2031-02-08",
+        "end": "2031-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2031-04-13",
+        "end": "2031-04-13",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2031-04-14",
+        "end": "2031-04-14",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2031-04-27",
+        "end": "2031-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-01",
+        "end": "2031-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-02",
+        "end": "2031-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2031-06-01",
+        "end": "2031-06-01",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2031-06-25",
+        "end": "2031-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2031-08-15",
+        "end": "2031-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2031-10-31",
+        "end": "2031-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2031-11-01",
+        "end": "2031-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2031-12-25",
+        "end": "2031-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2031-12-26",
+        "end": "2031-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "JV",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2031-01-01",
+        "end": "2031-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2031-01-02",
+        "end": "2031-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2031-02-08",
+        "end": "2031-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2031-04-13",
+        "end": "2031-04-13",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2031-04-14",
+        "end": "2031-04-14",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2031-04-27",
+        "end": "2031-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-01",
+        "end": "2031-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-02",
+        "end": "2031-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2031-06-01",
+        "end": "2031-06-01",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2031-06-25",
+        "end": "2031-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2031-08-15",
+        "end": "2031-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2031-10-31",
+        "end": "2031-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2031-11-01",
+        "end": "2031-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2031-12-25",
+        "end": "2031-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2031-12-26",
+        "end": "2031-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "GR",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2031-01-01",
+        "end": "2031-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2031-01-02",
+        "end": "2031-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2031-02-08",
+        "end": "2031-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2031-04-13",
+        "end": "2031-04-13",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2031-04-14",
+        "end": "2031-04-14",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2031-04-27",
+        "end": "2031-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-01",
+        "end": "2031-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-02",
+        "end": "2031-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2031-06-01",
+        "end": "2031-06-01",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2031-06-25",
+        "end": "2031-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2031-08-15",
+        "end": "2031-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2031-10-31",
+        "end": "2031-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2031-11-01",
+        "end": "2031-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2031-12-25",
+        "end": "2031-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2031-12-26",
+        "end": "2031-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "OK",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2031-01-01",
+        "end": "2031-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2031-01-02",
+        "end": "2031-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2031-02-08",
+        "end": "2031-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2031-04-13",
+        "end": "2031-04-13",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2031-04-14",
+        "end": "2031-04-14",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2031-04-27",
+        "end": "2031-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-01",
+        "end": "2031-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-02",
+        "end": "2031-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2031-06-01",
+        "end": "2031-06-01",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2031-06-25",
+        "end": "2031-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2031-08-15",
+        "end": "2031-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2031-10-31",
+        "end": "2031-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2031-11-01",
+        "end": "2031-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2031-12-25",
+        "end": "2031-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2031-12-26",
+        "end": "2031-12-26",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "canton": "PN",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Novo leto",
+        "start": "2031-01-01",
+        "end": "2031-01-01",
+        "type": "public"
+      },
+      {
+        "name": "Novo leto",
+        "start": "2031-01-02",
+        "end": "2031-01-02",
+        "type": "public"
+      },
+      {
+        "name": "Prešernov dan",
+        "start": "2031-02-08",
+        "end": "2031-02-08",
+        "type": "public"
+      },
+      {
+        "name": "Velika noč",
+        "start": "2031-04-13",
+        "end": "2031-04-13",
+        "type": "public"
+      },
+      {
+        "name": "Velikonočni ponedeljek",
+        "start": "2031-04-14",
+        "end": "2031-04-14",
+        "type": "public"
+      },
+      {
+        "name": "Dan upora proti okupatorju",
+        "start": "2031-04-27",
+        "end": "2031-04-27",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-01",
+        "end": "2031-05-01",
+        "type": "public"
+      },
+      {
+        "name": "Praznik dela",
+        "start": "2031-05-02",
+        "end": "2031-05-02",
+        "type": "public"
+      },
+      {
+        "name": "Binkošti",
+        "start": "2031-06-01",
+        "end": "2031-06-01",
+        "type": "public"
+      },
+      {
+        "name": "Dan državnosti",
+        "start": "2031-06-25",
+        "end": "2031-06-25",
+        "type": "public"
+      },
+      {
+        "name": "Marijino vnebovzetje",
+        "start": "2031-08-15",
+        "end": "2031-08-15",
+        "type": "public"
+      },
+      {
+        "name": "Dan reformacije",
+        "start": "2031-10-31",
+        "end": "2031-10-31",
+        "type": "public"
+      },
+      {
+        "name": "Dan spomina na mrtve",
+        "start": "2031-11-01",
+        "end": "2031-11-01",
+        "type": "public"
+      },
+      {
+        "name": "Božič",
+        "start": "2031-12-25",
+        "end": "2031-12-25",
+        "type": "public"
+      },
+      {
+        "name": "Dan samostojnosti in enotnosti",
+        "start": "2031-12-26",
+        "end": "2031-12-26",
+        "type": "public"
+      }
+    ]
+  }
+]

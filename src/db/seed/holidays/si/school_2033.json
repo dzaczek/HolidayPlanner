@@ -1,0 +1,434 @@
+[
+  {
+    "canton": "OS",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-02-14",
+        "end": "2033-02-18",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2033-04-25",
+        "end": "2033-04-29",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-06-24",
+        "end": "2033-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2033-10-31",
+        "end": "2033-11-04",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2033-12-26",
+        "end": "2034-01-06",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "GO",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-02-14",
+        "end": "2033-02-18",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2033-04-25",
+        "end": "2033-04-29",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-06-24",
+        "end": "2033-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2033-10-31",
+        "end": "2033-11-04",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2033-12-26",
+        "end": "2034-01-06",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PD",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-02-21",
+        "end": "2033-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2033-04-25",
+        "end": "2033-04-29",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-06-24",
+        "end": "2033-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2033-10-31",
+        "end": "2033-11-04",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2033-12-26",
+        "end": "2034-01-06",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "SA",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-02-21",
+        "end": "2033-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2033-04-25",
+        "end": "2033-04-29",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-06-24",
+        "end": "2033-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2033-10-31",
+        "end": "2033-11-04",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2033-12-26",
+        "end": "2034-01-06",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "KO",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-02-14",
+        "end": "2033-02-18",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2033-04-25",
+        "end": "2033-04-29",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-06-24",
+        "end": "2033-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2033-10-31",
+        "end": "2033-11-04",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2033-12-26",
+        "end": "2034-01-06",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PO",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-02-21",
+        "end": "2033-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2033-04-25",
+        "end": "2033-04-29",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-06-24",
+        "end": "2033-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2033-10-31",
+        "end": "2033-11-04",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2033-12-26",
+        "end": "2034-01-06",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "ZA",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-02-21",
+        "end": "2033-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2033-04-25",
+        "end": "2033-04-29",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-06-24",
+        "end": "2033-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2033-10-31",
+        "end": "2033-11-04",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2033-12-26",
+        "end": "2034-01-06",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PS",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-02-21",
+        "end": "2033-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2033-04-25",
+        "end": "2033-04-29",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-06-24",
+        "end": "2033-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2033-10-31",
+        "end": "2033-11-04",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2033-12-26",
+        "end": "2034-01-06",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "JV",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-02-21",
+        "end": "2033-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2033-04-25",
+        "end": "2033-04-29",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-06-24",
+        "end": "2033-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2033-10-31",
+        "end": "2033-11-04",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2033-12-26",
+        "end": "2034-01-06",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "GR",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-02-21",
+        "end": "2033-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2033-04-25",
+        "end": "2033-04-29",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-06-24",
+        "end": "2033-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2033-10-31",
+        "end": "2033-11-04",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2033-12-26",
+        "end": "2034-01-06",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "OK",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-02-21",
+        "end": "2033-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2033-04-25",
+        "end": "2033-04-29",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-06-24",
+        "end": "2033-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2033-10-31",
+        "end": "2033-11-04",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2033-12-26",
+        "end": "2034-01-06",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PN",
+    "year": 2033,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2033-02-14",
+        "end": "2033-02-18",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2033-04-25",
+        "end": "2033-04-29",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2033-06-24",
+        "end": "2033-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2033-10-31",
+        "end": "2033-11-04",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2033-12-26",
+        "end": "2034-01-06",
+        "type": "school"
+      }
+    ]
+  }
+]

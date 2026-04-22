@@ -1,0 +1,434 @@
+[
+  {
+    "canton": "OS",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-02-16",
+        "end": "2031-02-20",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2031-04-28",
+        "end": "2031-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-06-27",
+        "end": "2031-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2031-10-27",
+        "end": "2031-10-31",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2031-12-22",
+        "end": "2032-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "GO",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-02-16",
+        "end": "2031-02-20",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2031-04-28",
+        "end": "2031-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-06-27",
+        "end": "2031-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2031-10-27",
+        "end": "2031-10-31",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2031-12-22",
+        "end": "2032-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PD",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-02-23",
+        "end": "2031-02-27",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2031-04-28",
+        "end": "2031-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-06-27",
+        "end": "2031-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2031-10-27",
+        "end": "2031-10-31",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2031-12-22",
+        "end": "2032-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "SA",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-02-23",
+        "end": "2031-02-27",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2031-04-28",
+        "end": "2031-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-06-27",
+        "end": "2031-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2031-10-27",
+        "end": "2031-10-31",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2031-12-22",
+        "end": "2032-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "KO",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-02-16",
+        "end": "2031-02-20",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2031-04-28",
+        "end": "2031-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-06-27",
+        "end": "2031-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2031-10-27",
+        "end": "2031-10-31",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2031-12-22",
+        "end": "2032-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PO",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-02-23",
+        "end": "2031-02-27",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2031-04-28",
+        "end": "2031-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-06-27",
+        "end": "2031-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2031-10-27",
+        "end": "2031-10-31",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2031-12-22",
+        "end": "2032-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "ZA",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-02-23",
+        "end": "2031-02-27",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2031-04-28",
+        "end": "2031-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-06-27",
+        "end": "2031-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2031-10-27",
+        "end": "2031-10-31",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2031-12-22",
+        "end": "2032-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PS",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-02-23",
+        "end": "2031-02-27",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2031-04-28",
+        "end": "2031-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-06-27",
+        "end": "2031-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2031-10-27",
+        "end": "2031-10-31",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2031-12-22",
+        "end": "2032-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "JV",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-02-23",
+        "end": "2031-02-27",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2031-04-28",
+        "end": "2031-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-06-27",
+        "end": "2031-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2031-10-27",
+        "end": "2031-10-31",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2031-12-22",
+        "end": "2032-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "GR",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-02-23",
+        "end": "2031-02-27",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2031-04-28",
+        "end": "2031-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-06-27",
+        "end": "2031-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2031-10-27",
+        "end": "2031-10-31",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2031-12-22",
+        "end": "2032-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "OK",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-02-23",
+        "end": "2031-02-27",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2031-04-28",
+        "end": "2031-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-06-27",
+        "end": "2031-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2031-10-27",
+        "end": "2031-10-31",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2031-12-22",
+        "end": "2032-01-02",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PN",
+    "year": 2031,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2031-02-16",
+        "end": "2031-02-20",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2031-04-28",
+        "end": "2031-05-02",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2031-06-27",
+        "end": "2031-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2031-10-27",
+        "end": "2031-10-31",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2031-12-22",
+        "end": "2032-01-02",
+        "type": "school"
+      }
+    ]
+  }
+]

@@ -1,0 +1,434 @@
+[
+  {
+    "canton": "OS",
+    "year": 2028,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2028-02-14",
+        "end": "2028-02-18",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2028-04-24",
+        "end": "2028-04-28",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2028-06-23",
+        "end": "2028-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2028-10-30",
+        "end": "2028-11-03",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2028-12-25",
+        "end": "2029-01-04",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "GO",
+    "year": 2028,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2028-02-14",
+        "end": "2028-02-18",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2028-04-24",
+        "end": "2028-04-28",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2028-06-23",
+        "end": "2028-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2028-10-30",
+        "end": "2028-11-03",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2028-12-25",
+        "end": "2029-01-04",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PD",
+    "year": 2028,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2028-02-21",
+        "end": "2028-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2028-04-24",
+        "end": "2028-04-28",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2028-06-23",
+        "end": "2028-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2028-10-30",
+        "end": "2028-11-03",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2028-12-25",
+        "end": "2029-01-04",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "SA",
+    "year": 2028,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2028-02-21",
+        "end": "2028-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2028-04-24",
+        "end": "2028-04-28",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2028-06-23",
+        "end": "2028-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2028-10-30",
+        "end": "2028-11-03",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2028-12-25",
+        "end": "2029-01-04",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "KO",
+    "year": 2028,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2028-02-14",
+        "end": "2028-02-18",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2028-04-24",
+        "end": "2028-04-28",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2028-06-23",
+        "end": "2028-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2028-10-30",
+        "end": "2028-11-03",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2028-12-25",
+        "end": "2029-01-04",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PO",
+    "year": 2028,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2028-02-21",
+        "end": "2028-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2028-04-24",
+        "end": "2028-04-28",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2028-06-23",
+        "end": "2028-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2028-10-30",
+        "end": "2028-11-03",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2028-12-25",
+        "end": "2029-01-04",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "ZA",
+    "year": 2028,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2028-02-21",
+        "end": "2028-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2028-04-24",
+        "end": "2028-04-28",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2028-06-23",
+        "end": "2028-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2028-10-30",
+        "end": "2028-11-03",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2028-12-25",
+        "end": "2029-01-04",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PS",
+    "year": 2028,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2028-02-21",
+        "end": "2028-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2028-04-24",
+        "end": "2028-04-28",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2028-06-23",
+        "end": "2028-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2028-10-30",
+        "end": "2028-11-03",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2028-12-25",
+        "end": "2029-01-04",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "JV",
+    "year": 2028,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2028-02-21",
+        "end": "2028-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2028-04-24",
+        "end": "2028-04-28",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2028-06-23",
+        "end": "2028-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2028-10-30",
+        "end": "2028-11-03",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2028-12-25",
+        "end": "2029-01-04",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "GR",
+    "year": 2028,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2028-02-21",
+        "end": "2028-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2028-04-24",
+        "end": "2028-04-28",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2028-06-23",
+        "end": "2028-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2028-10-30",
+        "end": "2028-11-03",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2028-12-25",
+        "end": "2029-01-04",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "OK",
+    "year": 2028,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2028-02-21",
+        "end": "2028-02-25",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2028-04-24",
+        "end": "2028-04-28",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2028-06-23",
+        "end": "2028-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2028-10-30",
+        "end": "2028-11-03",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2028-12-25",
+        "end": "2029-01-04",
+        "type": "school"
+      }
+    ]
+  },
+  {
+    "canton": "PN",
+    "year": 2028,
+    "holidays": [
+      {
+        "name": "Zimske počitnice",
+        "start": "2028-02-14",
+        "end": "2028-02-18",
+        "type": "school"
+      },
+      {
+        "name": "Prvomajske počitnice",
+        "start": "2028-04-24",
+        "end": "2028-04-28",
+        "type": "school"
+      },
+      {
+        "name": "Poletne počitnice",
+        "start": "2028-06-23",
+        "end": "2028-08-31",
+        "type": "school"
+      },
+      {
+        "name": "Jesenske počitnice",
+        "start": "2028-10-30",
+        "end": "2028-11-03",
+        "type": "school"
+      },
+      {
+        "name": "Novoletne počitnice",
+        "start": "2028-12-25",
+        "end": "2029-01-04",
+        "type": "school"
+      }
+    ]
+  }
+]

@@ -26,6 +26,11 @@ const countryModules = {
     workers: import.meta.glob('./holidays/pl/workers_*.json'),
     students: () => import('./holidays/pl/students.json').catch(() => ({ default: [] })),
   },
+  si: {
+    school: import.meta.glob('./holidays/si/school_*.json'),
+    workers: import.meta.glob('./holidays/si/workers_*.json'),
+    students: () => import('./holidays/si/students.json').catch(() => ({ default: [] })),
+  },
   galaxy: {
     school: import.meta.glob('./holidays/galaxy/school_*.json'),
     workers: import.meta.glob('./holidays/galaxy/workers_*.json'),
