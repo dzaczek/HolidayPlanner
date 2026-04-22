@@ -1263,3 +1263,119 @@ main {
 .btn-install:hover {
   background: #047857;
 }
+
+/* ── Responsive header ───────────────────────────────────────────────────────
+   Tablet (≤900px): hide motto, shrink title, keep 1 row but tighter
+   Mobile  (≤600px): stack into 2 rows — title on top, controls below
+   ─────────────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  #app-header {
+    padding: 8px 12px;
+    gap: 10px;
+  }
+
+  .app-motto {
+    display: none;
+  }
+
+  #app-header h1 {
+    font-size: 1rem;
+  }
+
+  .title-flags {
+    font-size: 0.95rem;
+  }
+
+  .app-version {
+    display: none;
+  }
+
+  .header-center {
+    gap: 10px;
+  }
+
+  .header-right {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  #app-header {
+    flex-wrap: wrap;
+    padding: 8px 10px;
+    gap: 6px;
+  }
+
+  /* Title takes full width on its own row */
+  .header-left {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* Controls row: center + right side-by-side, full width */
+  .header-center {
+    flex: 1;
+    gap: 8px;
+  }
+
+  .header-right {
+    gap: 6px;
+  }
+
+  .app-motto {
+    display: none;
+  }
+
+  .app-version {
+    display: none;
+  }
+
+  .title-flags {
+    font-size: 0.9rem;
+  }
+
+  #app-header h1 {
+    font-size: 0.95rem;
+  }
+
+  /* Year buttons compact */
+  .year-selector button {
+    padding: 0 8px;
+    min-width: 28px;
+    font-size: 0.85rem;
+  }
+
+  #current-year {
+    font-size: 1rem;
+    min-width: 36px;
+  }
+
+  /* Layout select narrower */
+  .layout-selector select {
+    font-size: 0.78rem;
+    padding: 0 4px;
+    height: 30px;
+  }
+
+  /* Icon buttons compact */
+  .btn-header {
+    height: 30px;
+  }
+
+  .btn-icon {
+    width: 30px;
+  }
+
+  /* Dropdowns: stay right-anchored, cap width so they don't overflow */
+  .share-menu,
+  .settings-menu {
+    right: 0;
+    left: auto;
+    min-width: 0;
+    width: 280px;
+    max-width: calc(100vw - 16px);
+  }
+}
