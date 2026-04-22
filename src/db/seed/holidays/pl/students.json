@@ -1,0 +1,3202 @@
+[
+  {
+    "gemeinde_id": "pl-mz-warszawa",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-mz-warszawa",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ma-krakow",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ma-krakow",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ds-wroclaw",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ds-wroclaw",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pm-gdansk",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pm-gdansk",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ld-lodz",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-sl-gliwice",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-wp-poznan",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-wp-poznan",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-mz-warszawa",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ma-krakow",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-kp-bydgoszcz",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-lu-lublin",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pk-rzeszow",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-wn-olsztyn",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-sk-kielce",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pd-bialystok",
+    "year": 2025,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2025-01-15",
+        "end": "2025-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2025-04-17",
+        "end": "2025-04-21",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2025-06-20",
+        "end": "2025-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-mz-warszawa",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-mz-warszawa",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ma-krakow",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ma-krakow",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ds-wroclaw",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ds-wroclaw",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pm-gdansk",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pm-gdansk",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ld-lodz",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-sl-gliwice",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-wp-poznan",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-wp-poznan",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-mz-warszawa",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ma-krakow",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-kp-bydgoszcz",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-lu-lublin",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pk-rzeszow",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-wn-olsztyn",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-sk-kielce",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pd-bialystok",
+    "year": 2026,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2026-01-15",
+        "end": "2026-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2026-04-02",
+        "end": "2026-04-06",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2026-06-20",
+        "end": "2026-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-mz-warszawa",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-mz-warszawa",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ma-krakow",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ma-krakow",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ds-wroclaw",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ds-wroclaw",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pm-gdansk",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pm-gdansk",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ld-lodz",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-sl-gliwice",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-wp-poznan",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-wp-poznan",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-mz-warszawa",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ma-krakow",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-kp-bydgoszcz",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-lu-lublin",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pk-rzeszow",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-wn-olsztyn",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-sk-kielce",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pd-bialystok",
+    "year": 2027,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2027-01-15",
+        "end": "2027-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2027-03-25",
+        "end": "2027-03-29",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2027-06-20",
+        "end": "2027-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-mz-warszawa",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-mz-warszawa",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ma-krakow",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ma-krakow",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ds-wroclaw",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ds-wroclaw",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pm-gdansk",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pm-gdansk",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ld-lodz",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-sl-gliwice",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-wp-poznan",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-wp-poznan",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-mz-warszawa",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-ma-krakow",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-kp-bydgoszcz",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-lu-lublin",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pk-rzeszow",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-wn-olsztyn",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-sk-kielce",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  },
+  {
+    "gemeinde_id": "pl-pd-bialystok",
+    "year": 2028,
+    "category": "student",
+    "holidays": [
+      {
+        "name": {
+          "pl": "Przerwa zimowa",
+          "en": "Winter break",
+          "de": "Winterpause",
+          "fr": "Pause hivernale"
+        },
+        "start": "2028-01-15",
+        "end": "2028-02-15",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Przerwa wielkanocna",
+          "en": "Easter break",
+          "de": "Osterpause",
+          "fr": "Pause pascale"
+        },
+        "start": "2028-04-13",
+        "end": "2028-04-17",
+        "type": "vacation"
+      },
+      {
+        "name": {
+          "pl": "Wakacje",
+          "en": "Summer break",
+          "de": "Sommerferien",
+          "fr": "Vacances d'été"
+        },
+        "start": "2028-06-20",
+        "end": "2028-09-30",
+        "type": "vacation"
+      }
+    ]
+  }
+]

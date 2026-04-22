@@ -29,7 +29,7 @@ function getPersonFlag(canton, country) {
     // Since we are generating HTML dynamically, we use the root-relative path which Vite handles.
     return `<img class="person-flag" src="/assets/flags/ch/${canton.toUpperCase()}.svg" alt="${canton}" />`;
   }
-  const emoji = { CH: '🇨🇭', DE: '🇩🇪', FR: '🇫🇷' }[country] ?? '🌍';
+  const emoji = { CH: '🇨🇭', DE: '🇩🇪', FR: '🇫🇷', PL: '🇵🇱' }[country] ?? '🌍';
   return `<span class="person-flag-emoji" aria-hidden="true">${emoji}</span>`;
 }
 

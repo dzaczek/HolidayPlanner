@@ -183413,5 +183413,1054 @@
     "plz": [
       "95000"
     ]
+  },
+  {
+    "id": "pl-ds-wroclaw",
+    "name": "Wrocław",
+    "canton": "DS",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "50-001",
+      "50-370",
+      "51-001"
+    ]
+  },
+  {
+    "id": "pl-ds-legnica",
+    "name": "Legnica",
+    "canton": "DS",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "59-220"
+    ]
+  },
+  {
+    "id": "pl-ds-walbrzych",
+    "name": "Wałbrzych",
+    "canton": "DS",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "58-300"
+    ]
+  },
+  {
+    "id": "pl-ds-jelenia-gora",
+    "name": "Jelenia Góra",
+    "canton": "DS",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "58-500"
+    ]
+  },
+  {
+    "id": "pl-ds-lubin",
+    "name": "Lubin",
+    "canton": "DS",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "59-300"
+    ]
+  },
+  {
+    "id": "pl-ds-boleslawiec",
+    "name": "Bolesławiec",
+    "canton": "DS",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "59-700"
+    ]
+  },
+  {
+    "id": "pl-ds-glogow",
+    "name": "Głogów",
+    "canton": "DS",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "67-200"
+    ]
+  },
+  {
+    "id": "pl-ds-swidnica",
+    "name": "Świdnica",
+    "canton": "DS",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "58-100"
+    ]
+  },
+  {
+    "id": "pl-ds-dzierzoniow",
+    "name": "Dzierżoniów",
+    "canton": "DS",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "58-200"
+    ]
+  },
+  {
+    "id": "pl-kp-bydgoszcz",
+    "name": "Bydgoszcz",
+    "canton": "KP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "85-001",
+      "85-066"
+    ]
+  },
+  {
+    "id": "pl-kp-torun",
+    "name": "Toruń",
+    "canton": "KP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "87-100"
+    ]
+  },
+  {
+    "id": "pl-kp-wloclawek",
+    "name": "Włocławek",
+    "canton": "KP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "87-800"
+    ]
+  },
+  {
+    "id": "pl-kp-grudziadz",
+    "name": "Grudziądz",
+    "canton": "KP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "86-300"
+    ]
+  },
+  {
+    "id": "pl-kp-inowroclaw",
+    "name": "Inowrocław",
+    "canton": "KP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "88-100"
+    ]
+  },
+  {
+    "id": "pl-lu-lublin",
+    "name": "Lublin",
+    "canton": "LU",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "20-001",
+      "20-950"
+    ]
+  },
+  {
+    "id": "pl-lu-chelm",
+    "name": "Chełm",
+    "canton": "LU",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "22-100"
+    ]
+  },
+  {
+    "id": "pl-lu-zamosc",
+    "name": "Zamość",
+    "canton": "LU",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "22-400"
+    ]
+  },
+  {
+    "id": "pl-lu-biala-podlaska",
+    "name": "Biała Podlaska",
+    "canton": "LU",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "21-500"
+    ]
+  },
+  {
+    "id": "pl-lu-pulawy",
+    "name": "Puławy",
+    "canton": "LU",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "24-100"
+    ]
+  },
+  {
+    "id": "pl-lb-zielona-gora",
+    "name": "Zielona Góra",
+    "canton": "LB",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "65-001",
+      "65-066"
+    ]
+  },
+  {
+    "id": "pl-lb-gorzow",
+    "name": "Gorzów Wielkopolski",
+    "canton": "LB",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "66-400"
+    ]
+  },
+  {
+    "id": "pl-lb-nowa-sol",
+    "name": "Nowa Sól",
+    "canton": "LB",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "67-100"
+    ]
+  },
+  {
+    "id": "pl-ld-lodz",
+    "name": "Łódź",
+    "canton": "LD",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "90-001",
+      "90-950",
+      "91-001",
+      "92-001",
+      "93-001"
+    ]
+  },
+  {
+    "id": "pl-ld-piotrkow",
+    "name": "Piotrków Trybunalski",
+    "canton": "LD",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "97-300"
+    ]
+  },
+  {
+    "id": "pl-ld-skierniewice",
+    "name": "Skierniewice",
+    "canton": "LD",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "96-100"
+    ]
+  },
+  {
+    "id": "pl-ld-pabianice",
+    "name": "Pabianice",
+    "canton": "LD",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "95-200"
+    ]
+  },
+  {
+    "id": "pl-ld-tomaszow",
+    "name": "Tomaszów Mazowiecki",
+    "canton": "LD",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "97-200"
+    ]
+  },
+  {
+    "id": "pl-ma-krakow",
+    "name": "Kraków",
+    "canton": "MA",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "30-001",
+      "31-001",
+      "32-001"
+    ]
+  },
+  {
+    "id": "pl-ma-nowy-sacz",
+    "name": "Nowy Sącz",
+    "canton": "MA",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "33-300"
+    ]
+  },
+  {
+    "id": "pl-ma-tarnow",
+    "name": "Tarnów",
+    "canton": "MA",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "33-100"
+    ]
+  },
+  {
+    "id": "pl-ma-oswiecim",
+    "name": "Oświęcim",
+    "canton": "MA",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "32-600"
+    ]
+  },
+  {
+    "id": "pl-ma-nowy-targ",
+    "name": "Nowy Targ",
+    "canton": "MA",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "34-400"
+    ]
+  },
+  {
+    "id": "pl-ma-zakopane",
+    "name": "Zakopane",
+    "canton": "MA",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "34-500"
+    ]
+  },
+  {
+    "id": "pl-ma-chrzanow",
+    "name": "Chrzanów",
+    "canton": "MA",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "32-500"
+    ]
+  },
+  {
+    "id": "pl-mz-warszawa",
+    "name": "Warszawa",
+    "canton": "MZ",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "00-001",
+      "00-950",
+      "01-001",
+      "02-001",
+      "03-001",
+      "04-001"
+    ]
+  },
+  {
+    "id": "pl-mz-radom",
+    "name": "Radom",
+    "canton": "MZ",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "26-600"
+    ]
+  },
+  {
+    "id": "pl-mz-plock",
+    "name": "Płock",
+    "canton": "MZ",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "09-400"
+    ]
+  },
+  {
+    "id": "pl-mz-siedlce",
+    "name": "Siedlce",
+    "canton": "MZ",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "08-100"
+    ]
+  },
+  {
+    "id": "pl-mz-ostroleka",
+    "name": "Ostrołęka",
+    "canton": "MZ",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "07-400"
+    ]
+  },
+  {
+    "id": "pl-mz-legionowo",
+    "name": "Legionowo",
+    "canton": "MZ",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "05-120"
+    ]
+  },
+  {
+    "id": "pl-mz-pruszkow",
+    "name": "Pruszków",
+    "canton": "MZ",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "05-800"
+    ]
+  },
+  {
+    "id": "pl-mz-nowy-dwor",
+    "name": "Nowy Dwór Mazowiecki",
+    "canton": "MZ",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "05-100"
+    ]
+  },
+  {
+    "id": "pl-op-opole",
+    "name": "Opole",
+    "canton": "OP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "45-001",
+      "45-055"
+    ]
+  },
+  {
+    "id": "pl-op-kedzierzyn",
+    "name": "Kędzierzyn-Koźle",
+    "canton": "OP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "47-200"
+    ]
+  },
+  {
+    "id": "pl-op-nysa",
+    "name": "Nysa",
+    "canton": "OP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "48-300"
+    ]
+  },
+  {
+    "id": "pl-op-brzeg",
+    "name": "Brzeg",
+    "canton": "OP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "49-300"
+    ]
+  },
+  {
+    "id": "pl-pk-rzeszow",
+    "name": "Rzeszów",
+    "canton": "PK",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "35-001",
+      "35-959"
+    ]
+  },
+  {
+    "id": "pl-pk-przemysl",
+    "name": "Przemyśl",
+    "canton": "PK",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "37-700"
+    ]
+  },
+  {
+    "id": "pl-pk-stalowa-wola",
+    "name": "Stalowa Wola",
+    "canton": "PK",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "37-450"
+    ]
+  },
+  {
+    "id": "pl-pk-mielec",
+    "name": "Mielec",
+    "canton": "PK",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "39-300"
+    ]
+  },
+  {
+    "id": "pl-pk-krosno",
+    "name": "Krosno",
+    "canton": "PK",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "38-400"
+    ]
+  },
+  {
+    "id": "pl-pk-tarnobrzeg",
+    "name": "Tarnobrzeg",
+    "canton": "PK",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "39-400"
+    ]
+  },
+  {
+    "id": "pl-pd-bialystok",
+    "name": "Białystok",
+    "canton": "PD",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "15-001",
+      "15-950"
+    ]
+  },
+  {
+    "id": "pl-pd-suwalki",
+    "name": "Suwałki",
+    "canton": "PD",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "16-400"
+    ]
+  },
+  {
+    "id": "pl-pd-lomza",
+    "name": "Łomża",
+    "canton": "PD",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "18-400"
+    ]
+  },
+  {
+    "id": "pl-pd-augustow",
+    "name": "Augustów",
+    "canton": "PD",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "16-300"
+    ]
+  },
+  {
+    "id": "pl-pm-gdansk",
+    "name": "Gdańsk",
+    "canton": "PM",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "80-001",
+      "80-950",
+      "81-001"
+    ]
+  },
+  {
+    "id": "pl-pm-gdynia",
+    "name": "Gdynia",
+    "canton": "PM",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "81-001",
+      "81-451"
+    ]
+  },
+  {
+    "id": "pl-pm-sopot",
+    "name": "Sopot",
+    "canton": "PM",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "81-800"
+    ]
+  },
+  {
+    "id": "pl-pm-slupsk",
+    "name": "Słupsk",
+    "canton": "PM",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "76-200"
+    ]
+  },
+  {
+    "id": "pl-pm-starogard",
+    "name": "Starogard Gdański",
+    "canton": "PM",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "83-200"
+    ]
+  },
+  {
+    "id": "pl-pm-tczew",
+    "name": "Tczew",
+    "canton": "PM",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "83-110"
+    ]
+  },
+  {
+    "id": "pl-pm-rumia",
+    "name": "Rumia",
+    "canton": "PM",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "84-230"
+    ]
+  },
+  {
+    "id": "pl-sl-katowice",
+    "name": "Katowice",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "40-001",
+      "40-951"
+    ]
+  },
+  {
+    "id": "pl-sl-czestochowa",
+    "name": "Częstochowa",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "42-200"
+    ]
+  },
+  {
+    "id": "pl-sl-sosnowiec",
+    "name": "Sosnowiec",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "41-200"
+    ]
+  },
+  {
+    "id": "pl-sl-gliwice",
+    "name": "Gliwice",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "44-100"
+    ]
+  },
+  {
+    "id": "pl-sl-zabrze",
+    "name": "Zabrze",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "41-800"
+    ]
+  },
+  {
+    "id": "pl-sl-bytom",
+    "name": "Bytom",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "41-902"
+    ]
+  },
+  {
+    "id": "pl-sl-rybnik",
+    "name": "Rybnik",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "44-200"
+    ]
+  },
+  {
+    "id": "pl-sl-tychy",
+    "name": "Tychy",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "43-100"
+    ]
+  },
+  {
+    "id": "pl-sl-bielsko-biala",
+    "name": "Bielsko-Biała",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "43-300"
+    ]
+  },
+  {
+    "id": "pl-sl-dabrowa",
+    "name": "Dąbrowa Górnicza",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "41-300"
+    ]
+  },
+  {
+    "id": "pl-sl-jastrzebie",
+    "name": "Jastrzębie-Zdrój",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "44-330"
+    ]
+  },
+  {
+    "id": "pl-sl-siemianowice",
+    "name": "Siemianowice Śląskie",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "41-100"
+    ]
+  },
+  {
+    "id": "pl-sl-zory",
+    "name": "Żory",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "44-240"
+    ]
+  },
+  {
+    "id": "pl-sl-jaworzno",
+    "name": "Jaworzno",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "43-600"
+    ]
+  },
+  {
+    "id": "pl-sl-myslowice",
+    "name": "Mysłowice",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "41-400"
+    ]
+  },
+  {
+    "id": "pl-sl-chorzow",
+    "name": "Chorzów",
+    "canton": "SL",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "41-500"
+    ]
+  },
+  {
+    "id": "pl-sk-kielce",
+    "name": "Kielce",
+    "canton": "SK",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "25-001",
+      "25-516"
+    ]
+  },
+  {
+    "id": "pl-sk-ostrowiec",
+    "name": "Ostrowiec Świętokrzyski",
+    "canton": "SK",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "27-400"
+    ]
+  },
+  {
+    "id": "pl-sk-starachowice",
+    "name": "Starachowice",
+    "canton": "SK",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "27-200"
+    ]
+  },
+  {
+    "id": "pl-sk-skarzysko",
+    "name": "Skarżysko-Kamienna",
+    "canton": "SK",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "26-110"
+    ]
+  },
+  {
+    "id": "pl-sk-radom",
+    "name": "Radomsko",
+    "canton": "SK",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "97-500"
+    ]
+  },
+  {
+    "id": "pl-wn-olsztyn",
+    "name": "Olsztyn",
+    "canton": "WN",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "10-001",
+      "10-959"
+    ]
+  },
+  {
+    "id": "pl-wn-elblag",
+    "name": "Elbląg",
+    "canton": "WN",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "82-300"
+    ]
+  },
+  {
+    "id": "pl-wn-elk",
+    "name": "Ełk",
+    "canton": "WN",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "19-300"
+    ]
+  },
+  {
+    "id": "pl-wn-ostróda",
+    "name": "Ostróda",
+    "canton": "WN",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "14-100"
+    ]
+  },
+  {
+    "id": "pl-wn-ilawa",
+    "name": "Iława",
+    "canton": "WN",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "14-200"
+    ]
+  },
+  {
+    "id": "pl-wp-poznan",
+    "name": "Poznań",
+    "canton": "WP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "60-001",
+      "61-001",
+      "62-001"
+    ]
+  },
+  {
+    "id": "pl-wp-kalisz",
+    "name": "Kalisz",
+    "canton": "WP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "62-800"
+    ]
+  },
+  {
+    "id": "pl-wp-leszno",
+    "name": "Leszno",
+    "canton": "WP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "64-100"
+    ]
+  },
+  {
+    "id": "pl-wp-konin",
+    "name": "Konin",
+    "canton": "WP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "62-500"
+    ]
+  },
+  {
+    "id": "pl-wp-gniezno",
+    "name": "Gniezno",
+    "canton": "WP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "62-200"
+    ]
+  },
+  {
+    "id": "pl-wp-pila",
+    "name": "Piła",
+    "canton": "WP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "64-920"
+    ]
+  },
+  {
+    "id": "pl-wp-ostrów",
+    "name": "Ostrów Wielkopolski",
+    "canton": "WP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "63-400"
+    ]
+  },
+  {
+    "id": "pl-zp-szczecin",
+    "name": "Szczecin",
+    "canton": "ZP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "70-001",
+      "70-952",
+      "71-001"
+    ]
+  },
+  {
+    "id": "pl-zp-koszalin",
+    "name": "Koszalin",
+    "canton": "ZP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "75-001"
+    ]
+  },
+  {
+    "id": "pl-zp-swinoujscie",
+    "name": "Świnoujście",
+    "canton": "ZP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "72-600"
+    ]
+  },
+  {
+    "id": "pl-zp-stargard",
+    "name": "Stargard",
+    "canton": "ZP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "73-110"
+    ]
+  },
+  {
+    "id": "pl-zp-kolobrzeg",
+    "name": "Kołobrzeg",
+    "canton": "ZP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "78-100"
+    ]
+  },
+  {
+    "id": "pl-zp-polic",
+    "name": "Police",
+    "canton": "ZP",
+    "country": "PL",
+    "language": "pl",
+    "plz": [
+      "72-010"
+    ]
   }
 ]
