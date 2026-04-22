@@ -16,7 +16,7 @@ function nextDay(dateStr) {
 }
 
 function uid() {
-  return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}@hcp`;
+  return `${crypto.randomUUID()}@hcp`;
 }
 
 function escapeICS(str) {
