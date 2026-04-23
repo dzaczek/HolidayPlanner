@@ -41,8 +41,6 @@ const countryModules = {
 // Country codes derived from registered modules
 const COUNTRIES = Object.keys(countryModules);
 
-// Canton/region -> gemeinde IDs (built once, keyed by country)
-let regionGemeinden = null;
 let gemeindenCache = null;
 
 async function getGemeinden() {
@@ -50,19 +48,8 @@ async function getGemeinden() {
   return gemeindenCache;
 }
 
-async function buildRegionMap() {
-  if (regionGemeinden) return regionGemeinden;
-  const gemeinden = await getGemeinden();
-  regionGemeinden = {};
-  for (const g of gemeinden) {
-    if (!g.canton) continue;
-    const key = g.country || 'CH';
-    if (!regionGemeinden[key]) regionGemeinden[key] = {};
-    if (!regionGemeinden[key][g.canton]) regionGemeinden[key][g.canton] = [];
-    regionGemeinden[key][g.canton].push(g.id);
-  }
-  return regionGemeinden;
-}
+// In-memory lock to prevent concurrent loads for the same year
+const loadingYears = new Set();
 
 /**
  * Initial seed: only Gemeinden (once).
@@ -103,90 +90,94 @@ function setTemplatesVersion(year, v) {
 }
 
 export async function ensureYearLoaded(year, onProgress) {
+  // Prevent concurrent loads for the same year (re-entry guard)
+  if (loadingYears.has(year)) return;
   // If templates exist for this year AND were built with the current SEED_VERSION, skip.
   if (await hasTemplatesForYear(year) && getTemplatesVersion(year) >= SEED_VERSION) return;
 
-  // Templates are stale or missing — force a reload for this year.
-  await clearYearTemplates(year);
+  loadingYears.add(year);
+  try {
+    // Templates are stale or missing — force a reload for this year.
+    await clearYearTemplates(year);
 
-  if (onProgress) onProgress('loading', 0);
-  const rMap = await buildRegionMap();
-  const templates = [];
+    if (onProgress) onProgress('loading', 0);
+    const templates = [];
 
-  for (const country of COUNTRIES) {
-    const mods = countryModules[country];
-    const cMap = rMap[country.toUpperCase()] || {};
+    for (const country of COUNTRIES) {
+      const mods = countryModules[country];
 
-    // School holidays
-    if (onProgress) onProgress('school', 20);
-    const schoolKey = Object.keys(mods.school).find(k => k.includes(`school_${year}`));
-    if (schoolKey) {
-      const mod = await mods.school[schoolKey]();
-      const entries = mod.default || mod;
-      expandEntries(entries, 'school', '#4CAF50', cMap, templates);
-    }
-
-    // Worker holidays
-    if (onProgress) onProgress('worker', 50);
-    const workerKey = Object.keys(mods.workers).find(k => k.includes(`workers_${year}`));
-    if (workerKey) {
-      const mod = await mods.workers[workerKey]();
-      const entries = mod.default || mod;
-      expandEntries(entries, 'worker', '#FF9800', cMap, templates);
-    }
-
-    // Student holidays
-    try {
-      const studentMod = await mods.students();
-      const studentData = studentMod.default || studentMod;
-      for (const entry of studentData) {
-        if (entry.year !== year) continue;
-        for (const holiday of entry.holidays) {
-          templates.push({
-            category: entry.category,
-            gemeinde: entry.gemeinde_id,
-            name: holiday.name,
-            startDate: holiday.start,
-            endDate: holiday.end,
-            type: holiday.type,
-            year: entry.year,
-            color: '#2196F3',
-          });
-        }
+      // School holidays — stored keyed by canton code (e.g. 'ZH', 'BY', 'MZ')
+      if (onProgress) onProgress('school', 20);
+      const schoolKey = Object.keys(mods.school).find(k => k.includes(`school_${year}`));
+      if (schoolKey) {
+        const mod = await mods.school[schoolKey]();
+        const entries = mod.default || mod;
+        expandEntries(entries, 'school', '#4CAF50', templates);
       }
-    } catch { /* no student data for this country */ }
-  }
 
-  if (templates.length > 0) {
-    if (onProgress) onProgress('saving', 70);
-    const CHUNK = 5000;
-    for (let i = 0; i < templates.length; i += CHUNK) {
-      await addTemplatesBatch(templates.slice(i, i + CHUNK));
-      if (onProgress) onProgress('saving', 70 + Math.round((i / templates.length) * 30));
+      // Worker holidays — stored keyed by canton code
+      if (onProgress) onProgress('worker', 50);
+      const workerKey = Object.keys(mods.workers).find(k => k.includes(`workers_${year}`));
+      if (workerKey) {
+        const mod = await mods.workers[workerKey]();
+        const entries = mod.default || mod;
+        expandEntries(entries, 'worker', '#FF9800', templates);
+      }
+
+      // Student holidays — stored keyed by specific gemeinde_id (university)
+      try {
+        const studentMod = await mods.students();
+        const studentData = studentMod.default || studentMod;
+        for (const entry of studentData) {
+          if (entry.year !== year) continue;
+          for (const holiday of entry.holidays) {
+            templates.push({
+              category: entry.category,
+              gemeinde: entry.gemeinde_id,
+              name: holiday.name,
+              startDate: holiday.start,
+              endDate: holiday.end,
+              type: holiday.type,
+              year: entry.year,
+              color: '#2196F3',
+            });
+          }
+        }
+      } catch { /* no student data for this country */ }
     }
-    logger.debug(`[HCP] Loaded ${templates.length} templates for ${year}`);
-  }
 
-  setTemplatesVersion(year, SEED_VERSION);
-  if (onProgress) onProgress('done', 100);
+    if (templates.length > 0) {
+      if (onProgress) onProgress('saving', 70);
+      const CHUNK = 2000;
+      for (let i = 0; i < templates.length; i += CHUNK) {
+        await addTemplatesBatch(templates.slice(i, i + CHUNK));
+        if (onProgress) onProgress('saving', 70 + Math.round((i / templates.length) * 30));
+      }
+      logger.debug(`[HCP] Loaded ${templates.length} templates for ${year}`);
+    }
+
+    setTemplatesVersion(year, SEED_VERSION);
+    if (onProgress) onProgress('done', 100);
+  } finally {
+    loadingYears.delete(year);
+  }
 }
 
-function expandEntries(entries, category, color, cMap, out) {
+// Store templates keyed by canton code (e.g. 'ZH', 'BY', 'MZ') — not by individual municipality.
+// This reduces template count from ~300K to ~3K entries per year.
+function expandEntries(entries, category, color, out) {
   for (const entry of entries) {
-    const gemeindeIds = cMap[entry.canton] || [entry.canton.toLowerCase()];
-    for (const gemId of gemeindeIds) {
-      for (const holiday of entry.holidays) {
-        out.push({
-          category,
-          gemeinde: gemId,
-          name: holiday.name,
-          startDate: holiday.start,
-          endDate: holiday.end,
-          type: holiday.type,
-          year: entry.year,
-          color,
-        });
-      }
+    for (const holiday of entry.holidays) {
+      out.push({
+        category,
+        gemeinde: entry.canton,
+        name: holiday.name,
+        startDate: holiday.start,
+        endDate: holiday.end,
+        type: holiday.type,
+        year: entry.year,
+        color,
+      });
     }
   }
 }

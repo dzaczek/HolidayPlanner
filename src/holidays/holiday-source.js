@@ -39,12 +39,15 @@ export async function buildHolidayMap(year) {
  * Get available holiday templates for a person (based on category + gemeinde).
  */
 export async function getAvailableTemplates(person, year) {
-  const templates = await getTemplates(person.category, person.gemeinde, year);
+  // School/worker templates are keyed by canton code; student templates by specific gemeinde_id.
+  const cantonKey = person.canton || person.gemeinde;
+  const ownKey = person.category === 'student' ? person.gemeinde : cantonKey;
+  const templates = await getTemplates(person.category, ownKey, year);
 
-  // School kids and students also see public holidays
+  // School kids and students also see public holidays (worker templates, always canton-keyed)
   let extra = [];
   if (person.category === 'school' || person.category === 'student') {
-    extra = await getTemplates('worker', person.gemeinde, year);
+    extra = await getTemplates('worker', cantonKey, year);
   }
 
   const lang = getLang();

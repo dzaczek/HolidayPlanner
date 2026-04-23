@@ -341,10 +341,12 @@ async function handlePersonChange(action, person) {
 }
 
 async function autoAssignSinglePerson(person, year) {
-  const templates = await getTemplates(person.category, person.gemeinde, year);
+  const cantonKey = person.canton || person.gemeinde;
+  const ownKey = person.category === 'student' ? person.gemeinde : cantonKey;
+  const templates = await getTemplates(person.category, ownKey, year);
   let extraTemplates = [];
   if (person.category === 'school' || person.category === 'student') {
-    extraTemplates = await getTemplates('worker', person.gemeinde, year);
+    extraTemplates = await getTemplates('worker', cantonKey, year);
   }
   const allTemplates = [...templates, ...extraTemplates];
   const holidays = [];
@@ -391,14 +393,16 @@ async function autoAssignHolidays(year) {
     // Skip if user manually cleared this person's holidays (don't re-assign)
     if (isPersonManuallyCleared(person.id)) continue;
 
-    // Get templates for person's own category
-    const templates = await getTemplates(person.category, person.gemeinde, year);
-    logger.debug(`[HCP] autoAssign ${person.name} (${person.category}, gem=${person.gemeinde}): ${templates.length} templates`);
+    // Get templates for person's own category (school/worker: by canton, student: by gemeinde)
+    const cantonKey = person.canton || person.gemeinde;
+    const ownKey = person.category === 'student' ? person.gemeinde : cantonKey;
+    const templates = await getTemplates(person.category, ownKey, year);
+    logger.debug(`[HCP] autoAssign ${person.name} (${person.category}, canton=${cantonKey}): ${templates.length} templates`);
 
-    // School kids and students also get public holidays (worker category)
+    // School kids and students also get public holidays (worker category, canton-keyed)
     let extraTemplates = [];
     if (person.category === 'school' || person.category === 'student') {
-      extraTemplates = await getTemplates('worker', person.gemeinde, year);
+      extraTemplates = await getTemplates('worker', cantonKey, year);
     }
 
     const allTemplates = [...templates, ...extraTemplates];

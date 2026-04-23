@@ -212,7 +212,7 @@ export async function deleteLeave(id) {
 
 // === Seed check ===
 
-export const SEED_VERSION = 21; // added Slovenia (SI) country
+export const SEED_VERSION = 22; // per-canton template storage (100x fewer DB entries)
 
 export async function getSeedVersion() {
   try {
