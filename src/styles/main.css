@@ -34,6 +34,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 16px;
   box-shadow: var(--shadow);
   position: sticky;
@@ -492,72 +493,63 @@ main {
   background: linear-gradient(to bottom, #f0fdf4 0%, var(--surface) 100%);
 }
 
-/* ── Sync lock button + dropdown panel ───────────────────────────────────── */
-.sync-dropdown-wrap {
-  position: relative;
+/* ── Sync row (second header row, full width) ────────────────────────────── */
+.sync-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 6px;
+  border-top: 1px solid #bbf7d0;
+  flex-wrap: wrap;
 }
 
-.sync-dropdown-wrap.hidden {
+.sync-row.hidden {
   display: none;
 }
 
-/* Lock button in header */
+.sync-row.sync-bar-error {
+  border-top-color: #fca5a5;
+}
+
+/* Lock button — inline pill, triggers panel expand */
 .btn-sync-lock {
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 0 8px;
-  height: 32px;
+  gap: 6px;
+  padding: 3px 10px;
+  height: 28px;
   background: #dcfce7;
   color: #15803d;
   border: 1.5px solid #16a34a;
-  border-radius: var(--radius);
+  border-radius: 14px;
   cursor: pointer;
   font-family: var(--font);
+  font-size: 0.78rem;
+  font-weight: 600;
   transition: background 0.15s;
+  white-space: nowrap;
 }
 
 .btn-sync-lock:hover {
   background: #bbf7d0;
 }
 
-.sync-dropdown-wrap.sync-bar-error .btn-sync-lock {
+.sync-row.sync-bar-error .btn-sync-lock {
   background: #fef2f2;
   color: #b91c1c;
   border-color: #dc2626;
 }
 
-/* Dropdown panel */
+/* Action buttons — shown inline after lock pill when panel opens */
 .sync-panel {
-  position: absolute;
-  right: 0;
-  top: calc(100% + 6px);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
-  min-width: 220px;
-  z-index: 200;
-  overflow: hidden;
-  padding: 12px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  gap: 6px;
 }
 
 .sync-panel.hidden {
   display: none;
-}
-
-.sync-panel-header {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.sync-panel-actions {
-  display: flex;
-  gap: 6px;
 }
 
 .sync-e2ee-badge {

@@ -94,27 +94,6 @@
     </div>
 
     <div class="header-right header-controls">
-      <div class="sync-dropdown-wrap hidden" id="sync-status-bar">
-        <button id="sync-lock-btn" class="btn-header btn-sync-lock" aria-label="E2EE Sync status" data-i18n-tooltip="tooltip.sync">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-          </svg>
-          <span id="sync-bar-dot" class="sync-dot sync-dot-ok"></span>
-        </button>
-        <div id="sync-panel" class="sync-panel hidden">
-          <div class="sync-panel-header">
-            <span class="sync-e2ee-badge">&#128274; E2EE</span>
-            <span id="sync-bar-date" class="sync-bar-date">—</span>
-          </div>
-          <div class="sync-panel-actions">
-            <button id="sync-quick-pull" class="btn-sync-quick" data-i18n-tooltip="tooltip.pull">&#8681; Pull</button>
-            <button id="sync-quick-push" class="btn-sync-quick" data-i18n-tooltip="tooltip.push">&#8679; Push</button>
-            <button id="sync-quick-sync" class="btn-sync-quick" data-i18n-tooltip="tooltip.sync">&#8645; Sync</button>
-          </div>
-        </div>
-      </div>
-
       <div class="layout-selector">
         <select id="layout-select" data-i18n-tooltip="tooltip.layout">
           <option value="3x4">3 &times; 4</option>
@@ -219,6 +198,24 @@
             <span class="settings-menu-title" data-i18n="tooltip.reset">Reset App</span>
           </button>
         </div>
+      </div>
+    </div>
+
+    <!-- Sync row: second row, full width, only visible when E2EE active -->
+    <div class="sync-row hidden" id="sync-status-bar">
+      <button id="sync-lock-btn" class="btn-sync-lock" aria-label="E2EE Sync status">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+        <span class="sync-e2ee-badge">E2EE</span>
+        <span id="sync-bar-dot" class="sync-dot sync-dot-ok"></span>
+        <span id="sync-bar-date" class="sync-bar-date">—</span>
+      </button>
+      <div id="sync-panel" class="sync-panel hidden">
+        <button id="sync-quick-pull" class="btn-sync-quick" data-i18n-tooltip="tooltip.pull">&#8681; Pull</button>
+        <button id="sync-quick-push" class="btn-sync-quick" data-i18n-tooltip="tooltip.push">&#8679; Push</button>
+        <button id="sync-quick-sync" class="btn-sync-quick" data-i18n-tooltip="tooltip.sync">&#8645; Sync</button>
       </div>
     </div>
   </header>

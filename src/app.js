@@ -199,7 +199,8 @@ function bindControls() {
     if (document.getElementById('settings-dropdown-wrap') && !document.getElementById('settings-dropdown-wrap').contains(e.target)) {
       settingsMenu.classList.add('hidden');
     }
-    if (document.getElementById('sync-status-bar') && !document.getElementById('sync-status-bar').contains(e.target)) {
+    const syncRow = document.getElementById('sync-status-bar');
+    if (syncRow && !syncRow.contains(e.target)) {
       document.getElementById('sync-panel')?.classList.add('hidden');
     }
   });
