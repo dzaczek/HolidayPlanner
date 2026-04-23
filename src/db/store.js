@@ -132,11 +132,20 @@ export async function getAllTemplatesForYear(year) {
 
 export async function hasTemplatesForYear(year) {
   const db = await getDB();
-  // Check if worker templates exist for this year
   const tx = db.transaction('holidayTemplates', 'readonly');
   const index = tx.store.index('by-year');
   const all = await index.getAll(year);
   return all.some(t => t.category === 'worker');
+}
+
+export async function clearYearTemplates(year) {
+  const db = await getDB();
+  const all = await db.getAllFromIndex('holidayTemplates', 'by-year', year);
+  const tx = db.transaction('holidayTemplates', 'readwrite');
+  for (const t of all) {
+    await tx.store.delete(t.id);
+  }
+  await tx.done;
 }
 
 export async function addTemplate(template) {

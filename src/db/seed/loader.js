@@ -1,4 +1,4 @@
-import { addGemeindenBatch, addTemplatesBatch, isSeeded, clearSeedStores, setSeedVersion, hasTemplatesForYear, SEED_VERSION } from '../store.js';
+import { addGemeindenBatch, addTemplatesBatch, isSeeded, clearSeedStores, setSeedVersion, hasTemplatesForYear, clearYearTemplates, SEED_VERSION } from '../store.js';
 import { logger } from '../../utils.js';
 
 // Lazy-load gemeinden (large file, ~2MB) — only loaded during seed
@@ -95,8 +95,19 @@ export async function seedDatabase(onProgress) {
  * Called on year change - loads only if not already in IndexedDB.
  * Iterates over all registered countries.
  */
+function getTemplatesVersion(year) {
+  return parseInt(localStorage.getItem(`hcp-templates-v-${year}`) || '0');
+}
+function setTemplatesVersion(year, v) {
+  localStorage.setItem(`hcp-templates-v-${year}`, String(v));
+}
+
 export async function ensureYearLoaded(year, onProgress) {
-  if (await hasTemplatesForYear(year)) return;
+  // If templates exist for this year AND were built with the current SEED_VERSION, skip.
+  if (await hasTemplatesForYear(year) && getTemplatesVersion(year) >= SEED_VERSION) return;
+
+  // Templates are stale or missing — force a reload for this year.
+  await clearYearTemplates(year);
 
   if (onProgress) onProgress('loading', 0);
   const rMap = await buildRegionMap();
@@ -156,6 +167,7 @@ export async function ensureYearLoaded(year, onProgress) {
     logger.debug(`[HCP] Loaded ${templates.length} templates for ${year}`);
   }
 
+  setTemplatesVersion(year, SEED_VERSION);
   if (onProgress) onProgress('done', 100);
 }
 
