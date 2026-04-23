@@ -142,7 +142,7 @@ export async function joinFamilySyncCode(codeInput, onChanged) {
 
   setFamilyCode(codeInput);
   hideModal();
-  if (onChanged) onChanged();
+  if (onChanged) await onChanged();
   await showSyncStatusModal(codeInput, onChanged);
 }
 
@@ -299,7 +299,7 @@ async function runSync({ code, pushAfterMerge, onChanged }) {
     }
 
     if (status) { status.className = 'sync-status-msg sync-ok'; status.textContent = '✓ ' + t('sync.done'); }
-    if (onChanged) onChanged();
+    if (onChanged) await onChanged();
   } catch (err) {
     if (status) { status.className = 'sync-status-msg sync-error'; status.textContent = err.message; }
   } finally {
@@ -480,7 +480,7 @@ export async function quickSync(mode, onChanged) {
       }
     }
 
-    if (onChanged) onChanged();
+    if (onChanged) await onChanged();
     return { ok: true };
   } catch (err) {
     console.error('[HCP Sync] quickSync failed:', err);

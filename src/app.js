@@ -60,6 +60,7 @@ export async function initApp() {
 
   const params = new URLSearchParams(window.location.search);
   const syncCode = params.get('sync');
+  let skipInitialRefresh = false;
 
   if (shared) {
     const accepted = await showShareImportConfirm();
@@ -75,7 +76,10 @@ export async function initApp() {
   } else if (syncCode) {
     const accepted = await showSyncJoinConfirm();
     if (accepted) {
-      await joinFamilySyncCode(syncCode, () => refreshAll());
+      // joinFamilySyncCode now awaits its onChanged callback, so the calendar is
+      // already fully refreshed when it returns — no need to call refreshAll again.
+      await joinFamilySyncCode(syncCode, async () => { await refreshAll(); });
+      skipInitialRefresh = true;
     }
     window.history.replaceState({}, '', window.location.pathname);
     setYear(new Date().getFullYear());
@@ -100,7 +104,8 @@ export async function initApp() {
   setDayChangedCallback(() => refreshAll());
   applyTranslations();
   bindControls();
-  await refreshAll();
+  // Skip if a sync join already called refreshAll (avoids concurrent autoAssignHolidays race)
+  if (!skipInitialRefresh) await refreshAll();
   updateSyncStatusBar();
 }
 
@@ -207,7 +212,7 @@ function bindControls() {
 
   document.getElementById('share-menu-family').addEventListener('click', () => {
     shareMenu.classList.add('hidden');
-    showFamilySyncModal(() => { refreshAll(); updateSyncStatusBar(); });
+    showFamilySyncModal(async () => { await refreshAll(); updateSyncStatusBar(); });
   });
 
   document.getElementById('share-menu-data').addEventListener('click', async () => {
