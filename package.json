@@ -1,8 +1,14 @@
 {
   "name": "hcp-holiday-calendar-planner",
-  "description": "Holiday Calendar Planner for Switzerland, Germany and France — optimize vacation decisions when family members work or attend school in different regions",
-  "private": true,
+  "description": "Holiday Calendar Planner for Switzerland, Germany, France, Poland and Slovenia — optimize vacation decisions when family members work or attend school in different regions",
   "version": "1.7.7",
+  "license": "MIT",
+  "author": "dzaczek",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dzaczek/HolidayPlanner.git"
+  },
+  "homepage": "https://hcp.sysop.cat/",
   "type": "module",
   "scripts": {
     "dev": "vite",

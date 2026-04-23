@@ -1,5 +1,8 @@
 # HCP - Holiday Calendar Planner
 
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/demo-hcp.sysop.cat-blue)](https://hcp.sysop.cat/)
+
 Plan smarter, rest longer!
 
 A calendar tool that helps families in Switzerland, Germany, and France optimize their vacation planning when family members work or attend school in different regions. Parents and children each have different holiday schedules (public holidays, school holidays, university holidays) depending on their region and municipality — HCP visualizes all of them on one calendar so you can find the best overlapping days off.
@@ -115,3 +118,9 @@ npm run build   # version appears as v0.2.0
 - IndexedDB (via `idb`)
 - CSS Grid / Flexbox
 - Docker + nginx + GoAccess
+
+## License
+
+[MIT](LICENSE) — free to use, modify, and distribute. Attribution appreciated.
+
+Copyright (c) 2026 dzaczek
