@@ -492,66 +492,109 @@ main {
   background: linear-gradient(to bottom, #f0fdf4 0%, var(--surface) 100%);
 }
 
-/* ── Sync status bar ─────────────────────────────────────────────────────── */
-.sync-status-bar {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  background: #dcfce7;
-  border: 1.5px solid #16a34a;
-  border-radius: var(--radius);
-  padding: 4px 8px;
-  font-size: 0.78rem;
-  color: #15803d;
-  font-weight: 500;
-  flex-shrink: 1;
-  min-width: 0;
+/* ── Sync lock button + dropdown panel ───────────────────────────────────── */
+.sync-dropdown-wrap {
+  position: relative;
 }
 
-.sync-status-bar.hidden {
+.sync-dropdown-wrap.hidden {
   display: none;
 }
 
-.sync-status-bar.sync-bar-error {
+/* Lock button in header */
+.btn-sync-lock {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 8px;
+  height: 32px;
+  background: #dcfce7;
+  color: #15803d;
+  border: 1.5px solid #16a34a;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: var(--font);
+  transition: background 0.15s;
+}
+
+.btn-sync-lock:hover {
+  background: #bbf7d0;
+}
+
+.sync-dropdown-wrap.sync-bar-error .btn-sync-lock {
   background: #fef2f2;
-  border-color: #dc2626;
   color: #b91c1c;
+  border-color: #dc2626;
+}
+
+/* Dropdown panel */
+.sync-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+  min-width: 220px;
+  z-index: 200;
+  overflow: hidden;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sync-panel.hidden {
+  display: none;
+}
+
+.sync-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sync-panel-actions {
+  display: flex;
+  gap: 6px;
 }
 
 .sync-e2ee-badge {
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.03em;
-  padding: 1px 5px;
+  padding: 2px 6px;
   border-radius: 4px;
   background: #16a34a;
   color: #fff;
   white-space: nowrap;
 }
 
-.sync-status-bar.sync-bar-error .sync-e2ee-badge {
+.sync-dropdown-wrap.sync-bar-error .sync-e2ee-badge {
   background: #dc2626;
 }
 
 .sync-bar-date {
   white-space: nowrap;
   font-size: 0.75rem;
-  min-width: 28px;
-  opacity: 0.85;
+  color: var(--text-muted);
 }
 
 .btn-sync-quick {
+  flex: 1;
   background: #16a34a;
   border: none;
   border-radius: 5px;
   color: #fff;
-  padding: 4px 7px;
-  font-size: 1rem;
+  padding: 6px 4px;
+  font-size: 0.82rem;
+  font-family: var(--font);
+  font-weight: 500;
   line-height: 1;
   cursor: pointer;
   transition: background 0.12s, opacity 0.12s;
   white-space: nowrap;
-  flex-shrink: 0;
 }
 
 .btn-sync-quick:hover {
@@ -563,11 +606,11 @@ main {
   cursor: default;
 }
 
-.sync-status-bar.sync-bar-error .btn-sync-quick {
+.sync-dropdown-wrap.sync-bar-error .btn-sync-quick {
   background: #dc2626;
 }
 
-.sync-status-bar.sync-bar-error .btn-sync-quick:hover {
+.sync-dropdown-wrap.sync-bar-error .btn-sync-quick:hover {
   background: #b91c1c;
 }
 

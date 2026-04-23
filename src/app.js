@@ -168,8 +168,8 @@ function bindControls() {
   settingsMenuBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     settingsMenu.classList.toggle('hidden');
-    // Close share menu if open
     shareMenu.classList.add('hidden');
+    document.getElementById('sync-panel')?.classList.add('hidden');
   });
 
   const shareMenuBtn = document.getElementById('share-menu-btn');
@@ -178,16 +178,29 @@ function bindControls() {
   shareMenuBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     shareMenu.classList.toggle('hidden');
-    if (typeof settingsMenu !== 'undefined') settingsMenu.classList.add('hidden');
+    settingsMenu.classList.add('hidden');
+    document.getElementById('sync-panel')?.classList.add('hidden');
   });
 
-  // Close dropdown when clicking outside
+  // ── Sync lock button ────────────────────────────────────────────────────────
+  document.getElementById('sync-lock-btn')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const panel = document.getElementById('sync-panel');
+    panel?.classList.toggle('hidden');
+    settingsMenu.classList.add('hidden');
+    shareMenu.classList.add('hidden');
+  });
+
+  // Close all dropdowns when clicking outside
   document.addEventListener('click', (e) => {
     if (document.getElementById('share-dropdown-wrap') && !document.getElementById('share-dropdown-wrap').contains(e.target)) {
       shareMenu.classList.add('hidden');
     }
     if (document.getElementById('settings-dropdown-wrap') && !document.getElementById('settings-dropdown-wrap').contains(e.target)) {
       settingsMenu.classList.add('hidden');
+    }
+    if (document.getElementById('sync-status-bar') && !document.getElementById('sync-status-bar').contains(e.target)) {
+      document.getElementById('sync-panel')?.classList.add('hidden');
     }
   });
 
@@ -241,19 +254,19 @@ function bindControls() {
 // ── Sync status bar ───────────────────────────────────────────────────────────
 
 export function updateSyncStatusBar() {
-  const bar = document.getElementById('sync-status-bar');
+  const wrap = document.getElementById('sync-status-bar'); // now the dropdown wrap
   const header = document.getElementById('app-header');
-  if (!bar) return;
+  if (!wrap) return;
 
   const code = getFamilyCode();
   if (!code) {
-    bar.classList.add('hidden');
-    bar.classList.remove('sync-bar-error');
+    wrap.classList.add('hidden');
+    wrap.classList.remove('sync-bar-error');
     header?.classList.remove('e2ee-active');
     return;
   }
 
-  bar.classList.remove('hidden');
+  wrap.classList.remove('hidden');
   header?.classList.add('e2ee-active');
   const dot = document.getElementById('sync-bar-dot');
   const dateEl = document.getElementById('sync-bar-date');
@@ -270,15 +283,14 @@ export function updateSyncStatusBar() {
     const d = new Date(lastSync);
     const datePart = `${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}.${d.getFullYear()}`;
     const timePart = `${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
-    dateEl.innerHTML = `${datePart}<br>${timePart}`;
+    dateEl.innerHTML = `${datePart} ${timePart}`;
     dot.className = 'sync-dot sync-dot-ok';
-    bar.classList.remove('sync-bar-error');
+    wrap.classList.remove('sync-bar-error');
   } else {
     dateEl.textContent = '—';
     dot.className = 'sync-dot sync-dot-ok';
   }
 
-  // Show dirty indicator on Push button when local calendar differs from remote
   if (pushBtn) {
     if (dirty) {
       pushBtn.classList.add('btn-sync-dirty');
@@ -294,17 +306,17 @@ async function doQuickSync(mode) {
   const pullBtn  = document.getElementById('sync-quick-pull');
   const pushBtn  = document.getElementById('sync-quick-push');
   const syncBtn  = document.getElementById('sync-quick-sync');
-  const bar = document.getElementById('sync-status-bar');
+  const wrap = document.getElementById('sync-status-bar');
   const dot = document.getElementById('sync-bar-dot');
 
   [pullBtn, pushBtn, syncBtn].forEach(b => { if (b) b.disabled = true; });
-  if (dot) dot.className = 'sync-dot'; // neutral while running
+  if (dot) dot.className = 'sync-dot';
 
   const result = await quickSync(mode, () => refreshAll());
 
-  if (bar) {
-    if (result.ok) bar.classList.remove('sync-bar-error');
-    else           bar.classList.add('sync-bar-error');
+  if (wrap) {
+    if (result.ok) wrap.classList.remove('sync-bar-error');
+    else           wrap.classList.add('sync-bar-error');
   }
   updateSyncStatusBar();
 

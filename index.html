@@ -58,7 +58,7 @@
     <div class="header-left">
       <div class="header-title">
         <h1 data-i18n="app.title">Holiday Calendar Planner</h1>
-        <span class="title-flags" aria-hidden="true">🇨🇭🇩🇪🇫🇷🇵🇱</span>
+        <span class="title-flags" aria-hidden="true">🇨🇭🇩🇪🇫🇷🇵🇱🇸🇮</span>
         <span id="app-version" class="app-version"></span>
       </div>
       <span id="app-motto" class="app-motto" data-i18n="about.motto">Planuj mądrzej, odpoczywaj dłużej!</span>
@@ -94,13 +94,25 @@
     </div>
 
     <div class="header-right header-controls">
-      <div id="sync-status-bar" class="sync-status-bar hidden">
-        <span class="sync-e2ee-badge">&#128274; E2EE</span>
-        <span id="sync-bar-dot" class="sync-dot sync-dot-ok"></span>
-        <span id="sync-bar-date" class="sync-bar-date">—</span>
-        <button id="sync-quick-pull" class="btn-sync-quick" data-i18n-tooltip="tooltip.pull">&#8681;</button>
-        <button id="sync-quick-push" class="btn-sync-quick" data-i18n-tooltip="tooltip.push">&#8679;</button>
-        <button id="sync-quick-sync" class="btn-sync-quick" data-i18n-tooltip="tooltip.sync">&#8645;</button>
+      <div class="sync-dropdown-wrap hidden" id="sync-status-bar">
+        <button id="sync-lock-btn" class="btn-header btn-sync-lock" aria-label="E2EE Sync status" data-i18n-tooltip="tooltip.sync">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <span id="sync-bar-dot" class="sync-dot sync-dot-ok"></span>
+        </button>
+        <div id="sync-panel" class="sync-panel hidden">
+          <div class="sync-panel-header">
+            <span class="sync-e2ee-badge">&#128274; E2EE</span>
+            <span id="sync-bar-date" class="sync-bar-date">—</span>
+          </div>
+          <div class="sync-panel-actions">
+            <button id="sync-quick-pull" class="btn-sync-quick" data-i18n-tooltip="tooltip.pull">&#8681; Pull</button>
+            <button id="sync-quick-push" class="btn-sync-quick" data-i18n-tooltip="tooltip.push">&#8679; Push</button>
+            <button id="sync-quick-sync" class="btn-sync-quick" data-i18n-tooltip="tooltip.sync">&#8645; Sync</button>
+          </div>
+        </div>
       </div>
 
       <div class="layout-selector">
