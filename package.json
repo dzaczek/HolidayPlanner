@@ -2,7 +2,7 @@
   "name": "hcp-holiday-calendar-planner",
   "description": "Holiday Calendar Planner for Switzerland, Germany, France, Poland and Slovenia — optimize vacation decisions when family members work or attend school in different regions",
   "version": "1.7.7",
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "author": "dzaczek",
   "repository": {
     "type": "git",

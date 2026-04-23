@@ -1,6 +1,6 @@
 # HCP - Holiday Calendar Planner
 
-[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License: AGPL v3](https://img.shields.io/badge/license-AGPL--v3-blue.svg)](LICENSE)
 [![Live Demo](https://img.shields.io/badge/demo-hcp.sysop.cat-blue)](https://hcp.sysop.cat/)
 
 Plan smarter, rest longer!
@@ -121,6 +121,6 @@ npm run build   # version appears as v0.2.0
 
 ## License
 
-[MIT](LICENSE) — free to use, modify, and distribute. Attribution appreciated.
+[GNU Affero General Public License v3.0](LICENSE) — free to use, modify, and distribute, but any modified version offered over a network must also be open-sourced under AGPL-3.0.
 
 Copyright (c) 2026 dzaczek
