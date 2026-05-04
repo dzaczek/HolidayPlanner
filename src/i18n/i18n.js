@@ -2,8 +2,9 @@ import de from './de.json';
 import en from './en.json';
 import fr from './fr.json';
 import it from './it.json';
+import pl from './pl.json';
 
-const locales = { de, en, fr, it };
+const locales = { de, en, fr, it, pl };
 
 function detectLang() {
   const langs = [...(navigator.languages || []), navigator.language || ''];
